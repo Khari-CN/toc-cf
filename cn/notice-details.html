@@ -1,0 +1,142 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>国际最新公告</title>
+    <meta name="keywords"
+        content="国际官网,贵金属,原油,股指期货,外汇的最新公告" />
+    <meta name="description"
+        content="本栏目提供国际是一家实力雄厚的在线金融平台,提供全世界最具竞争力的金融服务产品" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <!--#include file="/cn/template.css.html"-->
+    <!--#include file="/module/html.head.html"-->
+    <link rel="shortcut icon" href="/source/www/template/fav.ico" />
+    <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/cn/css/notice.css">
+    <link rel="stylesheet" type="text/css" href="/cn/css/font-awesome.css">
+    <script type="text/javascript" src="/cn/js/jquery-1.11.3.min.js"></script>
+    <script src="/cn/js/homepage/backheader.js"></script>
+</head>
+
+<body ng-cloak class="home-page" ng-controller="noticeDetailsController"
+    onhashchange="angular.element(document.getElementsByClassName('home-page')).scope().getData()">
+    <div class="main">
+        <!--#include file="/cn/common-html/suggestion.html"-->
+        <div class="panel" id="m-panel">
+            <!--#include file="/module/html.body.begin.html"-->
+            <!-- Begin header -->
+            <div class="pc">
+                <div class="e-header">
+                    <!--#include file="/cn/template.header.html"-->
+                </div>
+            </div>
+            <div class="m">
+                <script>
+                    menu();
+                </script>
+            </div>
+            <!-- End header -->
+            <div ng-cloak class="web-banner top-banner banner-notice">
+                <div class="container">
+                    <div class="block1">
+                        <div class="left-part-1">
+                            <div class="billboard">
+                                <h1 class="title">最新公告</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End hero banner-->
+            <!-- Begin Main contents -->
+            <div class="main-content">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="col-md-12">
+                            <div class="col-md-10">
+                                <div class="title-header">&nbsp;&nbsp;{{types[data.type].value}}</div>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="back-page" href="notice.html"><i
+                                        class="fa fa-angle-left padding-icon"></i>返回列表</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 padding-content">
+                        <div class="col-md-12 notification">
+                            <div class="col-md-10">
+                                <p class="title-content1 fl"> {{data.topic}} </p>
+                            </div>
+                            <div class="col-md-2 date-set">
+                                <span class="date-1">{{data.startDate | date: 'yyyy.MM.dd'}}</span>
+                                <span class="date-1">{{data.startDate | date: 'HH:mm'}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div ng-bind-html="data.message" class="des-content1">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="border-gray"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <p class="title-link">更多公告</p>
+                        <div class="col-md-12" ng-repeat="row in others">
+                            <a href="notice-details.html#{{row.id}}" class="link">[{{types[row.type].value}}]
+                                {{row.topic}}</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="m">
+                <!--底部-->
+                <script>
+                    footer();
+                </script>
+                <!--底部结束-->
+                <!--遮罩层-->
+                <div id="m-overlay" class="overlay" node-name="overlay"></div>
+                <!--遮罩层 end-->
+            </div>
+            <!--#include file="/cn/template.footer.html"-->
+        </div>
+        <!-- End Main contents -->
+        <div class="pc">
+            <!--#include file="/cn/template.right-1.html"-->
+        </div>
+        <div class="m">
+            <!--#include file="/cn/nav.html"-->
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/cn/js/angular.min.js"></script>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script src="/cn/js/notice-details.plugin.js"></script>
+<!--#include file="/module/html.body.end.html"-->
+<script type="text/javascript">
+    AOS.init({
+        offset: 100,
+        easing: "ease",
+        duration: 800,
+        delay: 100,
+        once: false
+    });
+</script>
+
+</html>

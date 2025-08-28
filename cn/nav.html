@@ -1,0 +1,145 @@
+<!--导航部分-->
+<nav id="m-menu" class="menu">
+  <div class="head">
+    <span node-name="closeBtn"></span>
+  </div>
+  <ul class="expmenu">
+    <li onclick="openSubmenu(0)" class="fifth">
+      <a a href="javascript:;" data-menu="1">
+        <!--<div class="rightBorder"></div>-->
+        <p>关于我们</p>
+        <span node-name="icon"></span>
+
+
+      </a>
+      <ul style="display: none">
+        <li><a href="/cn/aboutUS.html">关于</a></li>
+        <li><a href="/cn/about/advantage.html">企业优势</a></li>
+        <li><a href="/cn/about/awards-honor.html">企业荣誉</a></li>
+        <li><a href="/cn/about/operation-report.html">运营数据</a></li>
+        <li><a href="/cn/about/partners.html">合作伙伴</a></li>
+        <li><a href="/cn/about/contact-us.html">联系我们</a></li>
+      </ul>
+    </li>
+    <li onclick="openSubmenu(1)" class="third">
+      <a href="javascript:;" data-menu="1">
+        <!--<div class="rightBorder"></div>-->
+        <p>最新优惠</p>
+        <i class="limit-time-icon"></i>
+        <span node-name="icon"></span>
+
+
+      </a>
+      <ul style="display: none">
+        <li><a href="/cn/acc/promotion.html">所有优惠</a></li>
+        <li><a href="/cn/zt/campaign20230801.html?cms">新客优惠</a></li>
+        <li><a href="/cn/zt/old-campaign20230801.html?cms">老客优惠</a></li>
+        <li><a href="/cn/zt/referral-new.html?cms">推荐好友</a></li>
+      </ul>
+    </li>
+    <li onclick="openSubmenu(2)" class="second">
+      <a href="javascript:;" data-menu="1">
+        <!--<div class="leftBorder"></div>-->
+        <p>交易产品</p>
+        <span node-name="icon"></span>
+
+
+      </a>
+      <ul style="display: none">
+        <li><a href="/cn/product/forex.html">外汇</a></li>
+        <li><a href="/cn/product/commodities.html">商品</a></li>
+        <li><a href="/cn/product/indices.html">指数</a></li>
+        <li><a href="/cn/product/stock.html">股票</a></li>
+        <!--<li><a href="/cn/product/virtual.html">虚拟货币</a></li>-->
+      </ul>
+    </li>
+    <li onclick="openSubmenu(3)" class="six">
+      <a href="javascript:;" data-menu="1">
+        <!--<div class="leftBorder"></div>-->
+        <p>开户交易</p>
+        <span node-name="icon"></span>
+
+
+      </a>
+      <ul style="display: none">
+        <li class="sub-menu-nav">
+          <p>开户交易</p>
+          <ul class="sub-child2">
+            <li><a href="/cn/mobile/rcfd_account"
+                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实开户</a></li>
+            <li><a href="/cn/mobile/dcfd_account"
+                onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a></li>
+            <li><a href="/cn/acc/terms.html">账户类型</a></li>
+            <li><a href="/cn/acc/super-vip.html">尊贵账户</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu-nav">
+          <p>软件下载</p>
+          <ul class="sub-child2">
+            <li><a style="padding-left: 0.55rem;" href="/cn/platform/cfd-intro.html">CFD交易平台</a></li>
+            <li><a href="/cn/platform/cfd/step.html">操作指南</a></li>
+          </ul>
+        </li>
+        <li class="sub-menu-nav">
+          <p>交易须知</p>
+          <ul class="sub-child2">
+            <li><a href="/cn/exchangerate.html">汇率兑换</a></li>
+            <li><a href="/cn/acc/account-guide.html">存取指南</a></li>
+            <li><a href="/cn/acc/closeposition.html">交易下单</a></li>
+            <li><a style="padding-left: 0.3rem;" href="/cn/product/trade-calculator.html">交易计算器</a></li>
+            <li><a href="/cn/faq.html">常见问题</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/cn/agency.html">
+        <p>代理合作</p>
+        <i class="new-icon"></i>
+      </a>
+    </li>
+    <li onclick="openSubmenu(4)" class="six">
+      <a href="javascript:;" data-menu="1">
+        <!--<div class="leftBorder"></div>-->
+        <p>行情资讯</p>
+        <span node-name="icon"></span>
+
+
+      </a>
+      <ul style="display: none">
+       
+        <li><a href="/cn/information/newss.html">环球新闻</a></li>
+        <li><a href="/cn/information/quote.html">实时报价</a></li>
+        <li><a href="/cn/information/position.html">持仓比例</a></li>
+        <li><a href="/cn/information/calendar.html">财经日历</a></li>
+        <li><a href="/cn/information/centralBank.html">央行动态</a></li>
+      </ul>
+    </li>
+    <li onclick="openSubmenu(5)" class="forth">
+      <a href="javascript:;" data-menu="1">
+        <!--<div class="rightBorder"></div>-->
+        <p>研究院</p>
+        <span node-name="icon"></span>
+
+
+      </a>
+      <ul style="display: none">
+        <li><a href="/cn/edu/analyst.html">专家评论</a></li>
+        <li><a href="">互动问答</a></li>
+        <li><a href="/cn/super-topic/super_topic.html">汇聊</a></li>
+        <li><a href="/cn/edu/qualification.html">学习文章</a></li>
+        <li><a href="/cn/edu/course.html">视频课程</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="bottom_btn">
+    <a href="/cn/mobile/rcfd_account"
+      onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'SJ_GW', '1')">开启真实账户</a>
+    <a href="https://m.cftrader.com/">用户中心登录</a>
+  </div>
+</nav>
+<script>
+  openSubmenu = function(id){
+
+  } 
+</script>

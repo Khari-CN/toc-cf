@@ -1,0 +1,162 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>国际最新公告</title>
+    <meta name="keywords"
+        content="国际官网,贵金属,原油,股指期货,外汇的最新公告" />
+    <meta name="description"
+        content="本栏目提供国际是一家实力雄厚的在线金融平台,提供全世界最具竞争力的金融服务产品" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <!--#include file="/cn/template.css.html"-->
+    <!--#include file="/module/html.head.html"-->
+    <link rel="shortcut icon" href="/source/www/template/fav.ico" />
+    <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/cn/css/notice.css">
+    <script type="text/javascript" src="/cn/js/jquery-1.11.3.min.js"></script>
+    <script src="/cn/js/homepage/backheader.js"></script>
+</head>
+
+<body class="home-page" ng-controller="noticeController">
+    <div class="main">
+        <!--#include file="/cn/common-html/suggestion.html"-->
+        <div class="panel" id="m-panel">
+            <!--#include file="/module/html.body.begin.html"-->
+            <!-- Begin header -->
+            <div class="pc">
+                <div class="e-header">
+                    <!--#include file="/cn/template.header.html"-->
+                </div>
+            </div>
+            <div class="m">
+                <script>
+                    menu();
+                </script>
+            </div>
+            <!-- End header -->
+            <div ng-cloak class="web-banner top-banner banner-notice">
+                <div class="container">
+                    <div class="block1">
+                        <div class="left-part">
+                            <div class="billboard">
+                                <h1 class="title">最新公告</h1>
+                            </div>
+                        </div>
+                        <div class="pc">
+                            <div class="right-part">
+                                <div class="dropdown">
+                                    <select id="select" ng-model="type" ng-change="onTypeChange()">
+                                        <option ng-repeat="p in types" value="{{p.key}}">{{p.value}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End hero banner-->
+            <!-- Begin Main contents -->
+            <div ng-cloak class="main-content">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="col-md-12">
+                            <div class="title-header" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                                &nbsp;&nbsp;{{types[type].value}}</div>
+                        </div>
+                    </div>
+                    <div class="m">
+                        <div class="dropdown">
+                            <select id="select" ng-model="type" ng-change="onTypeChange()">
+                                <option ng-repeat="p in types" value="{{p.key}}">{{p.value}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div ng-repeat="row in data" class="col-md-12 padding-content"=>
+                        <div class="col-md-8">
+                            <a href="notice-details.html#{{row.id}}" target="_blank"
+                                class="title-content">[{{types[row.type].value}}] {{row.topic}}</a>
+                            <div class="des-content">{{ row.message | limitTo: 100 }}{{row.message.length > 100 ? '...'
+                                :
+                                ''}}<a href="notice-details.html#{{row.id}}" target="_blank">阅读全文</a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="date">{{ row.startDate | date: 'yyyy.MM.dd'}}</p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="border-gray"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <a href="javascript:;" class="reload" ng-click="getData()" ng-show="showLoadMore">查看更多公告</a>
+                    </div>
+                </div>
+            </div>
+            <div class="m">
+                <div class="web-page bg02">
+                    <div class="inner flex-panel">
+                        <div class="motto">
+                            <p class="main" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">准备好了吗？
+                            </p>
+                            <p class="sub" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                                开立账户只须30秒
+                            </p>
+                            <a data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000"
+                                href="/cn/pc/rcfd_account"
+                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m">
+                <!--底部-->
+                <script>
+                    footer();
+                </script>
+                <!--底部结束-->
+                <!--遮罩层-->
+                <div id="m-overlay" class="overlay" node-name="overlay"></div>
+                <!--遮罩层 end-->
+            </div>
+            <!--#include file="/cn/template.footer.html"-->
+        </div>
+        <!-- End Main contents -->
+        <div class="pc">
+            <!--#include file="/cn/template.right-1.html"-->
+        </div>
+        <div class="m">
+            <!--#include file="/cn/nav.html"-->
+        </div>
+    </div>
+</body>
+<script src="/cn/js/ScrollMagic.min.js"></script>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script src="/cn/js/nice-select.min.js"></script>
+<script src="/cn/js/angular.min.js"></script>
+<script src="/cn/js/notice.plugin.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#select').niceSelect();
+
+    });
+    AOS.init({
+        offset: 100,
+        easing: "ease",
+        duration: 800,
+        delay: 100,
+        once: false
+    });
+</script>
+
+
+</html>

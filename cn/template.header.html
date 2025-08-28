@@ -1,0 +1,170 @@
+<script src="/cn/js/live800.js"></script>
+<script>
+    window.onscroll = function () {
+    var scroll =
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      window.pageYOffset;
+    if (scroll >= 20) {
+      $(".center-support").addClass("scroll-down");
+      $(".new-megamenu").addClass("top-0");
+      $(".new-megamenu").addClass("menu-sroll-bg")
+    } else {
+      $(".center-support").removeClass("scroll-down");
+      $(".new-megamenu").removeClass("top-0");
+      $(".new-megamenu").removeClass("menu-sroll-bg")
+    }
+  };
+</script>
+<div class="header">
+    <!-- Begin center support bar -->
+    <div class="center-support">
+        <div class="container">
+            <div class="user-btn">
+                <a href="javascript: void(0)"
+                    onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">开启真实账户</a>
+                <a href="javascript: void(0)">用户中心登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="new-megamenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 col-ssm-1">
+                    <div class="logo">
+                        <a href="/"><img
+                                src="./images/cpt_logo.png"
+                                alt="国际logo" /></a>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-ssm-1"></div>
+                <div class="col-xs-10 col-ssm-10">
+                    <ul class="mega-menu clearfix" style="margin-top: 10px;">
+                        <li>
+                            <a href="/cn/aboutUS.html">关于我们</a>
+                            <ul class="sub-menu">
+                                <li><a
+                                        href="</a>
+                                </li>
+                                <li>
+                                    <a href="/cn/about/advantage.html">
+                                        企业优势</a>
+                                </li>
+                                <li><a href="/cn/about/awards-honor.html">企业荣誉</a>
+                                </li>
+                                <li><a href="/cn/about/operation-report.html">运营数据</a>
+                                </li>
+                                <li><a href="/cn/about/partners.html">合作伙伴</a></li>
+                                <li><a href="/cn/about/contact-us.html">联系我们</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">最新优惠<i class="new-icon-limited"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="javascript: void(0)">新客优惠</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: void(0)">
+                                        老客优惠</a>
+                                </li>
+                                <li><a href="javascript: void(0)">推荐好友</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/cn/product.html">交易产品</a>
+                            <ul class="sub-menu">
+                                <li><a href="/cn/product/forex.html">外汇</a></li>
+                                <li><a href="/cn/product/commodities.html">商品</a>
+                                </li>
+                                <li><a href="/cn/product/indices.html">指数</a></li>
+                    
+                                <li><a href="/cn/product/stock.html">股票</a></li>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="/cn/pc/rcfd_account"
+                            onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">开户交易</a>
+                        <div class="child1-wrapper">
+                            <ul class="sub-child1">
+                                <li>
+                                    <p>开户交易</p>
+                                    <ul class="sub-child2">
+                                        <li><a href="/cn/pc/rcfd_account" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实开户</a></li>
+                                        <li><a href="/cn/pc/dcfd_account" onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a></li>
+                                        <li><a href="/cn/acc/terms.html">账户类型</a></li>
+                                        <li><a href="/cn/acc/super-vip.html">尊贵账户</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                <p>软件下载</p>
+                                    <ul class="sub-child2">
+                                        <li><a href="/cn/platform/cfd-intro.html">CFD交易平台</a></li>
+                                        <li><a href="/cn/platform/cfd/step.html">操作指南</a></li>
+                                        <li><a href="https://cfd138.com/cn/MT5/MT5acc_step.html">MT5教学</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                <p>交易须知</p>
+                                    <ul class="sub-child2">
+                                        <li><a href="/cn/exchangerate.html">汇率兑换</a></li>
+                                        <li><a href="/cn/acc/account-guide.html">存取指南</a></li>
+                                        <li><a href="/cn/acc/closeposition.html">交易下单</a></li>
+                                        <li><a href="/cn/product/trade-calculator.html">交易计算器</li>
+                                        <li><a href="/cn/faq.html">常见问题</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="agency" href="/cn/agency.html">代理合作
+                            <i class="new-icon"></i>
+                        </a>
+                    </li>
+                    <li style="display: none;">
+                        <a href="/cn/information/newss.html#/news">行情资讯</a>
+                        <ul class="sub-menu">
+                            <li><a href="/cn/information/newss.html#/news">环球新闻</a>
+                            </li>
+                            <li><a href="/cn/information/quote.html">实时报价</a>
+                            </li>
+                            <li><a href="/cn/information/position.html">持仓比例</a>
+                            </li>
+                            <li><a href="/cn/information/calendar.html">财经日历</a>
+                            </li>
+                            <li><a href="/cn/information/centralBank.html">央行动态</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="display: none;">
+                        <a href="javascript:;">
+                            研究院</a>
+                        <ul class="sub-menu">
+                            <li><a href="/cn/edu/analyst.html">专家评论</a></li>
+                            <li><a href="">互动问答</a></li>
+                            <li>
+                                <a href="/cn/super-topic/super_topic.html">
+                                    汇聊</a>
+                            </li>
+                            <li><a href="/cn/edu/qualification.html">学习文章</a>
+                            </li>
+                            <li><a href="/cn/edu/course.html">视频课程</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End center support bar -->
+    <!-- Bengin stick megamenu larger than 1366px -->
+    <!-- End header bar -->
+
+    <!-- End stick megamenu larger than 1366px -->
+    <!-- Bengin stick megamenu less than 1366px -->
+
+    <!-- End stick megamenu less than 1366px -->
+    <!-- End header bar -->
+</div>

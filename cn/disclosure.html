@@ -1,0 +1,92 @@
+<div class="wrapper-overlay" id="disclosure-agreement">
+  <div class="wrapper-overlay-bg"></div>
+      <div class="wrapper-content">
+          <h3 style="font-size: 16px; font-weight: bold;">交易及存取款注意事项</h3>
+          <br/>
+          <div class="disclosure-agreement-text">
+              您好，感谢您加入创富，以下有几个重要的交易事项给您说明，关系您的交易权益，大约耽误您5分钟的时间，请您仔细聆听。<br /><br />
+                  <ol
+                      class="text-clipping"
+                      type="1"
+                  >
+                      <li>
+                          1.
+                          您在平台上所做的交易都默认是您本人操作，千万不要将账户交由他人代为交易；也建议您定期更改密码，确保您的账户安全。
+                      </li>
+                      <li>
+                          2.
+                          取款方面有兩个情况会收手续费，等于50或大于50美元就不收取。
+                          再来是您在平台上取款前需完成总注资金额的60%交易量，若没达成会收取取款金额的6%作为手续费。最后是每天24小时内可免费取款三次不限金额，第四次开始会收6%的手续费，并且您充值后若没交易就取款也会收6%手续费。以上三点再麻烦您留意，但请您不用担心，取款最终都会主动提示您是否收取手续费，请您多加留意。
+                      </li>
+                      <li>
+                          3.
+                          我司强制平仓水平平日是20%，周末收市前会提高到200%。建议您操作时务必留意风险控管，轻仓操作、止盈止损是必须的，而商品都有杠杆，交易时建议最多拿您账户资金的10%来建仓即可，止损金额设置为您可承受的范围内，切勿亏损加仓或是摊平操作，此外止盈止损是当周有效，过周、或是过假期未触发的话则需重新设定。
+                      </li>
+                      <li>
+                          4. 我司平台期货商品有原油、指数、天然气、农产品
+                          、铜、铁、股票股指等，合约到期当下会按照交易所合约的结算价强制平仓，建议您务必留意合约到期日提前平仓。若您持仓过夜，会产生过夜利息，夏令时是北京时间早上5点、冬令时是北京时间早上6点，只要您持仓超过这个结算时间就会收取，此外周四会按照国际惯例收取三天的过夜费，建议您周三晚上睡前请务必留意。
+                      </li>
+                      <li>
+                          5. 如您有参加新客户赠金活动,
+                          请你留意活动期间内您会暂时无法取款，若要取款，只要在您空仓且没有挂单的时候向在线客服申请结算，结算后会扣除未完成手数的赠金，之后即可正常取款。
+                      </li>
+                  </ol>
+                  <br />
+                  <p>
+                      最后我们也会将以上说明的内容以邮件寄送到您的绑定邮箱。感谢您耐心聆听,
+                      如有任何疑问,
+                      欢迎随时联系我们在线客服查询。感谢您。
+                  </p>
+          </div>
+          <audio id="disclosure-audio-source">
+              <source src="" type="audio/mpeg">
+          </audio>
+          <div class="wrapper-row" style="width: 100%">
+              <span id="text-audio-loading">加载录音中...请稍候</span>
+              <input type="range" id="audio-progress" max="0" value="0" onchange="changeProgressPointer(this)"/>
+              <span id="audio-current-time">00:00</span>/
+              <span id="audio-total-time"></span>
+          </div>
+          <div class="wrapper-row wrapper-align-left">
+              <button type="button" id="button-listen-audio" onclick="playSourceButtonClicked()">收听录音</button>
+              <button type="button" id="button-audio-speed" onclick="swapSpeed()" disabled>快速</button>
+          </div>
+          <!-- <div class="wrapper-row wrapper-align-left">
+              <input id="checkbox-read-disclosure" type="checkbox" /><label id="label-read-disclosure">已阅读以上内容</label>
+          </div>
+          <div class="wrapper-row">
+              <button type="button" id="button-confirm-disclosure" style="font-size: 14px; padding: 12px 24px;" disabled onclick="submitRead()">确定</button>
+          </div>
+          <input type="hidden" id="disclosure-play-speed" value="1" /> -->
+          <img id="close-disclosure" src="/images/close.png" />
+      </div>
+  </div>
+</div>
+<script>
+  const thisWindow = document.querySelector("#disclosure-agreement")
+  const thisAudio = document.querySelector("#disclosure-audio-source")
+  thisWindow.querySelector(".wrapper-overlay-bg").addEventListener('click', () => {
+    clearAndCloseDisclosureWindow()
+  })
+  document.querySelector('#close-disclosure').addEventListener('click', () => {
+    clearAndCloseDisclosureWindow()
+  })
+  const clearAndCloseDisclosureWindow = () => {
+    const progressBar = document.querySelector("#audio-progress")
+    const currentTime = document.querySelector('#audio-current-time')
+    const playButton = document.querySelector("#button-listen-audio")
+    const speedButton = document.querySelector("#button-audio-speed")
+    thisWindow.classList.remove('is-active')
+    thisAudio.pause()
+    thisAudio.currentTime = 0
+    progressBar.value = 0
+    currentTime.innerHTML = "00:00"
+    disclosureProgressValue = 0;
+    disclosurePlaybackRate = 1;
+    playButton.innerHTML = "收听录音";
+    speedButton.innerHTML = "快速"
+  }
+</script>
+
+<link rel="stylesheet" href="/cn/css/disclosure.css" />
+<script src="/cn/js/disclosure.js"></script>
