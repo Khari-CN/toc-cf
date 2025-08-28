@@ -1,0 +1,47 @@
+.top-banner-acitvity {position: relative;margin-top:-74px;background:#1c4560;line-height:0;}
+.top-banner-acitvity .banner-acitvity {background: url(../images/download/xiazai-img01.jpg) no-repeat left top;height:350px; }
+.top-banner-acitvity .banner-acitvity .title-banner {font-size:3.6em;line-height:2.0;color: #FFFFFF;text-align:left;padding-top:160px;}
+.top-banner-acitvity .banner-acitvity .sub-title {font-size:2.4em;line-height:2.0;color: #FFFFFF;padding-bottom:70px; }
+.download_main{}
+.title_1{color:#035b83;font-size:24px;padding-bottom:30px;}
+.ul_kaihu{display:inline-block;width:100%;margin-bottom: 60px;}
+.ul_kaihu li{width:33.33%;float:left;}
+.ul_kaihu .left,.ul_kaihu .right{float: left;}
+.ul_kaihu .right{padding-left:30px;}
+.li_text1{color: #333333;font-size: 20px;text-align: center;}
+.DownloadBtn{width:100px;height: 30px;background: #035b83;font-size: 16px;color: #FFFFFF;text-align: center;line-height: 30px;display: block;margin-top: 10px;margin-bottom: 15px;}
+.li_text2{font-size: 14px;color: #999999;text-align: center;}
+.download_main.first_main{padding-top:60px;}
+.silder_main .swiper-button-prev {background: url(../images/download/pc-left-jiantou.png)no-repeat 0px -5px;width: 20px;height: 60px;left: 30px;}
+.silder_main .swiper-button-next {background: url(../images/download/pc-right-jiantou1.png)no-repeat -16px;width: 20px;height: 60px;right: 50px;}
+.swiper-container {margin-left: auto;margin-right: auto;position: relative;overflow: hidden;z-index: 1;}
+.dw img{width: 100%;display: block;}
+.DW{width: 49%;height: 290px;background: #f6f6f6;margin-bottom: 65px;}
+.DW.CFD{float: left;position: relative;}
+.DW.CFIX{float: right;}
+.swiper_title{font-size:20px;color: #333333;padding-top: 40px;padding-left: 30px;}
+.swiper_title i{color: #999999;font-size: 14px;padding-left: 15px;}
+.pic_cfd{width: 100%;height: 210px;margin: 0 auto;background: url(../images/download/xiazai-img02.jpg)no-repeat center -70px;background-size: initial;overflow:hidden;}
+.cfd_btn{width: 100px;height: 30px;line-height: 30px;background: #035b83;display: block;margin: 0 auto;margin-top: 130px;color: #ffffff;text-align: center;font-size: 16px;}
+.pic_mobile{background:url(../images/download/xiazai-img04.jpg)no-repeat center;width: 100%;height: 290px;background-size: 95%;}
+.swiper_title1{font-size:20px;color: #333333;padding-top: 99px;padding-left:13%;}
+.cfd_btn.mobile{margin-left:26%;margin-top:10px;}
+.swiper_title1.two{font-size: 14px;color: #999999;padding-top: 15px;padding-left:24%;}
+.DW.CFIX .pic_mobile{background: url(../images/download/xiazai-img03.jpg)no-repeat center;}
+@media (max-width:1601px) {.swiper_title1 {font-size:18px;}.silder_main .swiper-button-next {right: 30px;}}
+@media (max-width:1201px) {
+.pic_cfd {background: url(../images/download/xiazai-img02.jpg)no-repeat center -25px;background-size: 105%;overflow: hidden;}
+.swiper_title1 {font-size: 16px;}
+.pic_mobile {height: 230px;}
+.cfd_btn.mobile {margin-left: 24%;}
+.cfd_btn {margin-top: 105px;}
+.DW {height: 250px;}
+.DW.CFIX .pic_mobile {background: url(../images/download/xiazai-img03.jpg)no-repeat center 15px;background-size: 115%;}
+.swiper_title1.two {padding-left: 22%;}
+.silder_main .swiper-button-prev {left: 15px;}
+.silder_main .swiper-button-next {right: 15px;}
+.pic_mobile {background: url(../images/download/xiazai-img04.jpg)no-repeat right 35px;background-size: 95%;}
+.li_text1{font-size: 18px;}
+.ul_kaihu .right {padding-left: 15px;}
+}
+

@@ -1,0 +1,101 @@
+.main-article {
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+
+.main-article .top-banner {
+    position: relative;
+    background: #1c4560;
+    line-height: 0;
+    top:-76px;
+    margin-bottom:30px;
+}
+
+.main-article .top-banner .img-banner {
+    display: block;
+    height: 350px;
+    opacity: 1;
+    background: url(//sc.cfygxz.com/source/www/sitemap/banner.jpg) top center no-repeat;
+    background-size: cover !important;
+}
+
+.main-article .top-banner .container {
+    position: absolute;
+    top: 194px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.main-article .section1{
+	clear:both;
+	margin:0 auto;
+}
+.main-article .section1 h2 {
+    font-size:20px;
+    color: #035a83;
+    line-height: 1.0;
+    margin: 15px 0 0 0;
+	/*font-weight:600;*/
+}
+
+
+.main-article .section1 h2 a {
+    font-size: 16px;
+    color: #08c;
+    transition: all .15s ease-in;
+}
+
+.main-article .section1 h2 a:hover {
+    color: #069;
+}
+
+.main-article .section1 ul {
+    padding-top: 10px;
+    padding-bottom:20px;
+	border-bottom:1px dashed #bfbfbf;
+	float:left;
+	width:100%;
+}
+
+.main-article .section1 li {
+    margin: 0 auto;
+	float:left;
+	font-size:1.8rem
+}
+.main-article .section1 li a{
+	color:#333;
+	float:left;
+	display:block;
+    font-size:16px;
+    line-height: 1.8;
+}
+.main-article .section1 li a:hover{
+    color: #0288d1;
+
+    /*text-decoration:underline;*/
+    /*border-bottom:2px solid #035a83;*/
+
+}
+.main-article .section1 li span{
+	display:block;
+	float:left;
+	padding:0 20px;
+	color:#cccccc;
+}
+.title-banner {
+    font-size: 3.6em;
+    color: #ffffff;
+    line-height: 1.0;
+}
+
+.title-min-banner {
+    font-size: 2.0em;
+    line-height: 1.0;
+    color: #ffffff;
+    padding-top: 25px;
+}
+
+
+
+
+
+

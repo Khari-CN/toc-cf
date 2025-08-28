@@ -1,0 +1,705 @@
+<!--#include file="/module/config.html"-->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+<head>
+    <meta charset="UTF-8">
+    <title>国际-财经日历</title>
+    <meta name="keywords" content="国际,财经日历,财经数据,财经事件" />
+    <meta name="description" content="财经日历栏目提供经济指标日历，财经大事预告，主要国家利率，债市期货行情，各国央行动态，各国数据，美国、韩国、英国、澳大利亚、德国、西班牙、欧元区、日本经济数据,非农数据,美联储议息会议，信誉评级，各国消费者信心指数，各国CPI月率年率,PMI数据,失业率,国债数据，失业率，货币供给，国币供应，央行抵押贷款等等财经大数据。" />
+    <link rel="shortcut icon" href="/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
+    <link rel="stylesheet" href="/cn/css/jquery-ui.css">
+    <link rel="stylesheet" href="/cn/css/flexslider.css">
+    <link href="/cn/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="/cn/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/cn/css/calendar.css" rel="stylesheet" type="text/css" />
+    <script src="/cn/js/config.js"></script>
+    <script type="text/javascript" src="/cn/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/cn/js/autoNumeric-min.js"></script>
+    <script type="text/javascript" src="/cn/js/template.js"></script>
+    <script type="text/javascript" src="/cn/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/cn/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/cn/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/cn/js/datepicker-zh-TW.js"></script>
+    <script type="text/javascript" src="/cn/js/angular.min.js"></script>
+    <style type="text/css">
+        .flexslider .slides > li {
+            display:block;
+        }
+    </style>
+</head>
+
+<body ng-controller="homeCtrl">
+<div class="contract-forex">
+    <!--#include file="/cn/template.header.html"-->
+
+    <!-- End Header -->
+    <!-- =====Begin main content contract page===== -->
+    <div class="top-banner">
+        <div class="img-banner">
+            <div class="container">
+                <div class="title-calender">财经日历</div>
+                <div class="subtitle-calender">全球视野 紧贴行情</div>
+                <div class="col-md-12 time">
+                    <div class="news2_slect_tbox">
+                        <span>公布日期</span>
+                        <input type="text" id="datepicker" ng-model="current_date" ng-change="changeDay1(current_date)"/>
+                        <input type="hidden" ng-model="change_date">
+                        <a href="#form" id="search">订阅通知</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section1  clearfix">
+        <div class="news2_nr_top_box container">
+            <div class="flexslider carousel">
+                <ul class="slides" id="monitor">
+                    <li ng-repeat="cday in dayInWeek"  ng-click="changeDay(cday)" ng-show="dayInWeek.length != 0">
+                        <a ng-class="cday.isActive?'active':''" ng-cloak>
+                            <span class="td-date">{{cday.date | date : 'yyyy.MM.dd'}}</span>
+                            <span>{{cday.chineseDay}}</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+                <ul class="flex-direction-nav">
+                    <li class="flex-nav-prev"><a ng-click="show_prev()" class="flex-prev flex-disabled" href="javascript:void(0);" tabindex="-1">Previous</a></li>
+                    <li class="flex-nav-next"><a ng-click="show_next()" class="flex-next flex-disabled" href="javascript:void(0);" tabindex="-1">Next</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section2 clearfix">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-12 clearfix">
+                    <a class="btn-fifter collapsed" data-toggle="collapse" data-target="#body_2">过滤</a>
+                </div>
+                <div class="col-md-12 article-answer collapse " id="body_2">
+                    <div class="col-right">
+                        <div class="col-md-12 news2_nr_bottom_box">
+                            <ul class="col-1" id="country-selector">
+                                <li id="usa" class="america" style="margin-left:0px;"  ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/usa.png" country="美国"></span>美国
+                                </li>
+                                <li id="eur" class="euro" name ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/eur.png" country="欧洲"></span>欧洲
+                                </li>
+                                <li id="jan" class="asia" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/jan.png" country="日本"></span>日本
+                                </li>
+                                <li id="eng" class="euro" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/eng.png" country="英国"></span>英国
+                                </li>
+                                <li id="swi" class="euro" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/swi.png" country="瑞士"></span>瑞士
+                                </li>
+                                <li id="ustr" class="asia" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/ustr.png" country="澳大利亚"></span>澳大利亚
+                                </li>
+                                <li id="cana" class="america" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/cana.png" country="加拿大"></span>加拿大
+                                </li>
+                                <li id="china" class="asia" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/china.png" country="中国"></span>中国
+                                </li>
+                                <li id="newz" class="asia" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/newz.png" country="新西兰"></span>新西兰
+                                </li>
+                                <li id="hk" class="asia" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/hk.png" country="香港"></span>香港
+                                </li>
+                                <li id="other" class="other" ng-click="countrySelect($event)">
+                                    <span><img src="/source/www/news/calendar/other.png" country="其它" ></span>其他
+                                </li>
+                            </ul>
+                            <ul class="col-2" id="continent-selector">
+                                <li id="continent1" class="continent1" style="margin-left:0px;" ng-click="countrySelect1($event)" country="日本-澳大利亚-中国-新西兰-香港">
+                                    亚洲盘
+                                </li>
+                                <li id="continent2" class="continent2" ng-click="countrySelect1($event)" country="欧洲-英国-瑞士">
+                                    欧洲盘
+                                </li>
+                                <li id="continent3" class="continent3" ng-click="countrySelect1($event)" country="美国-加拿大">
+                                    美国盘
+                                </li>
+                            </ul>
+                            <ul class="col-3" id="star-selector">
+                                <li id="star1" class="star" style="margin-left:0px;" ng-click="starSelect1($event)" star="1,2">
+                                    <span class="star-1"></span><span></span><span></span>
+                                </li>
+                                <li id="star2" class="star" ng-click="starSelect1($event)" star="3">
+                                    <span class="star-1"></span><span class="star-1"></span><span></span>
+                                </li>
+                                <li id="star3" class="star" ng-click="starSelect1($event)" star="4,5">
+                                    <span class="star-1"></span><span class="star-1"></span><span class="star-1"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="javascript:;" class="btn-selectall" id="selectall" ng-click="AllorNull()">选择全部</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3 container clearfix">
+        <p class="title-sec3"><i class="icon-tit1"></i>财经数据</p>
+        <div class="col-md-12">
+            <table class="tablist" cellspacing="0" width="100%" cellpadding="0" ng-cloak="">
+                <tr>
+                    <th class="t-gj">时间</th>
+                    <th class="t-wid2 t-gj">国家</th>
+                    <th class="t-wid t-l t-3">指标</th>
+                    <th class="t-gj">重要性</th>
+                    <th class="th-1">前值</th>
+                    <th class="th-1">预测值</th>
+                    <th class="th-1">公布值</th>
+                    <th class="th-2">预期影响</th>
+                    <th class="th-2">实际影响</th>
+                </tr>
+
+
+
+                <tr ng-show="cal.length != 1 && country != '' && cancelStatus != 2 && country.indexOf(currency[key.substring(8)]) != -1" ng-repeat="(key,cal) in data.calendar" ng-init="outerIndex = $index">
+
+                    <td rowspan="{{cal.length + 1}}">
+                        <span class="t-time">{{cal.time}}</span>
+                    </td>
+
+                    <td class="t-gj" rowspan="{{cal.length + 1}}">
+                        <div class="t-country">
+                            <i><img ng-src="/source/www/news/calendar/flag/{{(flags[cal.country])?flags[cal.country] : 'unknown.png'}}" width="100%"></i>
+                        </div>
+                    </td>
+                    <td class="t-l t-3">{{cal.name}}</td>
+                    <td class="t-mo">
+                        <div class="xing-info" ng-show="cal.importanceLevel=='5'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='4'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='3'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span>★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='2'">
+                            <span class="sp-on">★</span><span>★</span><span>★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='1'">
+                            <span class="sp-on">★</span><span>★</span><span>★</span>
+                        </div>
+                    </td>
+                    <td class="t-mo"><span class="qianz">{{cal.lastValue}}</span></td>
+                    <td><span class="qianz">{{cal.predictValue}}</span></td>
+                    <td><span class="qianz">{{cal.value}}</span></td>
+                    <td class="t-mo1">
+                        <div class="duo-pinfo" ng-show="cal.country != '美国'">
+                            <p ng-show="isArray(cal.expect_mongo)== true && isArray(cal.expect_text_mongo) == true">
+                                <strong ng-show="cal.expect_text_mongo[0] != ''">{{currency[cal.country]=='其它'?cal.expect_text_mongo[0]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.expect_text_mongo[1] != ''">{{currency[cal.country]=='其它'?cal.expect_text_mongo[1]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.expect_text_mongo[2] != ''">{{currency[cal.country]=='其它'?cal.expect_text_mongo[2]:currency[cal.country]}}</strong>
+                                <span ng-class="selectClass(cal.expect_mongo[0])" ng-show="cal.expect_mongo[0] != ''">{{cal.expect_mongo[0]}}</span>
+                                <span ng-class="selectClass(cal.expect_mongo[1])" ng-show="cal.expect_mongo[1] != ''">{{cal.expect_mongo[1]}}</span>
+                                <span ng-class="selectClass(cal.expect_mongo[2])" ng-show="cal.expect_mongo[2] != ''">{{cal.expect_mongo[2]}}</span>
+                            </p>
+
+                            <p ng-show="isArray(cal.expect_mongo)== true && isArray(cal.expect_text_mongo) == false">
+                                <strong>{{currency[cal.country]=='其它'?'':currency[cal.country]}}</strong>
+                                <span ng-class="selectClass(cal.expect_mongo[0])" ng-show="cal.expect_mongo[0] != ''">{{cal.expect_mongo[0]}}</span>
+                                <span ng-class="selectClass(cal.expect_mongo[1])" ng-show="cal.expect_mongo[1] != ''">{{cal.expect_mongo[1]}}</span>
+                                <span ng-class="selectClass(cal.expect_mongo[2])" ng-show="cal.expect_mongo[2] != ''">{{cal.expect_mongo[2]}}</span>
+                            </p>
+
+                            <p ng-show="isArray(cal.expect_mongo)== false && isArray(cal.expect_text_mongo) == true">
+                                <strong ng-show="cal.expect_text_mongo[0] != ''">{{currency[cal.country]=='其它'?cal.expect_text_mongo[0]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.expect_text_mongo[1] != ''">{{currency[cal.country]=='其它'?cal.expect_text_mongo[1]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.expect_text_mongo[2] != ''">{{currency[cal.country]=='其它'?cal.expect_text_mongo[2]:currency[cal.country]}}</strong>
+                            </p>
+                            <p ng-show="isArray(cal.expect_mongo) == false && isArray(cal.expect_text_mongo) == false">
+                                <strong>{{currency[cal.country]=='其它'?'':currency[cal.country]}}</strong>
+                            </p>
+                        </div>
+
+                        <div class="duo-pinfo" ng-show="cal.country == '美国' && titles.indexOf(cal.name) != -1 ">
+                            <p ng-show="isArray(cal.expect_mongo) == true">
+                                <strong>美元</strong>
+                                <span ng-class="selectClass(cal.expect_mongo[0])" ng-show="cal.expect_mongo[0] != ''">{{cal.expect_mongo[0]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.expect_mongo) == false">
+                                <strong>美元</strong>
+                            </p>
+
+                            <p ng-show="isArray(cal.expect_mongo) == true">
+                                <strong>原油</strong>
+                                <span ng-class="selectClass(cal.expect_mongo[0])" ng-show="cal.expect_mongo[0] != ''">{{cal.expect_mongo[0]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.expect_mongo) == false">
+                                <strong>原油</strong>
+                            </p>
+                        </div>
+
+                        <div class="duo-pinfo" ng-show="cal.country == '美国' && titles.indexOf(cal.name) == -1 ">
+                            <p ng-show="isArray(cal.expect_mongo) == true">
+                                <strong>美元</strong>
+                                <span ng-class="selectClass(cal.expect_mongo[0])" ng-show="cal.expect_mongo[0] != ''">{{cal.expect_mongo[0]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.expect_mongo) == false">
+                                <strong>美元</strong>
+                            </p>
+
+
+                            <p ng-show="isArray(cal.expect_mongo) == true">
+                                <strong>黄金</strong>
+                                <span ng-class="selectClass(cal.expect_mongo[1])" ng-show="cal.expect_mongo[1] != ''">{{cal.expect_mongo[1]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.expect_mongo) == false">
+                                <strong>黄金</strong>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="t-mo1">
+                        <div class="duo-pinfo" ng-show="cal.country != '美国'">
+                            <p ng-show="isArray(cal.actual_mongo)== true && isArray(cal.actual_text_mongo) == true">
+                                <strong ng-show="cal.actual_text_mongo[0] != ''">{{currency[cal.country]=='其它'?cal.actual_text_mongo[0]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.actual_text_mongo[1] != ''">{{currency[cal.country]=='其它'?cal.actual_text_mongo[1]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.actual_text_mongo[2] != ''">{{currency[cal.country]=='其它'?cal.actual_text_mongo[2]:currency[cal.country]}}</strong>
+                                <span ng-class="selectClass(cal.actual_mongo[0])" ng-show="cal.actual_mongo[0] != ''">{{cal.actual_mongo[0]}}</span>
+                                <span ng-class="selectClass(cal.actual_mongo[1])" ng-show="cal.actual_mongo[1] != ''">{{cal.actual_mongo[1]}}</span>
+                                <span ng-class="selectClass(cal.actual_mongo[2])" ng-show="cal.actual_mongo[2] != ''">{{cal.actual_mongo[2]}}</span>
+                            </p>
+
+                            <p ng-show="isArray(cal.actual_mongo)== true && isArray(cal.actual_text_mongo) == false">
+                                <strong>{{currency[cal.country]=='其它'?'':currency[cal.country]}}</strong>
+                                <span ng-class="selectClass(cal.actual_mongo[0])" ng-show="cal.actual_mongo[0] != ''">{{cal.actual_mongo[0]}}</span>
+                                <span ng-class="selectClass(cal.actual_mongo[1])" ng-show="cal.actual_mongo[1] != ''">{{cal.actual_mongo[1]}}</span>
+                                <span ng-class="selectClass(cal.actual_mongo[2])" ng-show="cal.actual_mongo[2] != ''">{{cal.actual_mongo[2]}}</span>
+                            </p>
+
+                            <p ng-show="isArray(cal.actual_mongo)== false && isArray(cal.actual_text_mongo) == true">
+                                <strong ng-show="cal.actual_text_mongo[0] != ''">{{currency[cal.country]=='其它'?cal.actual_text_mongo[0]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.actual_text_mongo[1] != ''">{{currency[cal.country]=='其它'?cal.actual_text_mongo[1]:currency[cal.country]}}</strong>
+                                <strong ng-show="cal.actual_text_mongo[2] != ''">{{currency[cal.country]=='其它'?cal.actual_text_mongo[2]:currency[cal.country]}}</strong>
+                            </p>
+                            <p ng-show="isArray(cal.actual_mongo) == false && isArray(cal.actual_text_mongo) == false">
+                                <strong>{{currency[cal.country]=='其它'?'':currency[cal.country]}}</strong>
+                            </p>
+                        </div>
+
+                        <div class="duo-pinfo" ng-show="cal.country == '美国' && titles.indexOf(cal.name) != -1 ">
+                            <p ng-show="isArray(cal.actual_mongo) == true">
+                                <strong>美元</strong>
+                                <span ng-class="selectClass(cal.actual_mongo[0])" ng-show="cal.actual_mongo[0] != ''">{{cal.actual_mongo[0]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.actual_mongo) == false">
+                                <strong>美元</strong>
+                            </p>
+
+                            <p ng-show="isArray(cal.actual_mongo) == true">
+                                <strong>原油</strong>
+                                <span ng-class="selectClass(cal.actual_mongo[0])" ng-show="cal.actual_mongo[0] != ''">{{cal.actual_mongo[0]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.actual_mongo) == false">
+                                <strong>原油</strong>
+                            </p>
+                        </div>
+
+                        <div class="duo-pinfo" ng-show="cal.country == '美国' && titles.indexOf(cal.name) == -1 ">
+                            <p ng-show="isArray(cal.actual_mongo) == true">
+                                <strong>美元</strong>
+                                <span ng-class="selectClass(cal.actual_mongo[0])" ng-show="cal.actual_mongo[0] != ''">{{cal.actual_mongo[0]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.actual_mongo) == false">
+                                <strong>美元</strong>
+                            </p>
+
+
+                            <p ng-show="isArray(cal.actual_mongo) == true">
+                                <strong>黄金</strong>
+                                <span ng-class="selectClass(cal.actual_mongo[1])" ng-show="cal.actual_mongo[1] != ''">{{cal.actual_mongo[1]}}</span>
+                            </p>
+                            <p ng-show="isArray(cal.actual_mongo) == false">
+                                <strong>黄金</strong>
+                            </p>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr ng-show="(data.calendar.length != 1) || (data.calendar.length != 1 && cancelStatus == 2)" ng-repeat="(key,cal) in data.calendar">
+                    <td rowspan="{{cal.length + 1}}">
+                        <span class="t-time">{{cal.time}}</span>
+                    </td>
+
+                    <td class="t-gj" rowspan="{{cal.length + 1}}">
+                        <div class="t-country">
+                            <i><img ng-src="/source/www/news/calendar/flag/{{(flags[cal.country])? flags[cal.country] : 'unknown.png'}}" width="100%"></i>
+                        </div>
+                    </td >
+
+
+                    <td  class="t-l t-3">{{cal.name}}</td>
+                    <td class="t-mo">
+                        <div class="xing-info" ng-show="cal.importanceLevel=='5'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='4'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='3'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span>★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='2'">
+                            <span class="sp-on">★</span><span>★</span><span>★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="cal.importanceLevel=='1'">
+                            <span class="sp-on">★</span><span>★</span><span>★</span>
+                        </div>
+                    </td>
+                    <td class="t-mo"><span class="qianz">{{cal.lastValue}}</span></td>
+                    <td><span class="qianz">{{cal.predictValue}}</span></td>
+                    <td><span class="qianz">{{cal.value}}</span></td>
+
+                    <td class="t-mo1">
+                        <div class="duo-pinfo" >--</div>
+                    </td>
+                    <td class="t-mo1">
+                        <div class="duo-pinfo" >--</div>
+                    </td>
+
+                </tr>
+
+
+
+                <tr ng-show="data.calendar.length == 0">
+                    <td colspan="9">
+                        <span>暂无数据</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section3 container clearfix">
+        <p class="title-sec3"><i class="icon-tit2"></i>财经事件</p>
+        <div class="col-md-12">
+            <table class="tablist" cellspacing="0" width="100%" ng-cloak="">
+                <tr>
+                    <th class="t-gj">时间</th>
+                    <th class="t-wid2 t-gj">国家</th>
+                    <th class="t-gj">重要性</th>
+                    <th class="t-l" width="75%">事件</th>
+                </tr>
+                <tr ng-show="data.financeEventList.length != 0 && isArray(data.financeEventList) == true" ng-repeat="eve in data.financeEventList">
+                    <td>
+                        <span class="t-time">{{eve.time}}</span>
+                    </td>
+                    <td class="t-gj">
+                        <div class="t-country">
+                            <i><img ng-src="/source/www/news/calendar/flag/{{(flags[eve.country])?  flags[eve.country] : 'unknown.png'}}" width="100%"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="xing-info" ng-show="eve.importanceLevel=='5'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="eve.importanceLevel=='4'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="eve.importanceLevel=='3'">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span>★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="eve.importanceLevel=='2'">
+                            <span class="sp-on">★</span><span>★</span><span>★</span>
+                        </div>
+
+                        <div class="xing-info" ng-show="eve.importanceLevel=='1'">
+                            <span class="sp-on">★</span><span>★</span><span>★</span>
+                        </div>
+                    </td>
+                    <td class="t-l">{{eve.content}}</td>
+                </tr>
+
+                <tr ng-show="isArray(data.financeEventList) == false">
+                    <td>
+                        <span class="t-time">{{data.financeEventList.time}}</span>
+                    </td>
+                    <td class="t-gj">
+                        <div class="t-country">
+                            <i><img ng-src="/source/www/news/calendar/flag/{{(flags[data.financeEventList.country])?flags[data.financeEventList.country] : 'unknown.png'}}" width="100%"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="xing-info">
+                            <span class="sp-on">★</span><span class="sp-on">★</span><span class="sp-on">★</span>
+                        </div>
+                    </td>
+                    <td class="t-l">{{data.financeEventList.content}}</td>
+                </tr>
+
+                <tr ng-show="data.financeEventList.length == 0">
+                    <td colspan="4">
+                        <span>暂无财经大事</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section3 container clearfix">
+        <p class="title-sec3"><i class="icon-tit3"></i>假期预告</p>
+        <div class="col-md-12">
+            <table class="tablist" cellspacing="0" width="100%" ng-cloak="">
+                <tr>
+                    <th class="th-date">时间</th>
+                    <th class="t-gj">国家</th>
+                    <th class="t-l">事件</th>
+                </tr>
+                <tr ng-show="data.financeVacationList.length != 0 && isArray(data.financeVacationList) == true" ng-repeat="vac in data.financeVacationList">
+                    <td>
+                        <span class="td-date">{{vac.date | date: 'yyyy.MM.dd' }}</span>
+                        <!--&lt;!&ndash; <div class="jiaq-time">-->
+                            <!--<span class="sp-tfon">2016</span>-->
+                            <!--<span>11.24</span>-->
+                        <!--</div> &ndash;&gt;-->
+                    </td>
+                    <td class="t-gj">
+                        <div class="t-country">
+                            <i><img ng-src="/source/www/news/calendar/flag/{{(flags[vac.country])?flags[vac.country] : 'unknown.png'}}" width="100%"></i>
+                        </div>
+                    </td>
+                    <td class="t-l">{{vac.content}}
+                    </td>
+                </tr>
+
+                <tr ng-show="isArray(data.financeVacationList) == false">
+                    <td>
+                        <span class="td-date">{{data.financeVacationList.date | date: 'yyyy.MM.dd' }}</span>
+                        <!-- <div class="jiaq-time">
+                            <span class="sp-tfon">2016</span>
+                            <span>11.24</span>
+                        </div> -->
+                    </td>
+                    <td class="t-gj">
+                        <div class="t-country">
+                            <i><img ng-src="/source/www/news/calendar/flag/{{(flags[data.financeVacationList.country])?flags[data.financeVacationList.country] : 'unknown.png'}}" width="100%"></i>
+                        </div>
+                    </td>
+                    <td class="t-l">{{data.financeVacationList.content}}
+                    </td>
+                </tr>
+                <tr ng-show="data.financeVacationList.length == 0">
+                    <td colspan="3">
+                        <span>暂无假期预告</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section4 container clearfix">
+        <div class="title-sec4">数据对照表</div>
+        <div class="des-sec4">提供全球最新、最全的经济指标及各国重要财经事件，配合具有多年投资经验的专家对数据影响力进行预测和分析，让投资者抓紧每个行情波动。</div>
+        <div class="col-md-5">
+            <div class="col-md-12 ">
+                <a id="article_1" class="article-question collapsed" data-toggle="collapse" data-target="#article_body_1">前值</a>
+                <div class="article-answer collapse" id="article_body_1">
+                    <p>前值是指本指标在上一期已公布的数值</p>
+                </div>
+            </div>
+            <div class="col-md-12 ">
+                <a id="article_2" class="article-question collapsed" data-toggle="collapse" data-target="#article_body_2">预测值</a>
+                <div class="article-answer collapse" id="article_body_2">
+                    <p>预测值为对尚未公布之指标的估计数值</p>
+                </div>
+            </div>
+            <div class="col-md-12 ">
+                <a id="article_3" class="article-question collapsed" data-toggle="collapse" data-target="#article_body_3">公布值</a>
+                <div class="article-answer collapse" id="article_body_3">
+                    <p>公布值是指本指标由官方机构公布的数值</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+            <div class="col-md-12 ">
+                <a id="article_4" class="article-question collapsed" data-toggle="collapse" data-target="#article_body_4">预期影响</a>
+                <div class="article-answer collapse" id="article_body_4">
+                    <p>预期影响是由专业团队经分析后对每项数据影响产品之方向进行预测，客户可以此作为决定交易方向的其中一个参考指标</p>
+                </div>
+            </div>
+            <div class="col-md-12 ">
+                <a id="article_5" class="article-question collapsed" data-toggle="collapse" data-target="#article_body_5">实际影响</a>
+                <div class="article-answer collapse" id="article_body_5">
+                    <p>实际影响是指数据公布后对产品带来的实际方向影响，客户可于此参考最后结果</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section5 container clearfix">
+        <p class="title-sec5">下一步您需要了解</p>
+        <div class="fl-sec3 pdt-sec3" id="form">
+            <div class="img-lef">
+                <img src="/source/www/news/calendar/img-2.jpg">
+            </div>
+            <div class="cont-right">
+                <p class="sub-title-sec5">国际新闻</p>
+                <p class="des-sec5">实时更新国际重大新闻及热点事件，时刻提醒重要行情</p>
+                <a href="/cn/information/newss.html#/news">了解更多</a>
+            </div>
+        </div>
+        <div class="fl-sec3-1"></div>
+        <div class="fl-sec3 pdt-sec3">
+            <div class="img-lef">
+                <img src="/source/www/news/calendar/img-1.jpg">
+            </div>
+            <div class="cont-right">
+                <p class="sub-title-sec5">专家评论</p>
+                <p class="des-sec5">每日预测重要的行情波动，制定稳妥的交易策略</p>
+                <a href="/cn/information/newss.html">了解更多</a>
+            </div>
+        </div>
+    </div>
+    <div class="section6">
+        <div class="container" ng-controller="calendarCtrl">
+            <h2>订阅财经日历</h2>
+            <p>可收到由发出的每日重大数据公布电邮以及由专家团队分析之行情走势</p>
+            <!--<form name="onlineResponseFrm" novalidate>
+                <div class="row">
+                    <div class="col-xs-6 col-ssmm-12 col-ssm-6">
+                        <div class="group">
+                            <input id="name" type="text"  ng-model="onlineResponse.accountname" name="accountname" capitalize ng-pattern="/^[\u4E00-\u9FA5A-Z\0]+$/" required>
+                            <span class="bar"></span>
+                            <label>姓名</label>
+                            <div class="inforeg-error" id="name-err" ng-show="!onlineResponseFrm.accountname.$valid">真实姓名只能为中文或者大写英文</div>
+                        </div>
+                        <div class="group user-phone">
+                            <span class="area-code">+86</span>
+                            <input id="phone" class="phone-number" type="tel" maxlength="11" ng-model="onlineResponse.phone" name="onlineResponse.phone" ng-pattern="/^\d{11}$/" required>
+                            <span class="bar"></span>
+                            <label>电话</label>
+                            <div class="inforeg-error" id="phone-err">请检查电话号码是否正确</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-ssmm-12 col-ssm-6">
+                        <div class="group">
+                            <input id="email" type="text" ng-model="onlineResponse.email"  name="onlineResponse.email" ng-pattern="/^[a-z0-9-.]{1,30}@[a-z0-9-]{1,65}\.[a-z]{2,5}$/" required>
+                            <span class="bar"></span>
+                            <label>电邮地址</label>
+                            <div class="inforeg-error" id="email-err">输入正确的邮箱格式，如cf88@163.com！</div>
+                        </div>
+                        <div class="group info-box">
+                            <input class="info" type="text" ng-model="onlineResponse.content" name="onlineResponse.content"  ng-init="onlineResponse.content='订阅财经日历'" value="">
+                            <span class="bar"></span>
+                            <label>内容</label>
+                        </div>
+                    </div>
+                </div>
+                <input id="checkStatus" class="checkbox" ng-model="onlineResponse.tickedReceiveInfo"  type="checkbox" name="checkb" ng-true-value='1' ng-false-value='0' checked="true"><span class="desc">本人确认之平台</span>
+                <button class="submit clearfix" ng-click="createMessage()" ng-disabled="onlineResponse.tickedReceiveInfo != 1 || onlineResponse.type != 'SUBSCRIPTION'" type="submit" name="subbt" value="subbt">提交</button>
+
+                <div class="error-mess" ng-show="isSubmitted && !isSuccess"><img class="error-img" src="&lt;!&ndash;#echo var='IMG_URL' default=''&ndash;&gt;/cn/images/message/error.png" alt="">提交失败，请重试<a href=""><img class="refresh" src="&lt;!&ndash;#echo var='IMG_URL' default=''&ndash;&gt;/cn/images/message/f5.png" alt=""></a></div>
+                <div class="valid-mess" ng-show="isSubmitted && isSuccess"><img src="&lt;!&ndash;#echo var='IMG_URL' default=''&ndash;&gt;/cn/images/message/success.png" alt="">提交成功！</div>
+                &lt;!&ndash; <div class="error-mess"><img class="error-img" src="images/ratio/error.png" alt="">提交失败，请重试
+                    <a href=""><img class="refresh" src="images/ratio/f5.png" alt=""></a>
+                </div>
+                <div class="valid-mess"><img src="images/ratio/success.png" alt="">提交成功！</div> &ndash;&gt;
+            </form>-->
+
+            <form ng-submit="submit()">
+                <div class="row">
+                    <div class="col-xs-6 col-ssmm-12 col-ssm-6">
+                        <div class="group">
+                            <input id="name" type="text" ng-model="onlineResponse.accountname">
+                            <span class="bar"></span>
+                            <label>姓名</label>
+                            <div class="inforeg-error" id="name-err">真实姓名只能为中文或者大写英文</div>
+                        </div>
+                        <div class="group user-phone">
+                            <span class="area-code">+86</span>
+                            <input id="phone" class="phone-number" type="tel" maxlength="11" ng-model="onlineResponse.phone">
+                            <span class="bar"></span>
+                            <label>电话</label>
+                            <div class="inforeg-error" id="phone-err">请检查电话号码是否正确</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-ssmm-12 col-ssm-6">
+                        <div class="group">
+                            <input id="email" type="text" ng-model="onlineResponse.email">
+                            <span class="bar"></span>
+                            <label>电邮地址</label>
+                            <div class="inforeg-error" id="email-err">输入正确的邮箱格式，如cf88@163.com！</div>
+                        </div>
+                        <div class="group info-box">
+                            <input class="info" type="text" disabled ng-model="onlineResponse.content">
+                            <span class="bar"></span>
+                            <label>内容</label>
+                        </div>
+                    </div>
+                </div>
+                <input class="checkbox" type="checkbox" checked="checked" name="checkb" value="checkb" ng-model="onlineResponse.tickedReceiveInfo"><span class="desc">本人确认之平台</span>
+                <button ng-show="showButton" class="submit clearfix" type="submit">提交</button>
+                <div ng-show="showError" class="error-mess"><img class="error-img" src="/source/www/news/ratio/error.png" alt="">提交失败，请重试<a href=""><img onclick="location.reload()" class="refresh" src="/source/www/news//ratio/f5.png" alt=""></a></div>
+                <div ng-show="showSuccess" class="valid-mess"><img src="/source/www/news/ratio/success.png" alt="">提交成功！</div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- =====End main content contract page===== -->
+</div>
+<script type="text/javascript" src="/cn/js/calendar.js"></script>
+<script type="text/javascript" src="/cn/js/calendar.plugin.js"></script>
+
+
+
+<script async>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71703518-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!--#include file="/cn/template.js.html"-->
+<!--#include file="/cn/template.footer.html"-->
+<!--#include file="/cn/template.right-1.html"-->
+
+<!--  common method openQQCustomer and openLive800 -->
+
+
+<script src="/cn/js/analytics.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.phone').hover(function(){
+            $('.code_phone').fadeToggle();
+        });
+
+    });
+</script>
+
+</body>
+</html>
+<!-- End footer -->
+		

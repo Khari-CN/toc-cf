@@ -1,0 +1,135 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>虚拟货币_
+        国际</title>
+    <meta name="keywords" content="合作">
+    <meta name="description" content="邮箱：cs@cfd139.com。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <!--#include file="/module/html.head.html"-->
+    <link rel="shortcut icon" href="/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
+    <link rel="stylesheet" href="/cn/css/template.css">
+    <link rel="stylesheet" type="text/css" href="/cn/css/aos.css" />
+    <link rel="stylesheet" href="/cn/css/virtual-new.css">
+    <script src="/cn/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <!-- Begin header -->
+        <div class="e-header">
+            <!--#include file="/cn/template.header.html"-->
+        </div>
+        <!-- End header -->
+        <div class="web-banner">
+            <div class="inner">
+                <span class="size">虚拟货币</span>
+                <span>提供比特币、以太币等全球最热门的虚拟货币交易</span>
+            </div>
+        </div>
+        <div class="web-content">
+            <!-- 面包屑-->
+            <div class="crumb-wrap">
+                <div class="w clearfix">
+                    <div class="item"><a href="/">首页</a></div>
+                    <div class="item sep">></div>
+                    <div class="item"><a href="/cn/product/forex.html">交易产品</a></div>
+                    <div class="item sep">></div>
+                    <div class="item"><a href="javascript:;">虚拟货币</a></div>
+                </div>
+            </div>
+            <div class="detail-con">
+                <div class="section2 container clearfix">
+                    <div class="backtrack">
+                        <a href="/cn/product/virtual.html">
+                            < 返回列表</a>
+                    </div>
+                    <div class="layout">
+                        <span></span>
+                        <div class="con"></div>
+                    </div>
+                    <div class="page-list">
+                        <div class="item" id="pre"><span>上一篇：</span>
+                            <a></a>
+                        </div>
+                        <div class="item" id="next"><span>下一篇：</span>
+                            <a></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ad-con">
+                <div class="inner" id="imgBanner">
+                    <!--<a><img src="https://img.cfd139.com/source/www/analyst/1805analystPC.jpg"/></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="/cn/template.js.html"-->
+    <!--#include file="/cn/template.footer.html"-->
+    <!--#include file="/cn/template.right-1.html"-->
+    <!--#include file="/module/html.body.end.html"-->
+</body>
+<script type="text/javascript" src="/cn/js/aos.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script>
+    $.ajax({
+        url: 'virtual.json',
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            var data = data.result;
+            var str = '';
+            var prama = Number(window.location.search.substr(1, 2));
+            var href = window.location.pathname;
+            for (var i = 0; i < data.length; i++) {
+                if (i == prama) {
+                    str += [
+                        "<span>" + data[i].title + "</span>",
+                        "<div class=\"con\">" + data[i].content + "</div>"
+                    ].join("");
+                    if (i == 0) {
+                        $("#pre").hide();
+                        $("#next a").attr("href", href + '?0' + (prama + 1)).text(data[i + 1].title);
+                    } else if (i > 0 && i < 9) {
+                        $("#pre a").attr("href", href + '?0' + (prama - 1)).text(data[i - 1].title);
+                        $("#next a").attr("href", href + '?0' + (prama + 1)).text(data[i + 1].title);
+                    } else if (i == 9 || i == 10) {
+                        $("#pre a").attr("href", href + '?0' + (prama - 1)).text(data[i - 1].title);
+                        $("#next a").attr("href", href + '?' + (prama + 1)).text(data[i + 1].title);
+                    } else if (i == data.length - 1) {
+                        $("#next").hide();
+                        $("#pre a").attr("href", href + '?' + (prama - 1)).text(data[i - 1].title);
+                    } else {
+                        $("#pre a").attr("href", href + '?' + (prama - 1)).text(data[i - 1].title);
+                        $("#next a").attr("href", href + '?' + (prama + 1)).text(data[i + 1].title);
+                    }
+                }
+            }
+            $(".layout").empty().append(str);
+        }
+    });
+    var url = cms_url + "/api/ad/actions/17";
+    $.post(url, {
+        "-r": Math.random()
+    }, function(response) {
+        if (response.code != 200) return;
+        var data = response.ch_msg;
+        var str = "";
+        for (var i in data) {
+            str += "<a href=\"" + data[i].attr.image_link + "\"><img src=\"" + data[i].attr.image_url + "\"/></a>";
+        }
+        $("#imgBanner").append(str);
+    })
+</script>
+
+</html>

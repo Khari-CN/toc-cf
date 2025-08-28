@@ -1,0 +1,1489 @@
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.inner.position {
+    position: relative
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/acc/vip/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.web-content {
+    /* overflow: hidden; */
+    width: 100%;
+    position: relative;
+}
+
+.web-content .web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 48px 0 97px 0;
+}
+
+.web-content .web-page.bg01 {
+    background: #f4f4f5;
+}
+
+.web-content .web-page.bg02 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/bg2.png') no-repeat;
+    background-size: 100% 100%;
+    height: 521px;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 60px 0 10px 0;
+    color: #000000;
+}
+
+.contact-details {
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding: 15px 0;
+    font-family: Microsoft JhengHei;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px
+}
+
+.contact-icon .medal img {
+    margin: 0 auto;
+}
+
+.contact-icon .medal p:first {
+    margin-top: 15px;
+}
+
+.contact-content {
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    letter-spacing: 0.1em;
+    /* line-height: 1.6em; */
+    margin-top: 20px;
+    font-family: Microsoft YaHei;
+}
+
+.contact-content a {
+    text-align: center;
+    color: #000000;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    font-family: Microsoft YaHei;
+    cursor: pointer;
+}
+
+.contact-content p:first-child {
+    font-weight: 700;
+}
+
+.flex-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.web-content .web-page.bg02 .motto {
+    margin: 0 auto;
+}
+
+.web-content .web-page.bg02 .motto .main {
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-left: 25px
+}
+
+.web-content .web-page.bg02 .motto .sub {
+    text-align: center;
+    font-size: 2.2em;
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.web-content .web-page.bg02 .motto a {
+    background-size: 100% 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 225px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box .menu {
+    background: url("https://sc.cfygxz.com/source/www/about-us/new-version/bg05_menu.png") no-repeat;
+    background-size: 100% 100%;
+    max-width: 1107px;
+    width: 100%;
+    height: 312px;
+    position: absolute;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-footer {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    padding: 15px 0;
+    z-index: 9;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 9px;
+}
+
+.web-footer .left-btn {
+    overflow: hidden;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background: #0096dc;
+    float: left;
+}
+
+.web-footer .left-btn a {
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.35s ease-in;
+}
+
+.web-footer .left-btn a:hover {
+    background: #035B83;
+    transition: all 0.35s ease-in;
+}
+
+.web-footer .right-download {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    width: 400px;
+    margin-top: 3px;
+}
+
+.web-footer .right-download span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+}
+
+.web-footer .right-download img {
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+.hover-code {
+    overflow: hidden;
+    position: fixed;
+    bottom: 80px;
+    width: 100%;
+    z-index: 9;
+}
+
+.hover-code .code {
+    overflow: hidden;
+    width: 100px;
+    float: right;
+    display: block;
+}
+
+.hover-code .code img {
+    width: 100px;
+}
+
+.hover-code .code span {
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #fff;
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-bottom: 8px solid rgba(0, 0, 0, 0);
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    margin-left: 88px;
+}
+
+.hover-code .code.ios {
+    display: none;
+    margin-left: 0;
+    margin-right: 140px;
+}
+
+.hover-code .code.android {
+    display: none;
+    margin-left: 0;
+    margin-right: 77px;
+}
+
+/* bg03 begin */
+.web-content .web-page.bg03 {
+    background: #ffffff;
+    padding: 48px 0 157px 0;
+}
+
+.bg03 .container .block1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+
+.bg03 .container .block1 .block1_left {
+    flex-basis: 45%;
+    position: relative;
+}
+
+.bg03 .container .block1 .block1_right {
+    flex-basis: 40%;
+}
+
+.bg03 .container .block1 .block1_left .block1_icon {
+    max-width: 615px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+}
+
+
+.bg03 .container .block1 .block1_right .item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-family: Microsoft JhengHei;
+    font-size: 1.8em;
+}
+
+.bg03 .container .block1 .block1_right .item ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg03 .container .block1 .block1_right .item li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.bg03 .container .block1 .block1_right .item li span {
+    padding-left: 15px;
+    padding-top: 5px;
+    letter-spacing: .1em;
+    font-weight: 700;
+}
+
+@keyframes left-btn-animation {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.check {
+    animation: left-btn-animation 1s linear infinite;
+    max-width: 36px;
+    height: auto;
+    width: 100%;
+}
+
+/* open-panel Start */
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+    margin-top: -80px;
+}
+
+.box .open-panel {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/aboutUs/advantage/openAc_bg.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: -90px;
+    max-width: 1107px;
+    width: 100%;
+    height: 172px;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.open-panel p {
+    font-size: 2.8em;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.open-panel a {
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.2em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 180px;
+    height: 45px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* open-panel End */
+
+/* bg03 End */
+/* bg04 Start */
+.web-content .web-page.bg04 {
+    background: #f4f4f5;
+    padding: 108px 0 97px 0;
+}
+
+.bg04 .container .block2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bg04 .container .block2 .block2_left {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.bg04 .container .block2 .block2_right {
+    flex-basis: 45%;
+}
+
+.faq a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.faq .img-qs1 {
+    width: 68%;
+    margin: 45px auto;
+    display: block;
+}
+
+.article-question1 {
+    font-size: 2em;
+    margin: 0;
+    position: relative;
+    padding: 15px 0;
+    padding-right: 80px;
+    display: block;
+    color: #3391e7;
+    text-decoration: none;
+}
+
+.article-question {
+    font-size: 2.3em;
+    margin: 0;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    position: relative;
+    padding: 15px 0;
+    padding-right: 80px;
+    display: block;
+    color: #3391e7;
+    text-decoration: none;
+    letter-spacing: .1em;
+}
+
+.article-question.collapsed:after {
+    transform: rotate(0);
+}
+
+.article-question:after {
+    background-color: #f4f4f5;
+    content: url('https://sc.cfygxz.com/source/www/acc/vip/new-version/minus-icon.png');
+    position: absolute;
+    right: 10px;
+    top: 33%;
+}
+
+.article-question.collapsed {
+    color: #000000;
+    font-weight: 700;
+    padding: 15px 0;
+    /* border-bottom: 1px solid #9fa0a0; */
+}
+
+.article-question.collapsed:hover {
+    color: #3391e7;
+}
+
+.article-question.collapsed:after {
+    content: url('https://sc.cfygxz.com/source/www/acc/vip/new-version/plus-icon.png');
+}
+
+.article-answer {
+    font-size: 1.4em;
+    color: #333333;
+    margin-bottom: 1%;
+    font-family: Microsoft JhengHei;
+}
+
+.article-answer p {
+    color: #333333;
+    line-height: 1.8;
+}
+
+.article-answer strong {
+    font-weight: bold;
+}
+
+.article-answer .padding-title {
+    padding-top: 10px;
+    display: block;
+}
+
+.article-answer a {
+    color: #0096DB;
+}
+
+.article-answer a:hover {
+    color: #3391e7;
+}
+
+.article-answer .pleft {
+    padding-left: 16px;
+}
+
+.article-answer .border {
+    border: 1px solid #CCCCCC;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+.collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+    -moz-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
+}
+
+.collapse.in {
+    height: auto;
+}
+
+.img-wrapper img {
+    margin-left: 0;
+    display: block;
+}
+
+.info-wrapper {
+    width: 88%;
+    /* background: #FFFFFF; */
+    height: 240px;
+    float: right;
+    position: relative;
+}
+
+.info-wrapper:before {
+    content: '';
+    background: url(//sc.cfygxz.com/source/www/news/ratio/become.png);
+    width: 24px;
+    height: 24px;
+    display: block;
+    left: -17%;
+    top: 50%;
+    margin-top: -12px;
+    position: absolute;
+}
+
+.info-wrapper img {
+    margin-right: 0;
+    display: block;
+}
+
+/* bg04 End */
+/* bg05 Start */
+.web-content .web-page.bg05 {
+    background: #ffffff;
+    padding: 48px 0 97px 0;
+}
+
+.bg05 .container .privilege {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.bg05 .container .privilege .privilege-box {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.bg05 .container .privilege .halo {
+    background: url('https://sc.cfygxz.com/source/www/acc/vip/new-version/halo_icon.png') no-repeat;
+    background-size: 100% 100%;
+    width: 192px;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.bg05 .container .privilege .main-intro {
+    color: #000000;
+    font-size: 2.2em;
+    font-family: 'Microsoft YaHei';
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bg05 .container .privilege .sub-intro {
+    color: #000000;
+    font-size: 1.7em;
+    font-family: 'Microsoft JhengHei';
+    text-align: center;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+
+
+/* bg05 End */
+/* bg06 Start */
+.web-content .web-page.bg06 {
+    background: #f4f4f5;
+    padding: 48px 0 97px 0;
+}
+
+.web-page.bg06 .reward-panel {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reward-panel div {
+    padding: 0 15px;
+}
+
+.reward-panel div img {
+    max-width: 424px;
+    width: 100%;
+    height: auto;
+}
+
+.reward-title {
+    margin-top: 25px;
+    font-family: Microsoft JhengHei;
+    font-size: 2em;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.reward-subtitle {
+    font-family: Microsoft JhengHei;
+    font-size: 1.4em;
+    letter-spacing: .1em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.web-page.bg06 .notify {
+    padding: 5% 0 0 0;
+    float: right;
+}
+
+.web-page.bg06 .notify span {
+    overflow: hidden;
+    display: block;
+    padding: 3px 0;
+    font-size: 1.3em;
+    font-family: Microsoft JhengHei;
+    color: #000000;
+}
+
+.web-page.bg06 .notify span a {
+    display: inline-block;
+    color: #3391e7;
+    padding: 0 6px;
+}
+
+/* bg06 End */
+
+
+
+@media (max-width: 1400px) {
+    .inner {
+        width: 90%
+    }
+}
+
+
+.btn-container {
+    position: absolute;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    bottom: 385px;
+    z-index: 99;
+}
+
+.btn-container .icon {
+    /* position: relative; */
+}
+
+.btn-container>img {
+    max-width: 277px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.btn-container a>img {
+    max-width: 277px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.App_code {
+    overflow: hidden;
+    position: absolute;
+    width: 100px;
+}
+
+.App_code img {
+    width: 100px;
+    height: 100px;
+}
+
+.App_code span {
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000000;
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-bottom: 8px solid rgba(0, 0, 0, 0);
+    border-left: 6px solid rgba(0, 0, 0, 0);
+}
+
+.App_code.ios-CFD {
+    display: none;
+    left: 13%;
+    bottom: -106px;
+}
+
+.App_code.android-CFD {
+    display: none;
+    bottom: -106px;
+    left: 42%;
+}
+
+.left-title .main-title {
+    border-left: 10px solid #ffac00;
+    font-size: 4em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-top: -15px;
+}
+
+.left-title .sub-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+.left-title {
+    padding-right: 30px;
+}
+
+.right-menu {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.right-menu a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-menu hr {
+    width: 67%;
+    margin: 10px auto;
+}
+
+.right-menu a span {
+    font-size: 2.4em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+}
+
+.right-menu a:hover {
+    transform: scale(1.1);
+}
+
+.right-menu a img {
+    width: 13px;
+    height: 21px;
+}
+
+/* .right-menu a img:hover{
+    transform: scale(1.1);
+} */
+
+/* mobile responsive */
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #f6f6f6;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/acc/vip/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .web-content .web-page.bg01 {
+        background: url('//sc.cfygxz.com/source/www/about-us/m/bg1.png') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 0.6rem 0 0.1rem 0;
+    }
+
+    .contact-details {
+        font-size: 0.22rem;
+    }
+
+    .m .block1_icon {
+        max-width: 6.15rem;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    .bg03 .container .block1 .block1_right {
+        flex-basis: 100%;
+    }
+
+    .bg03 .container .block1 .block1_right .item ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bg03 .container .block1 .block1_right .item li {
+        width: 50%;
+        padding: 0.15rem 0;
+    }
+
+    .bg03 .container .block1 .block1_right .item li span {
+        font-size: 0.25rem;
+        padding-left: 0.1rem;
+        letter-spacing: 0;
+    }
+
+    .bg03 .container .block1 {
+        padding-top: .2rem;
+    }
+
+    .check {
+        max-width: 0.43rem;
+    }
+
+    /* tab-pagination */
+
+    .web-content .web-page.bg01 {
+        background: #ffffff;
+        padding: 1.5rem 0 0 0;
+
+    }
+
+    .web-content .web-page.bg03 {
+        padding: 0 0 0.5rem 0;
+    }
+
+    .tab-pagination {
+        display: inline-flex;
+        width: 100%;
+        margin: 0.5rem auto 1rem;
+        justify-content: space-evenly;
+    }
+
+    .tab-pagination .tab-bullet {
+        cursor: pointer;
+    }
+
+    .tab-pagination .tab-bullet span {
+        font-size: 0.3rem;
+        color: #595757;
+        font-family: 'Microsoft JhengHei';
+        font-weight: 700;
+    }
+
+    .tab-pagination .tab-bullet.active span {
+        color: #3391e7;
+    }
+
+    .tab-pagination .tab-bullet.active {
+        border-bottom: 5px solid #3391e7;
+    }
+
+    .tab-container {
+        margin-bottom: 1rem;
+    }
+
+    .web-content .web-page.bg04 {
+        background: #ffffff;
+        padding: 0 0 0.5rem 0;
+    }
+
+    .bg04 .container .block2 .block2_left {
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+
+    .m .block2_icon {
+        max-width: 4.98rem;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .article-question {
+        font-size: 0.28rem;
+    }
+
+    .article-answer {
+        font-size: 0.23rem;
+    }
+
+    /* bg05 */
+    .web-content .web-page.bg05{
+        padding: 0 0 0.5rem 0;
+    }
+
+
+    .bg05 .container .privilege .main-intro {
+        font-size: 0.4rem;
+    }
+
+    .bg05 .container .privilege .sub-intro {
+        font-size: 0.25rem;
+        padding-top: 0.25rem;
+    }
+
+    .bg05 .container .privilege {
+        flex-wrap: wrap;
+    }
+
+    .bg05 .container .privilege .privilege-box {
+        margin-bottom: 0.45rem;
+    }
+
+    /* bg06 */
+    .web-content .web-page.bg06 {
+        background: #ffffff;
+        padding: 0 0 0.5rem 0;
+    }
+
+    .reward-title {
+        font-size: 0.3rem;
+        letter-spacing: 0;
+    }
+
+    .reward-subtitle{
+        font-size: 0.23rem;
+        letter-spacing: 0;
+    }
+
+
+    .web-page.bg06 .notify span{
+        font-size: 0.18rem;
+    }
+
+    .web-page.bg06 .reward-panel{
+        flex-wrap: wrap;
+    }
+
+    .web-page.bg06 .reward-panel .reward2{
+        margin-top: 0.6rem;
+    }
+
+    /* open-acc box */
+    .box {
+        margin-bottom: 0.5rem;
+        background: #ffffff;
+    }
+
+    .box .open-panel {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/openAc_bg.png') no-repeat;
+        width: 6.35rem;
+        height: 1rem;
+        background-size: 100% 100%;
+        position: relative;
+        margin-bottom: 0;
+        bottom: 0;
+    }
+
+    .open-panel p {
+        font-size: 0.22rem;
+        font-family: 'Microsoft JhengHei';
+        font-weight: 700;
+        padding: 0 0rem 0 0.15rem;
+        letter-spacing: 0;
+    }
+
+    .open-panel a {
+        font-size: 0.23rem;
+        width: 2rem;
+        height: 0.45rem;
+    }
+
+}

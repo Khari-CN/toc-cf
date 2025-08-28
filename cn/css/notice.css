@@ -1,0 +1,1355 @@
+/*****************************/
+@font-face {
+    font-family: Myriad;
+    font-style: normal;
+    src: url(../fonts/myriad/MYRIADPRO-LIGHT.OTF) format("embedded-opentype"), url(../fonts/myriad/MYRIADPRO-LIGHT.woff) format("woff");
+}
+
+@font-face {
+    font-family: Myriadb;
+    font-style: normal;
+    src: url(../fonts/myriad/MYRIADPRO-BOLD.OTF) format("embedded-opentype");
+}
+
+@font-face {
+    font-family: Myriadr;
+    font-style: normal;
+    src: url(../fonts/myriad/MyriadPro-Regular.otf) format("embedded-opentype"), url(../fonts/myriad/MyriadPro-Regular.woff) format("woff");
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.inner.position {
+    position: relative
+}
+
+.web-banner,
+.web-diff {
+    position: relative;
+    overflow: hidden
+}
+
+.web-banner,
+.web-diff,
+.web-diff .bank-content .right ul li ul {
+    overflow: hidden
+}
+
+.e-header .header {
+    background: none;
+}
+
+.content {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/notice/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: visible;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/news/centralBank/new-version/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 20px 0px 0 50px;
+    top: 93px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    background-color: #efefef;
+    border-bottom: solid 2px #ffffff;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+    top: 12px;
+    font-size: 1em;
+}
+
+.nice-select .current {
+    position: relative;
+}
+
+.nice-select:hover {
+    border-color: #dbdbdb;
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+    border-color: #999;
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    content: '';
+    display: block;
+    height: 7px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 7px;
+}
+
+.nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+
+.nice-select.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none;
+}
+
+.nice-select.disabled:after {
+    border-color: #cccccc;
+}
+
+.nice-select.wide {
+    width: 100%;
+}
+
+.nice-select.wide .list {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.nice-select.right {
+    float: right;
+}
+
+.nice-select.right .list {
+    left: auto;
+    right: 0;
+}
+
+.nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px;
+}
+
+.nice-select.small:after {
+    height: 4px;
+    width: 4px;
+}
+
+.nice-select.small .option {
+    line-height: 34px;
+    min-height: 34px;
+}
+
+.nice-select .list {
+    background-color: #efefef;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 1px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding: 8px 29px 8px 25px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: #3391e7;
+}
+
+.nice-select .option.selected {
+    font-weight: bold;
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+
+/*end*/
+
+
+
+.top-banner {
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.content-banner {
+    position: absolute;
+    bottom: -298px;
+}
+
+.main-content {
+    display: block;
+    overflow: hidden;
+    margin: 80px 0;
+}
+
+.top-banner {
+    min-height: 350px;
+    display: block;
+}
+
+.top-banner .title-banner {
+    font-size: 3.6em;
+    color: #FFFFFF;
+    line-height: 2.0;
+    font-weight: 500;
+    padding-top: 10%;
+}
+
+.top-banner .sub-title {
+    font-size: 2.4em;
+    line-height: 2.0;
+    color: #FFFFFF;
+}
+
+.container .block1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 100px;
+}
+
+.container .block1 .left-part-1 {
+    flex-basis: 100%;
+    position: relative;
+}
+
+.container .block1 .left-part {
+    flex-basis: 80%;
+    position: relative;
+}
+
+.container .block1 .right-part {
+    flex-basis: 20%;
+    position: relative;
+}
+
+.top-banner .dropdown .nice-select {
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 225px;
+    padding-left: 35px;
+    font-size: 1.6em;
+    line-height: 1.8;
+    padding-top: 9px;
+    width: 200px;
+    margin: 0 auto;
+    font-family: Microsoft JhengHei;
+}
+
+.title-header {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 0 0 40px 0;
+    color: #000000;
+}
+
+.top-banner .dropdown .nice-select .list {
+    width: 100%;
+}
+
+.top-banner .dropdown .nice-select .option {
+    border-bottom: 2px solid #ffffff;
+    line-height: 30px;
+    padding: 8px 29px 8px 35px;
+}
+
+.top-banner .dropdown .nice-select .option:hover {
+    background: #3391e7 !important;
+    color: #ffffff;
+}
+
+.top-banner .dropdown .nice-select .option.selected {
+    color: #000000;
+    font-weight: 300;
+}
+
+.top-banner .dropdown .nice-select:hover .current {
+    color: #000000;
+}
+
+.top-banner .dropdown .nice-select:hover:after {
+    border-bottom: 2px solid #3391e7;
+    border-right: 2px solid #3391e7;
+}
+
+.top-banner .dropdown .nice-select.open .current {
+    color: #000000;
+}
+
+.top-banner .dropdown .nice-select.open:after {
+    border-bottom: 2px solid #3391e7;
+    border-right: 2px solid #3391e7;
+}
+
+.top-banner .dropdown select {
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: -171px;
+    padding-left: 35px;
+    margin: 0;
+}
+
+.top-banner .box-dropdown {
+    width: 60%;
+    margin: 0 auto;
+    height: 65px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    margin-top: 2%;
+}
+
+.container .header-content {
+    margin-top: 55px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-set {
+    text-align: end;
+}
+
+.container .header-content .icon-doc {
+    background: url(//sc.cfygxz.com/source/www/notice/doc.png) no-repeat center center;
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin-top: 12px;
+}
+
+.container .header-content .icon-doc1 {
+    background: url(//sc.cfygxz.com/source/www/notice/doc.png) no-repeat center center;
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    display: block;
+    float: left;
+    margin-right: 17px;
+}
+
+.container .header-content .border-header {
+    border-bottom: 3px solid #035B83;
+    padding-top: 55px;
+}
+
+.container .header-content .back-page {
+    color: #000000;
+    font-size: 1.6em;
+    line-height: 1.8;
+    text-align: right;
+    display: block;
+    padding-top: 15px;
+    font-family: Microsoft JhengHei;
+}
+
+.container .header-content .back-page:hover {
+    color: #03354C;
+}
+
+.container .header-content .back-page:hover i {
+    padding-right: 20px;
+}
+
+.container .header-content .back-page .padding-icon {
+    padding-right: 10px;
+    transition: all .25s ease-in;
+}
+
+.container .padding-content {
+    padding: 30px 0 0 0;
+}
+
+.container .padding-content .title-content {
+    color: #0088cf;
+    font-size: 2.2em;
+    line-height: 2.2;
+    font-family: Microsoft JhengHei;
+    /* font-family: Source Han Sans; */
+    font-weight: 700;
+    padding-left: 0;
+    letter-spacing: 1px;
+    text-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.container .padding-content .title-content:hover {
+    color: #035B83;
+}
+
+.container .padding-content .title-content1 {
+    color: #035B83;
+    font-size: 3em;
+    line-height: 2;
+}
+
+.container .padding-content .des-content {
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #000000;
+    letter-spacing: 0.1em;
+    font-family: Microsoft JhengHei;
+}
+
+.container .padding-content .des-content1 {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: #000000;
+    padding-top: 20px;
+    /* min-height: 350px; */
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    padding-bottom: 45px;
+    font-weight: normal;
+}
+
+.container .padding-content a {
+    color: #0088cf;
+    padding-left: 10px;
+    letter-spacing: 0;
+}
+
+.container .padding-content a:hover {
+    color: #035B83;
+}
+
+.container .padding-content .date {
+    font-family: Microsoft JhengHei;
+    font-size: 1.4em;
+    line-height: 2.5;
+    text-align: right;
+    padding-top: 10px;
+    color: #333333;
+}
+
+.container .padding-content .date-1 {
+    padding-left: 5px;
+    font-family: Microsoft JhengHei;
+    font-size: 1.4em;
+    line-height: 1.6;
+    text-align: right;
+    padding-top: 10px;
+    color: #000000;
+}
+
+.container .padding-content .fl {
+    float: left;
+}
+
+.container .padding-content .border-gray {
+    border-bottom: 1px solid #000000;
+    padding-top: 30px;
+}
+
+.container .reload {
+    text-align: center;
+    font-size: 2.5em;
+    color: #0096DB;
+    line-height: 1.8;
+    padding-top: 45px;
+    display: block;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+}
+
+.container .reload:hover {
+    color: #035B83;
+}
+
+.container .title-link {
+    font-size: 2.2em;
+    color: #595757;
+    line-height: 1.8;
+    padding-top: 30px;
+    font-family: Source Han sans-serif;
+    letter-spacing: .1em;
+    font-weight: 400;
+}
+
+.container .link {
+    color: #0088cf;
+    font-size: 2em;
+    line-height: 1.8;
+    padding-top: 15px;
+    display: block;
+    letter-spacing: 1px;
+    font-family: Source Han sans-serif;
+}
+
+.container .link:hover {
+    color: #035B83;
+}
+
+.hidden-mc {
+    display: block;
+}
+
+@media (max-width: 1100px) {
+    .hidden-mc {
+        display: none;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-8 {
+        width: 66.66666667%;
+    }
+
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        float: left;
+    }
+
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+
+    .col-md-10 {
+        width: 83.33333333%;
+    }
+
+    .col-md-2 {
+        width: 16.66666667%;
+    }
+}
+
+@media (max-width: 640px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .top-banner .dropdown .nice-select {
+        top: 0;
+    }
+}
+
+tr,
+th,
+td,
+table,
+tbody,
+thead {
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/notice/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: visible;
+        position: relative;
+        padding: 0;
+    }
+
+    .container .block1 .left-part {
+        flex-basis: 100%;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5rem;
+        left: 0rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .title-header {
+        font-size: 0.4rem;
+        margin: 1rem 0 0.1rem 0;
+    }
+
+    .container .header-content {
+        margin-top: 0;
+    }
+
+    .container .padding-content .title-content {
+        font-size: 0.3rem;
+        line-height: 0.4rem;
+        font-weight: 700;
+        text-wrap: unset;
+        white-space: unset;
+    }
+
+    .container .padding-content .des-content {
+        font-size: 0.23rem;
+        line-height: 0.3rem;
+        letter-spacing: 0;
+        margin-top: 0.2rem;
+    }
+
+    .container .padding-content .date {
+        font-size: 0.18rem;
+    }
+
+    .container .reload {
+        font-size: 0.35rem;
+        line-height: 0.5rem;
+        font-weight:normal;
+    }
+
+    .dropdown .nice-select {
+        height: 45px;
+        /* position: absolute; */
+        right: 0;
+        top: 225px;
+        padding-left: 35px;
+        font-size: 1.6em;
+        line-height: 1.8;
+        padding-top: 9px;
+        width: 200px;
+        margin: 0 auto;
+        font-family: Microsoft JhengHei;
+    }
+
+    .dropdown .nice-select .list {
+        width: 100%;
+    }
+
+    .dropdown .nice-select .option {
+        border-bottom: 2px solid #ffffff;
+        line-height: 30px;
+        padding: 8px 29px 8px 35px;
+    }
+
+    .dropdown .nice-select .option:hover {
+        background: #3391e7 !important;
+        color: #ffffff;
+    }
+
+    .dropdown .nice-select .option.selected {
+        color: #000000;
+        font-weight: 300;
+    }
+
+    .dropdown .nice-select:hover .current {
+        color: #000000;
+    }
+
+    .dropdown .nice-select:hover:after {
+        border-bottom: 2px solid #3391e7;
+        border-right: 2px solid #3391e7;
+    }
+
+    .dropdown .nice-select.open .current {
+        color: #000000;
+    }
+
+    .dropdown .nice-select.open:after {
+        border-bottom: 2px solid #3391e7;
+        border-right: 2px solid #3391e7;
+    }
+
+    .dropdown {
+        text-align: right;
+    }
+
+    .dropdown select {
+        height: 0.6rem;
+        width: 2.8rem;
+        padding-left: 0.75rem;
+        margin: 0;
+        font-size: 0.3rem;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        color: #000000;
+        background: #efefef;
+        border: 1px solid #efefef;
+        box-shadow: 1px 1px 5px 1px rgba(235, 235, 235, 1);
+    }
+
+    .dropdown select:hover {
+        border: 1px solid #efefef;
+    }
+
+    .dropdown select:focus {
+        border: 1px solid #efefef;
+    }
+
+    .dropdown select option {
+        background: #efefef !important;
+        color: #000000;
+        border-bottom: 10px solid #cccccc !important;
+    }
+
+    .dropdown select option:hover {
+        background: #3391e7 !important;
+        color: #ffffff;
+    }
+
+    .box-dropdown {
+        width: 60%;
+        margin: 0 auto;
+        height: 65px;
+        border: 1px solid #CCCCCC;
+        background-color: #FFFFFF;
+        margin-top: 2%;
+    }
+
+    .web-page.bg02 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/m/bg2.png') no-repeat;
+        height: 3.67rem;
+        background-size: 100% 100%;
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .flex-panel {
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-page.bg02 .motto .main {
+        font-size: 0.4rem;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    .web-page.bg02 .motto .sub {
+        font-size: 0.3rem;
+        color: #ffffff;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .web-page.bg02 .motto a {
+        font-size: 0.3rem;
+        width: 2.65rem;
+        height: 0.65rem;
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        font-family: Microsoft JhengHei;
+        border: unset;
+        border-color: unset;
+        align-items: center;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: 600;
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    }
+
+    .header-content .col-md-10{
+        width: 65%;
+    }
+
+    .header-content .col-md-2{
+        width: 35%;
+    }
+
+    .container .header-content .back-page {
+        font-size: 0.23rem;
+        color: #000000;
+        padding-top: 1.1rem;
+    }
+
+    .notification{
+        flex-flow: column;
+    }
+
+    .notification .col-md-10{
+        width:100%;
+        height: 0.3rem;
+    }
+
+    .notification .col-md-2{
+        width: 100%;
+    }
+
+    .date-set{
+        text-align: start;
+    }
+
+    .container .padding-content .title-content1{
+        font-size: 0.3rem;
+        line-height: 1.5;
+    }
+
+    .container .padding-content .date-1{
+        font-size: 0.25rem;
+        margin-top: 0.2rem;
+    }
+
+    .container .padding-content .des-content1{
+        font-size: 0.25em;
+        font-family: Microsoft JhengHei;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    .container .title-link{
+        font-size: 0.35rem;
+    }
+
+    .container .link{
+        font-size: .3rem;
+    }
+
+}

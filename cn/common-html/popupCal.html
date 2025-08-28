@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cal-wrapper{
+            display: none;
+        }
+        .cal-popup{
+            font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+            position: absolute;
+            right:0;
+            top: -130px;
+            z-index: 9999;
+            text-align: center;
+            cursor: pointer;
+
+        }
+        .cal-close{
+            position: absolute;
+            left: 6px;
+        }
+        .cal-close img{
+            width: 70%;
+        }
+        .inner-close{
+            padding: 30px;
+            position: absolute;
+            cursor: pointer;
+            right: 0;
+        }
+        .cal-content{
+            position: fixed;
+            right: 77px;
+            top:50%;
+            margin-top: -300px;
+            z-index: 9999;
+            font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+            display: none;
+            line-height: 1;
+        }
+        .cal-inner{
+            background: url("/source/www/zt/cal-popup/cal-bg.png") no-repeat;
+            width: 452px;
+            height: 668px;
+            background-size: 452px 668px;
+            padding-top: 147px;
+        }
+        .inner-bottom{
+            width:390px;
+            height:420px ;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 26px #ccc;
+            overflow: hidden;
+            background: #fff;
+        }
+        .inner-title{
+            height: 60px;
+            color: #fff;
+            font-size: 19px;
+            background: #0780DD;
+            text-align: center;
+            padding-top: 8px;
+        }
+        .inner-title p{
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        #nav-right .inner-content ul{
+            padding:0 15px;
+            margin-top: 14px;
+            overflow: initial;
+        }
+        #nav-right .inner-content ul li{
+            float: left;
+            position: relative;
+            text-align: center;
+            width: auto;
+            border: none;
+            height: auto;
+            padding: 0;
+            overflow: initial;
+            color: #333;
+        }
+        #nav-right .inner-content ul li:hover{
+            background: none;
+        }
+        .inner-content ul li input{
+            width: 132px;
+            height: 36px;
+            border: 1px solid #BDBDBD;
+            background: transparent;
+            border-radius: 6px;
+            margin: 0 6px;
+            font-size: 20px;
+            padding-left: 10px;
+            line-height: 36px
+        }
+        #nav-right .inner-content ul li span{
+            font-size: 16px;
+            color: #333;
+            display: initial;
+        }
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color:     #D2D0D0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    #D2D0D0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:     #D2D0D0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:     #D2D0D0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .total-area{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .total-price{
+            width: 176px;
+            margin: 0 auto;
+            border-bottom: 1px solid #bdbdbd;
+            font-size: 54px;
+            font-weight: bold;
+            color:#0A95FF;
+        }
+        .total-info{
+            font-size: 14px;
+            color: #333;
+            margin: 5px auto 28px;
+        }
+        .cal-btn{
+            width: 357px;
+            height: 59px;
+            line-height: 59px;
+            text-align: center;
+            background: #0A95FF;
+            border-radius: 10px;
+            margin: 0 auto;
+            font-size: 23px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .inner-btn{
+            width: 370px;
+            margin: 11px auto 0;
+            font-size: 0;
+        }
+        .inner-btn a{
+           display: inline-block;
+
+            text-align: center;
+            border-radius: 6px;
+        }
+        a.server-cal{
+            border: 1px solid #0A95FF;
+            color: #0A95FF;
+            width: 151px;
+            height: 46px;
+            line-height: 46px;
+            float: right;
+            font-size: 19px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .inner-content ul li  .result{
+            width: 109px;
+            border: none;
+            border-bottom: 1px solid #BDBDBD;
+            margin: 0 auto 6px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 0;
+            background: transparent;
+            height: 40px;
+        }
+        .inner-content ul li:nth-child(2) .item{
+            position: relative;
+            top: -21px;
+            right: -34px;
+        }
+        @media (max-width: 1366px){
+            .inner-close {
+                position: absolute;
+                cursor: pointer;
+                right: 50px;
+                top: 27px;
+                padding: 0;
+            }
+            .cal-inner{
+                background: url(//sc.cfygxz.com/source/www/zt/cal-popup/cal-bg.png) no-repeat;
+                width: 406px;
+                height: 600px;
+                padding-top: 122px;
+                background-size:95%;
+            }
+            .inner-bottom {
+                width: 320px;
+                height: 357px;
+                box-shadow: 0 0 15px #ccc;
+                margin-left: 34px;
+            }
+            .inner-title {
+                height: 54px;
+                font-size: 16px;
+            }
+            .total-price {
+                width: 140px;
+                font-size: 38px;
+            }
+            .inner-content ul {
+                padding: 0 15px;
+                margin-top: 14px;
+            }
+            .inner-content ul li span {
+                font-size: 12px;
+            }
+            .inner-content ul li input {
+                width: 107px;
+                height: 30px;
+                font-size: 20px;
+                padding-left: 10px;
+                line-height: 30px;
+            }
+            .inner-content ul li .result {
+                width: 88px;
+                font-size: 20px;
+                height: 35px;
+            }
+            .inner-content ul li:nth-child(2) .item {
+                position: relative;
+                top: -21px;
+                right: -7px;
+            }
+            .total-area {
+                margin-top: 10px;
+            }
+            .total-info {
+                font-size: 14px;
+                color: #333;
+                margin: 5px auto 25px;
+            }
+            .inner-btn {
+                width: 321px;
+                font-size: 0;
+                margin-left: 22px;
+                margin-top: 15px
+            }
+            .cal-account img{
+                width: 86%;
+            }
+            a.server-cal {
+                width: 123px;
+                height: 37px;
+                line-height: 37px;
+                float: right;
+                font-size: 16px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .cal-btn {
+                width: 270px;
+                height: 42px;
+                line-height: 42px;
+            }
+            .cal-content {
+                right: 60px;
+                margin-top: -247px;
+            }
+
+        }
+        @media (max-width: 1200px){
+            .inner-close {
+                position: absolute;
+                cursor: pointer;
+                right: 60px;
+                top: 20px;
+                padding: 0;
+            }
+            .cal-inner{
+                background: url(//sc.cfygxz.com/source/www/zt/cal-popup/cal-bg.png) no-repeat;
+                width: 406px;
+                height: 600px;
+                padding-top: 118px;
+                background-size:90% ;
+            }
+            .inner-bottom {
+                width: 300px;
+                height: 357px;
+                box-shadow: 0 0 15px #ccc;
+            }
+            .inner-title {
+                height: 54px;
+                font-size: 16px;
+            }
+            .total-price {
+                width: 140px;
+                font-size: 38px;
+            }
+            .inner-content ul {
+                padding: 0 15px;
+                margin-top: 14px;
+            }
+            .inner-content ul li span {
+                font-size: 12px;
+            }
+            .inner-content ul li input {
+                width: 107px;
+                height: 30px;
+                font-size: 20px;
+                padding-left: 10px;
+                line-height: 30px;
+            }
+            .inner-content ul li .result {
+                width: 88px;
+                font-size: 20px;
+                height: 35px;
+            }
+            .inner-content ul li:nth-child(2) .item {
+                position: relative;
+                top: -21px;
+                right: -7px;
+            }
+            .inner-bottom {
+                width: 300px;
+                height: 350px;
+                box-shadow: 0 0 15px #ccc;
+                margin-left: 34px;
+            }
+            .total-area {
+                margin-top: 10px;
+            }
+            .total-info {
+                font-size: 14px;
+                color: #333;
+                margin: 5px auto 25px;
+            }
+            .inner-btn {
+                width: 294px;
+                font-size: 0;
+                margin-left: 22px;
+                margin-top: 5px;
+            }
+            .cal-account img{
+                width: 70%;
+            }
+            a.server-cal {
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                float: right;
+                font-size: 16px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .cal-btn {
+                width: 248px;
+                height: 42px;
+                line-height: 42px;
+            }
+            .cal-content {
+                right: 39px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="cal-wrapper">
+    <div class="cal-popup" onclick="$(this).hide()">
+        <div class="cal-close"><img src="/source/www/zt/cal-popup/cal-close.png" alt=""></div>
+        <div class="cal-open" onclick=" ga('send', 'event', 'CalculateOpen','ClickCalculateOpen', 'PC_GW', '1');"><img src="/source/www/zt/cal-popup/cal-btn-new.png?V=436237" alt=""></div>
+    </div>
+    <div class="cal-content">
+        <div class="inner-close" onclick="$('.cal-content').hide();$('.cal-popup').show(); ga('send', 'event', 'CalculateClose','ClickCalculateClose', 'PC_GW', '1');"><img src="/source/www/zt/cal-popup/cal-close-new.png" alt=""></div>
+        <div class="cal-inner">
+            <div class="inner-bottom">
+                <div class="inner-title">
+                    <p>算一算</p>
+                    你能拿到多少幸运投资成本
+                </div>
+                <div class="total-area">
+                    <div class="total-price" id="totalMoney">0</div>
+                    <div class="total-info">您可领取赠金（美元）</div>
+                </div>
+                <div class="inner-content">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="item">
+                                <span>入金</span>
+                                <input type="number" id="price" placeholder="请输入金额">
+                                <span>美元</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="result" id="priceResult" ></div>
+                                <div>可领取(美元)</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li  style="margin-right: 17px;">
+                            <div class="item">
+                                <span>推荐</span>
+                                <input  type="number" id="recommend"  placeholder="请输入人数">
+                                <span>人</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="result" id="recommendResult" ></div>
+                                <div>可领取(美元)</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total-area">
+                        <div class="cal-btn" id="calculate" onclick="ga('send', 'event','Calculate','ClickCalculate', 'PC_GW', '1');">计算</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="inner-btn">
+                <a target="_blank"  class="cal-account" href="javascript:void(0)" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_LP', '1');"><img src="/source/www/zt/cal-popup/account-btn.png" alt=""></a>
+                <a target="_blank"  href="javascript:void(0)" onclick="ga('send', 'event', 'Chat_Live800', 'Click800', 'PC_LP', '1');countBiUtil.gwanalysis('2', '0', '2', '', '', '');" class="server-cal">咨询客服</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/cn/common-html/js/popupCal.js"></script>
+<script>
+    cal.init();
+    var str = window.location.href;
+    if (str.indexOf("promotion") != -1) {
+        $(".cal-wrapper").hide()
+    }
+</script>
+</body>
+</html>

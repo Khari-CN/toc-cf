@@ -1,0 +1,1624 @@
+@charset "utf-8";
+
+/*页面css重置*/
+body {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.header .header-bg {
+    background: none;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.e-header .header {
+    background: none;
+}
+
+.content {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/news/quote/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/news/centralBank/new-version/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 20px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.web-content {
+    /* overflow: hidden; */
+    width: 100%;
+    position: relative;
+}
+
+.web-content .web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 58px 0 97px 0;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 60px 0 40px 0;
+    color: #000000;
+}
+
+@keyframes blinkRotateR {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        border: 2px solid #0b8140;
+    }
+
+    90% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border: 2px solid #0b8140;
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blinkRotateR {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        border: 2px solid #0b8140;
+    }
+
+    90% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border: 2px solid #0b8140;
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border-color: transparent;
+    }
+}
+
+@keyframes blinkRotateG {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        border: 2px solid #ee2024;
+    }
+
+    90% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border: 2px solid #ee2024;
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blinkRotateG {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        border: 2px solid #ee2024;
+    }
+
+    90% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border: 2px solid #ee2024;
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        border-color: transparent;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*banner*/
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.banner {
+    height: 350px;
+    background: url("//sc.cfygxz.com/source/www/news/quote/quote-banner.jpg?v0503") no-repeat center 0;
+    margin-top: -74px;
+    padding-top: 200px;
+}
+
+.banner span {
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.banner span.size {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+/*quote*/
+.quote {
+    padding: 50px 0 97px;
+    background: #ffffff;
+}
+
+.quote>.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.quote .container>h2,
+.quote .container>p {
+    color: #333;
+    text-align: left;
+    line-height: 1;
+}
+
+.quote .container>h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-left: 25px;
+    color: #275782;
+}
+
+.quote .container>h2 span {
+    font-size: 20px;
+    color: #666;
+}
+
+.quote-nav,
+.quote-table {
+    font-size: 0px;
+    text-align: center;
+    margin-top: 38px;
+}
+
+.quote-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quote-nav li {
+    display: inline-block;
+    width: 96px;
+    height: 40px;
+    font-size: 17px;
+    color: #000000;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-bottom: 4px solid #e3dfdf;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+}
+
+.quote-nav li:hover {
+    color: #000000;
+    border-bottom: 4px solid #3391e7;
+}
+
+.quote-nav li.active {
+    color: #000000;
+    border-bottom: 4px solid #3391e7;
+}
+
+.quote-container {
+    margin-top: 45px;
+}
+
+.quote .quote-container.show {
+    display: block;
+}
+
+.quote .quote-container.hide {
+    display: none;
+}
+
+.quote-box {
+    margin: 35px 24px;
+    background: #ffffff;
+    margin-top: 50px;
+}
+
+.quote-box>h2 {
+    margin: 0 auto;
+    width: 170px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 13px;
+    background: #e5e8ea;
+}
+
+/* .quote-table{
+    margin-top: 5px;
+} */
+.quote-table em {
+    width: 8.7%;
+}
+
+
+.quote-header span,
+.quote-body li>span {
+    width: 13%;
+}
+
+/* .quote-header{
+    margin-bottom: 2px;
+} */
+.quote-body em,
+.quote-body li>span {
+    height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    font-weight: 700;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+    line-height: 52px;
+    background: #fff;
+    display: inline-block;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #fafafa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.quote-body li>span {
+    text-align: left;
+    padding-left: 1.22%;
+}
+
+.quote-header em {
+    font-weight: 700;
+    height: 52px;
+    font-size: 17px;
+    color: #12508b;
+    text-align: center;
+    line-height: 52px;
+    background: #fff;
+    display: inline-block;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #fafafa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    border: 1px solid #535353;
+}
+
+.quote-header em {
+    border-right: transparent;
+}
+
+.quote-header em:last-child {
+    border-top-right-radius: 10px;
+    border: 1px solid #535353;
+}
+
+.quote-header>span {
+    position: relative;
+    /* top: 2px; */
+    color: #ffffff;
+    font-size: 18px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    background: #3391e7;
+    display: inline-block;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: #535353; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-top-left-radius: 10px;
+    border: 1px solid #535353;
+    border-right: transparent;
+}
+
+.quote-header em {
+    position: relative;
+}
+
+.quote-header em i {
+    color: #cc0000;
+}
+
+.quote-header em>span {
+    position: absolute;
+    font-size: 12px;
+    top: -33px;
+    left: -5px;
+    display: none;
+    padding: 5px;
+    width: 321px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    background: #fff;
+    font-family: Microsoft JhengHei;
+}
+
+.quote-header em>span:before {
+    position: absolute;
+    left: 2px;
+    bottom: -15px;
+    content: '';
+    width: 25px;
+    height: 15px;
+    background: url("//sc.cfygxz.com/source/www/news/quote/popup-bg.jpg") no-repeat;
+}
+
+.quote-header em:hover>span {
+    display: block;
+}
+
+/*.quote-header em > span:before,*/
+/*.quote-header em > span:after{*/
+/*position: absolute;*/
+/*content: '';*/
+/*}*/
+/*.quote-header em > span:before{*/
+/*left: 0;*/
+/*bottom: -8px;*/
+/*z-index: 1;*/
+/*border-style: solid;*/
+/*border-width: 8px 10px 0 10px;*/
+/*border-color: #fff transparent transparent transparent;*/
+/*}*/
+/*.quote-header em > span:after{*/
+/*left: -2px;*/
+/*bottom: -10px;*/
+/*border-style: solid;*/
+/*border-width: 9px 12px 0 12px;*/
+/*border-color: #31689b transparent transparent transparent;*/
+/*}*/
+.quote-body span {
+    /* border: 2px solid transparent; */
+    line-height: 48px;
+}
+
+.quote-body ul {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.quote-body li {
+    border: 1px solid #535353;
+    border-top: transparent;
+}
+
+.quote-body em,
+.quote-body li>span {
+    height: 50px;
+    font-weight: normal;
+    line-height: 50px;
+    vertical-align: top;
+    background: #fff;
+    font-family: 'Microsoft JhengHei';
+}
+
+.quote-body li>span:first-child {
+    font-weight: 700;
+    background: #f7f8f8;
+    border-right: 1px solid #535353;
+    border-bottom-left-radius: 10px;
+}
+
+.quote-body li>i {
+    /* position: relative; */
+    display: inline-block;
+    /*margin-right: .25%;*/
+    width: 8.7%;
+    height: 50px;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #fafafa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* .quote-body li > i:before{
+    position: absolute;
+    top: 50%;
+    right: -8%;
+    content: '';
+    margin-top: -2px;
+    width: 8%;
+    height: 4px;
+    background: #f3f3f3;
+} */
+.quote-body li>i.blink {
+    background: url("//sc.cfygxz.com/source/www/news/quote/cf-blue.png") no-repeat #fff center center;
+}
+
+.quote-body .down,
+.quote-body .up {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 9;
+}
+
+.quote-body .down {
+    color: #0b8140;
+    -webkit-animation: blinkRotateR 2s;
+    -o-animation: blinkRotateR 2s;
+    animation: blinkRotateR 2s;
+}
+
+.quote-body .down-i {
+    color: #0b8140;
+    /*    -webkit-animation: blink .5s linear 0s 2;
+    -o-animation: blink .5s linear 0s 2;
+    animation: blink .5s linear 0s 2;*/
+}
+
+.quote-body .up-i {
+    color: #ee2024;
+    /*    -webkit-animation: blink .5s linear 0s 2;
+    -o-animation: blink .5s linear 0s 2;
+    animation: blink .5s linear 0s 2;*/
+}
+
+.quote-body .down i,
+.quote-body .up i {
+    display: inline-block;
+    margin-left: 5px;
+    border-style: solid;
+    -webkit-animation: blink 2s infinite;
+    -o-animation: blink 2s infinite;
+    animation: blink 2s infinite;
+}
+
+.quote-body .down i {
+    border-width: 10px 5px 0 5px;
+    border-color: #0b8140 transparent transparent transparent;
+}
+
+.quote-body .up {
+    color: #ee2024;
+    -webkit-animation: blinkRotateG 2s;
+    -o-animation: blinkRotateG 2s;
+    animation: blinkRotateG 2s;
+}
+
+.quote-body .up i {
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #ee2024 transparent;
+}
+
+.quote-body li>em {
+    /* position: relative; */
+    /*margin: 0 .25%;*/
+    width: 8.7%;
+    font-family: arial, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    border-left: 1px solid #535353;
+}
+
+.quote-body li>em:nth-child(even) {
+    /* background-color: #f7f8f8; */
+    background-color: #ffffff;
+}
+
+.quote-body li>em:nth-child(odd) {
+    /* background-color: #ffffff; */
+    background-color: #f7f8f8;
+}
+
+.quote-body ul li>em.last-em {
+    margin-right: 0;
+    width: 8.7%;
+    border-bottom-right-radius: 10px;
+}
+
+/* .quote-body ul li:last-child {
+    background: #000000 !important;
+} */
+
+.quote-body li.last {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.quote-body li>em:before {
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    content: '';
+    margin-top: -2px;
+    width: 8%;
+    height: 4px;
+    background: #fff;
+}
+
+.note-wr ul {
+    display: flex;
+}
+
+.note-wr li {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.note-wr li.note {
+    padding-left: 27px;
+}
+
+.note-wr {
+    margin-top: 22px;
+    color: #666666;
+}
+
+.note-wr li.note span {
+    color: red;
+    padding-right: 2px;
+}
+
+.note-wr li.update-time {
+    float: right;
+    text-align: right;
+    padding-right: 27px;
+    color: #a6a7a7;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.note-wr li.update-time span,
+.note-wr li.update-time i {
+    display: inline-block;
+    padding-left: 16px;
+}
+
+.backtop {
+    display: none
+}
+
+.content {
+    padding: 0
+}
+
+.header .mega-menu .cre-bt a {
+    color: #fff !important;
+}
+
+.header img {
+    padding: 0 !important;
+}
+
+@media (max-width: 479px) {
+    .quote>.container {
+        margin: 0 auto;
+        width: 97%;
+    }
+}
+
+@media (min-width: 480px) {
+    .quote>.container {
+        margin: 0 auto;
+        width: 97%;
+    }
+}
+
+@media (min-width: 768px) {
+    .quote>.container {
+        margin: 0 auto;
+        width: 97%;
+    }
+}
+
+@media (min-width: 992px) {
+    .quote>.container {
+        margin: 0 auto;
+        width: 97%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .quote>.container {
+        margin: 0 auto;
+        width: 97%;
+    }
+}
+
+@media (min-width: 1218px) {
+    .quote>.container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+}
+
+/* Begin bg02 */
+.web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px 0 97px 0;
+}
+
+
+.bg02 {
+    background: #f4f4f5;
+}
+
+
+.bg02 .container .more-product {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.bg02 .container .more-product div {
+    background: url('https://sc.cfygxz.com/source/www/news/quote/new-version/bg2_bg.png') no-repeat;
+    background-size: 100% 100%;
+    max-width: 267px;
+    width: 100%;
+    height: 137px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column;
+    padding: 2% 5% 2% 5%;
+}
+
+.bg02 .container .more-product div a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 2.2em;
+    font-family: 'Microsoft JhengHei';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bg02 .container .more-product div p {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-family: 'Microsoft JhengHei';
+    text-align: center;
+}
+
+/* End bg02 */
+/* Begin bg03 */
+
+.bg03 {
+    background: #ffffff;
+    height: 200px;
+    overflow: visible;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box .promotion-panel {
+    /* position: absolute; */
+    background: url(//sc.cfygxz.com/source/www/product/index/promo_bg.png) no-repeat;
+    background-size: 100% 100%;
+    /* bottom: 950px; */
+    max-width: 1107px;
+    width: 100%;
+    height: 172px;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.promotion-panel p {
+    font-size: 2.8em;
+    color: #ffffff;
+    font-weight: bolder;
+    /* letter-spacing: 0.1em; */
+    font-family: Microsoft JhengHei;
+}
+
+.promotion-panel a {
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.2em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 208px;
+    height: 45px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* End bg03 */
+/* Begin bg04 */
+.bg04 {
+    background: url('https://sc.cfygxz.com/source/www/news/quote/new-version/bg4.png') no-repeat;
+    background-size: 100% 100%;
+    height: 609px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bg04 .main-title {
+    border-left: 10px solid #ffac00;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.pros {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+}
+
+.pros>div {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+}
+
+.pros img {
+    margin: 0 auto;
+}
+
+.pros .title {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+}
+
+.pros .sub-title {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+/* End bg04 */
+
+.inner .open-panel {
+    position: absolute;
+    display: flex;
+    bottom: 1525px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.inner .open-panel a {
+    margin: 0 50px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 225px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(74, 164, 247, 1) 0%, rgba(20, 98, 169, 1) 100%);
+}
+
+.inner .open-panel a:last-child {
+    /* margin: 0 auto; */
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 225px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 174, 0, 1) 0%, rgba(225, 140, 1, 1), rgba(192, 103, 2, 1) 100%);
+}
+
+
+/* Begin bg05 */
+
+.web-page.bg05 {
+    background: #ffffff;
+    padding: 50px 0 97px 0;
+    height: 300px;
+}
+
+.web-page.bg06 {
+    background: #60646a;
+    /* padding: 50px 0 97px 0;
+    height: 120px; */
+}
+
+.left-title .main-title {
+    border-left: 10px solid #ffac00;
+    font-size: 4em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-top: -15px;
+}
+
+.left-title .sub-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+.left-title {
+    padding-right: 30px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box2 .menu {
+    background: url("https://sc.cfygxz.com/source/www/about-us/new-version/bg05_menu.png") no-repeat;
+    background-size: 100% 100%;
+    max-width: 1107px;
+    width: 100%;
+    height: 312px;
+    position: absolute;
+    bottom: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-menu {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.right-menu a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-menu hr {
+    width: 67%;
+    margin: 10px auto;
+}
+
+.right-menu a span {
+    font-size: 2.4em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+}
+
+.right-menu a:hover {
+    transform: scale(1.1);
+}
+
+.right-menu a img {
+    width: 13px;
+    height: 21px;
+}
+
+
+/* End bg05 */
+
+/* mobile version responsive  */
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/news/quote/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 1rem 0 0.1rem 0;
+    }
+
+    .quote-body,
+    .quote-table {
+        display: grid;
+        max-width: 20rem;
+        width: 20rem;
+        min-width: 20rem;
+        overflow-x: scroll;
+        margin: unset;
+    }
+
+    .quote-nav li {
+        color: #595757;
+        border-bottom: none;
+    }
+
+    .quote-nav li:hover {
+        color: #595757;
+        border-bottom: none;
+    }
+
+    .quote-nav li.active {
+        color: #3391e7;
+        border-bottom: 4px solid #3391e7;
+    }
+
+
+    .quote-nav li.active:hover {
+        color: #3391e7;
+        border-bottom: 4px solid #3391e7;
+    }
+
+    .quote-container-wrapper {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .note-wr ul {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .note-wr li {
+        font-size: 0.2rem;
+        width: 100%;
+        letter-spacing: 0;
+        line-height: 2;
+    }
+
+    .note-wr li.update-time{
+        margin-bottom: 0.3rem;
+    }
+
+    /* promotion-panel */
+
+    .quote{
+        padding: 50px 0 0;
+    }
+
+    .web-page.bg03{
+        padding: 0;
+    }
+
+    .promotion-panel p {
+        font-size: 0.25rem;
+        text-align: left;
+    }
+
+    .promotion-panel a {
+        font-size: 0.3rem;
+        width: 2.28rem;
+        height: 0.55rem;
+        line-height: 0;
+        align-items: center;
+    }
+
+    .box {
+        padding: 0 0 0.3rem 0;
+    }
+
+    .box .promotion-panel {
+        position: relative;
+        background: url(//sc.cfygxz.com/source/www/product/forex/m/promo_bg.png) no-repeat;
+        background-size: 100% 100%;
+        max-width: 7.05rem;
+        height: 1.1rem;
+        bottom: 0;
+        justify-content: space-evenly;
+        padding: 0 0.15rem;
+        z-index: 99;
+    }
+}

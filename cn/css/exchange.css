@@ -1,0 +1,1164 @@
+/*Exchange*/
+#main {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	overflow: hidden;
+}
+
+.pc {
+	display: block;
+}
+
+.m {
+	display: none;
+}
+
+.inner {
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.inner.position {
+	position: relative
+}
+
+img {
+	overflow: hidden;
+	display: block;
+	border: none;
+}
+
+.e-header .header {
+	background: none;
+}
+
+.center-support {
+	display: none
+}
+
+.header .pcst-megamenu {
+	display: block;
+	visibility: visible;
+	margin: 0 auto 0;
+	opacity: 1;
+	z-index: 999;
+	top: 0;
+}
+
+.header .mobilest-megamenu {
+	display: block;
+}
+
+.web-banner {
+	background: url("https://sc.cfygxz.com/source/www/acc/exchange/new-version/topbanner.png") no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+	position: relative;
+	/* margin-top: 68px; */
+	padding-top: 200px;
+}
+
+.billboard {
+	background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+	background-size: 100% 100%;
+	height: 194px;
+	width: 608px;
+	position: absolute;
+	padding: 30px 0px 0 50px;
+	top: 328px;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+}
+
+.billboard .title {
+	font-size: 3.8em;
+	font-weight: 700;
+	color: #ffffff;
+	letter-spacing: 0.2em;
+	margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+	font-size: 2.8em;
+	font-weight: lighter;
+	color: #ffffff;
+	letter-spacing: 0.1em;
+}
+
+.banner-exchange {
+	height: 375px;
+	margin: -86px auto 0 auto;
+	background: url(//sc.cfygxz.com/source/www/acc/exchange/banner-exchange.jpg) no-repeat center;
+}
+
+.banner-exchange .container {
+	position: absolute;
+	top: 20.86%;
+	text-align: left;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.banner-exchange h1 {
+	font-size: 3.6em;
+	color: #FFFFFF;
+	line-height: 1.0;
+	margin-bottom: 30px;
+}
+
+.banner-exchange h2 {
+	font-size: 2.4em;
+	line-height: 1.6;
+	margin-top: -12px;
+	color: #FFFFFF;
+}
+
+.exchange-content {
+	margin: 0 auto;
+	padding: 58px 0 97px 0;
+}
+
+.main-title {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	border-left: 10px solid #3391e7;
+	border-spacing: 5px;
+	margin: 60px 0 10px 0;
+	color: #000000;
+}
+
+.contact-details {
+	font-size: 2em;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	padding: 15px 0;
+	font-family: Microsoft JhengHei;
+}
+
+.exchange-content .group-btn {
+	width: 714px;
+	margin: 65px auto 45px;
+	display: block;
+	overflow: auto;
+}
+
+.exchange-content .group-btn .btn {
+	height: 55px;
+	width: 280px;
+}
+
+.exchange-content .group-btn .btn-ist-unselect {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-ist-unselect.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+	display: block;
+	float: left;
+
+}
+
+.exchange-content .group-btn .btn-ist-unselect:hover {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-ist-unselect-hover.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.exchange-content .group-btn .btn-ist-unselect:hover {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-ist-unselect-hover.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.exchange-content .group-btn .btn-cfd-unselect {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-cfd-unselect.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+	display: block;
+	float: right;
+}
+
+.exchange-content .group-btn .btn-cfd-select {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-cfd-unselect.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.exchange-content .group-btn .btn-cfd-select:hover {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-cfd-unselect-hover.png);
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.ist .img-exchange .img-circle-orange1 {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/circle-orange3.png);
+	left: 28%;
+}
+
+.ist .img-exchange .img-circle-blue1 {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/circle-blue-2.png);
+	left: 49%;
+}
+
+.exchange-content .group-btn .btn-ist-unselect.selected {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/btn-ist-select.png);
+}
+
+.frame {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/frame.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	color: #000000;
+	font-size: 18px;
+	height: 137px;
+
+}
+
+.ist .frame {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/ist-bg.png);
+
+}
+
+.text-frame {
+	padding: 35px 0;
+	width: 890px;
+	margin: 0 auto;
+	line-height: 1.8;
+}
+
+.ist .text-frame {
+	width: 639px;
+	line-height: 2.2;
+	padding-top: 31px;
+}
+
+.img-exchange {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	margin: 50px auto;
+	height: 200px;
+}
+
+#img-circle-orange1 img,
+#img-circle-orange2 img {
+	width: 35px;
+	height: 35px;
+}
+
+.currency {
+	font-size: 2em;
+	color: #ffffff;
+	font-family: Microsoft JhengHei;
+	padding: 5px 0;
+}
+
+.img-circle-orange1 {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/new-version/dark-circle-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 173px;
+	height: 173px;
+	position: absolute;
+	left: 15%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+}
+
+.img-circle-orange2 {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/new-version/dark-circle-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	width: 173px;
+	height: 173px;
+	position: absolute;
+	left: 57%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+}
+
+.img-circle-blue1 {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/new-version/light-circle-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	width: 173px;
+	height: 173px;
+	position: absolute;
+	left: 28%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-circle-blue2 {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/new-version/light-circle-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	width: 173px;
+	height: 173px;
+	position: absolute;
+	left: 70%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-img {
+	color: white;
+	font-size: 2.5em;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: .1em;
+	font-family: Microsoft JhengHei;
+}
+
+.img-equals {
+	background-image: url(//sc.cfygxz.com/source/www/acc/exchange/new-version/equal-icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 41px;
+	display: block;
+	height: 23px;
+}
+
+/* Begin bg04 */
+.bg04 {
+	background: url('https://sc.cfygxz.com/source/www/acc/exchange/new-version/bg04.png') no-repeat;
+	background-size: 100% 100%;
+	height: 543px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.bg04 .main-title {
+	border-left: 10px solid #ffac00;
+	color: #ffffff;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+.pros {
+	display: flex;
+	justify-content: space-between;
+	align-items: initial;
+}
+
+.pros>div {
+	display: flex;
+	flex-flow: column;
+	/* justify-content: center; */
+}
+
+.pros img {
+	margin: 0 auto;
+}
+
+.pros .title {
+	text-align: center;
+	font-size: 2em;
+	color: #ffffff;
+	letter-spacing: 0.1em;
+	padding: 10px 0;
+}
+
+.pros .sub-title {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: lighter;
+	color: #ffffff;
+	letter-spacing: 0.1em;
+}
+
+/* End bg04 */
+/* Begin bg02 */
+.web-page.bg02 {
+	background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/bg2.png') no-repeat;
+	background-size: 100% 100%;
+	height: 521px;
+	width: 100%;
+	padding: 15px 0;
+	display: flex;
+	align-items: baseline;
+}
+
+.flex-panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
+
+.web-page.bg02 .motto {
+	margin: 0 auto;
+}
+
+.web-page.bg02 .motto .main {
+	text-align: center;
+	font-size: 3em;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	padding-left: 25px
+}
+
+.web-page.bg02 .motto .sub {
+	text-align: center;
+	font-size: 2.2em;
+	color: #ffffff;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.web-page.bg02 .motto a {
+	background-size: 100% 100%;
+	margin: 0 auto;
+	border-radius: 4px;
+	font-size: 2em;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 2.3em;
+	display: flex;
+	justify-content: center;
+	font-family: Microsoft JhengHei;
+	border: unset;
+	border-color: unset;
+	width: 225px;
+	height: 48px;
+	background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* End bg02 */
+
+/* Begin promotion-panel */
+.box {
+	display: flex;
+	justify-content: center;
+	max-width: 1920px;
+	width: 100%;
+	overflow: visible;
+}
+
+.box .promotion-panel {
+	position: absolute;
+	background: url(//sc.cfygxz.com/source/www/product/index/promo_bg.png) no-repeat;
+	background-size: 100% 100%;
+	bottom: -45px;
+	max-width: 1107px;
+	width: 100%;
+	height: 172px;
+	margin: 0 auto;
+	z-index: 999;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.promotion-panel p {
+	font-size: 2.8em;
+	color: #ffffff;
+	font-weight: bolder;
+	/* letter-spacing: 0.1em; */
+	font-family: Microsoft JhengHei;
+}
+
+.promotion-panel a {
+	margin: 0 10px;
+	border-radius: 4px;
+	font-size: 2em;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 2.2em;
+	display: flex;
+	justify-content: center;
+	font-family: Microsoft JhengHei;
+	border: unset;
+	border-color: unset;
+	width: 208px;
+	height: 45px;
+	background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* End promotion-panel */
+
+@media (max-width: 1200px) {
+	.img-circle-orange1 {
+		left: 0%
+	}
+
+	.img-circle-orange2 {
+		left: 58%
+	}
+
+	.img-circle-blue1 {
+		left: 19%
+	}
+
+	.img-circle-blue2 {
+		left: 77%
+	}
+}
+
+@media (max-width: 1025px) {
+	.img-circle-orange1 {
+		left: 5%
+	}
+
+	.img-circle-orange2 {
+		left: 57%
+	}
+
+	.img-circle-blue1 {
+		left: 21%
+	}
+
+	.img-circle-blue2 {
+		left: 73%
+	}
+}
+
+@media (max-width: 800px) {
+	.img-circle-orange1 {
+		left: 0%
+	}
+
+	.img-circle-orange2 {
+		left: 58%
+	}
+
+	.img-circle-blue1 {
+		left: 18%
+	}
+
+	.img-circle-blue2 {
+		left: 76%
+	}
+}
+
+/* @media (max-width: 650px) {
+	.img-equals {
+		display: none;
+	}
+} */
+
+/* mobile version start */
+
+@media screen and (max-width: 799px) {
+	html {
+		font-size: 4rem;
+	}
+
+	.inner {
+		position: unset;
+	}
+
+	.main {
+		overflow: hidden;
+	}
+
+	.pc {
+		display: none;
+	}
+
+	.m {
+		display: block;
+	}
+
+	.main-header {
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		width: 100%;
+	}
+
+	.m-header {
+		position: absolute;
+		z-index: 999;
+		top: 1rem;
+		width: 100%;
+		height: 1rem;
+		border-bottom: unset;
+		background-color: #ffffff;
+	}
+
+	/* navigation bar for mobile */
+	.menu {
+		width: 285px;
+		background: #093965;
+		position: relative;
+	}
+
+	.menu .head {
+		padding-top: 0.4rem;
+		font-size: 0;
+		padding-bottom: 0.4rem;
+		text-align: right;
+	}
+
+	.menu .head span {
+		margin-right: 0.2rem;
+		display: block;
+		display: inline-block;
+		background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+		background-size: 100% 100%;
+		width: 0.36rem;
+		height: 0.37rem;
+	}
+
+	.menu .head a {
+		margin: 0 auto;
+		display: block;
+		font-size: 0.32rem;
+		width: 215px;
+		background-color: #0096dc;
+		color: #fff;
+		text-align: center;
+		line-height: 0.7rem;
+		margin-top: 0.2rem;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		border: 0.01rem solid transparent;
+		border-radius: 0.06rem;
+	}
+
+	.menu .head a:active {
+		background-color: #0088c8;
+	}
+
+	.menu .expmenu li {
+		position: relative;
+		background: #ffffff;
+		border-top: 0.05rem solid #093965;
+		border-bottom: 0.05rem solid #093965;
+	}
+
+	.menu .expmenu li a {
+		color: #093965;
+		font-size: 0.4rem;
+		height: 0.89rem;
+		line-height: 0.89rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		font-family: Microsoft JhengHei;
+		position: relative;
+		font-weight: 700;
+		border-top: unset;
+	}
+
+	.menu .expmenu li a p {
+		width: 65%;
+		padding-left: 12%;
+	}
+
+	.menu .expmenu li i.limit-time-icon {
+		position: absolute;
+		background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+		background-size: 100% 100%;
+		width: 0.94rem;
+		height: 0.38rem;
+		top: unset;
+		margin-right: 0;
+		left: 2.4rem;
+		animation: lighting 6s infinite;
+	}
+
+	.menu .expmenu li i.new-icon {
+		position: absolute;
+		background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+		background-size: 100% 100%;
+		width: 0.94rem;
+		height: 0.38rem;
+		top: unset;
+		margin-right: 0;
+		left: 2.4rem;
+	}
+
+	.menu .expmenu li:before {
+		border-left: 0.1rem solid transparent;
+		content: "";
+		height: 0.89rem;
+		left: 0;
+		position: absolute;
+		top: 0;
+		-webkit-transition: border-color 0.3s ease;
+		transition: border-color 0.3s ease;
+	}
+
+	.menu .expmenu li i {
+		display: inline-block;
+		position: relative;
+		top: 0.2rem;
+		margin-right: 0.1rem;
+	}
+
+	.menu .expmenu li span {
+		background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+		width: 0.36rem;
+		height: 0.36rem;
+		background-size: 100% 100%;
+		margin-right: 0.25rem;
+	}
+
+	.menu .expmenu li .down,
+	.menu .expmenu li span {
+		display: inline-block;
+		background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+		width: 0.36rem;
+		height: 0.36rem;
+		background-size: 100% 100%;
+		background-position: unset;
+		margin-right: 0.25rem;
+	}
+
+	.menu .expmenu li .down {
+		background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+		width: 0.36rem;
+		height: 0.06rem;
+	}
+
+	@keyframes lighting {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			opacity: 0.5;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.menu .expmenu li ul {
+		display: none;
+	}
+
+	.menu .expmenu li ul li a {
+		display: block;
+		border-top: none;
+		border-bottom: none;
+		margin: 0 auto;
+		padding-left: 0.8rem;
+		height: 0.7rem;
+		line-height: 0.7rem;
+		background-color: #093965;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		color: #ffffff;
+		font-family: Microsoft JhengHei;
+		font-weight: 100;
+		font-size: 0.32rem;
+	}
+
+	.menu .expmenu li ul li a:active {
+		background: #dfdfdf;
+	}
+
+	/* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+	.menu .expmenu .fifth p,
+	.menu .expmenu .first p,
+	.menu .expmenu .forth p,
+	.menu .expmenu .second p,
+	.menu .expmenu .third p {
+		width: 87%;
+	}
+
+	.menu .expmenu>li.current:before {
+		border-color: #ffffff;
+	}
+
+	.menu .expmenu>li.current a p {
+		color: #0958a2;
+	}
+
+	.menu .bottom_btn {
+		border-top: unset;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.menu .bottom_btn a:first-child {
+		background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+		border: unset;
+		margin-top: 1rem;
+	}
+
+	.menu .bottom_btn a {
+		width: 3.6rem;
+		margin: 0.5rem auto;
+		height: 0.77rem;
+		line-height: 0.77rem;
+		display: block;
+		color: #ffffff;
+		font-size: 0.35rem;
+		border: 0.01rem solid #ffffff;
+		border-radius: 0.06rem;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		font-family: Microsoft JhengHei;
+		font-weight: 700;
+		letter-spacing: 0.02rem;
+	}
+
+
+
+	/* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+	.panel {
+		/* height: 100%; */
+		position: relative;
+	}
+
+	.slideout-menu {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		min-height: 100vh;
+		overflow: auto;
+		z-index: 0;
+		display: none;
+		padding-bottom: 1rem;
+	}
+
+	.slideout-menu-left {
+		left: 0;
+	}
+
+	.slideout-menu-right {
+		right: 0;
+	}
+
+	.slideout-panel {
+		position: relative;
+		z-index: 1;
+		background-color: #ffffff;
+		padding-bottom: 0;
+	}
+
+	.slideout-open,
+	.slideout-open .slideout-panel,
+	.slideout-open body {
+		overflow: hidden;
+	}
+
+	.slideout-open .slideout-menu {
+		display: block;
+	}
+
+	.menu .expmenu li ul li p {
+		border-top: none;
+		border-bottom: none;
+		margin: 0 auto;
+		padding-left: 0.8rem;
+		height: 0.7rem;
+		line-height: 0.7rem;
+		color: #fecd69;
+		font-family: Microsoft JhengHei;
+		font-weight: 100;
+		font-size: 0.32rem;
+	}
+
+	.menu .expmenu li ul li.sub-menu-nav {
+		background: #093965;
+		border-top: unset;
+	}
+
+	.menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+		display: block !important;
+	}
+
+	.menu .expmenu li ul li ul.sub-child2 li {
+		background: #093965;
+		border-top: unset;
+	}
+
+	.menu .expmenu li ul li ul.sub-child2 li a {
+		padding-left: 0rem;
+		height: 0.4rem;
+		line-height: 0.4rem;
+	}
+
+
+	/*End navigation bar for mobile */
+	.web-banner {
+		background: url("https://sc.cfygxz.com/source/www/acc/exchange/m/topbanner.png") no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		height: 6.64rem;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.billboard {
+		background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+		background-size: 100% 100%;
+		height: 1.94rem;
+		width: 5.6rem;
+		position: absolute;
+		padding: 0 0 0 0.5rem;
+		top: 5.65rem;
+		left: 0.15rem;
+		z-index: 99;
+		display: flex;
+		align-items: baseline;
+		flex-flow: column;
+		justify-content: center;
+	}
+
+	.billboard .title {
+		font-size: 0.55rem;
+		margin: 0;
+	}
+
+	.billboard .hr1 {
+		border: 1px solid #ffffff;
+		width: 80%;
+		margin: 0.1rem 0;
+	}
+
+	.billboard .subtitle {
+		font-size: 0.35rem;
+	}
+
+	.main-title {
+		font-size: 0.4rem;
+		margin: 1.3rem 0 0.1rem 0;
+	}
+
+	.contact-details {
+		font-size: 0.22rem;
+	}
+
+	/* bg04 */
+	.bg04 {
+		background: url('//sc.cfygxz.com/source/www/acc/exchange/m/bg04.png') no-repeat;
+		background-size: 100% 100%;
+		height: 10.9rem;
+		width: 100%;
+		align-items: baseline;
+		padding: 1.2rem 0 0 0;
+	}
+
+	.bg-btn {
+		width: 100%;
+	}
+
+	.bg04 .main-title {
+		margin: 0rem 0 0.6rem 0;
+	}
+
+	.pros {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin-bottom: 1rem;
+	}
+
+	.pros>div img {
+		width: 1.48rem;
+	}
+
+	.pros>div {
+		margin-bottom: 0.5rem;
+	}
+
+	.pros .title {
+		font-size: 0.28rem;
+	}
+
+	.pros .sub-title {
+		font-size: 0.16rem;
+	}
+
+	.bg-btn .open-panel {
+		position: absolute;
+		display: flex;
+		bottom: -21px;
+		max-width: 1200px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.bg-btn .open-panel a {
+		font-size: 0.3rem;
+		margin: 0 0.3rem;
+		border-radius: 4px;
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 2.3em;
+		display: flex;
+		justify-content: center;
+		font-family: Microsoft JhengHei;
+		border: unset;
+		border-color: unset;
+		width: 225px;
+		height: 48px;
+		background: linear-gradient(180deg, rgba(74, 164, 247, 1) 0%, rgba(20, 98, 169, 1) 100%);
+	}
+
+	.bg-btn .open-panel a:last-child {
+		border-radius: 4px;
+		font-size: 0.3rem;
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 2.3em;
+		display: flex;
+		justify-content: center;
+		font-family: Microsoft JhengHei;
+		border: unset;
+		border-color: unset;
+		width: 225px;
+		height: 48px;
+		background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+	}
+
+	/* promotion panel */
+	.web-page.bg06 {
+		background: #ffffff;
+		height: 2.5rem;
+	}
+
+
+	.promotion-panel p {
+		font-size: 0.25rem;
+		text-align: left;
+	}
+
+	.promotion-panel a {
+		font-size: 0.3rem;
+		width: 2.28rem;
+		height: 0.55rem;
+		line-height: 0;
+		align-items: center;
+	}
+
+	.box {
+		padding: 0 0 0.3rem 0;
+		position: relative;
+	}
+
+	.box .promotion-panel {
+		position: absolute;
+		background: url(//sc.cfygxz.com/source/www/product/forex/m/promo_bg.png) no-repeat;
+		background-size: 100% 100%;
+		max-width: 7.05rem;
+		height: 1.1rem;
+		bottom: -2rem;
+		justify-content: space-evenly;
+		padding: 0 0.15rem;
+        z-index: 99;
+	}
+
+	/* exchange panel */
+	.img-exchange {
+		flex-flow: column;
+		height: auto;
+		justify-content: unset;
+		min-height: 6rem;
+	}
+
+	.USD {
+		position: relative;
+		display: inline-flex;
+		margin-bottom: 0.3rem;
+	}
+
+	.img-circle-blue1 {
+		position: relative;
+		right: 1rem;
+		left: 0;
+	}
+
+	.img-equals {
+		background-image: url(//sc.cfygxz.com/source/www/acc/exchange/m/equal_icon.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		width: .4rem;
+		display: block;
+		height: .67rem;
+		margin: 0.5rem auto;
+	}
+
+	.img-circle-blue2 {
+		position: relative;
+		right: 1rem;
+		left: 0;
+	}
+
+	.img-circle-orange1 {
+		position: relative;
+		left: 0.26rem;
+	}
+
+	.CNY {
+		position: relative;
+		display: inline-flex;
+		margin-top: 0.3rem;
+	}
+
+	.img-circle-orange2 {
+		position: relative;
+		left: 0.26rem;
+	}
+
+	.text-img {
+		font-size: 0.5rem;
+	}
+
+	.currency {
+		font-size: 0.45rem;
+	}
+}

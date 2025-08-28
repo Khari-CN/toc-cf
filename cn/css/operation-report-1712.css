@@ -1,0 +1,869 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto;}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    //overflow: hidden;
+    position: relative;
+    margin-top: -74px;
+    width: 100%;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-pc.jpg") no-repeat center;
+    background-size: 100% 100%;
+    padding: 200px 0 55px 0;
+}
+.web-banner span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+.web-banner span.size{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.web-content{
+    overflow: hidden;
+    width: 100%;
+}
+.web-content .bg-nav{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: solid 1px #ccc;
+}
+.web-content .bg-nav .nav{
+    overflow: hidden;
+}
+.web-content .bg-nav .nav ul,li{
+    list-style: none;
+}
+.web-content .bg-nav .nav ul li{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 83px 16px 15px;
+    color: #333;
+}
+.web-content .bg-nav .nav ul li.on{
+    border-bottom: solid 3px #035b83;
+    color: #035b83;
+}
+.web-content .bg-nav .nav ul li span{
+    font-size: 16px;
+    margin-left: 17px;
+}
+.web-content .nav-content{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.web-content .nav-content .time{
+    overflow: hidden;
+    margin-top: 52px;
+    margin-left: 17px;
+}
+.web-content .nav-content .time span{
+    overflow: hidden;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #0096dc;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.web-content .nav-content .time span.triangle{
+    width:0;
+    height:0;
+    border-width:9px 9px 0;
+    border-style:solid;
+    border-color:#0096dc #fff #fff;
+    margin-left: 68px;
+}
+.a-width{
+    overflow: hidden;
+    display: block;
+    width: 340px;
+    height: 337px;
+    margin-top: 15px;
+}
+.web-content .nav-content .con-list{
+    overflow: hidden;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 336px;
+    height: 337px;
+}
+/*.web-content .nav-content .con-list:hover{
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover.png") no-repeat;
+    background-size: 100% 100%;
+}*/
+/*内页*/
+.oper-page{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report-1712/banner-bg-pc.jpg") no-repeat center bottom;
+    top: 0;
+    left: 0;
+}
+.oper-page .nav-content{
+    overflow: hidden;
+    background: #fff;
+    height: 70px;
+}
+.oper-page .nav-content .logo{
+    overflow: hidden;
+    float: left;
+    width: 15%;
+    margin-top: 8px;
+}
+.oper-page .nav-content .nav{
+    overflow: hidden;
+    float: left;
+    width: 85%;
+    margin-top: 4px;
+}
+.oper-page .nav-content .nav ul,li{
+    list-style: none;
+}
+.oper-page .nav-content .nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+}
+.oper-page .nav-content .nav ul li{
+    font-size: 16px;
+}
+.oper-page .nav-content .nav ul li span{
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+.oper-page .nav-content .nav ul li span:hover{
+    color: #ff9100;
+}
+.oper-page .nav-content .nav ul li span.on{
+    color: #ff9100;
+}
+.oper-page .nav-content .nav ul li a{
+    overflow: hidden;
+    display: block;
+    background: #0096dc;
+    color: #fff;
+    width: 102px;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.oper-page .slideBox{
+    overflow: hidden;
+    width: 100%;
+}
+.oper-page .slideBox .slider{
+    overflow: hidden;
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    margin-left: -600px;
+    margin-top: -350px;
+    padding: 16px 0;
+}
+.oper-page .slideBox .slider ul{
+    overflow: hidden;
+    list-style: none;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+.oper-page .slideBox .slider ul li{
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 700px;
+}
+.oper-page .slideBox .slider ul li .page{
+    overflow: hidden;
+    margin-top: 0;
+    position: relative;
+}
+.oper-page .slideBox .slider ul li .page img{
+    margin: 0 auto 60px auto;
+}
+.oper-page .slideBox .slider ul li .page img.first{
+    width: 216px;
+}
+.oper-page .slideBox .slider ul li .page img.last{
+    width: 720px;
+}
+.oper-page .slideBox .slider ul li .page .masking {
+    overflow: hidden;
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background: rgba(224,229,234,.5);
+    top:100px;
+    opacity: 0;
+    animation: masking infinite;
+    animation-duration: 1s;
+    -webkit-animation: masking 1s infinite;
+    animation-fill-mode: backwards;
+}
+@-webkit-keyframes masking {
+    from { left:0;opacity: .5;}
+    to{ left:1000px;opacity: 0;}
+}
+@keyframes masking {
+    from { left:0;opacity: .5;}
+    to{ left:1000px;opacity: 0;}
+}
+.oper-page .slideBox .prev,.oper-page .slideBox .next{
+    overflow: hidden;
+    position:absolute;
+    left:.5%;
+    margin-top:26%;
+    z-index:1;
+    display:block;
+    width:68px;
+    height:72px;
+    background:url("//sc.cfygxz.com/source/www/aboutUs/operation-report-1712/icon6-pc.png") no-repeat;
+}
+.oper-page .slideBox .next{left:auto; right:1.5%; background:url("//sc.cfygxz.com/source/www/aboutUs/operation-report-1712/icon7-pc.png") no-repeat;}
+/*.oper-page .slideBox .prev:hover, .next:hover{ filter:alpha(opacity=100);opacity:1;}*/
+.oper-page .slideBox .prevStop{ display:none;}
+.oper-page .slideBox .nextStop{ display:none;}
+.oper-page .slideBox .arrow{
+    animation: next 1s infinite;
+    -webkit-animation: arrow 1s infinite;
+    animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
+}
+@keyframes arrow{
+    from {transform: translateX(0);}
+    to {transform: translateX(16px);}
+}
+@-webkit-keyframes arrow{
+    from {transform: translateX(0);}
+    to {transform: translateX(16px);}
+}
+.oper-page .slideBox .slider ul li .page-2{
+    overflow: hidden;
+    margin-top: 5%;
+}
+.oper-page .slideBox .slider ul li .page-2 .title{
+    overflow: hidden;
+}
+.oper-page .slideBox .slider ul li .page-2 .title.margin{
+    margin-bottom: 50px;
+}
+.oper-page .slideBox .slider ul li .page-2 .title img{
+    margin: 0 auto;
+}
+.oper-page .slideBox .slider ul li .page-2 .title span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 14px;
+}
+.oper-page .slideBox .slider ul li .page-2 .title span.size{
+    font-size: 20px;
+}
+.oper-page .slideBox .slider ul li .page-2 .nav-con{
+    overflow: hidden;
+    margin-top: 122px;
+}
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list{
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    width: 23%;
+}
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list img{
+    margin: 0 auto 16px auto;
+}
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list span.size{
+    font-size: 28px;
+    color: #ff9100;
+    margin-top: 12px;
+}
+.oper-page .slideBox .slider ul li .page-2 .container{
+    margin-top: 80px;
+    height: 200px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 70px 45px 85px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con.width-01{
+    width: 73%;
+    margin: 0 auto;
+    display: block;
+}
+.oper-page .slideBox .slider ul li .page-2 .con.display{
+    display: block;
+    padding: 0 70px 0 85px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout{
+    overflow: hidden;
+    width: 45%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list{
+    overflow: hidden;
+    margin-bottom: 47px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin{
+    margin-left: 10%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin-1{
+    margin-bottom: 30px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin-2{
+    margin-bottom: 20px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list span.size{
+    font-size: 24px;
+    color: #ff9100;
+    margin-bottom: 6px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin-1 span.size{
+    margin-bottom: 10px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1.center{
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 .item{
+    overflow: hidden;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 .item span.bg{
+    font-size: 34px;
+    color: #f49455;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon5-pc.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 154px;
+    height: 117px;
+    line-height: 117px;
+    margin-bottom: 20px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2{
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    height: 166px;
+    color: #333;
+    margin-top: 36px;
+}
+/*.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item img{
+    width: 50px;
+}*/
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item span.bg-img{
+    width: 50px;
+    height: 166px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/neirong1-pc.png") no-repeat;
+    margin-top: 0;
+    display:block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item span.bg-img-1{
+    width: 50px;
+    height: 100px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/neirong1-2-pc.png") no-repeat;
+    margin-top: 0;
+}
+
+/*@-webkit-keyframes appear {
+
+    0% { width:50px; height:0;}
+    50% { width:50px; height:50px;}
+    100% { width:50px; height:100px;}
+}
+
+@keyframes appear {
+
+    0% { width:50px; height:0;}
+    50% { width:50px; height:50px;}
+    100% { width:50px; height:100px;}
+}
+
+.appear {
+    animation: appear;
+    animation-duration: 2s;
+    -webkit-animation:appear 2s;
+    animation-fill-mode: forwards;
+    position:absolute;
+    display:block;
+}*/
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-1{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -10px;
+ }
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-1 span{
+    overflow: hidden;
+    display: block;
+    color: #999;
+    margin-right: 13px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-1 span.line{
+    width: 100%;
+    height: 10px;
+    border-bottom: dashed 1px #ccc;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-2{
+    overflow: hidden;
+    display: flex;
+    justify-content:flex-end;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-2 span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    height: 166px;
+    color: #333;
+    margin-top: 36px;
+}
+/*.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item img{
+    width: 50px;
+}*/
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-2 span.bg-img{
+    width: 50px;
+    height: 100px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/neirong1-2-pc.png") no-repeat;
+    margin-top: 0;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3{
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3.width{width: 100%}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item{
+    overflow: hidden;
+    width: 126px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 10px 0 45px 0;
+    color: #666;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item-1{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 45px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item-1 span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    color: #ff9100;
+    position: absolute;
+    margin-left: 30px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item-1 span.margin{
+    margin-left: 90px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 .item{
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 .item img{
+    margin: 0 auto;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 .item img:first-child{
+    margin-bottom: 48px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item{
+    overflow: hidden;
+    float: left;
+    /*margin-right: 25px;*/
+    width: 35%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item:first-child{
+    margin-left: -5%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item span.color{
+    color: #ff9100;
+    font-size: 28px;
+    display: inline;
+    margin-right: 5px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 .item{
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 .item.margin{
+    margin-left: 25%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 img{
+    margin-top: 10px;
+    margin-right: 3px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-7{
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-7 .item{
+    overflow: hidden;
+    width: 380px;
+    height: 45px;
+    background: #ffb552;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-7 .item span{
+    overflow: hidden;
+    display: block;
+    width: 270px;
+    height: 45px;
+    background: #80acf4;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-8{
+    overflow: hidden;
+    width: 251px;
+    margin: 0 auto;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span{
+    overflow: hidden;
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle{
+    overflow: hidden;
+    width: 274px;
+    background: #ffb552;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right: 10px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-2{
+    width: 93px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-3{
+    width: 35px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-4{
+    width: 70px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-5{
+    width: 24px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1{
+    overflow: hidden;
+    width: 33%;
+    float: left;
+    margin-top: 74px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1.time1 {
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1.time2 {
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    width: 90%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 span.color{
+    font-size: 24px;
+    color: #ff9100;
+    margin-bottom: 0;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 span.line{
+    width: 44px;
+    height: 1px;
+    background: #ccc;
+    margin: 16px 0 10px 0;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-2{
+    overflow: hidden;
+    width: 46%;
+    border-top: dashed 1px #ddd;
+    padding: 0 23%;
+    margin-top: 95px;
+    box-shadow: none;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .list-width{
+    overflow: hidden;
+    width: 100%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03{
+    overflow: hidden;
+    width: 27%;
+    float: left;
+    margin-top: 44px;
+    margin-bottom: 14px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03.width{
+    width: 40%;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03 span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03 img{
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-04{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-04 a{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #0096dc;
+    border-bottom: solid 1px #0096dc;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+.oper-page .slideBox .slider ul li .page-2 .con .layout-04 span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+}
+.page-2 .con .layout-2 ol{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.page-2 .con .layout-2 ol li{
+    overflow: hidden;
+    list-style: none;
+    width: 180px;
+    margin: 0;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+}
+.page-2 .con .layout-2 ol li a{
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+.page-2 .con .layout-2 ol li a.check span.masking{
+    background: transparent;
+}
+.page-2 .con .layout-2 ol li a.check span.bg-color{
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon10-pc.png") no-repeat;
+}
+.page-2 .con .layout-2 ol li a span.masking{
+    background: rgba(255,255,255,.5);
+}
+.page-2 .con .layout-2 ol li a span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.page-2 .con .layout-2 ol li a span.pic{
+    overflow: hidden;
+    width: 101px;
+    height: 101px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report-1712/neirong6-1-pc.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 23px auto 20px auto;
+}
+.page-2 .con .layout-2 ol li a span.pic.bg{
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report-1712/neirong6-2-pc.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page-2 .con .layout-2 ol li a span.masking{
+    width: 101px;
+    height: 101px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: rgba(255,255,255,.5);
+    margin: 0;
+}
+.page-2 .con .layout-2 .item:hover span.masking{
+    background: transparent;
+}
+.page-2 .con .layout-2 .item a span.bg-color{
+    width: 22px;
+    height: 22px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon9-pc.png") no-repeat;
+    position: absolute;
+    z-index: 1;
+    margin-top: -12px;
+    margin-left: 80px;
+}
+.page-2 .con .layout-2 .item a span.bg-color.on{
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon10-pc.png") no-repeat;
+}
+.page-2 .con .layout-2 .item:hover a span.bg-color{
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon10-pc.png") no-repeat;
+}
+.page-2 .con .layout-3{
+    overflow: hidden;
+    display: block;
+    width: 80%;
+    margin: 14px auto;
+}
+.page-2 .con .layout-3 p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+}
+.oper-page #footer{
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom:20px;
+    font-size: 16px;
+    color: #666;
+}
+/*@media screen and (max-height: 600px){
+    .inner{width: 900px}
+    .oper-page .slideBox .slider ul{width: 900px;height: 434px}
+    .oper-page .slideBox .slider ul li{width: 900px;height: 434px}
+    .oper-page .slideBox .prev,.oper-page .slideBox .next{left: 10%}
+    .oper-page .slideBox .next{left:auto;right: 10%}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+.top-banner-acitvity {
+  position: relative;
+  margin-top: -74px;
+  background: #1c4560;
+  line-height: 0; }
+  .top-banner-acitvity .banner-acitvity {
+    background: url(//sc.cfygxz.com/source/www/aboutUs/activity/banner.jpg) no-repeat left top;
+    height: 350px; }
+    .top-banner-acitvity .banner-acitvity .title-banner {
+      font-size: 3.6em;
+      line-height: 2.0;
+      color: #FFFFFF;
+      text-align: left;
+      padding-top: 160px; }
+    .top-banner-acitvity .banner-acitvity .sub-title {
+      font-size: 2.4em;
+      line-height: 2.0;
+      color: #FFFFFF;
+      padding-bottom: 70px; }
+
+.main-content-activity {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: block;
+  overflow: hidden; }
+  .main-content-activity div {
+    display: block; }
+  .main-content-activity .title-header {
+    font-size: 3.6em;
+    line-height: 2.0;
+    padding-top: 50px;
+    color: #035B83; }
+  .main-content-activity .border-header {
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC; }
+  .main-content-activity img {
+    width: 214px;
+    height: 145px;
+    margin-bottom: 30px; }
+  .main-content-activity .title-content {
+    font-size: 2em;
+    color: #035B83;
+    line-height: 2.0; }
+  .main-content-activity .date {
+    font-size: 1.6em;
+    line-height: 1.8;
+    color: #666666; }
+  .main-content-activity .des-content {
+    font-size: 1.6em;
+    line-height: 1.8;
+    color: #333333; }
+  .main-content-activity a.link {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #0096DB;
+    padding-left: 5px; }
+    .main-content-activity a.link:hover {
+      color: #035B83; }
+  .main-content-activity .border-gray {
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC; }
+  .main-content-activity .reload {
+    font-size: 1.6em;
+    color: #0096DB;
+    line-height: 1.8;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+    display: block; }
+    .main-content-activity .reload:hover {
+      color: #035B83; }
+  .main-content-activity .padding-content {
+    padding-top: 30px; }
+  .main-content-activity .padding-left-content {
+    padding-left: 36px; }
+  .main-content-activity .widt-colum1 {
+    width: 19.4%; }
+  .main-content-activity .widt-colum2 {
+    width: 80%; }
+
+.section4 {
+  background: url(//sc.cfygxz.com/source/www/aboutUs/activity/bg-nav.png) center no-repeat;
+  height: 556px;
+  padding: 80px 0 0 0; }
+  .section4 h2 {
+    font-size: 3.6em;
+    line-height: 2.0;
+    color: #035B83; }
+  .section4 p {
+    font-size: 2.4em;
+    line-height: 2.0;
+    color: #666666; }
+  .section4 .row {
+    margin-top: 30px; }
+  .section4 .register {
+    width: 100%;
+    height: 236px;
+    margin: 0 auto;
+    position: relative; }
+    .section4 .register .user-box {
+      height: 250px;
+      width: 150px;
+      position: absolute;
+      text-align: center;
+      left: 9%;
+      top: 50%;
+      border: 1px solid #AFB3B5;
+      margin-top: -125px; }
+    .section4 .register p {
+      text-align: center;
+      padding-top: 12%;
+      color: #035B83;
+      font-size: 2.0em; }
+    .section4 .register a {
+      float: right;
+      clear: both;
+      margin-bottom: 20px;
+      display: block;
+      width: 100%;
+      height: 32px;
+      font-size: 1.6em;
+      line-height: 32px;
+      background: #0096DB;
+      text-align: center;
+      color: #fff; }
+    .section4 .register a.child-bott {
+      clear: both; }
+    .section4 .register .link-box {
+      width: 40%;
+      position: absolute;
+      top: 25%;
+      right: 11%; }
+  .section4 .devices {
+    width: 100%;
+    height: 236px;
+    margin: 0 auto;
+    position: relative; }
+    .section4 .devices .lap-box {
+      height: 250px;
+      width: 150px;
+      position: absolute;
+      text-align: center;
+      left: 9%;
+      top: 50%;
+      border: 1px solid #AFB3B5;
+      margin-top: -125px; }
+    .section4 .devices p {
+      text-align: center;
+      padding-top: 12%;
+      color: #035B83;
+      font-size: 2.0em; }
+    .section4 .devices a {
+      float: right;
+      clear: both;
+      margin-bottom: 20px;
+      display: block;
+      width: 100%;
+      height: 32px;
+      font-size: 1.6em;
+      line-height: 32px;
+      background: #0096DB;
+      text-align: center;
+      color: #fff; }
+    .section4 .devices a.child-bott {
+      clear: both; }
+    .section4 .devices .link-box {
+      width: 40%;
+      position: absolute;
+      top: 15%;
+      left: 42.5%; }
+  .section4 a {
+    transition: all .15s ease-in; }
+    .section4 a:hover {
+      background: #03354C; }
+
+@media (min-width: 720px) {
+  .section4 .register .link-box {
+    width: 35%;
+    position: absolute;
+    top: 32%;
+    right: 16%; }
+  .section4 .devices .link-box {
+    width: 35%;
+    position: absolute;
+    top: 22%;
+    left: 63%; } }
+@media (min-width: 992px) {
+  .main-content-activity .widt-colum1 {
+    width: 23.4%; }
+  .main-content-activity .widt-colum2 {
+    width: 76%; } }
+@media (min-width: 1024px) {
+  .section4 .register .link-box {
+    width: 50%;
+    position: absolute;
+    top: 32%;
+    right: 16%; }
+  .section4 .devices .link-box {
+    width: 50%;
+    position: absolute;
+    top: 22%;
+    left: 63%; }
+
+  .main-content-activity .widt-colum1 {
+    width: 29.4%; }
+  .main-content-activity .widt-colum2 {
+    width: 68%; } }
+@media (min-width: 1280px) {
+  .section4 .register .link-box {
+    width: 40%;
+    position: absolute;
+    top: 32%;
+    right: 13%; }
+  .section4 .devices .link-box {
+    width: 40%;
+    position: absolute;
+    left: 51%;
+    top: 22%; }
+
+  .main-content-activity .widt-colum1 {
+    width: 23.4%; }
+  .main-content-activity .widt-colum2 {
+    width: 76%; } }
+@media (min-width: 1367px) {
+  .section4 .register .link-box {
+    width: 34.48%;
+    position: absolute;
+    top: 32%;
+    right: 16%; }
+  .section4 .devices .link-box {
+    width: 34.48%;
+    position: absolute;
+    top: 22%;
+    left: 53.5%; } }
+@media (min-width: 1920px) {
+  .section4 .register .link-box {
+    width: 33.33%;
+    position: absolute;
+    top: 32%;
+    right: 11%; }
+  .section4 .devices .link-box {
+    width: 33.33%;
+    position: absolute;
+    top: 22%;
+    left: 42.5%; }
+
+  .main-content-activity .widt-colum1 {
+    width: 19.4%; }
+  .main-content-activity .widt-colum2 {
+    width: 80%; } }
+
+/*# sourceMappingURL=activity.css.map */

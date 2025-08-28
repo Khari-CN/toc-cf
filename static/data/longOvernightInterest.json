@@ -1,0 +1,692 @@
+[
+  {
+    "fl": 0.01,
+    "key": "XAUUSD",
+    "chineseName": "现货黄金",
+    "value": "0.03*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "XAGUSD",
+    "chineseName": "现货白银",
+    "value": "0.03*5000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "GAUCNH",
+    "chineseName": "离岸人民币黄金",
+    "value": "0.03*1000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "PLT",
+    "chineseName": "铂金",
+    "value": "0.03*50*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "PAD",
+    "chineseName": "钯金",
+    "value": "0.03*10*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "USOil",
+    "chineseName": "美国原油",
+    "value": "0.03*1000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "UKOil",
+    "chineseName": "英国原油",
+    "value": "0.03*1000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.001,
+    "key": "NGAS",
+    "chineseName": "天然气",
+    "value": "0.03*10000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "Iron",
+    "chineseName": "铁",
+    "value": "0.03*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.0001,
+    "key": "EURUSD",
+    "chineseName": "欧元美元",
+    "value": "0.031*100000*count*kcPrice*numCont/360",
+    "currency": "美元"
+  },
+  {
+    "fl": 0.01,
+    "key": "USDJPY",
+    "chineseName": "美元日元",
+    "value": "0.001*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDJPY",
+    "currency": "日元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "GBPUSD",
+    "chineseName": "英镑美元",
+    "value": "0.025*100000*count*kcPrice*numCont/360",
+    "currency": "美元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "USDCHF",
+    "chineseName": "美元瑞郎",
+    "value": "0.005*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDCHF",
+    "currency": "瑞郎"
+  },
+  {
+    "fl": 0.0001,
+    "key": "AUDUSD",
+    "chineseName": "澳元美元",
+    "value": "0.015*100000*count*kcPrice*numCont/360",
+    "currency": "美元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "NZDUSD",
+    "chineseName": "纽元美元",
+    "value": "0.004*100000*count*kcPrice*numCont/360",
+    "currency": "美元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "USDCAD",
+    "chineseName": "美元加元",
+    "value": "0.01*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDCAD",
+    "currency": "加元"
+  },
+  {
+    "fl": 0.01,
+    "key": "EURJPY",
+    "chineseName": "欧元日元",
+    "value": "0.001*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDJPY",
+    "currency": "日元"
+  },
+  {
+    "fl": 0.01,
+    "key": "GBPJPY",
+    "chineseName": "英镑日元",
+    "value": "0.001*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDJPY",
+    "currency": "日元"
+  },
+  {
+    "fl": 0.01,
+    "key": "AUDJPY",
+    "chineseName": "澳元日元",
+    "value": "0.005*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDJPY",
+    "currency": "日元"
+  },
+  {
+    "fl": 0.01,
+    "key": "CADJPY",
+    "chineseName": "加元日元",
+    "value": "0*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDJPY",
+    "currency": "日元"
+  },
+  {
+    "fl": 0.01,
+    "key": "NZDJPY",
+    "chineseName": "纽元日元",
+    "value": "0.01*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDJPY",
+    "currency": "日元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "EURCHF",
+    "chineseName": "欧元瑞郎",
+    "value": "0.001*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDCHF",
+    "currency": "瑞郎"
+  },
+  {
+    "fl": 0.0001,
+    "key": "EURAUD",
+    "chineseName": "欧元澳元",
+    "value": "0.031*100000*count*kcPrice*numCont/360",
+    "marketPrice": "AUDUSD",
+    "currency": "澳元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "EURGBP",
+    "chineseName": "欧元英镑",
+    "value": "0.024*100000*count*kcPrice*numCont/360",
+    "marketPrice": "GBPUSD",
+    "currency": "英镑"
+  },
+  {
+    "fl": 0.0001,
+    "key": "GBPCHF",
+    "chineseName": "英镑瑞郎",
+    "value": "0.001*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDCHF",
+    "currency": "瑞郎"
+  },
+  {
+    "fl": 0.0001,
+    "key": "GBPAUD",
+    "chineseName": "英镑澳元",
+    "value": "0.007*100000*count*kcPrice*numCont/360",
+    "marketPrice": "AUDUSD",
+    "currency": "澳元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "AUDNZD",
+    "chineseName": "澳元纽元",
+    "value": "0.029*100000*count*kcPrice*numCont/360",
+    "marketPrice": "NZDUSD",
+    "currency": "纽元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "HKDCNH",
+    "chineseName": "港元离岸人民币",
+    "value": "0.015*500000*count*kcPrice*numCont/360",
+    "marketPrice": "USDCNH",
+    "currency": "人民币"
+  },
+  {
+    "fl": 0.0001,
+    "key": "USDCNH",
+    "chineseName": "美元离岸人民币",
+    "value": "0.015*100000*count*kcPrice*numCont/360",
+    "marketPrice": "USDCNH",
+    "currency": "人民币"
+  },
+  {
+    "fl": 0.0001,
+    "key": "GBPNZD",
+    "chineseName": "英镑纽元",
+    "marketPrice": "GBPNZD",
+    "value": "0.033*100000*count*kcPrice*numCont/360",
+    "currency": "纽元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "GBPCAD",
+    "chineseName": "英镑加元",
+    "marketPrice": "GBPCAD",
+    "value": "0.019*100000*count*kcPrice*numCont/360",
+    "currency": "加元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "EURNZD",
+    "chineseName": "欧元纽元",
+    "marketPrice": "EURNZD",
+    "value": "0.045*100000*count*kcPrice*numCont/360",
+    "currency": "纽元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "EURCAD",
+    "chineseName": "欧元加元",
+    "marketPrice": "EURCAD",
+    "value": "0.033*100000*count*kcPrice*numCont/360",
+    "currency": "加元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "AUDCAD",
+    "chineseName": "澳元加元",
+    "marketPrice": "AUDCAD",
+    "value": "0.020*100000*count*kcPrice*numCont/360",
+    "currency": "加元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "AUDCHF",
+    "chineseName": "澳元瑞郎",
+    "marketPrice": "AUDCHF",
+    "value": "0.005*100000*count*kcPrice*numCont/360",
+    "currency": "瑞郎"
+  },
+  {
+    "fl": 0.0001,
+    "key": "NZDCAD",
+    "chineseName": "纽元加元",
+    "marketPrice": "NZDCAD",
+    "value": "0.012*100000*count*kcPrice*numCont/360",
+    "currency": "加元"
+  },
+  {
+    "fl": 0.0001,
+    "key": "NZDCHF",
+    "chineseName": "纽元瑞郎",
+    "marketPrice": "NZDCHF",
+    "value": "0.005*100000*count*kcPrice*numCont/360",
+    "currency": "瑞郎"
+  },
+  {
+    "fl": 0.0001,
+    "key": "CADCHF",
+    "chineseName": "加元瑞郎",
+    "marketPrice": "CADCHF",
+    "value": "0.002*100000*count*kcPrice*numCont/360",
+    "currency": "瑞郎"
+  },
+  {
+    "fl": 1,
+    "key": "HK50",
+    "chineseName": "香港50",
+    "value": "0.02*2*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "JPN225",
+    "chineseName": "日本JPN225",
+    "value": "0.02*2*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "CHINA300",
+    "chineseName": "中华300",
+    "value": "0.02*10*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "DJ30",
+    "chineseName": "美国DJ30",
+    "value": "0.025*5*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "SP500",
+    "chineseName": "美国SP500",
+    "value": "0.025*50*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "TECH100",
+    "chineseName": "美国TECH100",
+    "value": "0.025*20*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "FRA40",
+    "chineseName": "法国FRA40",
+    "value": "0.025*20*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "GER30",
+    "chineseName": "德国GER30",
+    "value": "0.025*10*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "UK100",
+    "chineseName": "英国UK100",
+    "value": "0.025*10*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "STI",
+    "chineseName": "新加坡指数",
+    "value": "0.02*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "AS200",
+    "chineseName": "澳洲200",
+    "value": "0.02*25*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "RUSS2000",
+    "chineseName": "罗素2000",
+    "value": "0.025*50*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "EUR50",
+    "chineseName": "欧洲50",
+    "value": "0.025*10*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "BTCUSD",
+    "chineseName": "比特币",
+    "value": "(pc-kc)*1*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "ETCUSD",
+    "chineseName": "以太币",
+    "value": "(pc-kc)*10*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "LTCUSD",
+    "chineseName": "莱特币",
+    "value": "(pc-kc)*50*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "BCHUSD",
+    "chineseName": "比特币现金",
+    "value": "(pc-kc)*5*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "XRPUSD",
+    "chineseName": "瑞波币",
+    "value": "(pc-kc)*10000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "ETHBTC",
+    "chineseName": "以太币兑比特币",
+    "value": "(pc-kc)*100000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "EOSUSD",
+    "chineseName": "柚子币",
+    "value": "(pc-kc)*500*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "BABA",
+    "chineseName": "阿里巴巴",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "AAPL",
+    "chineseName": "苹果",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "JD",
+    "chineseName": "京东",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "AMZN",
+    "chineseName": "亚马逊",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "IQ",
+    "chineseName": "爱奇艺",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "SBUX",
+    "chineseName": "星巴克",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "TSLA",
+    "chineseName": "特斯拉",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "FB",
+    "chineseName": "Facebook",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "GS",
+    "chineseName": "高盛",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "KO",
+    "chineseName": "可口可乐",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "DIS",
+    "chineseName": "迪士尼",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "PDD",
+    "chineseName": "拼多多",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "CTRP",
+    "chineseName": "携程",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "NTES",
+    "chineseName": "网易",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "BIDU",
+    "chineseName": "百度",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "MSFT",
+    "chineseName": "微软",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "AABA",
+    "chineseName": "雅虎",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00700.HK",
+    "chineseName": "腾讯控股",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00388.HK",
+    "chineseName": "香港交易所",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00005.HK",
+    "chineseName": "汇丰控股",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "01299.HK",
+    "chineseName": "友邦保险",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "01810.HK",
+    "chineseName": "小米集团",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "02318.HK",
+    "chineseName": "中国平安",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00011.HK",
+    "chineseName": "恒生银行",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00144.HK",
+    "chineseName": "招商局港口",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00165.HK",
+    "chineseName": "中国光大控股",
+    "value": "0.14*100*coun*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00267.HK",
+    "chineseName": "中信股份",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00285.HK",
+    "chineseName": "比亚迪电子",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00390.HK",
+    "chineseName": "中国中铁",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00728.HK",
+    "chineseName": "中国电信",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00992.HK",
+    "chineseName": "联想集团",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "01638.HK",
+    "chineseName": "佳兆业集团",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "01929.HK",
+    "chineseName": "周大福",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "02388.HK",
+    "chineseName": "中银香港",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00763.HK",
+    "chineseName": "中兴通讯",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "03333.HK",
+    "chineseName": "中国恒大",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "03968.HK",
+    "chineseName": "招商银行",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00941.HK",
+    "chineseName": "中国移动",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "00762.HK",
+    "chineseName": "中国联通",
+    "value": "0.14*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "SOYBEAN",
+    "chineseName": "大豆",
+    "value": "0.02*50*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "COCOA",
+    "chineseName": "可可",
+    "value": "0.02*20*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "CORN",
+    "chineseName": "玉米",
+    "value": "0.02*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "WHEAT",
+    "chineseName": "小麦",
+    "value": "0.02*100*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.01,
+    "key": "USDINDEX",
+    "chineseName": "美汇指数",
+    "value": "0.02*1000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "COFFEE",
+    "chineseName": "咖啡",
+    "value": "0.02*500*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "SUGAR",
+    "chineseName": "糖",
+    "value": "0.02*4000*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 0.1,
+    "key": "COTTON",
+    "chineseName": "棉花",
+    "value": "0.02*500*count*kcPrice*numCont/360"
+  },
+  {
+    "fl": 1,
+    "key": "A50",
+    "chineseName": "中华A50",
+    "value": "0.025*2*count*kcPrice*numCont/360"
+  }
+]

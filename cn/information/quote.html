@@ -1,0 +1,418 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>实时报价_行情资讯_国际</title>
+  <meta name="keywords" content="国际,实时报价,股指,外汇,贵金属,商品" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="wap-font-scale" content="no">
+  <!--#include file="/cn/template.css.html"-->
+  <!--#include file="/module/html.head.html"-->
+  <link rel="shortcut icon" href="/source/www/template/fav.ico" />
+  <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+  <link rel="stylesheet" href='/cn/css/quote.css' />
+  <script src="/cn/js/jquery-1.11.3.min.js"></script>
+  <script src='/cn/js/angular.min.js'></script>
+  <script src="/cn/js/homepage/backheader.js"></script>
+</head>
+
+<body ng-cloak>
+  <div id="main">
+    <div class="panel" id="m-panel">
+      <!--#include file="/module/html.body.begin.html"-->
+      <!-- Begin header -->
+      <div class="pc">
+        <div class="e-header">
+          <!--#include file="/cn/template.header.html"-->
+        </div>
+      </div>
+      <div class="m">
+        <script>
+          menu();
+        </script>
+      </div>
+      <!-- End header -->
+      <div class="web-banner"></div>
+      <div class="inner">
+        <div class="billboard">
+          <h1 class="title">实时报价</h1>
+        </div>
+      </div>
+      <div class="quote" ng-controller="quoteCtrl">
+        <div class="container">
+          <p class="main-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">&nbsp;&nbsp;特设热炒讯号
+          </p>
+          <div class="quote-nav clearfix">
+            <ul>
+              <li class="active">股指</li>
+              <li>外汇</li>
+              <li>贵金属</li>
+              <li>商品</li>
+              <li>所有产品</li>
+            </ul>
+          </div>
+          <div class="quote-container-wrapper">
+            <div class="quote-container show" id="content1">
+              <!--<div class="quote-box">
+                    <div class="quote-table">
+                        <div class="quote-header">
+                            <span>IST股指</span>
+                            <em>&lt;!&ndash; #echo var='CF_TEXT' default='' &ndash;&gt;热炒<i>*</i><span class="quote-table-popup">热炒讯号统计
+                                &lt;!&ndash;#echo var='CF_TEXT' default='' &ndash;&gt;客户群中当刻持仓量最多之七种交易产品</span>
+                            </em>
+                            <em>卖出价</em>
+                            <em>买入价</em>
+                            <em>点差</em>
+                            <em>升跌</em>
+                            <em>幅度</em>
+                            <em>最高</em>
+                            <em>最低</em>
+                            <em>开盘</em>
+                            <em>收盘</em>
+                        </div>
+                        <div class="quote-body">
+                            <ul>
+                                <li>
+                                    <span>恒生指数期货 (HSI)</span>
+                                    <i></i>
+                                    <em><span>78.2910<i></i></span></em>
+                                    <em>78.3480</em>
+                                    <em>2.4</em>
+                                    <em>-0.07218</em>
+                                    <em>-0.10%</em>
+                                    <em>78.987</em>
+                                    <em>77.2331</em>
+                                    <em>78.121</em>
+                                    <em class="last-em">78.310</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+              <div class="quote-box">
+                <div class="quote-table">
+                  <div class="quote-header">
+                    <span>股指</span>
+                    <em>
+                      热炒<i>*</i>
+                      <span
+                        class="quote-table-popup">热炒讯号统计客户群中当刻持仓量最多之七种交易产品</span>
+                    </em>
+                    <em>卖出价</em>
+                    <em>买入价</em>
+                    <em>点差</em>
+                    <em>升跌</em>
+                    <em>幅度</em>
+                    <em>最高</em>
+                    <em>最低</em>
+                    <em>开盘</em>
+                    <em>收盘</em>
+                  </div>
+                  <div class="quote-body">
+                    <ul>
+                      <li ng-class="row.listClass" ng-repeat="row in data" ng-show="isStock(row.symbol)">
+                        <span>{{row.name}}</span>
+                        <i ng-class="row.wealthyCSSClass"></i>
+                        <em><span ng-class="row.bidCSSClass">{{row.bid}}<i></i></span></em>
+                        <em><span ng-class="row.askCSSClass">{{row.ask}}<i></i></span></em>
+                        <em>{{row.spread | setDecimal: 1}}</em>
+                        <em><span ng-class="row.changeCSSClass">{{row.change}}<i></i></span></em>
+                        <em><span ng-class="row.amplitudeCSSClass">{{row.amplitude*100 | setDecimal:
+                            2}}%<i></i></span></em>
+                        <em>{{row.high}}</em>
+                        <em>{{row.low}}</em>
+                        <em>{{row.start}}</em>
+                        <em class="last-em">{{row.preclose}}</em>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--                 Exchange -->
+            <div class="quote-container hide" id="content2">
+              <div class="quote-box">
+                <div class="quote-table">
+                  <div class="quote-header">
+                    <span>外汇</span>
+                    <em>
+                      热炒<i>*</i>
+                      <span
+                        class="quote-table-popup">热炒讯号统计客户群中当刻持仓量最多之七种交易产品</span>
+                    </em>
+                    <em>卖出价</em>
+                    <em>买入价</em>
+                    <em>点差</em>
+                    <em>升跌</em>
+                    <em>幅度</em>
+                    <em>最高</em>
+                    <em>最低</em>
+                    <em>开盘</em>
+                    <em>收盘</em>
+                  </div>
+                  <div class="quote-body">
+                    <ul>
+                      <li ng-class="row.listClass" ng-repeat="row in data" ng-show="isExchange(row.symbol)">
+                        <span>{{row.name}}</span>
+                        <i ng-class="row.wealthyCSSClass"></i>
+                        <em><span ng-class="row.bidCSSClass">{{row.bid}}<i></i></span></em>
+                        <em><span ng-class="row.askCSSClass">{{row.ask}}<i></i></span></em>
+                        <em>{{row.spread | setDecimal: 1}}</em>
+                        <em><span ng-class="row.changeCSSClass">{{row.change}}<i></i></span></em>
+                        <em><span ng-class="row.amplitudeCSSClass">{{row.amplitude*100 | setDecimal:
+                            2}}%<i></i></span></em>
+                        <em>{{row.high}}</em>
+                        <em>{{row.low}}</em>
+                        <em>{{row.start}}</em>
+                        <em class="last-em">{{row.preclose}}</em>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--                 Metal -->
+            <div class="quote-container hide" id="content3">
+              <div class="quote-box">
+                <div class="quote-table">
+                  <div class="quote-header">
+                    <span>贵金属</span>
+                    <em>
+                      热炒<i>*</i>
+                      <span
+                        class="quote-table-popup">热炒讯号统计客户群中当刻持仓量最多之七种交易产品</span>
+                    </em>
+                    <em>卖出价</em>
+                    <em>买入价</em>
+                    <em>点差</em>
+                    <em>升跌</em>
+                    <em>幅度</em>
+                    <em>最高</em>
+                    <em>最低</em>
+                    <em>开盘</em>
+                    <em>收盘</em>
+                  </div>
+                  <div class="quote-body">
+                    <ul>
+                      <li ng-class="row.listClass" ng-repeat="row in data" ng-show="isMetal(row.symbol)">
+                        <span>{{row.name}}</span>
+                        <i ng-class="row.wealthyCSSClass"></i>
+                        <em><span ng-class="row.bidCSSClass">{{row.bid}}<i></i></span></em>
+                        <em><span ng-class="row.askCSSClass">{{row.ask}}<i></i></span></em>
+                        <em>{{row.spread | setDecimal: 1}}</em>
+                        <em><span ng-class="row.changeCSSClass">{{row.change}}<i></i></span></em>
+                        <em><span ng-class="row.amplitudeCSSClass">{{row.amplitude*100 | setDecimal:
+                            2}}%<i></i></span></em>
+                        <em>{{row.high}}</em>
+                        <em>{{row.low}}</em>
+                        <em>{{row.start}}</em>
+                        <em class="last-em">{{row.preclose}}</em>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--                 Commodity -->
+            <div class="quote-container hide" id="content4">
+              <div class="quote-box">
+                <div class="quote-table">
+                  <div class="quote-header">
+                    <span>商品</span>
+                    <em>
+                      热炒<i>*</i>
+                      <span
+                        class="quote-table-popup">热炒讯号统计客户群中当刻持仓量最多之七种交易产品</span>
+                    </em>
+                    <em>卖出价</em>
+                    <em>买入价</em>
+                    <em>点差</em>
+                    <em>升跌</em>
+                    <em>幅度</em>
+                    <em>最高</em>
+                    <em>最低</em>
+                    <em>开盘</em>
+                    <em>收盘</em>
+                  </div>
+                  <div class="quote-body">
+                    <ul>
+                      <li ng-class="row.listClass" ng-repeat="row in data" ng-show="isCommodity(row.symbol)">
+                        <span>{{row.name}}</span>
+                        <i ng-class="row.wealthyCSSClass"></i>
+                        <em><span ng-class="row.bidCSSClass">{{row.bid}}<i></i></span></em>
+                        <em><span ng-class="row.askCSSClass">{{row.ask}}<i></i></span></em>
+                        <em>{{row.spread | setDecimal: 1}}</em>
+                        <em><span ng-class="row.changeCSSClass">{{row.change}}<i></i></span></em>
+                        <em><span ng-class="row.amplitudeCSSClass">{{row.amplitude*100 | setDecimal:
+                            2}}%<i></i></span></em>
+                        <em>{{row.high}}</em>
+                        <em>{{row.low}}</em>
+                        <em>{{row.start}}</em>
+                        <em class="last-em">{{row.preclose}}</em>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="note-wr">
+            <ul>
+              <li class="note">
+                <span>*</span>热炒讯号统计客户群中当刻持仓量最多之七种交易产品
+              </li>
+              <li class="update-time">
+                最后更新时间:<span>{{ updatedDate | date:'yyyy.MM.dd'}}</span><i>{{ updatedDate | date:'HH:mm'}}</i>
+              </li>
+            </ul>
+            <ul>
+              <li class="note">
+                <span>*</span>以上所有报价来自平台
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="web-page bg02">
+          <div class="container">
+            <p class="main-title" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800">&nbsp;&nbsp;查看我们所有产品
+            </p>
+            <div class="more-product">
+              <div class="forex" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                <a class="main-intro" href="/cn/product/forex.html">外汇</a>
+                <p class="sub-intro">交易主要货币对、次要货币对和稀有货币对</p>
+              </div>
+              <div class="commodities" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                <a class="main-intro" href="/cn/product/commodities.html">商品</a>
+                <p class="sub-intro">提供能源商品、基础原材料和农副产品</p>
+              </div>
+              <div class="indices" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800">
+                <a class="main-intro" href="/cn/product/indices.html">指数</a>
+                <p class="sub-intro">交易中华300 、美国Tech100、香港50全球热门指数</p>
+              </div>
+              <div class="stock" data-aos="fade-down" data-aos-delay="1400" data-aos-duration="800">
+                <a class="main-intro" href="/cn/product/stock.html">股票</a>
+                <p class="sub-intro">买卖及持有全球知名企业的股票</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="web-page bg03">
+        <div class="inner box">
+          <div class="promotion-panel">
+            <p>每月限时活动 回馈新老客户</p>
+            <a href="/cn/acc/promotion.html">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="web-page bg04">
+          <div class="container">
+            <p class="main-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">&nbsp;&nbsp;为何选择创富国际
+            </p>
+            <div class="pros">
+              <div class="pro1">
+                <img src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/pros1.png">
+                <p class="title">安全保障</p>
+                <p class="sub-title">在多个司法管辖区均获得<br />授权和监管，资金隔离存管在<br />国际认可的银行</p>
+              </div>
+              <div class="pro2">
+                <img src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/pros2.png">
+                <p class="title">交易优势</p>
+                <p class="sub-title">提供90+ 金融投资产品，<br />点差可达 0 点子</p>
+              </div>
+              <div class="pro3">
+                <img src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/pros3.png">
+                <p class="title">专业客服</p>
+                <p class="sub-title">提供客服热线、在线客服、<br />官方微信客服等联系方式，50+客服<br />全天24小时在线</p>
+              </div>
+              <div class="pro4">
+                <img src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/pros4.png">
+                <p class="title">丰富学习资源</p>
+                <p class="sub-title">提供多种免费交易指南<br />和教学，助您轻松提升交易技能</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner">
+          <div class="open-panel">
+            <a href="/cn/pc/dcfd_account"
+              onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">免费模拟账户</a>
+            <a href="/cn/pc/rcfd_account"
+              onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">免费真实账户</a>
+          </div>
+        </div>
+        <div class="web-page bg05"></div>
+        <div class="web-page bg06"></div>
+        <div class="box2 inner">
+          <div class="menu">
+            <div class="left-title">
+              <p class="main-title">&nbsp;&nbsp;浏览更多</p>
+              <p class="sub-title">为您提供各种专业产品服务</p>
+            </div>
+
+            <div class="right-menu">
+
+              <a href="/cn/aboutUS.html"><span>关于创富</span><img class="arrow_icon"
+                  src="/source/www/about-us/new-version/arrow_icon.png"></a>
+              <hr class="line">
+              <a href="/cn/platform/cfd-intro.html"><span>交易平台</span><img class="arrow_icon"
+                  src="/source/www/about-us/new-version/arrow_icon.png"></a>
+              <hr class="line">
+              <a href="/cn/faq.html"><span>常见问题</span><img class="arrow_icon"
+                  src="/source/www/about-us/new-version/arrow_icon.png"></a>
+              <hr class="line">
+              <a href="/cn/information/position.html"><span>持仓比例</span><img class="arrow_icon"
+                  src="/source/www/about-us/new-version/arrow_icon.png"></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="m">
+        <!--底部-->
+        <script>
+          footer();
+        </script>
+        <!--底部结束-->
+        <!--遮罩层-->
+        <div id="m-overlay" class="overlay" node-name="overlay"></div>
+        <!--遮罩层 end-->
+      </div>
+      <!--#include file="/cn/template.footer.html"-->
+    </div>
+    <!-- End Main contents -->
+    <div class="pc">
+      <!--#include file="/cn/template.right-1.html"-->
+    </div>
+    <div class="m">
+      <!--#include file="/cn/nav.html"-->
+    </div>
+  </div>
+  <!--#include file="/cn/template.js.html"-->
+</body>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src='/cn/js/quota.js'></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script>
+  AOS.init({
+    offset: 100,
+    easing: "ease",
+    duration: 800,
+    delay: 100,
+    once: false
+  });
+</script>
+
+</html>

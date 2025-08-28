@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*css reset 整体布局*/
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+span,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+li,
+ol {
+    list-style: none;
+}
+i,
+em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+input,
+textarea {
+    -webkit-appearance: none;
+}
+img{ border: 0;}
+html {
+    font-size: 50px;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #FFFFFF
+}
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56.25px;
+    }
+}
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+@media screen and (min-width: 560px) {
+    html {
+        font-size: 87.5px;
+    }
+}
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+body{
+    background: #FFFFFF
+}

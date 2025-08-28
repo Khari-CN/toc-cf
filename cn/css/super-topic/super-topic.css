@@ -1,0 +1,1004 @@
+@charset "utf-8";
+
+/*css reset 整体布局*/
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+span,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+li,
+ol {
+    list-style: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+}
+
+img {
+    border: 0;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #fff;
+    /*font-size: .28rem;*/
+    color: #333;
+
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.inner.position {
+    position: relative
+}
+
+.web-banner,
+.web-diff {
+    position: relative;
+    overflow: hidden
+}
+
+.web-banner,
+.web-diff,
+.web-diff .bank-content .right ul li ul {
+    overflow: hidden
+}
+
+.e-header .header {
+    background: none;
+}
+
+.content {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/super-topic/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/news/centralBank/new-version/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 20px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-top: 120px;
+    color: #000000;
+    display: flex;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.main-title img {
+    width: 11px;
+    height: 38px;
+}
+
+.add-info {
+    width: 50%;
+    float: right;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.add-info span {
+    color: red;
+    padding-right: 2px;
+}
+
+.topic-content {
+    margin: 60px auto 15px;
+}
+
+.content-area {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top-topic {
+    background: #f7f7f7;
+    box-sizing: border-box;
+    padding-bottom: .2rem;
+}
+
+.top-topic .layout-1 {
+    background: #fff;
+    padding: .4rem .3rem;
+    line-height: .48rem;
+}
+
+.topic {
+    margin-bottom: 100px;
+}
+
+.topic .layout-1 .topic-title {
+    font-size: .32rem;
+    color: #003355;
+    font-weight: bold;
+}
+
+.topic .layout-1 .topic-sub {
+    font-size: .28rem;
+    color: #333;
+}
+
+.topic .layout-2 {
+    padding: 5rem .3rem 0;
+    background: #fff;
+}
+
+.topic .layout-2 .item-1 {
+    background: url(../../images/super-topic/example.jpg) no-repeat;
+    width: 345px;
+    height: 200px;
+    background-size: 345px 200px;
+    padding-top: .2rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    /*float: left;*/
+}
+
+.status {
+    font-size: 0;
+    margin-top: -2px;
+}
+
+.topic .layout-2 .item-1 .label {
+    font-size: 16px;
+    color: #fff;
+    border-bottom-right-radius: 15px;
+    height: 30px;
+    width: 60px;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.topic .layout-2 .item-1 .label.blue {
+    background: #4a84ee;
+}
+
+.topic .layout-2 .layout-content {
+    position: relative;
+    float: left;
+    margin: 0 15px 40px 15px;
+    display: block;
+}
+
+.layout-content .item-1 {
+    display: block;
+}
+
+.topic .layout-2 .item-1 .label.red {
+    background: #ee4a4a;
+}
+
+.topic .layout-2 .item-1 .label.grey {
+    background: #ff9c00;
+}
+
+.topic .layout-2 .item-1 .count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.topic .layout-2 .item-1 .count-content {
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-top-left-radius: 10px;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+}
+
+.topic .layout-2 .item-2 {
+    padding: .3rem 0;
+}
+
+.topic .layout-2 .item-2 .news-title {
+    font-size: 18px;
+    color: #000000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+}
+
+.topic .layout-2 .item-2 .news-time {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+    font-family: Microsoft JhengHei;
+}
+
+.load-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 2.2em;
+    color: #2986d7;
+    line-height: 1.8;
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+/* .load-more:hover{
+    background: #666;
+} */
+/* .e-header .header{
+    background: #fff;
+} */
+.future-popup {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: .5rem;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-left: -110px;
+    display: none;
+}
+
+.top-banner {
+    position: relative;
+    margin-top: -76px;
+    background: #1c4560;
+    line-height: 0;
+}
+
+.top-banner .img-banner-commodities {
+    display: block;
+    height: 350px;
+    background: url(../../super-topic/images/banner.jpg) top center no-repeat;
+    background-size: cover !important;
+}
+
+.top-banner .img-banner-commodities .title-banner {
+    font-size: 3.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 194px;
+}
+
+.top-banner .img-banner-commodities .sub-title {
+    font-size: 2.4em;
+    line-height: 1.8;
+    color: #FFFFFF;
+}
+
+.crumb-wrap {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-left: 18.5%;
+    font-size: 16px;
+}
+
+.crumb-wrap .w {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 13px 0 9px;
+}
+
+.crumb-wrap .w .item {
+    float: left;
+}
+
+.crumb-wrap .w .item.sep {
+    padding: 0 10px;
+    color: #D8D8D8;
+}
+
+/* open account panel*/
+.web-page.bg06 {
+    background: #60646a;
+    overflow: hidden;
+    width: 100%;
+    padding: 58px 0 97px 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box .open-panel {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/aboutUs/advantage/openAc_bg.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: 1180px;
+    width: 1107px;
+    height: 172px;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.open-panel p {
+    font-size: 2.8em;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.open-panel a {
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.2em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 180px;
+    height: 45px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+
+/* web page responsive*/
+
+@media (max-width: 1280px) {
+    .content-area {
+        display: flex;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+    }
+}
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .inner{
+        width: 100%;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/super-topic/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 1rem 0 0.1rem 0;
+    }
+
+    .topic .layout-2{
+        padding: 1.5rem 0.3rem 0;
+    }
+
+    /* bg07 part */
+    .web-page.bg07 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/m/bg2.png') no-repeat;
+        height: 3.67rem;
+        background-size: 100% 100%;
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .flex-panel {
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-page.bg07 .motto .main {
+        font-size: 0.4rem;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    .web-page.bg07 .motto .sub {
+        font-size: 0.3rem;
+        color: #ffffff;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .web-page.bg07 .motto a {
+        font-size: 0.3rem;
+        width: 2.65rem;
+        height: 0.65rem;
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        font-family: Microsoft JhengHei;
+        border: unset;
+        border-color: unset;
+        align-items: center;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: 600;
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    }
+
+    .add-info{
+        width: 100%;
+        padding: 0 0.3rem;
+    }
+
+    .load-more{
+        font-size: 0.3rem;
+        font-weight: normal;
+    }
+
+}
+
+
+
+@media (max-width: 770px) {
+    .box .open-panel {
+        bottom: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+    .content-area {
+        display: block;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+    }
+
+    .box .open-panel {
+        bottom: 29%;
+        max-width: 1107px;
+        width: 100%;
+    }
+
+    .open-panel p {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 401px) {
+    .topic .layout-2 .layout-content{
+        margin: 0;
+    }
+}

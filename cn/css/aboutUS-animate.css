@@ -1,0 +1,105 @@
+.active .a-slow-big{
+    animation:slowBig 1.5s ease-in-out both;
+    transform-origin: 50% 50%;
+    -webkit-animation:slowBig 1.5s ease-in-out both;
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes slowBig {
+    0%{transform:scale(0) rotate(-60deg);opacity:0;}
+    100%{transform:scale(1) rotate(0deg);opacity:1;}
+}
+@-webkit-keyframes slowBig {
+    0%{-webkit-transform:scale(0) rotate(-90deg);;opacity:0;}
+    100%{-webkit-transform:scale(1) rotate(0deg);;opacity:1;}
+}
+
+.active .a-big{
+    animation:slowBig 1.5s ease-in-out both;
+    transform-origin: 50% 50%;
+    -webkit-animation:slowBig 1.5s ease-in-out both;
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes slowBig {
+    0%{-webkit-transform:scale(0);opacity:0;}
+    100%{-webkit-transform:scale(1);opacity:1;}
+}
+@-webkit-keyframes slowBig {
+    0%{-webkit-transform:scale(0);opacity:0;}
+    100%{-webkit-transform:scale(1);opacity:1;}
+}
+.active .a_top{
+    animation:top_move 1.5s ease-in-out both;
+    -webkit-animation:top_move .8s ease-in-out both;
+}
+@keyframes top_move{
+    0%{opacity:0;transform:translate(0,-50px)}
+    100%{opacity:1;transform:translate(0,0)}
+}
+@-webkit-keyframes top_move {
+    0%{opacity:0;-webkit-transform:translate(0,-50px)}
+    100%{opacity:1;-webkit-transform:translate(0,0)}
+}
+
+.active .a_bottom{
+    animation:bottom_move 1.5s ease-in-out both;
+    -webkit-animation:bottom_move 1.5s ease-in-out both;
+}
+@keyframes bottom_move{
+    0%{opacity:0;transform:translate(0,50px)}
+    100%{opacity:1;transform:translate(0,0)}
+}
+@-webkit-keyframes top_move {
+    0%{opacity:0;-webkit-transform:translate(0,50px)}
+    100%{opacity:1;-webkit-transform:translate(0,0)}
+}
+
+.active .a_right{
+    animation:right_move 1.5s ease-in-out both;
+    -webkit-animation:right_move 1.5s ease-in-out both;
+}
+@keyframes right_move{
+    0%{opacity:0;transform:translate(50px,0)}
+    100%{opacity:1;transform:translate(0,0)}
+}
+@-webkit-keyframes right_move{
+    0%{opacity:0;-webkit-transform:translate(50px,0)}
+    100%{opacity:1;-webkit-transform:translate(0,0)}
+}
+
+.active .a_left{
+    animation:left_move 1.5s ease-in-out both;
+    -webkit-animation:left_move 1.5s ease-in-out both;
+}
+@keyframes left_move{
+    0%{opacity:0;transform:translate(-50px,0)}
+    100%{opacity:1;transform:translate(0,0)}
+}
+@-webkit-keyframes left_move {
+    0%{opacity:0;-webkit-transform:translate(-50px,0)}
+    100%{opacity:1;-webkit-transform:translate(0,0)}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

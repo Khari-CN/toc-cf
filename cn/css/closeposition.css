@@ -1,0 +1,1691 @@
+#main {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow: hidden;
+}
+
+.pc {
+  display: block;
+}
+
+.m {
+  display: none;
+}
+
+.inner {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+  /*position: relative;*/
+}
+
+.inner.position {
+  position: relative
+}
+
+img {
+  overflow: hidden;
+  display: block;
+  border: none;
+}
+
+.e-header .header {
+  background: none;
+}
+
+.center-support {
+  display: none
+}
+
+.header .pcst-megamenu {
+  display: block;
+  visibility: visible;
+  margin: 0 auto 0;
+  opacity: 1;
+  z-index: 999;
+  top: 0;
+}
+
+.header .mobilest-megamenu {
+  display: block;
+}
+
+.web-banner {
+  background: url("https://sc.cfygxz.com/source/www/acc/closeposition/new-version/topbanner.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+  /* margin-top: 68px; */
+  padding-top: 200px;
+}
+
+.billboard {
+  background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 194px;
+  width: 608px;
+  position: absolute;
+  padding: 30px 0px 0 50px;
+  top: 328px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.billboard .title {
+  font-size: 3.8em;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+  font-size: 2.8em;
+  font-weight: lighter;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+.web-content {
+  /* overflow: hidden; */
+  width: 100%;
+  position: relative;
+}
+
+.web-content .web-page {
+  overflow: hidden;
+  width: 100%;
+  padding: 58px 0 97px 0;
+}
+
+.web-content .web-page.bg01 {
+  background: #ffffff;
+}
+
+.main-title {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-left: 10px solid #3391e7;
+  border-spacing: 5px;
+  margin: 60px 0 10px 0;
+  color: #000000;
+}
+
+.contact-details {
+  font-size: 2em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  padding: 15px 0;
+  font-family: Microsoft JhengHei;
+}
+
+.bg01 .container .block1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 45px;
+}
+
+.bg01 .container .block1 .block1_right {
+  flex-basis: 45%;
+  position: relative;
+}
+
+.bg01 .container .block1 .block1_left {
+  flex-basis: 40%;
+}
+
+.bg01 .container .block1 .block1_right .block1_icon {
+  /* max-width: 619px;
+    width: 100%;
+    height: auto; */
+  z-index: 1;
+  position: relative;
+}
+
+.magnifier {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  max-width: 247px;
+  width: 100%;
+  height: auto;
+  animation-name: magnifier-move;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  z-index: 3;
+}
+
+@keyframes magnifier-move {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 70%;
+  }
+}
+
+.bg01 .container .block1 .block1_left .item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Microsoft JhengHei;
+  font-size: 1.8em;
+}
+
+.bg01 .container .block1 .block1_left .item ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg01 .container .block1 .block1_left .item li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.bg01 .container .block1 .block1_left .item li span {
+  padding-left: 15px;
+  letter-spacing: .1em;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+@keyframes left-btn-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.bg01_icon {
+  animation: left-btn-animation 1s linear infinite;
+  max-width: 36px;
+  height: auto;
+  width: 100%;
+}
+
+/* Begin bg02 */
+.web-content .web-page.bg02 {
+  background: url('//sc.cfygxz.com/source/www/about-us/new-version/bg4.png') no-repeat;
+  background-size: 100% 100%;
+  height: 945px;
+  width: 100%;
+  display: flex;
+  overflow: visible;
+}
+
+.web-content .web-page.bg02 .container .tab-pagination {
+  height: 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 450px;
+}
+
+.web-content .web-page.bg02 .container .tab-pagination>.tab-bullet {
+  position: relative;
+  flex: 1;
+  line-height: 1.9em;
+  font-size: 2.7em;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #5c8bb7;
+  opacity: 1;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  display: inline;
+  width: 192px;
+  height: 55px;
+  border: 1px solid #5c8bb7;
+  border-radius: 5px;
+  margin: 0 2rem;
+}
+
+.web-content .web-page.bg02 .container .tab-pagination>.tab-bullet.active {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.tab-container .tab-slider {
+  text-align: center;
+}
+
+.tab-container .tab-slider .acc-type {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.tab-container .tab-slider .acc-type .Paper_Ac {
+  background: url('//img.cfd139.com/source/www/about-us/new-version/Paper_Ac_bg.png') no-repeat;
+  background-size: 100% 100%;
+  max-width: 528px;
+  height: 610px;
+  width: 100%;
+}
+
+.tab-container .tab-slider .acc-type .Paper_Ac .title {
+  padding: 40px 0 10px 0;
+  color: #0085ff;
+  font-weight: 700;
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
+}
+
+.tab-container .tab-slider .acc-type .Paper_Ac a {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.3em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+  border: unset;
+  border-color: unset;
+  width: 225px;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(74, 164, 247, 1) 0%, rgba(20, 98, 169, 1) 100%);
+}
+
+.tab-container .tab-slider .acc-type .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 100px 0;
+}
+
+.tab-container .tab-slider .acc-type .item ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tab-container .tab-slider .acc-type .item li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+}
+
+@keyframes left-btn-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.check {
+  animation: left-btn-animation 1s linear infinite;
+  max-width: 33.6px;
+  height: auto;
+  width: 100%;
+}
+
+.tab-container .tab-slider .acc-type .item li span {
+  overflow: hidden;
+  display: block;
+  font-size: 2.5em;
+  font-weight: lighter;
+  padding: 0 0 0px 15px;
+  letter-spacing: 0.1em;
+}
+
+.tab-container .tab-slider .acc-type .Real_Ac {
+  background: url('//img.cfd139.com/source/www/about-us/new-version/Real_Ac_bg.png') no-repeat;
+  background-size: 100% 100%;
+  max-width: 528px;
+  height: 610px;
+  width: 100%;
+}
+
+.tab-container .tab-slider .acc-type .Real_Ac a {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.3em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+  border: unset;
+  border-color: unset;
+  width: 225px;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.tab-container .tab-slider .acc-type .Real_Ac .title {
+  padding: 40px 0 10px 0;
+  color: #ffac00;
+  font-weight: 700;
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
+}
+
+.tab-container .tab-slider .step {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.ipage-component-step,
+.ipage-component-step[data-type=dark],
+.ipage-component-step[data-type=light] {
+  background: url('//sc.cfygxz.com/source/www/homepage/s8_step_bg.png');
+  background-size: 100% 100%;
+  max-width: 755px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  padding: 50px 0 30px 30px;
+}
+
+.ipage-component-step .ipage-component-step-ul {}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  left: 24.5px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #8b8989;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li:last-child::before {
+  height: 0;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li .step-item {
+  display: flex;
+  align-items: center;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li .no-content {
+  align-items: center;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li .step-item .step-item-index {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  background: #8b8989;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li .step-item .step-item-content {
+  flex: 1;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li .step-item .step-item-content .step-item-content-title {
+  font-weight: lighter;
+  font-size: 1.9em;
+  letter-spacing: 0.1em;
+  text-align: start;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li .step-item .step-item-content .step-item-content-detail {
+  font-size: 14px;
+  color: #a8acb1;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li.active .step-item .step-item-index {
+  color: #ffffff;
+  background: #ffab00;
+}
+
+.ipage-component-step .ipage-component-step-ul .step-item-li.active .step-item .step-item-content .step-item-content-title {
+  font-weight: 600;
+}
+
+.ipage-component-step-images {
+  position: absolute;
+  right: -1%;
+  top: -11%;
+}
+
+.ipage-component-step-images .step-item-image>img {
+  max-width: 270px;
+  width: 100%;
+  height: auto;
+}
+
+.ipage-component-step-images .img-3 {
+  position: relative;
+}
+
+.ipage-component-step-images .img-3 .grade-cust {
+  position: absolute;
+  top: 125px;
+  left: -50px;
+}
+
+.ipage-component-step-images .img-3 .grade-cust>img {
+  width: 387px;
+  height: auto;
+}
+
+.tab-container .tab-slider .btn-open {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tab-container .tab-slider .btn-open a {
+  background-color: transparent;
+  border: 1px solid;
+  background-size: 100% 100%;
+  border-color: #ffffff;
+  width: 246px;
+  height: 45px;
+  margin: 0 10px;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.2em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+}
+
+.tab-container .tab-slider .btn-open a:first-child:hover {
+  background-color: #ffffff;
+  border: 1px solid;
+  background-size: 100% 100%;
+  border-color: #ffffff;
+  color: #063584;
+}
+
+.tab-container .tab-slider .btn-open a:last-child {
+  border: unset;
+  border-color: unset;
+  width: 180px;
+  height: 45px;
+  background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.btn-container {
+  position: absolute;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  bottom: -17%;
+  z-index: 99;
+}
+
+.btn-container .icon {
+  /* position: relative; */
+}
+
+.btn-container>img {
+  max-width: 277px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.btn-container a>img {
+  max-width: 277px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.App_code {
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+}
+
+.App_code img {
+  width: 100px;
+  height: 100px;
+}
+
+.App_code span {
+  overflow: hidden;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #000000;
+  border-right: 6px solid rgba(0, 0, 0, 0);
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+  border-left: 6px solid rgba(0, 0, 0, 0);
+}
+
+.App_code.ios-CFD {
+  display: none;
+  left: 13%;
+  bottom: -106px;
+}
+
+.App_code.android-CFD {
+  display: none;
+  bottom: -106px;
+  left: 42%;
+}
+
+/* End bg02 */
+/* Begin bg03 */
+.web-content .web-page.bg03 {
+  background: #ffffff;
+  padding: 80px 0 97px 0;
+}
+
+.bg03 .container .block2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.bg03 .container .block2 .block2_right {
+  flex-basis: 35%;
+  position: relative;
+}
+
+.bg03 .container .block2 .block2_left {
+  flex-basis: 48%;
+}
+
+.bg03 .container .block2 .block2_right .block2_icon {
+  /* max-width: 619px;
+    width: 100%;
+    height: auto; */
+  z-index: 1;
+  position: relative;
+}
+
+.magnifier2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  max-width: 247px;
+  width: 100%;
+  height: auto;
+  animation-name: magnifier-move2;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 2s; */
+  z-index: 3;
+}
+
+@keyframes magnifier-move2 {
+  0% {
+    left: 50%;
+    top: 10%;
+  }
+
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}
+
+.bg03 .container .block2 .block2_left .item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Microsoft JhengHei;
+  font-size: 1.8em;
+}
+
+.bg03 .container .block2 .block2_left .item ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg03 .container .block2 .block2_left .item li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.bg03 .container .block2 .block2_left .item li span {
+  padding-left: 15px;
+  letter-spacing: .1em;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+@keyframes left-btn-animation {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.bg03_icon {
+  animation: left-btn-animation 1s linear infinite;
+  max-width: 36px;
+  height: auto;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  max-width: 1920px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.box .phone-panel {
+  background: url(//sc.cfygxz.com/source/www/acc/closeposition/new-version/CS_bg.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 1099px;
+  width: 100%;
+  height: 162px;
+  z-index: 999;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.phone-panel p {
+  font-size: 2.8em;
+  color: #ffffff;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.phone-panel p img {
+  max-width: 27px;
+  width: 100%;
+  height: 29px;
+}
+
+.phone-panel p span {
+  padding-left: 10px;
+}
+
+
+.phone-panel a {
+  margin: 0 10px;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.2em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+  border: unset;
+  border-color: unset;
+  width: 180px;
+  height: 45px;
+  background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.tips {
+  font-family: Microsoft JhengHei;
+  font-size: 1.4em;
+  padding: 15px 0 0 0;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+/* End bg03 */
+
+/* Begin bg04 */
+.bg04 {
+  background: url('https://sc.cfygxz.com/source/www/acc/closeposition/new-version/bg04.png') no-repeat;
+  background-size: 100% 100%;
+  height: 543px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bg04 .main-title {
+  border-left: 10px solid #ffac00;
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.pros {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+}
+
+.pros>div {
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+}
+
+.pros img {
+  margin: 0 auto;
+}
+
+.pros .title {
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  padding: 10px 0;
+}
+
+.pros .sub-title {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: lighter;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+/* End bg04 */
+/* Begin bg05 */
+.web-page.bg05 {
+  background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/bg2.png') no-repeat;
+  background-size: 100% 100%;
+  height: 521px;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: baseline;
+  flex-flow: column;
+  overflow: visible;
+}
+
+.flex-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.web-page.bg05 .motto {
+  margin: 0 auto;
+}
+
+.web-page.bg05 .motto .main {
+  text-align: center;
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding-left: 25px
+}
+
+.web-page.bg05 .motto .sub {
+  text-align: center;
+  font-size: 2.2em;
+  color: #ffffff;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.web-page.bg05 .motto a {
+  background-size: 100% 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.3em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+  border: unset;
+  border-color: unset;
+  width: 225px;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* End bg05 */
+.web-page.bg06 {
+  background-color: #60646a;
+  padding: 0;
+  height: 100px;
+}
+
+/* Begin promotion-panel */
+.box2 {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.box2 .promotion-panel {
+  position: absolute;
+  background: url(//sc.cfygxz.com/source/www/product/index/promo_bg.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: -290px;
+  max-width: 1107px;
+  width: 100%;
+  height: 172px;
+  margin: 0 auto;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.promotion-panel p {
+  font-size: 2.8em;
+  color: #ffffff;
+  font-weight: bolder;
+  /* letter-spacing: 0.1em; */
+  font-family: Microsoft JhengHei;
+}
+
+.promotion-panel a {
+  margin: 0 10px;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.2em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+  border: unset;
+  border-color: unset;
+  width: 208px;
+  height: 45px;
+  background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* End promotion-panel */
+
+/* web page responsive*/
+
+@media (min-width: 1218px) {
+  .bg02 .container .btn-open {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1367px) {
+  .bg02 .container .btn-open {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .bg02 .container .btn-open {
+    width: 74%;
+  }
+
+}
+
+@media (min-width: 1920px) {
+  .bg02 .container .btn-open {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .inner {
+    width: 90%
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg02 .container .btn-open {
+    width: 68%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg02 .container .btn-open {
+    width: 60%;
+  }
+
+  .ipage-component-step-images .img-3 .grade-cust {
+    left: -20px;
+  }
+
+  .ipage-component-step-images .img-3 .grade-cust>img {
+    width: 309.6px;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .bg02 .container .btn-open {
+    width: 95%;
+    margin-top: 80px;
+  }
+
+  .btn-container {
+    bottom: -16%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg02 .container .btn-open {
+    width: 100%;
+  }
+}
+
+/* mobile version start */
+@media screen and (max-width: 799px) {
+  html {
+    font-size: 4rem;
+  }
+
+  .main {
+    overflow: hidden;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .m {
+    display: block;
+  }
+
+  .main-header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+  }
+
+  .m-header {
+    position: absolute;
+    z-index: 999;
+    top: 1rem;
+    width: 100%;
+    height: 1rem;
+    border-bottom: unset;
+    background-color: #ffffff;
+  }
+
+  /* navigation bar for mobile */
+  .menu {
+    width: 285px;
+    background: #093965;
+    position: relative;
+  }
+
+  .menu .head {
+    padding-top: 0.4rem;
+    font-size: 0;
+    padding-bottom: 0.4rem;
+    text-align: right;
+  }
+
+  .menu .head span {
+    margin-right: 0.2rem;
+    display: block;
+    display: inline-block;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+    background-size: 100% 100%;
+    width: 0.36rem;
+    height: 0.37rem;
+  }
+
+  .menu .head a {
+    margin: 0 auto;
+    display: block;
+    font-size: 0.32rem;
+    width: 215px;
+    background-color: #0096dc;
+    color: #fff;
+    text-align: center;
+    line-height: 0.7rem;
+    margin-top: 0.2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 0.01rem solid transparent;
+    border-radius: 0.06rem;
+  }
+
+  .menu .head a:active {
+    background-color: #0088c8;
+  }
+
+  .menu .expmenu li {
+    position: relative;
+    background: #ffffff;
+    border-top: 0.05rem solid #093965;
+    border-bottom: 0.05rem solid #093965;
+  }
+
+  .menu .expmenu li a {
+    color: #093965;
+    font-size: 0.4rem;
+    height: 0.89rem;
+    line-height: 0.89rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    position: relative;
+    font-weight: 700;
+    border-top: unset;
+  }
+
+  .menu .expmenu li a p {
+    width: 65%;
+    padding-left: 12%;
+  }
+
+  .menu .expmenu li i.limit-time-icon {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.94rem;
+    height: 0.38rem;
+    top: unset;
+    margin-right: 0;
+    left: 2.4rem;
+    animation: lighting 6s infinite;
+  }
+
+  .menu .expmenu li i.new-icon {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.94rem;
+    height: 0.38rem;
+    top: unset;
+    margin-right: 0;
+    left: 2.4rem;
+  }
+
+  .menu .expmenu li:before {
+    border-left: 0.1rem solid transparent;
+    content: "";
+    height: 0.89rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+  }
+
+  .menu .expmenu li i {
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.1rem;
+  }
+
+  .menu .expmenu li span {
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+    width: 0.36rem;
+    height: 0.36rem;
+    background-size: 100% 100%;
+    margin-right: 0.25rem;
+  }
+
+  .menu .expmenu li .down,
+  .menu .expmenu li span {
+    display: inline-block;
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+    width: 0.36rem;
+    height: 0.36rem;
+    background-size: 100% 100%;
+    background-position: unset;
+    margin-right: 0.25rem;
+  }
+
+  .menu .expmenu li .down {
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+    width: 0.36rem;
+    height: 0.06rem;
+  }
+
+  @keyframes lighting {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .menu .expmenu li ul {
+    display: none;
+  }
+
+  .menu .expmenu li ul li a {
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+    padding-left: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    background-color: #093965;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #ffffff;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+    font-size: 0.32rem;
+  }
+
+  .menu .expmenu li ul li a:active {
+    background: #dfdfdf;
+  }
+
+  /* .menu .expmenu li ul li:first-child {
+  border-top: 0.01rem solid #eee;
+} */
+
+  .menu .expmenu .fifth p,
+  .menu .expmenu .first p,
+  .menu .expmenu .forth p,
+  .menu .expmenu .second p,
+  .menu .expmenu .third p {
+    width: 87%;
+  }
+
+  .menu .expmenu>li.current:before {
+    border-color: #ffffff;
+  }
+
+  .menu .expmenu>li.current a p {
+    color: #0958a2;
+  }
+
+  .menu .bottom_btn {
+    border-top: unset;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .menu .bottom_btn a:first-child {
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    border: unset;
+    margin-top: 1rem;
+  }
+
+  .menu .bottom_btn a {
+    width: 3.6rem;
+    margin: 0.5rem auto;
+    height: 0.77rem;
+    line-height: 0.77rem;
+    display: block;
+    color: #ffffff;
+    font-size: 0.35rem;
+    border: 0.01rem solid #ffffff;
+    border-radius: 0.06rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+  }
+
+
+
+  /* .menu .bottom_btn a:active {
+  background: #035;
+  color: #fff;
+  border: 0.01rem solid #035;
+} */
+
+  .panel {
+    /* height: 100%; */
+    position: relative;
+  }
+
+  .slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: auto;
+    z-index: 0;
+    display: none;
+    padding-bottom: 1rem;
+  }
+
+  .slideout-menu-left {
+    left: 0;
+  }
+
+  .slideout-menu-right {
+    right: 0;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    background-color: #f6f6f6;
+    padding-bottom: 0;
+  }
+
+  .slideout-open,
+  .slideout-open .slideout-panel,
+  .slideout-open body {
+    overflow: hidden;
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+  .menu .expmenu li ul li p {
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+    padding-left: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #fecd69;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+    font-size: 0.32rem;
+  }
+
+  .menu .expmenu li ul li.sub-menu-nav {
+    background: #093965;
+    border-top: unset;
+  }
+
+  .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+    display: block !important;
+  }
+
+  .menu .expmenu li ul li ul.sub-child2 li {
+    background: #093965;
+    border-top: unset;
+  }
+
+  .menu .expmenu li ul li ul.sub-child2 li a {
+    padding-left: 0rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+  }
+
+
+  /*End navigation bar for mobile */
+  .web-banner {
+    background: url("https://sc.cfygxz.com/source/www/acc/closeposition/m/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 6.64rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .billboard {
+    background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 1.94rem;
+    width: 5.6rem;
+    position: absolute;
+    padding: 0 0 0 0.5rem;
+    top: 5.65rem;
+    left: 0.15rem;
+    z-index: 99;
+    display: flex;
+    align-items: baseline;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .billboard .title {
+    font-size: 0.55rem;
+    margin: 0;
+  }
+
+  .billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 80%;
+    margin: 0.1rem 0;
+  }
+
+  .billboard .subtitle {
+    font-size: 0.35rem;
+  }
+
+  .main-title {
+    font-size: 0.4rem;
+    margin: 0.6rem 0 0.1rem 0;
+  }
+
+  .contact-details {
+    font-size: .22rem;
+  }
+
+  /* block1 */
+
+  .web-content .web-page.bg01{
+    padding: 1rem 0 0.3rem 0;
+  }
+
+  .bg01 .container .block1 {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .bg01 .container .block1 .block1_left {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg01 .container .block1 .block1_right {
+    flex-basis: 100%;
+    position: relative;
+    margin-bottom: 0.65rem;
+  }
+
+  .bg01_icon {
+    max-width: .37rem;
+  }
+
+  .bg01 .container .block1 .block1_left .item li span {
+    font-size: .3rem;
+  }
+
+  .block1_icon {
+    max-width: 6.19rem;
+  }
+
+  .magnifier {
+    max-width: 2.47rem;
+  }
+
+  /* block2 */
+
+  .web-content .web-page.bg03 {
+    background: #ffffff;
+    padding: 0 0 1rem 0;
+  }
+
+  .bg03 .container .block2 {
+    flex-direction: column-reverse;
+  }
+
+  .bg03 .container .block2 .block2_left .item {
+    flex-direction: row;
+  }
+
+  .bg03 .container .block2 .block2_left {
+    flex-basis: 100%;
+  }
+
+  .bg03 .container .block2 .block2_left .item li span {
+    font-size: 0.3rem;
+  }
+
+  .bg03 .container .block2 .block2_right {
+    flex-basis: 100%;
+    margin-bottom: 0.65rem;
+  }
+
+  .bg03 .container .block2 .block2_right .block2_icon {
+    max-width: 6.03rem;
+    width: 100%;
+    height: auto;
+  }
+
+  @keyframes magnifier-move-m {
+    0% {
+      left: 50%;
+      top: 33%;
+    }
+
+    100% {
+      top: 33%;
+      left: 10%;
+    }
+  }
+
+  .magnifier2 {
+    max-width: 2.47rem;
+    top: 33%;
+    left: 50%;
+    animation-name: magnifier-move-m;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  /* bg05 */
+  .web-page.bg05 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/m/bg2.png') no-repeat;
+    height: 3.67rem;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .flex-panel {
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .web-page.bg05 .motto .main {
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-left: 25px;
+    text-align: center;
+  }
+
+  .web-page.bg05 .motto .sub {
+    font-size: 0.3rem;
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .web-page.bg05 .motto a {
+    font-size: 0.3rem;
+    width: 2.65rem;
+    height: 0.65rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    align-items: center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+  }
+
+
+  /* promotion panel */
+  .web-page.bg06 {
+    background: #ffffff;
+    height: 2.5rem;
+  }
+
+
+  .promotion-panel p {
+    font-size: 0.25rem;
+    text-align: left;
+  }
+
+  .promotion-panel a {
+    font-size: 0.3rem;
+    width: 2.28rem;
+    height: 0.55rem;
+    line-height: 0;
+    align-items: center;
+  }
+
+  .box2 {
+    padding: 0 0 0.3rem 0;
+  }
+
+  .box2 .promotion-panel {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/product/forex/m/promo_bg.png) no-repeat;
+    background-size: 100% 100%;
+    max-width: 7.05rem;
+    height: 1.1rem;
+    bottom: -2rem;
+    justify-content: space-evenly;
+    padding: 0 0.15rem;
+
+  }
+
+  /* phone panel */
+  .box{
+    margin-top: 0;
+  }
+
+  .box .phone-panel {
+    background: url(//sc.cfygxz.com/source/www/acc/closeposition/m/CS_bg.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 2.57rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.15rem;
+  }
+
+  .phone-panel p img{
+    max-width: .27rem;
+    width: 100%;
+    height: .29rem;
+    margin-left: 0.2rem;
+  }
+
+  .phone-panel p{
+    font-size: 0.4rem;
+    margin-left: 12%;
+    margin-right: 10%;
+    align-items: baseline;
+    text-align: center;
+  }
+
+  .tips{
+    font-size: 0.2rem;
+    margin: 0.3rem 0rem 0.3rem 0.3rem;
+  }
+
+  .phone-panel p span{
+    padding-left: 0;
+  }
+
+}

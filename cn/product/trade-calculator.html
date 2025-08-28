@@ -1,0 +1,496 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>交易工具_交易产品_国际</title>
+    <meta name="keywords"
+        content="国际软件下载,交易软件下载,交易平台下载,天指周指" />
+    <meta name="description"
+        content="本栏目提供国际在线交易的软件平台介绍和下载；差价合约/两大主流交易平台自由选择，全天24小时交投，交易时间灵活弹性，双向交易机制，双向获利，60s、小时、日、周、月、年的不同交割时段，长短线灵活交易投资。" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <!--#include file="/cn/template.css.html"-->
+    <!--#include file="/module/html.head.html"-->
+    <link rel="shortcut icon" href="/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
+    <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/css/animate.css" />
+    <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+    <link rel="stylesheet" href="/cn/css/calculator.css" />
+    <script src="/cn/js/jquery-1.11.3.min.js"></script>
+    <script src="/cn/js/angular.min.js"></script>
+    <script src="/cn/js/trade-calculator.js"></script>
+    <script src="/cn/js/homepage/backheader.js"></script>
+</head>
+
+<body ng-controller="myController">
+    <div class="main">
+        <!--#include file="/cn/common-html/suggestion.html"-->
+        <div class="panel" id="m-panel">
+            <!--#include file="/module/html.body.begin.html"-->
+            <!-- Begin header -->
+            <div class="pc">
+                <div class="e-header">
+                    <!--#include file="/cn/template.header.html"-->
+                </div>
+            </div>
+            <div class="m">
+                <script>
+                    menu();
+                </script>
+            </div>
+            <!-- End header -->
+            <div class="web-banner">
+            </div>
+            <div class="inner">
+                <div class="billboard">
+                    <h1 class="title">交易计算器</h1>
+                </div>
+            </div>
+            <div class="contract-commo">
+                <div class="article">
+                    <div class="main-article">
+                        <div class="section2 container clearfix">
+                            <p class="main-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                                &nbsp;&nbsp;免费投资交易工具</p>
+                            <p class="contact-details">
+                                为帮助建立及完善您的交易策略，创富国际免费提供一系列计算器工具，协助您更清晰了解投资在不同产品上所需涉及的成本与本金，在交易路上作出更好的部署。</p>
+                            <ul class="counterTab clearfix">
+                                <li class="counteractive">
+                                    <img class="Tab_ico Tab_icoactive tab-icon1"
+                                        src="https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/tab_icon1.png">
+                                    <span class="Tab_text">点值计算器</span>
+                                </li>
+                                <li>
+                                    <img class="Tab_ico tab-icon2"
+                                        src="https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/tab_icon2.png">
+                                    <span class="Tab_text">保证金计算器</span>
+                                </li>
+                                <li>
+                                    <img class="Tab_ico tab-icon3"
+                                        src="https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/tab_icon3.png">
+                                    <span class="Tab_text">盈利计算器</span>
+                                </li>
+                                <li>
+                                    <img class="Tab_ico tab-icon4"
+                                        src="https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/tab_icon4.png">
+                                    <span class="Tab_text">过夜利息计算器</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--点值计算器-->
+                        <div class="section4 container clearfix">
+                            <p class="section4_Stitle">
+                                点值计算器将帮助您计算出您想交易的货币一个点的价值。这个信息对于确定交易成本以及恰当管理交易风险至关重要。
+                            </p>
+                            <form ng-submit="calculate('one')">
+                                <ul class="link_title clearfix">
+                                    <li class="first_li">
+                                        <p>交易类别</p>
+                                        <select name="drop1" ng-change="spChanged(1)"
+                                            ng-options="p.key as p.value for p in baseProducts" ng-model="type1"
+                                            class="ui-select sel"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易产品</p>
+                                        <!---->
+                                        <select ng-model="product1"
+                                            ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type1} "
+                                            ng-change="typeChanged(product1)" class="ui-select sss-0"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易手数</p>
+                                        <input name="exchange" ng-model="count1" ng-mousedown="count1=''"
+                                            placeholder="0.01" onfocus="this.placeholder=''"
+                                            ng-focus="countFocused('one')" onblur="this.placeholder='0.01'"
+                                            ng-change="countChanged(count1,'one')" type="number" class="input"
+                                            step="0.01" id="input1" />
+                                        <span class="choise">输入0.01至100间数值</span>
+                                    </li>
+                                    <li class="first_li btn-3">
+                                        <button class="Btninput one a" ng-click="calculate('one')">
+                                            计算
+                                        </button>
+                                    </li>
+                                </ul>
+                            </form>
+
+                            <div class="point">
+                                <span>点值</span>
+                                <div class="Btn_1" ng-bind="sumInfo.sum1"></div>
+                                <span>美元</span>
+                                <span class="loadid"></span>
+                            </div>
+                            <div class="last">
+                                <i></i>
+                                <p>
+                                    最后更新时间
+                                    <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--保证金计算器-->
+                        <div class="section4 container clearfix" style="display: none">
+                            <p class="section4_Stitle">
+                                保证金计算器可更准确地计算出您需要多少保证金才能开设一个仓位。选择交易类别，交易产品和交易手数
+                                ，点击“计算”即可。
+                            </p>
+                            <form ng-submit="calculate('two')">
+                                <ul class="link_title spp clearfix">
+                                    <li class="first_li">
+                                        <p>交易类别</p>
+                                        <select name="drop1" ng-change="spChanged(2)" class="ui-select sel"
+                                            ng-options="p.key as p.value for p in baseProducts"
+                                            ng-model="type2"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易产品</p>
+                                        <select ng-model="product2"
+                                            ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type2}"
+                                            ng-change="typeChanged(product2)" class="ui-select sss-0"
+                                            id="inputPro"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易手数</p>
+                                        <input name="exchange" ng-model="count2" ng-mousedown="count2=''"
+                                            onfocus="this.placeholder=''" ng-focus="countFocused('two')"
+                                            onblur="this.placeholder='0.01'" ng-change="countChanged(count2,'two')"
+                                            type="number" class="input" placeholder="0.01" step="0.01" id="input2" />
+                                        <span class="choise">输入0.01至100间数值</span>
+                                    </li>
+                                    <li class="first_li">
+                                        <button class="Btninput one b" ng-click="calculate('two')">
+                                            计算
+                                        </button>
+                                    </li>
+                                </ul>
+                            </form>
+
+                            <div class="point">
+                                <span>所需保证金</span>
+                                <div class="Btn_1" ng-bind="sumInfo.sum2"></div>
+                                <span>美元</span>
+                                <span class="loadid"></span>
+                            </div>
+                            <div class="last">
+                                <i></i>
+                                <p>
+                                    最后更新时间
+                                    <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--盈利金计算器-->
+                        <div class="section4 container clearfix" style="display: none">
+                            <p class="section4_Stitle">
+                                盈利计算器是帮助您推测交易的益损值，检验投资策略是否正确，只需输入您想进出的价格和交易手数即可。
+                            </p>
+                            <form ng-submit="calculate('three')">
+                                <ul class="link_title sppp clearfix">
+                                    <li class="first_li">
+                                        <p>交易类别</p>
+                                        <select name="drop1" ng-change="spChanged(3)" class="ui-select sel"
+                                            ng-options="p.key as p.value for p in baseProducts"
+                                            ng-model="type3"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易产品</p>
+                                        <select ng-model="product3" ng-change="product3Changed()"
+                                            ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type3}"
+                                            class="ui-select sss-0"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易方向</p>
+                                        <select ng-model="jyType" ng-change="calculate('three')"
+                                            class="ui-select sss-0">
+                                            <option selected="selected" value="0">买入(做多)</option>
+                                            <option value="1">卖出(做空)</option>
+                                        </select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>开仓价格</p>
+                                        <input name="exchange" ng-model="kprice" type="number" class="input" step="0.01"
+                                            id="exchange1"
+                                            onkeyup="if(!/^\d+\.?(\d{1,5})?$/.test(this.value)){alert('输入有误，最多只能输入至小数点后五位');this.value='';}" />
+                                    </li>
+                                    <li class="first_li">
+                                        <p>平仓价格</p>
+                                        <input name="exchange" ng-model="pprice" type="number" class="input" step="0.01"
+                                            id="exchange2"
+                                            onkeyup="if(!/^\d+\.?(\d{1,5})?$/.test(this.value)){alert('输入有误，最多只能输入至小数点后五位');this.value='';}" />
+                                    </li>
+                                    <li class="first_li max1920">
+                                        <p>交易手数</p>
+                                        <form action="" method="post">
+                                            <input name="exchange" ng-model="count3" ng-mousedown="count3=''"
+                                                onfocus="this.placeholder=''" onblur="this.placeholder='0.01'"
+                                                ng-change="countChanged(count3)" type="number" class="input" step="0.01"
+                                                id="input5" />
+                                            <span class="choise">输入0.01至100间数值</span>
+                                        </form>
+                                    </li>
+                                    <li class="first_li btn-3 sp">
+                                        <button class="Btninput one c" ng-click="calculate('three')" id="BTn3">
+                                            计算
+                                        </button>
+                                    </li>
+                                </ul>
+                            </form>
+
+                            <div class="point">
+                                <span>利润所得</span>
+                                <div class="Btn_1" ng-bind="sumInfo.sum3"></div>
+                                <span>美元</span>
+                                <span class="loadid"></span>
+                            </div>
+                            <div class="last">
+                                <i></i>
+                                <p>
+                                    最后更新时间
+                                    <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--过夜利息计算器-->
+                        <div class="section4 container clearfix" style="display: none">
+                            <p class="section4_Stitle">
+                                过夜利息计算器将帮您计算出过夜持仓所需要的利息，只需输入交易手数和持有天数即可。
+                            </p>
+                            <form ng-submit="calculate('four')">
+                                <ul class="link_title sppp clearfix">
+                                    <li class="first_li">
+                                        <p>交易类别</p>
+                                        <select name="drop1" ng-change="spChanged(4)" class="ui-select sel"
+                                            ng-options="p.key as p.value for p in baseProducts"
+                                            ng-model="type4"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>交易产品</p>
+                                        <select ng-model="product4" ng-change="product4Changed()"
+                                            ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type4}"
+                                            class="ui-select sel"></select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>开仓方向</p>
+                                        <select ng-model="jyType" ng-change="calculate('fore')" class="ui-select sss-0">
+                                            <option selected="selected" value="0">买入(做多)</option>
+                                            <option value="1">卖出(做空)</option>
+                                        </select>
+                                    </li>
+                                    <li class="first_li">
+                                        <p class="thisChange">开仓价格</p>
+                                        <input name="exchange" ng-model="kprice4" type="number" class="input"
+                                            step="0.01" id="exchange1"
+                                            onkeyup="if(!/^\d+\.?(\d{1,5})?$/.test(this.value)){alert('输入有误，最多只能输入至小数点后五位');this.value='';}" />
+                                    </li>
+                                    <li class="first_li max1920">
+                                        <p>交易手数</p>
+                                        <input name="exchange" ng-model="count4" ng-mousedown="count4=''"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='0.01'"
+                                            ng-change="countChanged(count4)" type="number" class="input" step="0.01"
+                                            id="input6" />
+                                        <span class="choise">输入0.01至100间数值</span>
+                                    </li>
+                                    <li class="first_li">
+                                        <p>持有天数</p>
+                                        <input name="exchange4" ng-model="pprice4" type="number" class="input"
+                                            oninput="limitInput(this)" onfocus="clearDefaultValueOnMobile(this)"
+                                            value="1" id="exchange3" />
+                                        <span class="choise">输入1至360间数值test3</span>
+                                    </li>
+                                    <li class="first_li btn-3 sp">
+                                        <button class="Btninput one c" ng-click="calculate('fore')" type="submit"
+                                            id="BTn4">
+                                            计算
+                                        </button>
+                                    </li>
+                                </ul>
+                            </form>
+
+                            <div class="point">
+                                <span>过夜利息</span>
+                                <div class="Btn_1" ng-bind="sumInfo.sum4"></div>
+                                <span>{{sumInfo.currency}}</span>
+                                <span class="loadid"></span>
+                            </div>
+                            <div class="last">
+                                <i></i>
+                                <p>
+                                    最后更新时间
+                                    <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="commtitle_769 container">
+                            信息免责声明：本计算器只用于差价合约平台的产品计算，具体请参考交易平台，以上点值计算器之汇率及参数会根据市况及实际市场波幅而改变，保证金计算为差价合约平台的初始保证金，日内和周末强平保证金请参考<a
+                                href="/source/material/CFD_details.pdf"
+                                target="_blank" style="color: #1a558e">创富CFD平台合约细则</a>
+                        </p>
+                    </div>
+                    <div class="pc">
+                        <div class="web-page bg02">
+                            <div class="container">
+                                <p class="main-title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                                    &nbsp;&nbsp;查看我们所有产品</p>
+                                <div class="more-product">
+                                    <div class="forex" data-aos="fade-down" data-aos-delay="1000"
+                                        data-aos-duration="800">
+                                        <a class="main-intro" href="/cn/product/forex.html">外汇</a>
+                                        <p class="sub-intro">交易主要货币对、次要货币对和稀有货币对</p>
+                                    </div>
+                                    <div class="commodities" data-aos="fade-down" data-aos-delay="1000"
+                                        data-aos-duration="800">
+                                        <a class="main-intro" href="/cn/product/commodities.html">商品</a>
+                                        <p class="sub-intro">提供能源商品、基础原材料和农副产品</p>
+                                    </div>
+                                    <div class="indices" data-aos="fade-down" data-aos-delay="1200"
+                                        data-aos-duration="800">
+                                        <a class="main-intro" href="/cn/product/indices.html">指数</a>
+                                        <p class="sub-intro">交易中华300 、美国Tech100、香港50全球热门指数</p>
+                                    </div>
+                                    <div class="stock" data-aos="fade-down" data-aos-delay="1400"
+                                        data-aos-duration="800">
+                                        <a class="main-intro" href="/cn/product/stock.html">股票</a>
+                                        <p class="sub-intro">买卖及持有全球知名企业的股票</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web-page bg03">
+                        <div class="container flex-panel">
+                            <div class="motto">
+                                <p class="main" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">准备好了吗？
+                                </p>
+                                <p class="sub" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                                    开立账户只须30秒
+                                </p>
+                                <a data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000"
+                                    href="/cn/pc/rcfd_account"
+                                    onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pc">
+                        <div class="web-page bg04"></div>
+                        <div class="box container">
+                            <div class="menu">
+                                <div class="left-title">
+                                    <p class="main-title" data-aos="fade-down" data-aos-delay="600"
+                                        data-aos-duration="800">
+                                        &nbsp;&nbsp;浏览更多</p>
+                                    <p class="sub-title">为您提供各种专业产品服务</p>
+                                </div>
+
+                                <div class="right-menu">
+
+                                    <a href="/cn/aboutUS.html"><span>关于创富</span><img class="arrow_icon"
+                                            src="/source/www/about-us/new-version/arrow_icon.png"></a>
+                                    <hr class="line">
+                                    <a href="/cn/acc/terms.html"><span>账户类型</span><img class="arrow_icon"
+                                            src="/source/www/about-us/new-version/arrow_icon.png"></a>
+                                    <hr class="line">
+                                    <a href="/cn/platform/cfd/step.html"><span>操作指南</span><img class="arrow_icon"
+                                            src="/source/www/about-us/new-version/arrow_icon.png"></a>
+                                    <hr class="line">
+                                    <a href="/cn/faq.html"><span>常见问题</span><img class="arrow_icon"
+                                            src="/source/www/about-us/new-version/arrow_icon.png"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m">
+                    <!--底部-->
+                    <script>
+                        footer();
+                    </script>
+                    <!--底部结束-->
+                    <!--遮罩层-->
+                    <div id="m-overlay" class="overlay" node-name="overlay"></div>
+                    <!--遮罩层 end-->
+                </div>
+                <!--#include file="/cn/template.footer.html"-->
+            </div>
+            <!-- End Main contents -->
+            <div class="pc">
+                <!--#include file="/cn/template.right-1.html"-->
+            </div>
+            <div class="m">
+                <!--#include file="/cn/nav.html"-->
+            </div>
+        </div>
+</body>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src="/cn/js/wow.min.js"></script>
+<script src="/cn/js/forex.js"></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script>
+    AOS.init({
+        offset: 100,
+        easing: "ease",
+        duration: 800,
+        delay: 100,
+        once: false
+    });
+</script>
+<script>
+    function limitInput(input) {
+        var limitNum = input.value.replace(/[^0-9]+/g, '');
+        if (limitNum !== '') {
+            if (limitNum > 0 && limitNum <= 360) {
+                input.value = limitNum;
+            } else {
+                input.value = 1;
+            }
+        }
+    }
+
+    function clearDefaultValueOnMobile(input) {
+        if (input.value === "1") {
+            input.value = "";
+            input.focus();
+        }
+    }
+
+    function bindClearDefaultValue() {
+        var input = document.getElementById('exchange3');
+        input.addEventListener('input', function () {
+            limitInput(this);
+        });
+        input.addEventListener('focus', function () {
+            clearDefaultValueOnMobile(this);
+        });
+    }
+
+    window.onload = function () {
+        bindClearDefaultValue();
+    };
+
+    $(function () {
+        var $li = $(".counterTab li");
+        var $ul = $(".main-article .section4");
+        $li.click(function () {
+            var $this = $(this);
+            var $t = $this.index();
+            $li.removeClass().find(".Tab_ico").removeClass("Tab_icoactive");
+            $this.addClass("counteractive").find(".Tab_ico").addClass("Tab_icoactive");
+
+            $ul.hide().eq($t).show();
+        });
+    });
+</script>
+
+</html>

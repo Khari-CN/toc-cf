@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* 共用样式 */
+body{ margin:0 auto; padding:0; font-family:"微软雅黑";color:#666;}
+a img{ border:none;}
+dl,dt,dd,ul,li,div{ margin:0; padding:0;}
+.clear{ clear:both;} 
+
+
+/* banner广告 */
+.lpdirect1_banner{ width:300px;margin:0 auto; height:50px;margin-top:80px;
+	clear:both;border:1px solid #aaa
+;background-color:#fff;
+border-bottom:none;
+	position:absolute;
+	top:307px;
+	left:671px;
+}
+.guess-text{
+	position:absolute;
+	top:415px;
+	left:510px;
+	font-size:1.8em;
+	color:#666;
+}
+.wrapper{
+	margin:0 auto;
+}
+.lpdirect1_banner_djs{ margin-left:2px; clear:both;}
+
+
+
+
+
+
+/*/!* EIA原油库存历史数据 *!/*/
+/*.time2{ height:30px; float:right; padding-top:35px; width:280px; text-align:center; font-weight:bold; color:#2356a9; font-size:20px;}*/
+/*.EIA_sj{ width:1000px; margin:0 auto; clear:both; text-align:center; color:#fffb02; font-size:24px; padding-bottom:30px;}*/
+
+
+
+
+
+
+

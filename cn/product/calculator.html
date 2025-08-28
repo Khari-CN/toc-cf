@@ -1,0 +1,2005 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <title>交易工具_交易产品_国际</title>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta
+      name="keywords"
+      content="国际软件下载,交易软件下载,交易平台下载,天指周指"
+    />
+    <meta
+      name="description"
+      content="本栏目提供国际在线交易的软件平台介绍和下载；差价合约/两大主流交易平台自由选择，全天24小时交投，交易时间灵活弹性，双向交易机制，双向获利，60s、小时、日、周、月、年的不同交割时段，长短线灵活交易投资。"
+    />
+    <!--#include file="/module/html.head.html"-->
+    <!--#include file="/cn/template.css.html"-->
+    <link
+      rel="stylesheet"
+      href="/cn/css/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/cn/css/indices.css"
+    />
+    <script src="/cn/js/angular.min.js"></script>
+  </head>
+
+  <body ng-controller="myController">
+    <!--#include file="/module/html.body.begin.html"-->
+    <div class="contract-commo">
+      <!--#include file="/cn/template.header.html"-->
+      <!-- =====Begin main content contract page===== -->
+      <div class="top-banner">
+        <div class="img-banner-commodities counter">
+          <div class="container">
+            <div class="title-banner">交易计算器</div>
+            <div class="sub-title">
+              为客户开发免费的工具和计算器，帮助客户预测交易结果并完善交易策略
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 面包屑-->
+      <div class="crumb-wrap">
+        <div class="w clearfix">
+          <div class="item"><a href="/">首页</a></div>
+          <div class="item sep">></div>
+          <div class="item"><a href="commodities.html">交易产品</a></div>
+          <div class="item sep">></div>
+          <div class="item"><a href="javascript:;">交易计算器</a></div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="main-links">
+          <div class="container">
+            <ul class="link-box clearfix">
+              <li class="ic-Js active">
+                <a
+                  href="/cn/product/calculator.html"
+                  >交易计算器</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-article">
+          <div class="section2 container clearfix">
+            <p class="counter_Dtitle">交易计算器</p>
+            <p class="counter_Stitle">
+              交易计算器协助客户清晰投资在不同产品上所需涉及的成本与本金准备，让您在交易路上作出好的部署。
+            </p>
+            <ul class="counterTab clearfix">
+              <li class="counteractive">
+                <span class="Tab_ico Tab_icoactive"></span>
+                <p class="Tab_text">点值计算器</p>
+              </li>
+              <li>
+                <span class="Tab_ico"></span>
+                <p class="Tab_text">保证金计算器</p>
+              </li>
+              <li>
+                <span class="Tab_ico"></span>
+                <p class="Tab_text">盈利计算器</p>
+              </li>
+              <li>
+                <span class="Tab_ico"></span>
+                <p class="Tab_text">过夜利息计算器</p>
+              </li>
+            </ul>
+          </div>
+          <!--点值计算器-->
+          <div class="section4 container clearfix">
+            <p class="section4_Stitle">
+              点值计算器将帮助您计算出您想交易的货币一个点的价值。这个信息对于确定交易成本以及恰当管理交易风险至关重要
+            </p>
+            <form ng-submit="calculate('one')">
+              <ul class="link_title clearfix">
+                <li class="first_li">
+                  <p>交易类别</p>
+                    <select
+                      name="drop1"
+                      ng-change="spChanged(1)"
+                      ng-options="p.key as p.value for p in baseProducts"
+                      ng-model="type1"
+                      class="ui-select sel"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易产品</p>
+                    <!---->
+                    <select
+                      ng-model="product1"
+                      ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type1} "
+                      ng-change="typeChanged(product1)"
+                      class="ui-select sss-0"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易手数</p>
+                    <input
+                      name="exchange"
+                      ng-model="count1"
+                      ng-mousedown="count1=''"
+                      placeholder="0.01"
+                      onfocus="this.placeholder=''"
+                      ng-focus="countFocused('one')"
+                      onblur="this.placeholder='0.01'"
+                      ng-change="countChanged(count1,'one')"
+                      type="number"
+                      class="input"
+                      step="0.01"
+                      id="input1"
+                    />
+                    <span class="choise">输入0.01至100间数值</span>
+                </li>
+                <li class="first_li btn-3">
+                  <button class="Btninput one a" ng-click="calculate('one')">
+                    计算
+                  </button>
+                </li>
+              </ul>
+            </form>
+            <div class="point">
+              <span>点值</span>
+              <div class="Btn_1" ng-bind="sumInfo.sum1"></div>
+              <span>美元</span>
+              <span class="loadid"></span>
+            </div>
+            <div class="last">
+              <i></i>
+              <p>
+                最后更新时间
+                <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+              </p>
+            </div>
+          </div>
+          <!--保证金计算器-->
+          <div class="section4 container clearfix" style="display: none">
+            <p class="section4_Stitle">
+              保证金计算器可更准确地计算出您需要多少保证金才能开设一个仓位。选择交易类别，交易产品和交易手数
+              ，点击“计算”即可。
+            </p>
+            <form ng-submit="calculate('two')">
+              <ul class="link_title spp clearfix">
+                <li class="first_li">
+                  <p>交易类别</p>
+                    <select
+                      name="drop1"
+                      ng-change="spChanged(2)"
+                      class="ui-select sel"
+                      ng-options="p.key as p.value for p in baseProducts"
+                      ng-model="type2"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易产品</p>
+                    <select
+                      ng-model="product2"
+                      ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type2}"
+                      ng-change="typeChanged(product2)"
+                      class="ui-select sss-0"
+                      id="inputPro"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易手数</p>
+                    <input
+                      name="exchange"
+                      ng-model="count2"
+                      ng-mousedown="count2=''"
+                      onfocus="this.placeholder=''"
+                      ng-focus="countFocused('two')"
+                      onblur="this.placeholder='0.01'"
+                      ng-change="countChanged(count2,'two')"
+                      type="number"
+                      class="input"
+                      placeholder="0.01"
+                      step="0.01"
+                      id="input2"
+                    />
+                    <span class="choise">输入0.01至100间数值</span>
+                </li>
+                <li class="first_li">
+                  <button class="Btninput one b" ng-click="calculate('two')">
+                    计算
+                  </button>
+                </li>
+              </ul>
+            </form>
+            <div class="point">
+              <span>所需保证金</span>
+              <div class="Btn_1" ng-bind="sumInfo.sum2"></div>
+              <span>美元</span>
+              <span class="loadid"></span>
+            </div>
+            <div class="last">
+              <i></i>
+              <p>
+                最后更新时间
+                <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+              </p>
+            </div>
+          </div>
+          <!--盈利金计算器-->
+          <div class="section4 container clearfix" style="display: none">
+            <p class="section4_Stitle">
+              盈利计算器是帮助您推测交易的益损值，检验投资策略是否正确，只需输入您想进出的价格和交易手数即可。
+            </p>
+            <form ng-submit="calculate('three')">
+              <ul class="link_title sppp clearfix">
+                <li class="first_li">
+                  <p>交易类别</p>
+                    <select
+                      name="drop1"
+                      ng-change="spChanged(3)"
+                      class="ui-select sel"
+                      ng-options="p.key as p.value for p in baseProducts"
+                      ng-model="type3"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易产品</p>
+                    <select
+                      ng-model="product3"
+                      ng-change="product3Changed()"
+                      ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type3}"
+                      class="ui-select sss-0"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易方向</p>
+                    <select
+                      ng-model="jyType"
+                      ng-change="calculate('three')"
+                      class="ui-select sss-0"
+                    >
+                      <option selected="selected" value="0">买入(做多)</option>
+                      <option value="1">卖出(做空)</option>
+                    </select>
+                </li>
+                <li class="first_li">
+                  <p>开仓价格</p>
+                  <input
+                    name="exchange"
+                    ng-model="kprice"
+                    type="number"
+                    class="input"
+                    step="0.01"
+                    id="exchange1"
+                    onkeyup="if(!/^\d+\.?(\d{1,5})?$/.test(this.value)){alert('输入有误，最多只能输入至小数点后五位');this.value='';}"
+                  />
+                </li>
+                <li class="first_li">
+                  <p>平仓价格</p>
+                  <input
+                    name="exchange"
+                    ng-model="pprice"
+                    type="number"
+                    class="input"
+                    step="0.01"
+                    id="exchange2"
+                    onkeyup="if(!/^\d+\.?(\d{1,5})?$/.test(this.value)){alert('输入有误，最多只能输入至小数点后五位');this.value='';}"
+                  />
+                </li>
+                <li class="first_li max1920">
+                  <p>交易手数</p>
+                  <form action="" method="post">
+                    <input
+                      name="exchange"
+                      ng-model="count3"
+                      ng-mousedown="count3=''"
+                      onfocus="this.placeholder=''"
+                      onblur="this.placeholder='0.01'"
+                      ng-change="countChanged(count3)"
+                      type="number"
+                      class="input"
+                      step="0.01"
+                      id="input5"
+                    />
+                    <span class="choise">输入0.01至100间数值</span>
+                  </form>
+                </li>
+                <li class="first_li btn-3 sp">
+                  <button
+                    class="Btninput one c"
+                    ng-click="calculate('three')"
+                    id="BTn3"
+                  >
+                    计算
+                  </button>
+                </li>
+              </ul>
+            </form>
+            <div class="point">
+              <span>利润所得</span>
+              <div class="Btn_1" ng-bind="sumInfo.sum3"></div>
+              <span>美元</span>
+              <span class="loadid"></span>
+            </div>
+            <div class="last">
+              <i></i>
+              <p>
+                最后更新时间
+                <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+              </p>
+            </div>
+          </div>
+
+          <!--过夜利息计算器-->
+          <div class="section4 container clearfix" style="display: none">
+            <p class="section4_Stitle">
+              过夜利息计算器将帮您计算出过夜持仓所需要的利息，只需输入交易手数和持有天数即可。
+            </p>
+            <form ng-submit="calculate('four')">
+              <ul class="link_title sppp clearfix">
+                <li class="first_li">
+                  <p>交易类别</p>
+                    <select
+                      name="drop1"
+                      ng-change="spChanged(4)"
+                      class="ui-select sel"
+                      ng-options="p.key as p.value for p in baseProducts"
+                      ng-model="type4"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>交易产品</p>
+                    <select
+                      ng-model="product4"
+                      ng-change="product4Changed()"
+                      ng-options="p.key as p.chineseName for p in data.data1 | filter:{parent:type4}"
+                      class="ui-select sss-0"
+                    ></select>
+                </li>
+                <li class="first_li">
+                  <p>开仓方向</p>
+                    <select
+                      ng-model="jyType"
+                      ng-change="calculate('fore')"
+                      class="ui-select sss-0"
+                    >
+                      <option selected="selected" value="0">买入(做多)</option>
+                      <option value="1">卖出(做空)</option>
+                    </select>
+                </li>
+                <li class="first_li">
+                  <p class="thisChange">开仓价格</p>
+                  <input
+                    name="exchange"
+                    ng-model="kprice4"
+                    type="number"
+                    class="input"
+                    step="0.01"
+                    id="exchange1"
+                    onkeyup="if(!/^\d+\.?(\d{1,5})?$/.test(this.value)){alert('输入有误，最多只能输入至小数点后五位');this.value='';}"
+                  />
+                </li>
+                <li class="first_li max1920">
+                  <p>交易手数</p>
+                    <input
+                      name="exchange"
+                      ng-model="count4"
+                      ng-mousedown="count4=''"
+                      onfocus="this.placeholder=''"
+                      onblur="this.placeholder='0.01'"
+                      ng-change="countChanged(count4)"
+                      type="number"
+                      class="input"
+                      step="0.01"
+                      id="input6"
+                    />
+                    <span class="choise">输入0.01至100间数值</span>
+                </li>
+                <li class="first_li">
+                  <p>持有天数</p>
+                  <input
+                    name="exchange4"
+                    ng-model="pprice4"
+                    type="number"
+                    class="input"
+                    onkeyup="var limitNum = $(this).val().replace(/[^0-9]+/g, '');if(limitNum>0&&limitNum<=360){$(this).val(limitNum);}else{$(this).val(1);}"
+                    id="exchange3"
+                  />
+                  <span class="choise">输入1至360间数值</span>
+                </li>
+                <li class="first_li btn-3 sp">
+                  <button
+                    class="Btninput one c"
+                    ng-click="calculate('fore')"
+                    type="submit"
+                    id="BTn4"
+                  >
+                    计算
+                  </button>
+                </li>
+              </ul>
+            </form>
+            <div class="point">
+              <span>过夜利息</span>
+              <div class="Btn_1" ng-bind="sumInfo.sum4"></div>
+              <span>{{sumInfo.currency}}</span>
+              <span class="loadid"></span>
+            </div>
+            <div class="last">
+              <i></i>
+              <p>
+                最后更新时间
+                <span ng-bind="time|date:'yyyy-MM-dd HH:mm:ss'"></span>
+              </p>
+            </div>
+          </div>
+
+          <p class="commtitle_768">
+            信息免责声明：本计算器只用于差价合约平台的产品计算，具体请参考交易平台，以上点值计算器之汇率及参数会根据市况及实际市场波幅而改变，保证金计算为差价合约平台的初始保证金，日内和周末强平保证金请参考<a
+              href="/source/material/CFD_details.pdf"
+              target="_blank"
+              style="color: #0096db"
+              >创富CFD平台合约细则</a
+            >
+          </p>
+          <p class="commtitle_769 container">
+            信息免责声明：本计算器只用于差价合约平台的产品计算，具体请参考交易平台，以上点值计算器之汇率及参数会根据市况及实际市场波幅而改变，保证金计算为差价合约平台的初始保证金，日内和周末强平保证金请参考<a
+              href="/source/material/CFD_details.pdf"
+              target="_blank"
+              style="color: #0096db"
+              >创富CFD平台合约细则</a
+            >
+          </p>
+          <div class="pic_foot container clearfix">
+            <p class="commtitle">下一步你需要了解</p>
+            <div class="box_foot">
+              <div class="box left">
+                <span class="commtitle_pic">
+                  <img
+                    src="/source/www/product/counter/img-1.jpg"
+                  />
+                </span>
+                <div class="box_tit">
+                  <p class="ic_1">外汇合约细则</p>
+                  <p class="ic_2">
+                    包括全球20种热门的货币产品，处于低水平点差及高达 500
+                    倍的杠杆
+                  </p>
+                  <a
+                    href="/cn/product/forex/cfd-contract.html"
+                    class="look-more"
+                    >了解更多</a
+                  >
+                </div>
+              </div>
+              <div class="box right">
+                <span class="commtitle_pic">
+                  <img
+                    src="/source/www/product/counter/img-02.jpg"
+                  />
+                </span>
+                <div class="box_tit">
+                  <p class="ic_1">了解差价合约平台</p>
+                  <p class="ic_2">
+                    以保证交易的差价合约平台，支持电脑及移动版，多种图表及技术指标分析，合共多达68种
+                  </p>
+                  <a
+                    href="/cn/platform/cfd-intro.html"
+                    class="look-more"
+                    >了解更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box_foot768">
+              <ul>
+                <li>
+                  <span>
+                    <img
+                      src="/source/www/product/counter/img-2.jpg"
+                    />
+                  </span>
+                  <div class="box_foot768_right">
+                    <h5>外汇合约细则</h5>
+                    <p>含全球多种热门产品交易，低水平点差及500倍杠杆</p>
+                  </div>
+                </li>
+                <li>
+                  <span>
+                    <img
+                      src="/source/www/product/counter/img-02.jpg"
+                    />
+                  </span>
+                  <div class="box_foot768_right">
+                    <h5>了解差价合约平台</h5>
+                    <p>保证金交易模式，操作便捷智能化体验</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="Be_us768 container">
+            <p class="Be_ustitle">成为我们的客户</p>
+            <p class="Be_ustext">
+              不同交易方式相同投资机会，实时进行开户及平台下载
+            </p>
+            <ul class="link_title BTn clearfix">
+              <li class="le_btn">
+                <a
+                  href="/cn/mobile/rcfd_account"
+                  onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');"
+                >
+                  真实开户
+                </a>
+              </li>
+              <li class="ri_btn">
+                <a
+                  href="/cn/mobile/dcfd_account"
+                  onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');"
+                >
+                  模拟体验
+                </a>
+              </li>
+            </ul>
+            <span class="Download"> 平台下载 </span>
+            <!--ios下载平台-->
+            <div class="ios">
+              <ul class="link_title BTn BTn2 clearfix">
+                <li class="le_btn">
+                  <a
+                    href="https://itunes.apple.com/us/app/chuang-fucfd/id1153506842?mt=8"
+                    >差价合约</a
+                  >
+                </li>
+                <li class="le_btn">
+                  <a
+                    href="https://itunes.apple.com/us/app/chuang-fu-jin-rong-er-yuan/id849055502?|=zh&|s=1&mt=8"
+                    >秒速交易</a
+                  >
+                </li>
+              </ul>
+              <!--点击ICO出现二维码-->
+              <ul class="footer_ico">
+                <li class="clickico">
+                  <div class="code">
+                    <p class="Lookcode">查看二维码</p>
+                    <span class="code_big">
+                      <img src="/source/www/product/counter/fourcode_big.jpg"/
+                      >
+                    </span>
+                    <span class="code_small">
+                      <img
+                        src="/source/www/product/counter/one-samll.jpg"
+                      />
+                    </span>
+                  </div>
+                </li>
+                <li class="clickico">
+                  <div class="code">
+                    <p class="Lookcode">查看二维码</p>
+                    <span class="code_big">
+                      <img src="/source/www/product/counter/fivecode_big.jpg"/
+                      >
+                    </span>
+                    <span class="code_small">
+                      <img
+                        src="/source/www/product/counter/two-samll.jpg"
+                      />
+                    </span>
+                  </div>
+                </li>
+                <li class="clickico">
+                  <div class="code">
+                    <p class="Lookcode">查看二维码</p>
+                    <span class="code_big">
+                      <img src="/source/www/product/counter/sixcode_big.jpg"/
+                      >
+                    </span>
+                    <span class="code_small">
+                      <img
+                        src="/source/www/product/counter/three-samll.jpg"
+                      />
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--安卓下载平台-->
+            <div class="Android">
+              <ul class="link_title BTn BTn2 clearfix">
+                <li class="le_btn">
+                  <a
+                    href="download/CFD_APP.apk"
+                    onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadAndroid', 'PC_GW', '1')"
+                    >差价合约</a
+                  >
+                </li>
+                <li class="le_btn">
+                  <a href="download/CF88Target.apk">秒速交易</a>
+                </li>
+              </ul>
+              <!--点击Android出现二维码-->
+              <ul class="footer_ico">
+                <li class="clickico">
+                  <div class="code">
+                    <p class="Lookcode">查看二维码</p>
+                    <span class="code_big">
+                      <img src="/source/www/product/counter/onecode_big.jpg"/
+                      >
+                    </span>
+                    <span class="code_small">
+                      <img
+                        src="/source/www/product/counter/one-samll.jpg"
+                      />
+                    </span>
+                  </div>
+                </li>
+                <li class="clickico">
+                  <div class="code">
+                    <p class="Lookcode">查看二维码</p>
+                    <span class="code_big">
+                      <img src="/source/www/product/counter/twocode_big.jpg"/
+                      >
+                    </span>
+                    <span class="code_small">
+                      <img
+                        src="/source/www/product/counter/two-samll.jpg"
+                      />
+                    </span>
+                  </div>
+                </li>
+                <li class="clickico">
+                  <div class="code">
+                    <p class="Lookcode">查看二维码</p>
+                    <span class="code_big">
+                      <img src="/source/www/product/counter/threecode_big.jpg"/
+                      >
+                    </span>
+                    <span class="code_small">
+                      <img
+                        src="/source/www/product/counter/three-samll.jpg"
+                      />
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--新的手机端底部-->
+          <div class="footer_new">
+            <div class="footer_new_text">
+              <p>
+                FSP注册
+              </p>
+              <p>注册牌照号﹕507506</p>
+              <p>
+                国际为金融纠纷调解处计划成员
+              </p>
+              <ul class="footer_new_pic">
+                <li>
+                  <img
+                    src="/source/www/product/counter/footer3.png"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="/source/www/product/counter/footer2.png"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="/source/www/product/counter/footer1.png"
+                  />
+                </li>
+              </ul>
+              <ul class="footer_new_a">
+                <li>
+                  <a href=""> 私隐条款 </a>
+                </li>
+                <li>
+                  <a href=""> 免责声明 </a>
+                </li>
+                <li>
+                  <a href=""> 客户协议 </a>
+                </li>
+                <li>
+                  <a href=""> 网站地图 </a>
+                </li>
+              </ul>
+              <!--<p>Copyright © 2018 CF Financial Company Ltd. All rights reserved</p>-->
+              <p>
+                Copyright © 2018
+                国际有限公司 版权所有
+                不得转载
+              </p>
+            </div>
+          </div>
+          <!-- Begin new register customer footer form-->
+          <!--#include file="/cn/template.notification.html"-->
+          <!-- End new register customer footer form-->
+        </div>
+      </div>
+      <!-- =====End main content contract page===== -->
+      <!--#include file="/cn/template.js.html"-->
+      <!--#include file="/cn/template.footer.html"-->
+      <!--#include file="/cn/template.right-1.html"-->
+      <!--#include file="/module/html.body.end.html"-->
+    </div>
+    <script src="/cn/js/wow.min.js"></script>
+    <script src="/cn/js/forex.js"></script>
+    <!-- <script src="../js/jquery-1.11.3.min.js"></script> -->
+    <footer class="footer_375">
+      <nav class="footer-nav">
+        <ul>
+          <li class="footer-left">
+            <!-- <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&amp;uin=800163923"
+              ><i></i>QQ客服</a
+            > -->
+            <a
+              href="/cn/onlinecs.html"
+              ><i></i>在线客服</a
+            >
+          </li>
+          <li class="footer-right">
+            <nav></nav>
+            <a href="tel:400-075-9886"><i></i>客服热线</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script>
+    var _ = {
+      /**
+       * 根据条件筛选数组中的数据
+       * @param list 数组
+       * @param where json对象
+       * @returns {Array}
+       */
+      where: function (list, where) {
+        var result = [];
+        for (var i = 0; i < list.length; i++) {
+          var tmp = list[i];
+          var dy = true; //
+          for (x in where) {
+            if (tmp[x] !== where[x]) {
+              dy = false;
+            }
+          }
+          if (dy) {
+            result.push(tmp);
+          }
+        }
+        return result;
+      },
+    };
+    var loadInfo = {
+      open: function () {
+        $(".loadid").addClass("lazyload");
+      },
+      close: function () {
+        $(".loadid").removeClass("lazyload");
+      },
+    };
+
+    function add(a, b) {
+      var c, d, e;
+      try {
+        c = a.toString().split(".")[1].length;
+      } catch (f) {
+        c = 0;
+      }
+      try {
+        d = b.toString().split(".")[1].length;
+      } catch (f) {
+        d = 0;
+      }
+      return (e = Math.pow(10, Math.max(c, d))), (mul(a, e) + mul(b, e)) / e;
+    }
+
+    function sub(a, b) {
+      var c, d, e;
+      try {
+        c = a.toString().split(".")[1].length;
+      } catch (f) {
+        c = 0;
+      }
+      try {
+        d = b.toString().split(".")[1].length;
+      } catch (f) {
+        d = 0;
+      }
+      return (e = Math.pow(10, Math.max(c, d))), (mul(a, e) - mul(b, e)) / e;
+    }
+
+    function mul(a, b) {
+      var c = 0,
+        d = a.toString(),
+        e = b.toString();
+      try {
+        c += d.split(".")[1].length;
+      } catch (f) {}
+      try {
+        c += e.split(".")[1].length;
+      } catch (f) {}
+      return (
+        (Number(d.replace(".", "")) * Number(e.replace(".", ""))) /
+        Math.pow(10, c)
+      );
+    }
+
+    function div(a, b) {
+      var c,
+        d,
+        e = 0,
+        f = 0;
+      try {
+        e = a.toString().split(".")[1].length;
+      } catch (g) {}
+      try {
+        f = b.toString().split(".")[1].length;
+      } catch (g) {}
+      return (
+        (c = Number(a.toString().replace(".", ""))),
+        (d = Number(b.toString().replace(".", ""))),
+        mul(c / d, Math.pow(10, f - e))
+      );
+    }
+    /**加*/
+    Number.prototype.add = function (arg) {
+      return add(this, arg);
+    };
+    /**剪*/
+    Number.prototype.sub = function (arg) {
+      return sub(this, arg);
+    };
+    /**乘*/
+    Number.prototype.mul = function (arg) {
+      return mul(this, arg);
+    };
+    /**除*/
+    Number.prototype.div = function (arg) {
+      return div(this, arg);
+    };
+    var ngApp = angular.module("myApp", []);
+    ngApp.controller(
+      "myController",
+      async function ($scope, $http, $timeout, $filter, $log) {
+        /**计算结果初始化*/
+        $scope.sumInfo = {
+          sum1: 0.1,
+          sum2: 0.1,
+          sum3: 0.01,
+          sum3: 0.01,
+        };
+
+        $scope.jyType = "0"; //买卖方向model
+
+        $scope.baseProducts = [
+          { key: "1", value: "商品" },
+          { key: "2", value: "外汇" },
+          { key: "3", value: "指数" },
+          // {key:"4",value:"虚拟货币"},
+          { key: "5", value: "美股" },
+          { key: "6", value: "港股" },
+          { key: "7", value: "农产品" },
+        ];
+
+        $scope.product1 = "XAUUSD";
+        $scope.product2 = "XAUUSD";
+        $scope.product3 = "XAUUSD";
+        $scope.product4 = "XAUUSD";
+        $scope.count1 = 0.01;
+        $scope.count2 = 0.01;
+        $scope.count3 = 0.01;
+        $scope.count4 = 0.01;
+        $scope.kprice = 0.01;
+        $scope.pprice = 0.01;
+        $scope.kprice4 = 0.01;
+        $scope.pprice4 = 1;
+        $scope.type1 = "1";
+        $scope.type2 = "1";
+        $scope.type3 = "1";
+        $scope.type4 = "1";
+        $scope.fetchKey = [{
+          key: "data1",
+          path: "pointData.json"
+        }, {
+          key: "data2",
+          path: "margin.json"
+        }, {
+          key: "data3",
+          path: "profit.json"
+        }, {
+          key: "data4",
+          path: "longOvernightInterest.json"
+        }, {
+          key: "data5",
+          path: "shortOvernightInterest.json"
+        }]
+        $scope.data = {};
+
+        $scope.init = async function() {
+            for (let i = 0; i < $scope.fetchKey.length; i++) {
+              const file = $scope.fetchKey[i]
+              const res = await $http.get(`${www_url}/static/data/${file.path}`)
+              $scope.data[file.key] = res.data
+            }
+        }
+        await $scope.init()
+
+        $scope.typeChanged = function (str) {
+          // console.log("产品",str);
+          // if( str == "USOil" || str == 'UKOil'){
+          //     $(".choise").text("输入0.01至20间数值");
+          // }else{
+          //     $(".choise").text("输入0.01至100间数值");
+          // }
+
+          $(".choise").text("输入0.01至100间数值");
+        };
+        $scope.countFocused = function (type) {
+          var resultArray = _.where($scope.data.data2, {
+            key: $scope.product2,
+          });
+          var obj = resultArray[0];
+
+          if (type == "one") {
+            // console.log("点值");
+            resultArray = _.where($scope.data.data2, { key: $scope.product1 });
+            obj = resultArray[0];
+          }
+
+          // if( obj.key == "USOil" || obj.key == 'UKOil'){
+          //     $(".choise").text("输入0.01至20间数值");
+          // }else{
+          //     $(".choise").text("输入0.01至100间数值");
+          // }
+          $(".choise").text("输入0.01至100间数值");
+        };
+        $scope.countChanged = function (str, type) {
+          // var resultArray,obj;
+          var resultArray = _.where($scope.data.data2, {
+            key: $scope.product2,
+          });
+          var obj = resultArray[0];
+
+          if (type == "one") {
+            // console.log("点值");
+            resultArray = _.where($scope.data.data2, { key: $scope.product1 });
+            obj = resultArray[0];
+          }
+          // }else if ( type == "two"){
+          //     console.log("保证");
+
+          //     // resultArray = _.where($scope.data.data2, {key: $scope.product2});
+          //     // obj = resultArray[0];
+          // }
+
+          // console.log("objKey",obj.key);
+
+          var reg =
+            /^\d\.([1-9]{1,2}|[0-9][1-9])$|^[1-9]\d{0,1}(\.\d{1,2}){0,1}$|^100(\.0{1,2}){0,1}$/;
+          var reg20 =
+            /^[0]\.([1-9]{1,2}|[0-9][1-9])$|^[1-9](\.\d{1,2}){0,1}$|^([1][0-9])(\.\d{1,2}){0,1}$|^20(\.[0]{1,2}){0,1}$/;
+
+          if (str != null && str != "") {
+            // if( obj.key == "USOil" || obj.key == 'UKOil'){
+            //     // $(".choise").text("输入0.01至20间数值");
+            //     if(!reg20.test(str)){
+            //         alert("请输入0.01至20之间的的数值")
+            //         return false;
+            //     }
+
+            // }else{
+            //     // $(".choise").text("输入0.01至100间数值");
+            //     if (!reg.test(str)) {
+            //         alert("请输入0.01至100之间的的数值");
+            //         return false;
+            //     }
+            // }
+
+            if (!reg.test(str)) {
+              alert("请输入0.01至100之间的的数值");
+              return false;
+            }
+          }
+          return true;
+        };
+
+        /**获取即时报价数据*/
+        $scope.getMarketPrice2 = function (productCode, callBack) {
+          loadInfo.open();
+          $http
+            .post(api_url + "/public/marketprice/cf.json", {})
+            .success(function (data) {
+              loadInfo.close();
+              var obj = _.where(data, { symbol: productCode });
+              //console.log(obj)
+              if (obj.length > 0) {
+                obj = obj[0];
+                var d = new Date(obj.time);
+                d.setHours(d.getHours() + 8);
+                $scope.time = d;
+                if (callBack) {
+                  callBack(obj.ask);
+                }
+              }
+            });
+        };
+
+        $scope.getMarketPrice = function (productCode, callBack) {
+          loadInfo.open();
+          $http
+            .post(api_url + "/public/marketprice/cf.json", {})
+            .success(function (data) {
+              loadInfo.close();
+              var obj = _.where(data, { symbol: productCode });
+              if (obj.length > 0) {
+                obj = obj[0];
+                var result = (obj.ask + obj.bid) / 2;
+                var d = new Date(obj.time);
+                d.setHours(d.getHours() + 8);
+                $scope.time = d;
+                if (callBack) {
+                  callBack(result);
+                }
+              }
+            });
+        };
+
+        $scope.setResult = function (type, source) {
+          var sum = eval(source);
+          if (sum) {
+            if (type === "one") {
+              $scope.sumInfo.sum1 = sum.toFixed(2);
+            } else if (type === "two") {
+              $scope.sumInfo.sum2 = sum.toFixed(2);
+            } else if (type === "fore") {
+              $scope.sumInfo.sum4 = sum.toFixed(2);
+              if ($scope.sumInfo.sum4 == "0.00") {
+                $scope.sumInfo.sum4 = 0.01;
+              }
+            } else {
+              $scope.sumInfo.sum3 = sum.toFixed(2);
+            }
+          } else {
+            $scope.sumInfo.sum4 = sum.toFixed(2);
+          }
+        };
+
+        /**计算按钮点击(ask+bid)/2等于及时报价*/
+        $scope.calculate = function (type, nprice) {
+          if (type === "one") {
+            //点值计算器
+            if (!$scope.count1) {
+              return;
+            }
+            if (!$scope.countChanged($scope.count1)) {
+              return;
+            }
+            var resultArray = _.where($scope.data.data1, {
+              key: $scope.product1,
+            });
+            if (resultArray.length > 0) {
+              var obj = resultArray[0];
+              var source = obj.value.replace("count", $scope.count1);
+              if (obj.marketPrice) {
+                var price = $scope.getMarketPrice(
+                  obj.marketPrice,
+                  function (price) {
+                    source = source.replace("price", price);
+                    $scope.setResult(type, source);
+                  }
+                );
+              } else {
+                $scope.setResult(type, source);
+              }
+            }
+          } else if (type === "two") {
+            if (!$scope.count2) {
+              return;
+            }
+            if (!$scope.countChanged($scope.count2)) {
+              return;
+            }
+            var resultArray = _.where($scope.data.data2, {
+              key: $scope.product2,
+            });
+            if (resultArray.length > 0) {
+              var obj = resultArray[0];
+              var sum;
+              var source = obj.value;
+              if (obj.key == "XAUUSD") {
+                if ($scope.count2 > 0 && $scope.count2 <= 5) {
+                  source = 500;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 5 && $scope.count2 <= 50) {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 5) + 2500;
+                } else {
+                  source = 2000;
+                  sum = source * ($scope.count2 - 50) + 47500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "XAGUSD") {
+                if ($scope.count2 > 0 && $scope.count2 <= 3) {
+                  source = 500;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 3 && $scope.count2 <= 15) {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 3) + 1500;
+                } else {
+                  source = 2000;
+                  sum = source * ($scope.count2 - 15) + 13500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "USOil" || obj.key == "UKOil") {
+                if ($scope.count2 > 0 && $scope.count2 <= 5) {
+                  source = 200;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 5 && $scope.count2 <= 20) {
+                  source = 500;
+                  sum = source * ($scope.count2 - 5) + 1000;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 50) {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 20) + 8500;
+                } else {
+                  source = 2000;
+                  sum = source * ($scope.count2 - 50) + 38500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "BABA" ||
+                obj.key == "FB" ||
+                obj.key == "GS" ||
+                obj.key == "BIDU"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 750;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 1500;
+                  sum = source * ($scope.count2 - 10) + 7500;
+                } else {
+                  source = 3000;
+                  sum = source * ($scope.count2 - 30) + 37500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "AAPL" || obj.key == "PAD") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 1000;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 2000;
+                  sum = source * ($scope.count2 - 10) + 10000;
+                } else {
+                  source = 4000;
+                  sum = source * ($scope.count2 - 30) + 50000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "JD") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 100;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 200;
+                  sum = source * ($scope.count2 - 10) + 1000;
+                } else {
+                  source = 400;
+                  sum = source * ($scope.count2 - 30) + 5000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "SBUX" ||
+                obj.key == "COPPER" ||
+                obj.key == "Iron"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 300;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 600;
+                  sum = source * ($scope.count2 - 10) + 3000;
+                } else {
+                  source = 1200;
+                  sum = source * ($scope.count2 - 30) + 15000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "TSLA") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 2000;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 4000;
+                  sum = source * ($scope.count2 - 10) + 20000;
+                } else {
+                  source = 8000;
+                  sum = source * ($scope.count2 - 30) + 100000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "KO") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 250;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 500;
+                  sum = source * ($scope.count2 - 10) + 2500;
+                } else {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 30) + 12500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "USDINDEX") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 250;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 20) {
+                  source = 500;
+                  sum = source * ($scope.count2 - 10) + 2500;
+                } else {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 30) + 7500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "DIS" || obj.key == "MSFT") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 600;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 1200;
+                  sum = source * ($scope.count2 - 10) + 6000;
+                } else {
+                  source = 2400;
+                  sum = source * ($scope.count2 - 30) + 30000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "PDD" || obj.key == "CTRP") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 200;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 400;
+                  sum = source * ($scope.count2 - 10) + 2000;
+                } else {
+                  source = 800;
+                  sum = source * ($scope.count2 - 30) + 10000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "NTES") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 1500;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 3000;
+                  sum = source * ($scope.count2 - 10) + 15000;
+                } else {
+                  source = 6000;
+                  sum = source * ($scope.count2 - 30) + 75000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "AABA") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 350;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 700;
+                  sum = source * ($scope.count2 - 10) + 3500;
+                } else {
+                  source = 1400;
+                  sum = source * ($scope.count2 - 30) + 17500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "00700.HK") {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 1500;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 3000;
+                  sum = (source * ($scope.count2 - 20) + 30000) / 7.8;
+                } else {
+                  source = 6000;
+                  sum = (source * ($scope.count2 - 60) + 150000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "00388.HK" || obj.key == "00011.HK") {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 1000;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 2000;
+                  sum = (source * ($scope.count2 - 20) + 20000) / 7.8;
+                } else {
+                  source = 4000;
+                  sum = (source * ($scope.count2 - 60) + 100000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "00005.HK" ||
+                obj.key == "01299.HK" ||
+                obj.key == "00941.HK" ||
+                obj.key == "02318.HK"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 350;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 700;
+                  sum = (source * ($scope.count2 - 20) + 7000) / 7.8;
+                } else {
+                  source = 1400;
+                  sum = (source * ($scope.count2 - 60) + 35000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "01810.HK" ||
+                obj.key == "00144.HK" ||
+                obj.key == "00165.HK" ||
+                obj.key == "00285.HK"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 100;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 200;
+                  sum = (source * ($scope.count2 - 20) + 2000) / 7.8;
+                } else {
+                  source = 400;
+                  sum = (source * ($scope.count2 - 60) + 10000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "00267.HK" ||
+                obj.key == "00390.HK" ||
+                obj.key == "00992.HK" ||
+                obj.key == "01929.HK" ||
+                obj.key == "00762.HK"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 50;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 100;
+                  sum = (source * ($scope.count2 - 20) + 1000) / 7.8;
+                } else {
+                  source = 200;
+                  sum = (source * ($scope.count2 - 60) + 5000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "00728.HK" || obj.key == "01638.HK") {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 20;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 40;
+                  sum = (source * ($scope.count2 - 20) + 400) / 7.8;
+                } else {
+                  source = 80;
+                  sum = (source * ($scope.count2 - 60) + 2000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "03968.HK" ||
+                obj.key == "03333.HK" ||
+                obj.key == "00763.HK" ||
+                obj.key == "02388.HK"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 20) {
+                  source = 200;
+                  sum = (source * $scope.count2) / 7.8;
+                } else if ($scope.count2 > 20 && $scope.count2 <= 60) {
+                  source = 400;
+                  sum = (source * ($scope.count2 - 20) + 4000) / 7.8;
+                } else {
+                  source = 800;
+                  sum = (source * ($scope.count2 - 60) + 20000) / 7.8;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "SOYBEAN" ||
+                obj.key == "COCOA" ||
+                obj.key == "CORN" ||
+                obj.key == "WHEAT" ||
+                obj.key == "PLT" ||
+                obj.key == "COFFEE" ||
+                obj.key == "SUGAR" ||
+                obj.key == "STI" ||
+                obj.key == "AS200"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 500;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 10) + 5000;
+                } else {
+                  source = 2000;
+                  sum = source * ($scope.count2 - 30) + 25000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "COTTON") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 400;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 30) {
+                  source = 800;
+                  sum = source * ($scope.count2 - 10) + 4000;
+                } else {
+                  source = 1600;
+                  sum = source * ($scope.count2 - 30) + 20000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "HK50" ||
+                obj.key == "A50" ||
+                obj.key == "A50" ||
+                obj.key == "CHINA300" ||
+                obj.key == "JPN225"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 200;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 20) {
+                  source = 500;
+                  sum = source * ($scope.count2 - 10) + 2000;
+                } else {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 20) + 7000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "DJ30" ||
+                obj.key == "SP500" ||
+                obj.key == "TECH100" ||
+                obj.key == "FRA40" ||
+                obj.key == "GRE30"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 500;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 20) {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 10) + 5000;
+                } else {
+                  source = 2000;
+                  sum = source * ($scope.count2 - 20) + 15000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (obj.key == "UK100" || obj.key == "USDINDEX") {
+                if ($scope.count2 > 0 && $scope.count2 <= 10) {
+                  source = 250;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 20) {
+                  source = 500;
+                  sum = source * ($scope.count2 - 10) + 2500;
+                } else {
+                  source = 1000;
+                  sum = source * ($scope.count2 - 20) + 7500;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else if (
+                obj.key == "GBPNZD" ||
+                obj.key == "GBPCAD" ||
+                obj.key == "EURNZD" ||
+                obj.key == "EURCAD" ||
+                obj.key == "AUDCAD" ||
+                obj.key == "AUDCHF" ||
+                obj.key == "NZDCAD" ||
+                obj.key == "NZDCHF" ||
+                obj.key == "CADCHF"
+              ) {
+                if ($scope.count2 > 0 && $scope.count2 <= 30) {
+                  source = 400;
+                  sum = source * $scope.count2;
+                } else if ($scope.count2 > 10 && $scope.count2 <= 60) {
+                  source = 600;
+                  sum = source * ($scope.count2 - 30) + 12000;
+                } else {
+                  source = 800;
+                  sum = source * ($scope.count2 - 60) + 30000;
+                }
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              } else {
+                sum = source * $scope.count2;
+                $scope.sumInfo.sum2 = sum.toFixed(2);
+              }
+              //$scope.sumInfo.sum2 = sum.toFixed(2);
+            }
+          } else if (type === "fore") {
+            //three
+            // console.log("in this");
+            if (!$scope.pprice4 || !$scope.kprice4 || !$scope.count4) {
+              return;
+            }
+            // console.log("2");
+            if (!$scope.countChanged($scope.count4)) {
+              return;
+            }
+            // console.log("3");
+            if ($scope.jyType == "1") {
+              //等于1时、更改方向
+              var resultArray = _.where($scope.data.data5, {
+                key: $scope.product4,
+              });
+            } else {
+              var resultArray = _.where($scope.data.data4, {
+                key: $scope.product4,
+              });
+            }
+            if (resultArray.length > 0) {
+              var obj = resultArray[0];
+              var source = obj.value.replace("count", $scope.count4);
+              source = source.replace("numCont", $scope.pprice4);
+              source = source.replace("kcPrice", $scope.kprice4);
+              //當交易產品為離岸人民幣黃金時, 利息單位為人民幣
+              if(obj.key == "GAUCNH"){
+                $scope.sumInfo.currency = "人民币";
+              } else {
+                $scope.sumInfo.currency = obj.currency || "美元";
+              }
+              $scope.setResult(type, source);
+            } else {
+              $scope.sumInfo.currency = "美元";
+            }
+          } else {
+            //three
+            if (!$scope.pprice || !$scope.kprice || !$scope.count3) {
+              return;
+            }
+            if (!$scope.countChanged($scope.count3)) {
+              return;
+            }
+            var resultArray = _.where($scope.data.data3, {
+              key: $scope.product3,
+            });
+            if (resultArray.length > 0) {
+              var obj = resultArray[0];
+              var source = obj.value.replace("count", $scope.count3);
+
+              if ($scope.jyType == "1") {
+                //等于1时、更改方向
+                source = source.replace("pc", $scope.kprice);
+                source = source.replace("kc", $scope.pprice);
+              } else {
+                source = source.replace("pc", $scope.pprice);
+                source = source.replace("kc", $scope.kprice);
+              }
+              if (obj.marketPrice) {
+                var price;
+                if (nprice) {
+                  price = nprice;
+                  source = source.replace("price", price);
+                } else {
+                  $scope.getMarketPrice(obj.marketPrice, function (price) {
+                    source = source.replace("price", price);
+                    $scope.setResult(type, source);
+                  });
+                }
+              } else {
+                $scope.setResult(type, source);
+              }
+            }
+          }
+        };
+
+        $scope.product3Changed = function () {
+          $scope.getMarketPrice2($scope.product3, function (price) {
+            if (!price) {
+              price = 0;
+            }
+            $scope.kprice = price; //开仓价
+
+            var resultArray = _.where($scope.data.data3, {
+              key: $scope.product3,
+            });
+            if (resultArray.length > 0) {
+              var obj = resultArray[0];
+              $scope.pprice = price.add(obj.fl.mul(5));
+              //                    $scope.pprice =(price+(obj.fl*5));
+            }
+            $scope.calculate("three");
+          });
+        };
+
+        $scope.product4Changed = function () {
+          $scope.getMarketPrice2($scope.product4, function (price) {
+            if (!price) {
+              price = 0;
+            }
+            $scope.kprice4 = price; //开仓价
+
+            var resultArray = _.where($scope.data.data4, {
+              key: $scope.product4,
+            });
+
+            $scope.calculate("fore");
+          });
+        };
+
+        $scope.spChanged = function (index) {
+          if (index == 1) {
+            if ($scope.type1 === "1") {
+              $scope.product1 = "XAUUSD";
+            } else if ($scope.type1 === "2") {
+              $scope.product1 = "EURUSD";
+            } else if ($scope.type1 === "3") {
+              $scope.product1 = "HK50";
+            } else if ($scope.type1 === "4") {
+              $scope.product1 = "BTCUSD";
+            } else if ($scope.type1 === "5") {
+              $scope.product1 = "BABA";
+            } else if ($scope.type1 === "6") {
+              $scope.product1 = "00700.HK";
+            } else {
+              $scope.product1 = "SOYBEAN";
+            }
+            $scope.calculate("one");
+          } else if (index == 2) {
+            if ($scope.type2 === "1") {
+              $scope.product2 = "XAUUSD";
+            } else if ($scope.type2 === "2") {
+              $scope.product2 = "EURUSD";
+            } else if ($scope.type2 === "3") {
+              $scope.product2 = "HK50";
+            } else if ($scope.type2 === "4") {
+              $scope.product2 = "BTCUSD";
+            } else if ($scope.type2 === "5") {
+              $scope.product2 = "BABA";
+            } else if ($scope.type2 === "6") {
+              $scope.product2 = "00700.HK";
+            } else {
+              $scope.product2 = "SOYBEAN";
+            }
+            $scope.calculate("two");
+          } else if (index == 4) {
+            $(".thisChange").text("开仓价格");
+            if ($scope.type4 === "1") {
+              $scope.product4 = "XAUUSD";
+            } else if ($scope.type4 === "2") {
+              $(".thisChange").text("昨收价格");
+              $scope.product4 = "EURUSD";
+            } else if ($scope.type4 === "3") {
+              $scope.product4 = "HK50";
+            } else if ($scope.type4 === "4") {
+              $scope.product4 = "BTCUSD";
+            } else if ($scope.type4 === "5") {
+              $scope.product4 = "BABA";
+            } else if ($scope.type4 === "6") {
+              $scope.product4 = "00700.HK";
+            } else {
+              $scope.product4 = "SOYBEAN";
+            }
+            $scope.product4Changed();
+          } else {
+            if ($scope.type3 === "1") {
+              $scope.product3 = "XAUUSD";
+            } else if ($scope.type3 === "2") {
+              $scope.product3 = "EURUSD";
+            } else if ($scope.type3 === "3") {
+              $scope.product3 = "HK50";
+            } else if ($scope.type3 === "4") {
+              $scope.product3 = "BTCUSD";
+            } else if ($scope.type3 === "5") {
+              $scope.product3 = "BABA";
+            } else if ($scope.type3 === "6") {
+              $scope.product3 = "00700.HK";
+            } else {
+              $scope.product3 = "SOYBEAN";
+            }
+            $scope.product3Changed();
+          }
+        };
+        $scope.product4Changed();
+        $scope.product3Changed();
+        $scope.spChanged(1);
+        $scope.spChanged(2);
+      }
+    );
+  </script>
+
+  <script>
+    $(function () {
+      var $li = $(".counterTab li");
+      var $ul = $(".main-article .section4");
+
+      $li.click(function () {
+        var $this = $(this);
+        var $t = $this.index();
+
+        $li.removeClass().find(".Tab_ico").removeClass("Tab_icoactive");
+        $this.addClass("counteractive").find(".Tab_ico").addClass("Tab_icoactive");
+        
+        $ul.hide().eq($t).show();
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      // var ok1=false;
+      // var resultArray = _.where($scope.data.data2, {key: $scope.product2});
+      // var obj = resultArray[0];
+      // console.log("objKey",obj.key);
+
+      // $("#input2").focus(function () {
+      //   console.log($("#inputPro").val());
+      // });
+
+      $('input[name="exchange"]')
+        .focus(function () {
+          // $(this).next().text('输入0.01至100间数值').addClass('state1');
+          $(this).next().addClass("state1");
+          if (
+            $(this)
+              .val()
+              .search(/^(0|[1-9]|[1-9]\d|100)(\.\d{1,2}|\.{0})$/) == -1
+          ) {
+            // $(this).next().text('输入0.01至100间数值').removeClass('state1').addClass('state3');
+            $(this).next().removeClass("state1").addClass("state3");
+          } else {
+            // $(this).next().text('输入0.01至100间数值').removeClass('state3').addClass('state1');
+            $(this).next().removeClass("state3").addClass("state1");
+          }
+        })
+        .blur(function () {
+          if (
+            $(this)
+              .val()
+              .search(/^(0|[1-9]|[1-9]\d|100)(\.\d{1,2}|\.{0})$/) == -1
+          ) {
+            // $(this).next().text('输入0.01至100间数值').removeClass('state1').addClass('state3');
+            $(this).next().removeClass("state1").addClass("state3");
+          } else {
+            // $(this).next().text('输入0.01至100间数值').removeClass('state3').addClass('state1');
+            $(this).next().removeClass("state3").addClass("state1");
+            ok4 = true;
+          }
+        });
+      $('input[name="exchange4"]')
+        .focus(function () {
+          $(this).next().text("输入1至360间数值").addClass("state1");
+          if (
+            $(this)
+              .val()
+              .search(/[1-9]{1}[0-9]{0,2}/) == -1
+          ) {
+            $(this)
+              .next()
+              .text("输入1至360间数值")
+              .removeClass("state1")
+              .addClass("state3");
+          } else {
+            $(this)
+              .next()
+              .text("输入1至360间数值")
+              .removeClass("state3")
+              .addClass("state1");
+          }
+        })
+        .blur(function () {
+          if (
+            $(this)
+              .val()
+              .search(/[1-9]{1}[0-9]{0,2}/) == -1
+          ) {
+            $(this)
+              .next()
+              .text("输入1至360间数值")
+              .removeClass("state1")
+              .addClass("state3");
+          } else {
+            $(this)
+              .next()
+              .text("输入1至360间数值")
+              .removeClass("state3")
+              .addClass("state1");
+            ok4 = true;
+          }
+        });
+      $(".Btn").click(function () {
+        if (ok1) {
+          $("form").submit();
+        } else {
+          return false;
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".select").click(function () {
+        $(this).addClass("selectactive");
+        $(this).siblings().removeClass("selectactive");
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".select-set").click(function () {
+        $(this).addClass("select-set_active");
+        $(this).siblings().removeClass("select-set_active");
+      });
+    });
+  </script>
+  <!--判断用户访问机型-->
+  <script type="text/javascript">
+    function CheckIsAndroid() {
+      var browser = {
+        versions: (function () {
+          var u = navigator.userAgent,
+            app = navigator.appVersion;
+          return {
+            //移动终端浏览器版本信息
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+            android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, //android终端或uc浏览器
+            iPhone: u.indexOf("iPhone") > -1, //是否为iPhone或者QQHD浏览器
+            iPad: u.indexOf("iPad") > -1, //是否iPad
+          };
+        })(),
+      };
+      //if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+      //    return false;
+      //}
+      if (browser.versions.android) return true;
+      return false;
+    }
+    function CheckIsIOS() {
+      var browser = {
+        versions: (function () {
+          var u = navigator.userAgent,
+            app = navigator.appVersion;
+          return {
+            //移动终端浏览器版本信息
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+            android: u.indexOf("Android") > -1 || u.indexOf("Linux") > -1, //android终端或uc浏览器
+            iPhone: u.indexOf("iPhone") > -1, //是否为iPhone或者QQHD浏览器
+            iPad: u.indexOf("iPad") > -1, //是否iPad
+          };
+        })(),
+      };
+      if (
+        browser.versions.iPhone ||
+        browser.versions.iPad ||
+        browser.versions.ios
+      ) {
+        return true;
+        return false;
+      }
+    }
+    $(function () {
+      if (CheckIsIOS()) {
+        $(".ios").show();
+        $(".Android").hide();
+      }
+      if (CheckIsAndroid()) {
+        $(".ios").hide();
+        $(".Android").show();
+      }
+    });
+  </script>
+  <!--手机端出现二维码扫一扫-->
+  <script type="text/javascript">
+    $(function () {
+      $(".clickico .Lookcode").click(
+        function () {
+          $(this).siblings(".code_big").stop(true, true).slideDown(500);
+        },
+        function () {
+          $(this).siblings(".code_big").stop(true, true).slideUp("fast");
+        }
+      );
+    });
+  </script>
+  <!--交易产品栏对应的产品-->
+  <script>
+    $(function () {
+      $(".sel").change(function () {
+        //alert($(this).get(0).selectedIndex);
+        var index = $(this).get(0).selectedIndex;
+        $(".sss-" + index)
+          .show()
+          .siblings(".sss")
+          .hide();
+      });
+    });
+  </script>
+  <!--input获取焦点 placeholder消失-->
+  <script type="text/javascript">
+    onfocus = "this.placeholder=''"; /*点击的时候文本设置为空*/
+    onblur = "this.placeholder='0.01'"; /*离开的时候文本显示出来*/
+  </script>
+  <!--点数交易判断只能输入0.01至100之间的数值-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".Btninput.one.a").click(function () {
+        var exchange1 = $("#input1").val();
+        if (exchange1 != null && exchange1 != "") {
+          if (exchange1 > 0) {
+            return true;
+          } else {
+            alert("输入有误，请输入大于0的值");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".Btninput.one.b").click(function () {
+        var exchange1 = $("#input2").val();
+        if (exchange1 != null && exchange1 != "") {
+          if (exchange1 > 0) {
+            return true;
+          } else {
+            alert("输入有误，请输入大于0的值");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".Btninput.one.c").click(function () {
+        var exchange1 = $("#input5").val();
+        if (exchange1 != null && exchange1 != "") {
+          if (exchange1 > 0) {
+            return true;
+          } else {
+            alert("输入有误，请输入大于0的值");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".Btninput.one.c").click(function () {
+        var exchange1 = $("#input6").val();
+        if (exchange1 != null && exchange1 != "") {
+          if (exchange1 > 0) {
+            return true;
+          } else {
+            alert("输入有误，请输入大于0的值");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".Btninput.one.c").click(function () {
+        var exchange1 = $("#exchange1").val();
+        if (exchange1 != null && exchange1 != "") {
+          if (exchange1 > 0) {
+            return true;
+          } else {
+            alert("输入有误，请输入大于0的值");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".Btninput.one.c").click(function () {
+        var exchange2 = $("#exchange2").val();
+        if (exchange2 != null && exchange2 != "") {
+          if (exchange2 > 0) {
+            return true;
+          } else {
+            alert("输入有误，请输入大于0的值");
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*登录框*/
+        .zhezhao {
+            width: 100%;
+            height: 200%;
+            background: rgba(0, 0, 0, .5);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10000;
+            position: fixed;
+        }
+
+        .advise {
+            box-shadow: 3px 3px 5px rgba(14, 25, 34, 0.3), 0px 3px 5px rgba(14, 25, 34, 0.3);
+            position: fixed;
+            top: 355px;
+            left: 50%;
+            margin: -230px 0 0 -530px;
+            width: 1100px;
+            background: #fff;
+            z-index: 10001;
+            overflow: hidden;
+            /* border-radius: 5px; */
+            padding-bottom: 30px;
+            font-family: Microsoft JhengHei;
+        }
+
+        #advise-inner #btclose {
+            width: 27px;
+            height: 27px;
+            background: url(/source/www/nav-right/close_btn_w.png) no-repeat;
+            background-size: 100% 100%;
+            display: block;
+            position: absolute;
+            top: 34px;
+            right: 30px;
+        }
+
+        #suggestion .advise-title {
+            background: url(/source/www/nav-right/advise-title-bg.png) no-repeat;
+            background-size: 100% 100%;
+            width: 330px;
+            height: 130px;
+            position: fixed;
+            top: 355px;
+            left: 38%;
+            margin: -300px 0 0 -330px;
+            z-index: 10002;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 50px;
+        }
+
+        .advise-title .advise-title-content {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.2em;
+        }
+
+        .advise .content .advise-title {
+            font-size: 2.3em;
+            color: #000000;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: normal;
+            font-family: Microsoft JhengHei;
+        }
+
+        .advise .content .info {
+            padding: 0 70px;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .advise .content .Lookcode {
+            margin: 0 auto;
+            border-radius: 4px;
+            font-size: 2.5em;
+            color: #ffffff;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Microsoft JhengHei;
+            width: 193px;
+            height: 51px;
+            background: linear-gradient(to bottom, #f6ad13, #eb8709, #e57103);
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .advise .content .sub_error {
+            color: #ef392b;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        /* .advise .content input {
+            width: 500px;
+            display: block;
+            height: 40px;
+            color: #333333;
+            font-size: 16px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            -webkit-appearance: none;
+            background-color: transparent;
+            border-radius: 0;
+            outline: medium;
+            font-family: Microsoft JhengHei;
+        } */
+
+        .advise .input-tip {
+            color: #ef392b;
+            font-size: 14px;
+            text-align: left;
+            height: 0.2rem;
+        }
+
+        .con-btn {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .con-btn a {
+            overflow: hidden;
+            display: block;
+            width: 163px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: #dc7d00;
+            border-bottom: solid 1px #dc7d00;
+            margin: 0 auto;
+            font-size: 14px;
+            transition: all .3s ease-in 0s;
+        }
+
+        .con-btn a:active {
+            background: #ae6607;
+            transition: all .3s ease-in 0s;
+            color: #fff;
+        }
+
+        .advise a.pass-icon {
+            display: inline-block;
+            background: url(../super-topic/images/ckey-m.png) no-repeat;
+            width: 2rem;
+            height: 0.92rem;
+            position: absolute;
+            right: -0.4rem;
+            top: -0.1rem;
+            background-size: 2rem 0.92rem;
+        }
+
+        .advise a.pass-icon.active {
+            display: inline-block;
+            background: url(../super-topic/images/ckey-m.png) no-repeat;
+            width: 2rem;
+            height: 0.92rem;
+            position: absolute;
+            right: -0.4rem;
+            top: -0.1rem;
+            background-size: 2rem 0.92rem;
+        }
+
+        .loading {
+            position: fixed;
+            top: 44%;
+            left: 15%;
+            margin: 0 0 0 33%;
+            z-index: 10001;
+            overflow: hidden;
+            border-radius: 5px;
+            padding-top: 100px;
+            text-align: center;
+            background: url(/source/www/nav-right/loading.svg) no-repeat;
+            animation: loadingMove 1.2s linear infinite;
+            width: 120px;
+            height: 120px;
+            background-size: 100% 100%;
+        }
+
+        .loading img {
+            width: 138px;
+            height: 138px;
+        }
+
+        #finish-advise {
+            background: url(/source/www/nav-right/advise-finish-bg.png) no-repeat;
+            background-size: 100% 100%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -230px 0 0 -381px;
+            z-index: 10002;
+            width: 711px;
+            height: 389px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btclose-finish {
+            width: 27px;
+            height: 27px;
+            background: url(/source/www/nav-right/finish_btn_w.png) no-repeat;
+            background-size: 100% 100%;
+            display: block;
+            position: absolute;
+            top: 34px;
+            right: 30px;
+        }
+
+        .finish-icon {
+            max-width: 197px;
+            width: 100%;
+            height: 187px;
+            margin-bottom: 30px;
+        }
+
+        .finish-notice {
+            font-family: Microsoft JhengHei;
+            font-size: 2.5em;
+            color: #ffffff;
+        }
+
+        /* 提交建议框网页版 */
+        .suggestionsBox {
+            /* viewport width */
+            overflow-y: hidden;
+            overflow-x: hidden;
+            z-index: 99999;
+            display: flex;
+            justify-content: center;
+        }
+
+        .suggestionsBoxForm {
+            max-width: 1150px;
+            width: 100%;
+            height: 575px;
+            margin-top: 50px;
+            overflow-y: auto;
+        }
+
+        .suggestionsBox .variation {
+            display: none;
+        }
+
+        /* .suggestionsBox .closeButton {
+            background-image: url(/images/sprites-index-2x.png);
+            background-position: -0.68rem -12.04rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            background-size: 13.05rem 12.64rem;
+            margin-right: 0.3rem;
+        } */
+
+        .suggestionsBoxForm .title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .suggestionsBox .titleBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4%;
+        }
+
+        .suggestionsBox .formBox {
+            margin-top: 2%;
+        }
+
+        .suggestionsBox .formBoxTitle {
+            font-size: 21px;
+            margin-left: 5%;
+            font-family: 'Microsoft JhengHei';
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        .optional-title {
+            color: #9fa0a0;
+            display: inline;
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .selectBox {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .selectBox1,
+        .selectBox2 {
+            display: inline-flex;
+            justify-content: space-evenly;
+            margin-top: 2%;
+        }
+
+        .suggestionsBox label {
+            text-align: center;
+            width: 135px;
+            font-size: 16px;
+            margin: 0 15px;
+            font-family: 'Microsoft JhengHei';
+            border-radius: 3px;
+            padding: 5px;
+            border: 1px solid #9fa0a0;
+            color: #9fa0a0;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .suggestionsBox .inputBox {
+            width: 100%;
+            margin-top: 1%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 0.2rem;
+        }
+
+        .big-input-box {
+            background: url(/source/www/nav-right/suggestion_input_bg_m.png) no-repeat;
+            background-size: 100% 100%;
+            height: 130px;
+            resize: none;
+        }
+
+        .middle-input-box {
+            background: url(/source/www/nav-right/num_input_bg_m.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .small-input-box {
+            background: url(/source/www/nav-right/img_input_bg_m.png) no-repeat;
+            background-size: 100% 100%;
+            height: auto;
+            padding: 5px 10px;
+        }
+
+        .suggestionsBox textarea,
+        .suggestionsBox input {
+            box-sizing: border-box;
+            padding: 10px 10px;
+            border: 1px solid rgba(215, 215, 215, 1);
+            border-radius: 1px;
+            width: 88%;
+            font-size: 18px;
+            font-family: Microsoft JhengHei;
+        }
+
+        .variation:checked+label {
+            border: 1px solid #2986d7;
+            color: #2986d7;
+        }
+
+        .suggestionsBox .uploadBox {
+            overflow: hidden;
+            border-radius: 1px;
+            height: auto;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 16px;
+            text-align: left;
+            color: #D7D7D7;
+            padding: 10px 10px;
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .suggestionsBox .uploadButton {
+            height: 40px;
+            background-color: #3391e7;
+            border: 1px solid #308adc;
+            color: #fff;
+            width: 115px;
+            display: block;
+            border-radius: 3px;
+            float: right;
+
+        }
+
+        .suggestionsBox .submitButtonPC {
+            border-radius: 3px;
+            width: 185px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            height: 43px;
+            background-color: #3391e7;
+            border: 1px solid #308adc;
+            font-family: 'Microsoft JhengHei';
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .suggestionsBox .submitButtonMobile {
+            display: none;
+        }
+
+        .thanks-title {
+            font-size: 15px;
+            margin: 10px auto;
+            width: 65%;
+            text-align: center;
+            color: #9fa0a0;
+            font-family: 'Microsoft JhengHei';
+            letter-spacing: 1px;
+        }
+
+        .suggestionImg {
+            background-image: url(/images/suggestionImg.svg);
+            background-repeat: no-repeat;
+            background-size: 0.35rem 0.35rem;
+            display: inline-block;
+            width: 0.35rem;
+            height: 0.35rem;
+            vertical-align: middle;
+            margin-right: 0.1rem;
+        }
+
+        #uploadBoxText {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .suggestionsBox em {
+            display: block;
+            font-size: 12px;
+            margin-top: 2px;
+            text-align: left;
+            margin-left: 6%;
+            color: #ff4444;
+            display: none;
+        }
+
+        .acc_btn_select {
+            display: flex;
+            justify-content: start;
+            width: 89%;
+            margin: 10px auto;
+        }
+
+        .cs_notice {
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: 'Microsoft JhengHei';
+            letter-spacing: 1px;
+        }
+
+        .loadingBox {
+            display: none;
+            height: 200px;
+            width: 200px;
+            margin-top: 30%;
+            margin-bottom: 15%;
+            background-color: #fff;
+            border-radius: 15px;
+        }
+
+        @keyframes loadingMove {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (max-width: 799px) {
+
+            /*建议表格*/
+            .acc_btn_select {
+                width: 84%;
+            }
+
+            .zhezhao {
+                width: 100%;
+                height: 200%;
+                background: rgba(0, 0, 0, .5);
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10000;
+                position: fixed;
+            }
+
+            #suggestion .advise-title {
+                width: 3.3rem;
+                height: 1.3rem;
+                margin: 0 auto;
+                left: 1%;
+                top: 7%;
+                padding-left: .25rem;
+            }
+
+            .advise-title .advise-title-content {
+                font-size: 0.32rem;
+                font-weight: 700;
+                color: #ffffff;
+                letter-spacing: .2em;
+            }
+
+            .advise {
+                position: fixed;
+                top: 12%;
+                left: 2%;
+                margin: 0 auto;
+                width: 96%;
+                background: #fff;
+                z-index: 10001;
+                overflow: hidden;
+                /* border-radius: 5px; */
+                padding-bottom: 0.5rem;
+            }
+
+            #advise-inner #btclose {
+                width: 0.34rem;
+                height: 0.34rem;
+                display: block;
+                position: absolute;
+                top: 0.3rem;
+                right: 0.3rem;
+            }
+
+            #advise-inner .content {
+                margin-top: 0.8rem;
+            }
+
+            .advise .content .advise-title {
+                font-size: 0.36rem;
+                color: #333333;
+                text-align: center;
+                margin-top: 0.6rem;
+                font-weight: normal;
+            }
+
+            .advise .content .info {
+                padding: 0 0.5rem;
+                text-align: center;
+                margin-top: 0.4rem;
+
+            }
+
+            .advise .content .Lookcode {
+                display: block;
+                width: 5.6rem;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                color: #fff;
+                font-size: 0.36rem;
+                text-align: center;
+                background: #ff9100;
+                transition: all 0.3s;
+                margin: 0 auto;
+                margin-top: 0.2rem;
+                border-radius: 0.1rem;
+            }
+
+            .advise .content .sub_error {
+                color: #ef392b;
+                font-size: 14px;
+                margin-top: 10px;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+            /* .advise .content input {
+                width: 5.6rem;
+                display: block;
+                height: 0.8rem;
+                color: #333333;
+                font-size: 0.28rem;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                -webkit-appearance: none;
+                background-color: transparent;
+                border-radius: 0;
+                outline: medium;
+            } */
+
+            .advise .input-tip {
+                color: #ef392b;
+                font-size: 14px;
+                text-align: left;
+                height: 0.2rem;
+            }
+
+            .con-btn {
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .con-btn a {
+                overflow: hidden;
+                display: block;
+                width: 3.4rem;
+                height: 0.6rem;
+                line-height: 0.6rem;
+                text-align: center;
+                color: #dc7d00;
+                border-bottom: solid 1px #dc7d00;
+                margin: 0 auto;
+                font-size: 0.28rem;
+                transition: all .3s ease-in 0s;
+            }
+
+            .con-btn a:active {
+                background: #ae6607;
+                transition: all .3s ease-in 0s;
+                color: #fff;
+            }
+
+            .advise a.pass-icon {
+                display: inline-block;
+                background: url(https://m.cfd139.com/cn/zt/images/newyear-lottery/ckey-m.png) no-repeat;
+                width: 2rem;
+                height: 0.92rem;
+                position: absolute;
+                right: -0.4rem;
+                top: -0.1rem;
+                background-size: 2rem 0.92rem;
+            }
+
+            .advise a.pass-icon.active {
+                display: inline-block;
+                background: url(https://m.cfd139.com/cn/zt/images/newyear-lottery/key-m.png) no-repeat;
+                width: 2rem;
+                height: 0.92rem;
+                position: absolute;
+                right: -0.4rem;
+                top: -0.1rem;
+                background-size: 2rem 0.92rem;
+            }
+
+            #finish-advise {
+                margin: -3rem 0 0 -3.55rem;
+                width: 7.11rem;
+                height: 3.89rem;
+            }
+
+            #btclose-finish {
+                width: .34rem;
+                height: .34rem;
+                top: .34rem;
+                right: .3rem;
+            }
+
+            .finish-icon {
+                max-width: 1.97rem;
+                width: 100%;
+                height: 1.87rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .finish-notice {
+                font-size: 0.3rem;
+            }
+
+            /* 提交建议框 mobile*/
+            /* #imgSuggestionsBoxSwitch {
+                position: relative;
+            }
+
+            .imgSuggestionsBoxBackground {
+                background: url('/images/imgSuggestionsBoxBackground.svg') no-repeat;
+                background-size: 40px 40px;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+            }
+
+            .imgSuggestionsBoxIcon {
+                background: url('/images/imgSuggestionsBoxIcon.svg') no-repeat;
+                background-size: 25px 25px;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 8px;
+                left: 22px;
+            }
+
+            .suggestionSwitch {
+                display: none;
+            } */
+
+            .suggestionsBox {
+                /* viewport width */
+                overflow-y: hidden;
+                overflow-x: hidden;
+                z-index: 99999;
+                display: flex;
+                justify-content: center;
+            }
+
+            .suggestionsBoxForm {
+                margin: 0;
+                overflow-y: auto;
+                height: 9rem;
+            }
+
+            .suggestionsBox .variation {
+                display: none;
+            }
+
+            .suggestionsBox .closeButton {
+                background-image: url(/images/sprites-index-2x.png);
+                background-position: -0.68rem -12.04rem;
+                width: 0.6rem;
+                height: 0.6rem;
+                background-size: 13.05rem 12.64rem;
+                margin-right: 0.3rem;
+            }
+
+            .suggestionsBoxForm .title {
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            .suggestionsBox .titleBox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 4%;
+            }
+
+            .suggestionsBox .formBox {
+                margin-top: 4%;
+            }
+
+            .suggestionsBox .formBoxTitle {
+                font-size: 0.35rem;
+                margin-left: 5%;
+                font-family: 'Microsoft JhengHei';
+                font-weight: 700;
+                color: #000000;
+            }
+
+            .optional-title {
+                color: #9fa0a0;
+                display: inline;
+                font-size: 0.25rem;
+                font-weight: 100;
+            }
+
+            .selectBox {
+                width: 92%;
+                margin: 0 auto;
+                margin-bottom: 0.3rem;
+                display: block;
+            }
+
+            .suggestionsBox label {
+                text-align: center;
+                width: 30%;
+                font-size: 0.22rem;
+                font-family: Microsoft JhengHei;
+                border-radius: 3px;
+                padding: 0.05rem;
+                border: 1px solid #9fa0a0;
+                color: #9fa0a0;
+                font-weight: 700;
+                cursor: pointer;
+                margin: 0 0.2rem;
+            }
+
+            .suggestionsBox .inputBox {
+                width: 100%;
+                margin-top: 1%;
+                text-align: center;
+                margin: 0 auto;
+                padding: 0 0.2rem;
+            }
+
+            .big-input-box {
+                background: url(/source/www/nav-right/suggestion_input_bg_m.png) no-repeat;
+                background-size: 100% 100%;
+                height: 150px;
+                resize: none;
+            }
+
+            .middle-input-box {
+                background: url(/source/www/nav-right/num_input_bg_m.png) no-repeat;
+                background-size: 100% 100%;
+            }
+
+            .small-input-box {
+                background: url(/source/www/nav-right/img_input_bg_m.png) no-repeat;
+                background-size: 100% 100%;
+                height: 36px;
+                padding: 5px 10px;
+            }
+
+            .suggestionsBox textarea,
+            .suggestionsBox input {
+                box-sizing: border-box;
+                padding: 10px 10px;
+                border: 1px solid rgba(215, 215, 215, 1);
+                border-radius: 1%;
+                width: 90%;
+                font-size: 0.25rem;
+                font-family: Microsoft JhengHei;
+            }
+
+            .variation:checked+label {
+                border: 1px solid #2986d7;
+                color: #2986d7;
+            }
+
+            .suggestionsBox .uploadBox {
+                overflow: hidden;
+                border-radius: 1%;
+                height: 60px;
+                width: 95%;
+                margin: 0 auto;
+                font-size: 0.25rem;
+                text-align: left;
+                color: #D7D7D7;
+                padding: 10px 10px;
+                line-height: 30px;
+            }
+
+            .suggestionsBox .uploadButton {
+                height: 36px;
+                background-color: #3391e7;
+                border: 1px solid #308adc;
+                color: #fff;
+                width: 1.5rem;
+                display: block;
+                border-radius: 3px;
+                float: right;
+                font-size: 0.28rem;
+            }
+
+            .suggestionsBox .submitButtonPC {
+                display: none;
+            }
+
+            .suggestionsBox .submitButtonMobile {
+                background-color: rgba(30, 138, 236, 1);
+                border-radius: 3px;
+                width: 3.5rem;
+                margin: 0.45rem auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                height: 0.65rem;
+                background-color: #3391e7;
+                border: 1px solid #308adc;
+                font-family: 'Microsoft JhengHei';
+                font-size: 0.35rem;
+                font-weight: 700;
+            }
+
+            .thanks-title {
+                font-size: 0.25rem;
+                margin: 10px auto;
+                width: 65%;
+                text-align: center;
+                color: #9fa0a0;
+                font-family: 'Microsoft JhengHei';
+                letter-spacing: 1px;
+            }
+
+            .suggestionImg {
+                background-image: url(/images/suggestionImg.svg);
+                background-repeat: no-repeat;
+                background-size: 0.35rem 0.35rem;
+                display: inline-block;
+                width: 0.35rem;
+                height: 0.35rem;
+                vertical-align: middle;
+                margin-right: 0.1rem;
+            }
+
+            #uploadBoxText {
+                display: inline-block;
+                width: 70%;
+                overflow: hidden;
+            }
+
+            .suggestionsBox em {
+                display: block;
+                font-size: 0.25rem;
+                margin-top: 0.05rem;
+                text-align: left;
+                margin-left: 0.4rem;
+                color: #ff4444;
+                display: none;
+            }
+
+            .selectBox1,
+            .selectBox2 {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2%;
+            }
+
+            .loading {
+                position: fixed;
+                top: 44%;
+                left: 10%;
+                width: 1.2rem;
+                z-index: 10001;
+                overflow: hidden;
+                height: 1.2rem;
+            }
+
+            .loading img {
+                width: 1.38rem;
+                height: 1.38rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 填写建议弹窗-->
+    <div id="suggestion" style="display: none;">
+        <!--填写建议框-->
+        <div class="zhezhao" id="zhezhao" onclick="shadowClick()"></div>
+        <div class="advise" id="advise">
+            <div class="advise-title">
+                <p class="advise-title-content">填写建议</p>
+            </div>
+            <div id="advise-inner">
+                <div>
+                    <a id="btclose" onclick="$('#suggestion').hide();"></a>
+                </div>
+                <div class="content">
+                    <!--功能建议-->
+                    <div class="suggestionsBox">
+                        <div class="suggestionsBoxForm">
+                            <div class="formBox">
+                                <div class="formBoxTitle">新增建议*</div>
+                                <div class="selectBox">
+                                    <div class="selectBox1">
+                                        <input class="variation" id="platfrom" type="radio" value="1"
+                                            name="suggestionType" checked>
+                                        <label for="platfrom">平台建议</label>
+                                        <input class="variation" id="depositAndWithdrawal" type="radio" value="2"
+                                            name="suggestionType">
+                                        <label for="depositAndWithdrawal">出入金</label>
+                                        <input class="variation" id="serve" type="radio" value="3"
+                                            name="suggestionType">
+                                        <label for="serve">服务</label>
+                                    </div>
+                                    <div class="selectBox2">
+                                        <input class="variation" id="software" type="radio" value="4"
+                                            name="suggestionType">
+                                        <label for="software">电脑软件PC</label>
+                                        <input class="variation" id="phoneApp" type="radio" value="5"
+                                            name="suggestionType">
+                                        <label for="phoneApp">手机软件APP</label>
+                                        <input class="variation" id="other" type="radio" value="6"
+                                            name="suggestionType">
+                                        <label for="other">其他</label>
+                                    </div>
+                                </div>
+                                <div class="inputBox">
+                                    <textarea class="big-input-box" placeholder="请输入您的意见或建议(限300字)" maxlength="300"
+                                        rows="4" id="contentText"></textarea>
+                                    <em id="contentEm">请输入您的意见或建议</em>
+                                </div>
+                            </div>
+                            <div class="formBox">
+                                <div class="formBoxTitle">您是否有创富会员账号*</div>
+                                <div class="acc_btn_select">
+                                    <input class="variation" id="haveAcc" type="radio" value="3" checked="checked"
+                                        name="haveAcc">
+                                    <label for="haveAcc">有账号</label>
+                                    <input class="variation" id="noAcc" type="radio" value="1" name="haveAcc">
+                                    <label for="noAcc">沒有账号</label>
+                                </div>
+                            </div>
+                            <div class="formBox" id="acc">
+                                <div class="formBoxTitle">会员账号*</div>
+                                <div class="inputBox">
+                                    <input class="middle-input-box" type="number" maxlength="8"
+                                        placeholder="请输入您的账户/手机号">
+                                    <em class="accPhoneEm">请输入有效的账户或手机号</em>
+                                </div>
+                            </div>
+                            <div class="formBox" id="phone" style="display: none;">
+                                <div class="formBoxTitle">联系手机*</div>
+                                <div class="inputBox">
+                                    <input class="middle-input-box" type="number" maxlength="11" placeholder="请输入您的手机号">
+                                    <em class="accPhoneEm">请输入有效的手机号</em>
+                                </div>
+                            </div>
+                            <div class="formBox">
+                                <div class="formBoxTitle">微信</div>
+                                <div class="inputBox">
+                                    <input class="middle-input-box" type="text" placeholder="请输入您的微信号" id="weChat">
+                                    <em class="weChatEm">请输入有效的微信号</em>
+                                </div>
+
+                            </div>
+                            <div class="formBox">
+                                <div class="formBoxTitle">图片<p class="optional-title">(选填，提供相关截图)
+                                    </p>
+                                </div>
+                                <div class="inputBox">
+                                    <div class="uploadBox">
+                                        <div id="uploadBoxText" class="small-input-box">图片限上传一张</div>
+                                        <label for="uploadImg" class="uploadButton">上传</label>
+                                        <input type="file" id="uploadImg" class="variation">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="formBox" style="text-align: center;">
+                                <div class="cs_notice">
+                                    如果您有紧急事宜，请
+                                    <div style="color:#3391e7;display: inline;cursor: pointer; font-weight: 700;"
+                                        onclick="window.open('/cn/onlinecs.html', 'mozillaWindow', 'popup')">联系客服</div>
+                                </div>
+                                <div class="submitButtonPC">提交</div>
+                                <div class="submitButtonMobile">提交</div>
+                                <div class="thanks-title">
+                                    多谢您的宝贵意见反馈，意见被采纳将通过微信联系，发送<p style="color:#ffa200;display: inline; font-weight: 700;">
+                                        2</p>美元赠金。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="finish-advise" style="display: none;">
+            <div>
+                <a id="btclose-finish" onclick="shadowClick()"></a>
+            </div>
+            <img class="finish-icon"
+                src="/source/www/nav-right/finish_icon_w.png" />
+            <p class="finish-notice">感谢您的到访，建议提交成功！</p>
+        </div>
+        <div class="loadingBox">
+            <div class="loading"></div>
+        </div>
+    </div>
+</body>
+<script>
+    var isFormSubmitSuccess = false
+
+    $('#imgSuggestionsBoxSwitch').click(function () {
+        $('.suggestionSwitch').show();
+    })
+    let img, feedback = { "realAccount": "", "phone": "", "wechat": "", "type": 1, "content": "", "demoAccount": "" }
+    function shadowClick() {
+
+        if (isFormSubmitSuccess) {
+            isFormSubmitSuccess = false
+            location.reload()
+        } else {
+            $('#suggestion').hide();
+        }
+    }
+    // 點擊 Mobile 按鈕
+    $(".submitButtonMobile").bind('click', function () {
+        submitFeedback(2, 'Mobile/CF138'); // platform 为 2, channel 为 'Mobile/CF138'
+    });
+
+    // 點擊 PC 按鈕
+    $(".submitButtonPC").bind('click', function () {
+        submitFeedback(3, 'PC/CF138'); // platform 为 3, channel 为 'PC/CF138'
+    });
+    function submitFeedback(platformValue, channel) {
+        let type = $('input:radio[name=suggestionType]:checked').val(),
+            haveAcc = $('input:radio[name=haveAcc]:checked').val(),
+            realAccount = $('#acc input').val(),
+            phone = $('#phone input').val(),
+            weChat = $('#weChat').val(),
+            phoneState = true,
+            weChatState = true,
+            realAccState = true,
+            content = $('#contentText').val(),
+            phoneReg=/^1[3-9]\d{9}$/,
+            weChatReg = /^[a-zA-Z]([-_a-zA-Z0-9]{5,19})+$/;
+        if (!content) {
+            $('#contentEm').css('display', 'block');
+            $('#contentText').css('border-color', 'red');
+        } else {
+            $('#contentEm').css('display', 'none');
+            $('#contentText').css('border-color', 'rgba(169, 169, 169, 1)');
+        }
+        if (phoneReg.test(phone)) {
+            phoneState = true
+        } else {
+            phoneState = false
+        }
+        if (weChatReg.test(weChat)) {
+            weChatState = true
+        } else {
+            weChat == '' ? weChatState = true : weChatState = false;
+        }
+        if (!realAccount && !phoneState) {
+            $('.accPhoneEm').css('display', 'block');
+            $('#acc input').css('border-color', 'red');
+            $('#phone input').css('border-color', 'red');
+        } else {
+            realAccState ?
+                ($('.accPhoneEm').css('display', 'none'),
+                    $('#acc input').css('border-color', 'rgba(169, 169, 169, 1)'),
+                    $('#phone input').css('border-color', 'rgba(169, 169, 169, 1)')) :
+                ($('.accPhoneEm').css('display', 'block'),
+                    $('#acc input').css('border-color', 'red'),
+                    $('#phone input').css('border-color', 'red'))
+        }
+        if (!weChatState) {
+            $('.weChatEm').css('display', 'block');
+            $('#weChat').css('border-color', 'red');
+        } else {
+            $('.weChatEm').css('display', 'none');
+            $('#weChat').css('border-color', 'rgba(169, 169, 169, 1)');
+        }
+        if ((realAccount || phoneState) && weChatState && content) {
+            $('.loadingBox').show();
+            $('#advise').hide();
+            if (realAccount.length >= 11) {
+                phone = realAccount
+                realAccount = ''
+            }
+            feedback = { "realAccount": realAccount, "phone": phone, "wechat": weChat, "type": type, "content": content, "demoAccount": "" };
+            const data = new FormData();
+            data.append("feedback", JSON.stringify(feedback));
+            if (img) { data.append('images', img); }
+
+            $.ajax({
+                type: 'POST',
+                data: data,
+                // url: 'http://yuncloudapi.zdcfd.com/mis/api/feedback/submit',   // UAT test link
+                url: 'https://gate.icinew.com/mis/api/feedback/submit',     // PRD link
+                processData: false,
+                contentType: false,
+                headers: {
+                    // 'sign': 'test_sign_8859',
+                    'platform': platformValue, // 使用傳遞的 platform 變量
+                    'accountType': haveAcc,
+                    'channel': channel, // 使用新的 channel 变量
+                    'isAjax': 'true',
+                    'origin': 'www.cfd138.com'
+                },
+            }).done(function (res) {
+                $('.loadingBox').hide();
+                if (res.result) {
+                    isFormSubmitSuccess = true
+                    $('#finish-advise').show()
+                } else {
+                    if (res.message == '接口限流了') {
+                        alert('每分钟限提交一次，请稍等再提交。')
+                    } else {
+                        if (res.message == '无效的账号或电话号码' || res.message == '[游客用户需提供手机号码]') {
+                            $('.accPhoneEm').css('display', 'block');
+                            $('#acc input').css('border-color', 'red');
+                            $('#phone input').css('border-color', 'red');
+                            realAccState = false
+                        } else {
+                            alert(res.message.replace('|Invalid expression', '格式错误'))
+                        }
+                    }
+                    $('#advise').show()
+                }
+            })
+        }
+    }
+    $('#btclose-finish').on('click', function () {
+        $('#finish-advise').hide();
+        $('.loadingBox').hide();
+        $('#advise').show();
+    })
+    $('#uploadImg').on('change', function () {
+        var _this = this;
+        var imgVal = _this.files[0];
+        console.log(imgVal)
+        if (/\.(?:heif|heic|HEIF|HEIC)$/.test(imgVal.name.toLowerCase())) {
+            $('#uploadBoxText').text(imgVal.name).css('color', '#000')
+            if (imgVal) {
+                img = imgVal
+            }
+            return false
+        }
+        if (!(imgVal.type.indexOf('image') == 0 && imgVal.type && /\.(?:jpg|png|JPG|PNG)$/.test(imgVal.name.toLowerCase()))) {
+            alert('请上传 JPG、PNG 格式的图片。');
+            $('#uploadBoxText').text('图片限上传一张').css('color', '#D7D7D7')
+            img = '';
+            return false;
+        }
+        $('#uploadBoxText').text(imgVal.name).css('color', '#000')
+        if (imgVal) {
+            img = imgVal
+        }
+    });
+    $('input[type=radio][name=haveAcc]').on('change', function () {
+        switch ($(this).val()) {
+            case '3':
+                $('#acc').show();
+                $('#phone').hide();
+                $('#phone input').val('')
+                break;
+            case '1':
+                $('#acc').hide();
+                $('#phone').show();
+                $('#acc input').val('')
+                break;
+        }
+    });
+</script>
+
+</html>

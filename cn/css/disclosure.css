@@ -1,0 +1,158 @@
+.wrapper-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  /* position: relative; */
+}
+
+.wrapper-overlay-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper-content {
+  width: 75%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+.wrapper-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.wrapper-align-left {
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#disclosure-agreement {
+  display: none;
+}
+
+#disclosure-agreement.is-active {
+  display: block;
+}
+
+#disclosure-agreement .wrapper-content {
+  padding: 0.2rem;
+  /* width: 780px; */
+  height: 650px;
+  padding: 15px 32px;
+  max-width: 780px;
+}
+
+#disclosure-agreement .disclosure-agreement-text {
+  height: 480px;
+  overflow-y: scroll;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+#disclosure-agreement #text-audio-loading.is-remove {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+#disclosure-agreement #audio-progress {
+  height: 35px;
+  /* width: 580px; */
+  opacity: 0;
+  width: 0;
+  transition: all .3s ease-in-out;
+}
+
+#disclosure-agreement #audio-progress::-webkit-slider-runnable-track {
+  color: #0075FF;
+}
+
+#disclosure-agreement #audio-current-time {
+  margin-left: 25px;
+}
+
+#disclosure-agreement #audio-progress.is-active {
+  opacity: 1;
+  /* width: 580px; */
+  flex: 1;
+  -webkit-appearance: slider-horizontal;
+  background: #d3d3d3;
+}
+
+#disclosure-agreement .wrapper-row button {
+  padding: 5px 14px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: rgb(234, 234, 234);
+  color: black;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 2px;
+  /* background-color: #027DB4;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px; */
+}
+
+#close-disclosure {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+#disclosure-agreement button:hover {
+  cursor: pointer;
+}
+
+#disclosure-agreement button:disabled {
+  opacity: 0.7;
+}
+
+#disclosure-agreement #checkbox-read-disclosure {
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: checkbox;
+  margin-right: 8px;
+}
+
+.layer-popup {
+  font-size: 15px;
+  text-align: center;
+}
+
+.layer-popup .layui-layer-title {
+  font-size: 18;
+  font-weight: bold;
+  padding: 0;
+}
+
+.layer-popup .layui-layer-content {
+  display: flex;
+  min-height: 55px;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer-popup .layui-layer-btn {
+  text-align: center;
+}

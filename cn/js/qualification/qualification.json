@@ -1,0 +1,67 @@
+{
+  "result":[
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic1.png",
+      "title":" 移动平均线(Moving Average)",
+      "abstract":"移动平均线是将某一段时间的收盘价之和除以该周期，从而得到一条带有趋势性的轨迹",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?00"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic2.png",
+      "title":" 布林线指标（Bollinger Bands）",
+      "abstract":"布林线是一个多功能指标，它结合了移动平均和标准差，是最广泛使用的技术指标之一",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?01"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic3.png",
+      "title":" 指数平滑异同平均线（MACD）",
+      "abstract":"当MACD从负数转向正数，是买的信号；当MACD从正数转向负数，是卖的信号",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?02"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic4.png",
+      "title":" 相对强弱指标（RSI）",
+      "abstract":"相对强度指标是一个用来分析当前价格强度与之前价格关系的振荡器",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?03"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic5.png",
+      "title":" 随机指标（KDJ）",
+      "abstract":"在盘整震荡走势中, KDJ指标是短线高抛低吸操作中最得力的工具之一",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?04"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic6.png",
+      "title":" 乖离率指标(BIAS)",
+      "abstract":"乖离率(BIAS)指标主要用于测算汇价在波动过程中与移动平均线的偏离程度",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?05"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic7.png",
+      "title":" BBI多空指数",
+      "abstract":"BBI是一种将不同日数移动平均线加权平均之后的综合指标，属于均线型指标",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?06"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic8.png",
+      "title":" 威廉指标-WR",
+      "abstract":"威廉指标是过度买入和过度抛售的技术指标，它可以提供潜在买卖信号",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?07"
+    },
+    {
+      "imgUrl":"/source/www/news/qualification/new-version/subtopic9.png",
+      "title":" 顺势指标- (CCI)",
+      "abstract":"顺势指标是给出买卖信号使用的技术指标，也被用来辨认过量买进和过度抛售的区域",
+      "property":"1",
+      "addUrl":"/cn/edu/qualification-detail.html?08"
+    }
+  ]
+}

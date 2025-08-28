@@ -1,0 +1,106 @@
+<div class="left_row clearfix">
+    <div class="left_cont">
+        <div class="left1">
+            <div class="mod_video">
+                <!--文字直播-->
+                <div class="live-notice dn" id="nextCourse">
+                    <div class="cont">
+                        <div class="ntext"></div>
+                        <div class="nextbox dn">
+                            <div class="tec_head">
+                                <img src="" />
+                            </div>
+                            <span class="t_name"></span>
+                            <p class="live_name"></p>
+                            <span class="live_time"><span>直播时间：<label class="time" style="margin-left:5px;"></label></span></span>
+                        </div>
+                    </div>
+                </div>
+                <!--视频直播-->
+                <div id="videoPlayerPanel" class="dn" style="width: 100%; height: 100%"></div>
+                <!--无直播 教程循环-->
+                <div class="video-loop dn" id="videoLoop">
+                    <video id="my-player" width="100%" height="100%" object-fit="fill" class="video-js vjs-default-skin vjs-big-play-centered">
+
+                   </video>
+                </div>
+                <!--教学视频播放窗口-->
+                <div class="video-teach dn">
+                    <video id="video-teach" autoplay="autoplay" width="100%" height="100%" controls class="video-js vjs-default-skin vjs-big-play-centered">
+
+                    </video>
+                </div>
+                <!-- 滚动新闻 -->
+                <div class="mod_scrollnews">
+                    <div class="newslist">
+                        <div class="newsbox bd">
+                            <ul>
+
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="newsclose"><i></i></a>
+                    </div>
+                    <a href="javascript:void(0);" class="newsbtn">
+                        <i></i>NEWS<sup id="rollNewCount" style="display:none;">0</sup></a>
+                </div>
+                <!-- 滚动新闻 end -->
+                <!--侧边提示 今日课程-->
+                <div class="mod_livelist">
+                    <div class="cont">
+                        <div class="minbox dn" id="playlist_min"><a href="javascript:void(0)" id="playlist_show"><i></i></a></div>
+                        <div class="maxbox" id="playlist_max">
+                            <div class="livetabnav" id="playlist_nav">
+                                <a href="javascript:void(0)" class="on" t="today">
+                                   今日课程</a>
+                                <a href="javascript:void(0)" class="fr" t="yesterday" style="display: none;">
+                                   昨日回顾</a>
+                            </div>
+                            <div class="livetab" id="playlist_panel">
+                                <div class="scrollbox">
+                                    <ul t="today">
+                                    </ul>
+                                    <ul t="yesterday" style="display: none;">
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="hidebtn" id="playlist_hide"><i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--侧边提示 end-->
+            </div>
+            <div class="mod_videolist mod_infotab">
+                <div class="tabnav">
+                    <!--<a href="javascript:void(0)" data-type="analyst-order" >交易动态</a>-->
+                    <a href="javascript:void(0)" data-type="main_tab" class="on">教学课程</a>
+                    <div class="nav-right fr">
+                        <ul class="clearfix">
+                            <li class="myClass"><span class="bg-book"></span>课程安排</li>
+                            <li class="myaid"><span class="bg-assi "></span>联系助理</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabcont">
+                    <div class="main_tab on">
+                        <div class="sub-tabnav" id="teachVideoId">
+                            <a href="javascript:void(0);" t="teach_video_base" class="on"><span>新手入门</span></a>
+                            <a href="javascript:void(0);" t="teach_video_simple"><span>新手进阶</span></a>
+                            <a href="javascript:void(0);" t="teach_video_operate"><span>技术实战</span></a>
+                            <div class="backLiveRoom dn" id="backLiveRoom"><i class="bg-back"></i>返回直播间</div>
+                        </div>
+                        <div class="tab-content" id="teach-wrapper">
+                            <ul class="clearfix" id="tab-content">
+                                <!--<li>-->
+                                <!--<a href="">-->
+                                <!--<img src="http://download.cfd139.com/live/pc/order.jpg" alt="">-->
+                                <!--<p>个人如何在线炒外汇最赚钱</p>-->
+                                <!--</a>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

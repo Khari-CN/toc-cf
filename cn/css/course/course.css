@@ -1,0 +1,1494 @@
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.inner.position {
+    position: relative
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/news/course/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.web-content {
+    /* overflow: hidden; */
+    width: 100%;
+    position: relative;
+}
+
+.web-content .web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 58px 0 97px 0;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 60px 0 10px 0;
+    color: #000000;
+    text-align: left;
+}
+
+a,
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+li,
+ol,
+p,
+pre,
+span,
+table,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li,
+ol {
+    list-style: none
+}
+
+em,
+i {
+    font-style: normal
+}
+
+a {
+    text-decoration: none
+}
+
+input,
+textarea {
+    -webkit-appearance: none
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.web-footer .layout-1 {
+    padding-left: 387px;
+    margin-bottom: 10px
+}
+
+.web-footer .layout-1 ul li {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    border-right: 1px solid #666;
+    padding: 0 10px
+}
+
+.web-footer .layout-1 ul li a {
+    color: #666;
+    font-size: 16px
+}
+
+.web-footer .layout-1 ul li:last-child {
+    border-right: 0
+}
+
+.web-footer .layout-2 {
+    color: #666;
+    font-size: 16px
+}
+
+.crumb-wrap {
+    width: 100%;
+    background-color: #f2f2f2;
+    font-size: 16px
+}
+
+.crumb-wrap .w {
+    padding: 13px 0 9px
+}
+
+.crumb-wrap .w .item {
+    float: left
+}
+
+.crumb-wrap .w .item a {
+    color: #666
+}
+
+.crumb-wrap .w .item.sep {
+    padding: 0 10px;
+    color: #D8D8D8
+}
+
+.crumb-wrap .w .item a:hover {
+    color: #035B83;
+    text-decoration: none
+}
+
+.content {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto
+}
+
+/* .web-content {
+    background: url('https://img.cfd139.com/source/www/news/course/main-bg.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+} */
+
+.content .part1 {
+    margin-bottom: 30px;
+}
+
+.content .part1 .title1 {
+    margin: 40px 0 30px 0;
+}
+
+.main-video-player {
+    position: relative;
+    margin-top: 35px;
+}
+
+.content .part1>video {
+    cursor: pointer;
+}
+
+.main-video-player button {
+    background: url(//img.cfd139.com/source/www/news/course/btn_play.png) no-repeat;
+    width: 211px;
+    height: 211px;
+    background-size: 100% 100%;
+    border: transparent;
+    position: absolute;
+    top: 34%;
+    left: 42%;
+}
+
+.content .part1>video:hover+.part1-play-btn img {
+    display: block;
+}
+
+.part2 {
+    margin-bottom: 80px;
+}
+
+.content .part2 .bg-nav {
+    overflow: hidden;
+    width: 100%;
+    /* border-bottom: solid 1px #ccc; */
+}
+
+.part2 .bg-nav .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.part2 .bg-nav .nav .navs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part2 .bg-nav .nav ul,
+li {
+    list-style: none;
+}
+
+.part2 .bg-nav .nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #9fa0a0;
+    border-radius: 3px;
+    width: 140px;
+    height: 36px;
+    margin: 10px 20px;
+}
+
+.part2 .bg-nav .nav ul li.on {
+    border: solid 1px #2986d7;
+}
+
+.part2 .bg-nav .nav ul li span {
+    font-size: 1.8em;
+    font-family: Microsoft JhengHei;
+    color: #9fa0a0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.part2 .bg-nav .nav ul li.on span {
+    color: #2986d7;
+}
+
+.part2 .bg-nav .nav ul li img.pic {
+    margin-left: -17px;
+}
+
+.part2 .bg-nav .nav ul li img.hide {
+    display: none;
+}
+
+.part2 .bg-nav .nav ul li img.hide1 {
+    display: none;
+}
+
+.part2 .nav-content {
+    overflow: hidden;
+    display: none;
+}
+
+.grid-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
+
+.grid-container .all {
+    padding-bottom: 70px;
+}
+
+/* .grid-container .all >a >img{
+    width: 310px;
+    height: 175px;
+    position: relative;
+    margin: 0 8px 8px 0;
+    float: left;
+} */
+
+.grid-container .beginner .video-play>a>img {
+    border-style: solid;
+    border-color: #b6da2f;
+}
+
+.grid-container .intermediate .video-play>a>img {
+    border-style: solid;
+    border-color: #00a0d7;
+}
+
+.grid-container .technical .video-play>a>img {
+    border-style: solid;
+    border-color: #ff7d01;
+}
+
+.part2 .nav-content .video-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.lengththumbnail {
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    height: 20px;
+    width: 59px;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Microsoft JhengHei;
+    font-weight: lighter;
+    right: -3px;
+    visibility: visible;
+}
+
+.video-desc {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #000000;
+    padding: 10px 0 0 0;
+    cursor: pointer;
+    font-family: Microsoft JhengHei;
+}
+
+/* play-btn */
+.video-play {
+    position: relative;
+    width: 310px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+.grid-container .all .vid-clip-play {
+    width: 315px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.grid-container .all .vid-clip-play:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#66000000', endColorstr='#66000000');
+    /* IE */
+}
+
+.grid-container .all .vid-clip-play img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    width: 44px;
+}
+
+.bg-duration1 {
+    background: url('//img.cfd139.com/source/www/news/course/timer_bg1.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-duration2 {
+    background: url('//img.cfd139.com/source/www/news/course/timer_bg2.png') no-repeat !important;
+    background-size: 100% 100%;
+}
+
+.bg-duration3 {
+    background: url('//img.cfd139.com/source/www/news/course/timer_bg3.png') no-repeat !important;
+    background-size: 100% 100%;
+}
+
+.video_caculate {
+    display: none;
+    visibility: hidden;
+}
+
+.web-content .content-left {
+    width: 23.3%;
+    float: left
+}
+
+.web-content .content-left .content-title {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-size: 24px;
+    background: url(//sc.cfygxz.com/source/www/news/academy/bg-academy.jpg) no-repeat;
+    background-size: 280px 80px
+}
+
+.web-content .content-left .content-middle {
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+
+.web-content .content-left .content-middle li {
+    cursor: pointer;
+}
+
+.web-content .content-left .content-middle li:hover a {
+    color: #035a82;
+}
+
+.web-content .content-left .content-middle li span {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #eee;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.web-content .content-left .content-middle li a {
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    width: 223px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.web-content .content-left .content-middle .active a {
+    color: #035a82;
+}
+
+.web-content .content-left .content-bottom .pro-title {
+    padding-top: 40px;
+    text-align: left
+}
+
+.web-content .content-left .content-bottom .pro-title .title-left {
+    display: inline-block;
+    width: 140px;
+    border-bottom: 2px solid #035a82;
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 15px
+}
+
+.web-content .content-left .content-bottom .pro-title .title-left span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 23px;
+    height: 26px;
+    background: url(//sc.cfygxz.com/source/www/news/academy/academy-spirts.png) -10px -10px
+}
+
+.web-content .content-left .content-bottom .pro-title .title-right {
+    float: right
+}
+
+.web-content .content-left .content-bottom .pro-title .title-right a {
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid #eee
+}
+
+.web-content .content-left .content-bottom .pro-title .title-right a:hover {
+    background: #0096dc;
+    color: #fff
+}
+
+.web-content .content-left .content-bottom .pro-detail {
+    margin-top: 10px
+}
+
+.web-content .content-left .content-bottom .pro-detail a {
+    display: block;
+    height: 150px
+}
+
+.web-content .content-left .content-bottom .pro-detail a:hover {
+    box-shadow: 0 0 0 3px #faa121
+}
+
+.web-content .content-right {
+    margin-left: 25%
+}
+
+.web-content .content-right .content-detail {
+    padding: 0 0 40px 35px;
+    text-align: left;
+    /*font-size: 0;*/
+    overflow: hidden;
+}
+
+.web-content .content-right .content-detail ul li {
+    float: left;
+    width: 270px;
+    margin-right: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.web-content .content-right .content-detail .mask {
+    position: absolute;
+    top: -179px;
+    left: 0;
+    width: 270px;
+    height: 179px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.web-content .content-right .content-detail ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.web-content .content-right .content-detail ul li .top-bannerr {
+    width: 270px;
+    height: 179px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.web-content .content-right ul li .item-1 {
+    overflow: hidden;
+    position: relative;
+    width: 270px;
+    height: 179px;
+}
+
+.web-content .content-right ul li .item-1 .lock {
+    width: 62px;
+    height: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -31px;
+    margin-top: -38px;
+}
+
+.web-content .content-right ul li .item-1 .lock.ds {
+    display: none;
+}
+
+.web-content .content-right ul li .ds {
+    display: none;
+}
+
+.web-content .content-right ul li .item-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.web-content .content-right ul li .item-2 span {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url(//sc.cfygxz.com/source/www/news/academy/academy-spirts.png) -52px -56px;
+    background-size: 169px 88px;
+    vertical-align: middle;
+}
+
+.web-content .content-right ul li .item-2 {
+    font-size: 16px;
+    color: #333;
+    margin: 15px 0;
+    padding-right: 10px;
+
+}
+
+.web-content .content-right ul li .item-2 .left {
+    padding-right: 10px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.web-content .content-right ul li:hover {
+    box-shadow: 0 12px 64px rgba(0, 0, 0, 0.1);
+}
+
+.web-content .content-right ul li:hover .left {
+    color: #075780;
+    padding-left: 10px;
+}
+
+.web-content .content-right ul li:hover .mask {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.web-content .content-right ul li:hover .right {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.web-content .content-right ul li:hover .item-3 {
+    padding-left: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.web-content .content-right ul li:hover .item-1 .top-bannerr {
+    transform: scale(1.1, 1.1);
+}
+
+.web-content .content-right ul li .item-3 {
+    font-size: 13px;
+    color: #999;
+    line-height: 22px;
+    padding-right: 10px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.web-content .content-right ul li .item-2 .rightArrow {
+    display: inline-block;
+    background: url("//sc.cfygxz.com/source/www/news/qualification/change.png");
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.web-content .content-right ul li:hover .rightArrow {
+    border-radius: 50%;
+    background-size: 32px 32px;
+    border: 1px solid transparent;
+}
+
+.web-content .content-right ul li .item-2 .right {
+    width: 33px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.web-content .content-detail a {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* detail 页面*/
+.content-detail {
+    font-size: 30px;
+    color: #035a82;
+}
+
+.content-detail h1 {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    background: #035a82;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3px 20px 3px 10px;
+    margin: 30px 0;
+}
+
+.content-detail p {
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.content-detail h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-detail p img {
+    width: 863px;
+    border: 0;
+    margin: 20px 0;
+}
+
+.content-right .pageOrder {
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.content-right .pageOrder .lastpage a,
+.content-right .pageOrder .nextpage a {
+    cursor: pointer;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.lastpage {
+    margin-bottom: 15px;
+}
+
+/* open account panel*/
+.web-page.bg06 {
+    background: #60646a;
+    overflow: hidden;
+    width: 100%;
+    padding: 58px 0 97px 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box .open-panel {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/aboutUs/advantage/openAc_bg.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: 1180px;
+    width: 1107px;
+    height: 172px;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.open-panel p {
+    font-size: 2.8em;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.open-panel a {
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.2em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 180px;
+    height: 45px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* web page responsive*/
+@media (max-width: 1400px) {
+    .inner {
+        width: 90%
+    }
+}
+
+@media (max-width: 1367px) {
+    .nav-content {
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 400px);
+    }
+
+    .part1 .main-video-player {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-video-player button {
+        top: 27%;
+        left: 38%;
+    }
+
+    .part1 .main-video-player>video {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 960px) {
+    .part1 .main-video-player>video {
+        width: 700px;
+    }
+
+    .part2 .bg-nav .nav ul li {
+        width: 120px;
+    }
+}
+
+@media (max-width: 770px) {
+    .box .open-panel {
+        bottom: 34%;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav-content {
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 400px);
+    }
+
+    .part1 .main-video-player {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .part1 .main-video-player>video {
+        width: 600px;
+    } */
+
+    .main-video-player button {
+        width: 105px;
+        height: 105px;
+        top: 34%;
+        left: 42%;
+    }
+
+    .box .open-panel {
+        bottom: 26%;
+    }
+}
+
+/* @media (min-width: 320px) {
+    .content .part1 .main-video-player >video {
+      width: 100%;
+    }
+  }
+  @media (min-width: 640px) {
+    .content .part1 .main-video-player >video {
+        width: 400px;
+      }
+}
+@media (min-width: 720px) {
+    .content .part1 .main-video-player >video {
+        width: 600px;
+      }
+}
+
+@media (min-width: 855px) {
+    .content .part1 .main-video-player >video {
+        width: 700px;
+      }
+}
+
+@media (min-width: 1024px) {
+    .content .part1 .main-video-player >video {
+        width: 800px;
+      }
+}
+@media (min-width: 1280px) {
+    .content .part1 .main-video-player >video {
+        width: 800px;
+      }
+}
+@media (min-width: 1367px) {
+    .content .part1 .main-video-player >video {
+        width: 1000px;
+      }
+}
+@media (min-width: 1920px) {
+    .content .part1 .main-video-player >video {
+        width: 1000px;
+      }
+} */
+/* mobile version responsive  */
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/news/course/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 1rem 0 0.1rem 0;
+        letter-spacing: 3px;
+    }
+
+    .main-video-player {
+        max-width: 7.5rem;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .part1 .main-video-player>video {
+        width: 7rem;
+        margin: 0 auto;
+    }
+
+    .main-video-player button {
+        background: unset;
+        width: unset;
+        height: unset;
+        background-size: unset;
+        border: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+    }
+
+    .content .part1 {
+        margin-bottom: 0;
+    }
+
+    .part1 .main-video-player>video[poster] {
+        width: 100%;
+    }
+
+    .part2 .bg-nav .nav .navs {
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .part2 .bg-nav .nav ul li span {
+        font-size: 0.28rem;
+    }
+
+    .bg-nav .inner {
+        width: 100%;
+    }
+
+    .part2 .bg-nav .nav ul li {
+        width: 2rem;
+        margin: 0.1rem 0.15rem;
+    }
+
+    .lengththumbnail {
+        font-size: 0.2rem;
+        font-weight: normal;
+    }
+
+    .video-desc {
+        font-size: 0.23rem;
+    }
+
+    .more-video .reload {
+        color: #4ba6fa;
+        font-size: 0.3rem;
+        line-height: 1.0;
+        margin: 20px 0 100px 0;
+        text-align: center;
+        cursor: pointer;
+        font-family: Microsoft JhengHei;
+        letter-spacing: 1px;
+    }
+
+    .web-content .web-page{
+        padding: 1rem 0 0 0;
+    }
+
+    /* open-panel */
+    .web-page.bg06 {
+        display: none;
+    }
+
+    .box {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+
+    .box .open-panel {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/openAc_bg.png') no-repeat;
+        width: 6.35rem;
+        height: 1rem;
+        background-size: 100% 100%;
+        position: relative;
+        margin-bottom: 0.8rem;
+    }
+
+    .open-panel p {
+        font-size: 0.22rem;
+        font-family: 'Microsoft JhengHei';
+        font-weight: 700;
+        padding: 0 0rem 0 0.15rem;
+        letter-spacing: 0;
+    }
+
+    .open-panel a {
+        font-size: 0.23rem;
+        width: 2rem;
+        height: 0.45rem;
+    }
+
+}

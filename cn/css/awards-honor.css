@@ -1,0 +1,786 @@
+#main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.slideout-panel {
+    background-color: #ffffff;
+}
+
+.web-banner {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/awards-honor/m/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.billboard {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/awards-honor/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin-top: 80px;
+    color: #000000;
+}
+
+.web-banner span {
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.web-banner span.size {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.web-content {
+    width: 100%;
+    position: relative;
+}
+
+.web-content .year {
+    background: #ffffff;
+}
+
+.web-content .year:hover {
+    background: #f4f4f5;
+}
+
+.year {
+    overflow: hidden;
+    position: relative;
+}
+
+.year.first {
+    margin-top: 30px;
+}
+
+.year .left-time {
+    overflow: hidden;
+    text-align: center;
+    color: #2170b5;
+    font-size: 1.6em;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.year .left-time .dashed1 {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #2170b5;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.year .left-time .dashed2 {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #3691e0;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.year .left-time .dashed3 {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #5db3fd;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.year .left-time .year2 {
+    color: #3691e0;
+}
+
+.year .left-time .year3 {
+    color: #5db3fd;
+}
+
+.year .right-con {
+    overflow: hidden;
+    border-left: dashed 2px #9fa0a0;
+    padding-left: 25px;
+    margin-left: 39px;
+}
+
+.year .right-con a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #9fa0a0;
+    padding: 15px 0;
+}
+
+.year .right-con .default {
+    border-bottom: unset !important;
+    padding: 15px 0 60px 0;
+}
+
+/* .year .right-con a:hover{
+    transform: scale(1.1);
+} */
+
+.year .right-con a span {
+    font-size: 2em;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.year .right-con a img {
+    width: 25px;
+    height: 19px;
+}
+
+.year .right-con.last {
+    border-left: unset;
+}
+
+.web-content .web-page {
+    overflow: hidden;
+    width: 100%;
+    /* padding: 58px 0 97px 0; */
+}
+
+.bg02 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/awards-honor/bg2.png') no-repeat;
+    background-size: 100% 100%;
+    height: 512px;
+    width: 100%;
+}
+
+.bg02 .main-title {
+    border-left: 10px solid #ffac00;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.pros {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.pros img {
+    margin: 0 auto;
+}
+
+.pros .title {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+}
+
+.pros .sub-title {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.inner .open-panel {
+    position: absolute;
+    display: flex;
+    bottom: -21px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.inner .open-panel a {
+    margin: 0 50px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 225px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(74, 164, 247, 1) 0%, rgba(20, 98, 169, 1) 100%);
+}
+
+.inner .open-panel a:last-child {
+    /* margin: 0 auto; */
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 225px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+@media screen and (max-width: 1200px) {
+    .inner {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .inner {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/aboutUs/awards-honor/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 2rem 0 0.1rem 0;
+    }
+
+    .year.first{
+        margin-top: 0.5rem;
+    }
+
+    .year .left-time{
+        font-size: 0.25rem;
+        font-family: 'Arial';
+        margin-left: 0.21rem;
+    }
+
+    .year .right-con a span{
+        max-width: 90%;
+        font-size: 0.25rem;
+        font-family: 'Microsoft JhengHei';
+        letter-spacing: 0;
+        font-weight: 700;
+    }
+
+    .year .right-con{
+        margin-left: 0.32rem;
+        padding-left: 0.2rem;
+    }
+
+    .year .right-con a img{
+        width: 0.25rem;
+        height: 0.19rem;
+    }
+
+    .bg02 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/awards-honor/m/bg2.png') no-repeat;
+        background-size: 100% 100%;
+        height: 10.51rem;
+        width: 7.5rem;
+    }
+
+    .bg-btn{
+        width: 100%;
+    }
+
+    .bg02 .main-title {
+        margin: 1.5rem 0 0.6rem 0;
+    }
+
+    .pros{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pros >div img{
+        width: 1.48rem;
+    }
+
+    .pros >div{
+        margin-bottom: 0.5rem;
+    }
+
+    .pros .title{
+        font-size: 0.28rem;
+    }
+
+    .pros .sub-title{
+        font-size: 0.16rem;
+    }
+
+    .inner .open-panel a{
+        font-size: 0.3rem;
+        margin: 0 0.3rem;
+
+    }
+
+    .inner .open-panel a:last-child{
+        font-size: 0.3rem;
+    }
+
+}

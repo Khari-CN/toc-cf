@@ -1,0 +1,132 @@
+
+<div id="calendar" class="index-calendar">
+    <div class="calendar-top">
+        <div class="week swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide" @click="changeDay(item)" v-for="item in dayInWeek" :class ="{'active': item.isActive}" >
+                    <span class="c-day">{{item.date | formatTime('MD')}}</span>
+                    <span class="c-date">{{item.chineseDay}}</span>
+                </li>
+
+            </ul>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev" @click="show_prev()"></div>
+            <div class="swiper-button-next" @click="show_next()"></div>
+        </div>
+    </div>
+    <div class="filter-calendar">
+        <div class="filter-btn" @click="filPart()"><i class="bg-calen04"></i>过滤</div>
+        <div class="filter-part" :class="{'active':filterBtn}">
+            <div class="single-country">
+                <ul class="clearfix">
+                    <li  v-for="(item ,index) in filterFlags" :typeName="item.id" :country="item.name"  @click="countrySelect(event)">
+                        <img :src="'/source/www/news/calendar/' + item.imgUrl" alt="">
+                        <span>{{item.name}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="many-country">
+                <ul class="clearfix">
+                    <li   v-for="item in countryPart" :type="item.id" @click="countrysSelect(event)" :country="item.countrys">
+                        <img :src=" '/source/www/news/calendar/' + item.imgUrl "  alt=""> {{item.name}}
+                    </li>
+                </ul>
+            </div>
+            <div class="select-star">
+                <ul class="clearfix">
+                    <li @click="selectStar(event)" star="1,2" ><i>★</i>★★</li>
+                    <li @click="selectStar(event)" star="3" ><i>★★</i>★</li>
+                    <li @click="selectStar(event)" star="4,5" ><i>★★★</i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="calendar-bottom">
+        <div class="bottom-data" >
+            <div class="calendar-data">
+                <p class="ca-title"><i class="bg-calen01"></i>财经数据</p>
+                <div class="data-list">
+                    <table cellspacing="0" width="100%" cellpadding="0">
+                        <tr  class="first-title">
+                            <th>时间</th>
+                            <th>国家</th>
+                            <th>指标</th>
+                            <th>重要性</th>
+                            <th>前值</th>
+                            <th>预测值</th>
+                            <th >公布值</th>
+                        </tr>
+                        <!--<tr>{{calendarData}}</tr>-->
+
+                            <tr v-if="calendarData.length != 0" v-for="items  in calendarData">
+                                <td>{{items.time}}</td>
+                                <td><img :src=" '/source/www/news/calendar/flag/' + flags[items.country] "alt=""></td>
+                                <td class="special-td">{{items.name}}</td>
+                                <td class="level">
+                                    <span  v-show ="items.importanceLevel == '2' || items.importanceLevel == '1'"><i>★</i>★★</span>
+                                    <span  v-show =" items.importanceLevel == '3'"><i>★★</i>★</span>
+                                    <span  v-show ="items.importanceLevel =='4' || items.importanceLevel == '5'"><i>★★★</i></span>
+                                </td>
+                                <td>{{items.lastValue?items.lastValue:"--"}}</td>
+                                <td>{{items.predictValue?items.predictValue :"--"}}</td>
+                                <td>{{items.value?items.value :"--"}}</td>
+                            </tr>
+                        <div v-if="calendarData == null || calendarData.length == 0"  class="data-status">{{ loadStatusEvent }}</div>
+                    </table>
+                </div>
+            </div>
+            <div class="calendar-event">
+                <p class="ca-title"><i class="bg-calen02"></i>财经事件</p>
+                <div class="data-list">
+                    <table cellspacing="0" width="100%" cellpadding="0">
+                        <tr  class="first-title">
+                            <th>时间</th>
+                            <th>国家</th>
+                            <th>重要性</th>
+                            <th>事件</th>
+                        </tr>
+                        <tr  v-if="calendarEvent != null && calendarEvent.length != 0" v-for="items  in calendarEvent">
+                            <td>{{items.time}}</td>
+                            <td><img :src=" '/source/www/news/calendar/flag/' + flags[items.country] "alt=""></td>
+                            <td class="level">
+                                <span  v-show ="items.importanceLevel == '1'"><i>★</i>★★</span>
+                                <span  v-show ="items.importanceLevel == '2' || items.importanceLevel == '3'"><i>★★</i>★</span>
+                                <span  v-show ="items.importanceLevel =='4' || items.importanceLevel == '5'"><i>★★★</i></span>
+                            </td>
+                            <td>{{items.content}}</td>
+                        </tr>
+                        <div v-if="calendarEvent == null"  class="data-status">{{ loadStatusEvent }}</div>
+
+
+
+
+                    </table>
+                </div>
+            </div>
+            <div class="calendar-holiday">
+                <p class="ca-title"><i class="bg-calen03"></i>假期预告</p>
+                <div class="data-list">
+                    <table cellspacing="0" width="100%" cellpadding="0">
+                        <tr  class="first-title">
+                            <th>时间</th>
+                            <th>国家</th>
+                            <th>事件</th>
+                        </tr>
+
+                            <tr  v-for="items  in calendarHoliday" v-if="calendarHoliday.length != 0">
+                                <td>{{items.time}}</td>
+                                <td><img :src=" '/source/www/news/calendar/flag/' + flags[items.country] "alt=""></td>
+                                <td>{{items.content}}</td>
+                            </tr>
+
+                            <div v-if="calendarHoliday == null"  class="data-status">{{ loadStatusEvent }}</div>
+
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

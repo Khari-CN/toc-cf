@@ -1,0 +1,226 @@
+.top-banner-about {
+  position: relative;
+  margin-top: -74px;
+  background: #1c4560;
+  line-height: 0; }
+  .top-banner-about .banner-about {
+    background: url( //sc.cfygxz.com/source/www/aboutUs/about/banner-about.jpg) no-repeat center top;
+    height: 350px; }
+
+.main-content-about {
+  background-color: #FFFFFF;
+  display: block; }
+  .main-content-about .img-about {
+    position: relative;
+    left: 0;
+    margin-top: -40px;
+    width: 503px;
+    height: 406px; }
+  .main-content-about .title-about {
+    font-size: 2.4em;
+    color: #035B83;
+    text-align: left;
+    padding-top: 100px; }
+  .main-content-about .des-about {
+    font-size: 1.6em;
+    line-height: 1.8;
+    color: #333333;
+    padding-right: 28px;
+    text-align: justify;
+    padding-top: 5px; }
+  .main-content-about .video {
+    display: none; }
+    .main-content-about .video .iframe {
+      width: 640px;
+      height: 498px;
+      top: 50%;
+      left: 50%;
+      margin-top: -249px;
+      margin-left: -320px;
+      z-index: 99999;
+      position: fixed; }
+    .main-content-about .video .overlay {
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      display: block;
+      left: 0;
+      top: 0;
+      background: #000;
+      opacity: 0.75;
+      position: fixed; }
+  .main-content-about .image-container {
+    width: 606px;
+    height: 340px;
+    margin: 40px auto;
+    position: relative; }
+    .main-content-about .image-container img {
+      width: 100%;
+      height: 340px;
+      border: 5px solid #FFFFFF;
+      box-shadow: 0px 1px 6px 6px #CCCCCC; }
+    .main-content-about .image-container .play {
+      left: 42%;
+      top: 36%;
+      position: absolute;
+      border-radius: 50%;
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      border: 4px solid #fff;
+      background: #000;
+      opacity: .7;
+      text-align: center;
+      color: #ddd;
+      font-size: .9em;
+      text-transform: uppercase;
+      z-index: 500;
+      -webkit-transition: all .2s ease-in;
+      -moz-transition: all .2s ease-in;
+      transition: all .2s ease-in; }
+      .main-content-about .image-container .play:before {
+        content: "-";
+        font-size: 368%;
+        line-height: .8;
+        margin: 22px 0 8px 0px;
+        display: block;
+        background: url( //sc.cfygxz.com/source/www/aboutUs/about/icon-play.png) no-repeat center center; }
+  .main-content-about .title-about-video {
+    font-size: 2.4em;
+    color: #035B83;
+    text-align: center; }
+  .main-content-about .des-about-video {
+    font-size: 1.6em;
+    color: #333333;
+    text-align: center;
+    line-height: 1.8;
+    padding-top: 4px;
+    padding-bottom: 70px; }
+  .main-content-about .bg-1 {
+    background: url( //sc.cfygxz.com/source/www/aboutUs/about/img-about-1.jpg) no-repeat center top;
+    height: 600px; }
+    .main-content-about .bg-1 .sub-title {
+      color: #FFFFFF;
+      font-size: 2.4em;
+      padding-top: 200px; }
+    .main-content-about .bg-1 .des-min {
+      color: #FFFFFF;
+      font-size: 1.6em;
+      line-height: 1.8;
+      width: 48%;
+      padding-top: 5px; }
+  .main-content-about .bg-2 {
+    background: url( //sc.cfygxz.com/source/www/aboutUs/about/img-about-2.jpg) no-repeat center top;
+    height: 600px; }
+    .main-content-about .bg-2 .sub-title {
+      color: #FFFFFF;
+      font-size: 2.4em;
+      padding-top: 380px; }
+    .main-content-about .bg-2 .des-min {
+      color: #FFFFFF;
+      font-size: 1.6em;
+      line-height: 1.8;
+      width: 48%;
+      padding-top: 5px; }
+  .main-content-about .bg-3 {
+    background: url( //sc.cfygxz.com/source/www/aboutUs/about/img-about-3.jpg) no-repeat center top;
+    height: 600px; }
+    .main-content-about .bg-3 .sub-title {
+      color: #FFFFFF;
+      font-size: 2.4em;
+      padding-top: 107px; }
+    .main-content-about .bg-3 .des-min {
+      color: #FFFFFF;
+      font-size: 1.6em;
+      line-height: 1.8;
+      width: 48%;
+      padding-top: 5px; }
+    .main-content-about .bg-3 .link-about {
+      color: #0096DB;
+      text-decoration: none; }
+      .main-content-about .bg-3 .link-about:hover {
+        color: #035B83; }
+  .main-content-about .bg-map {
+    background: url( //sc.cfygxz.com/source/www/aboutUs/about/bg-map.jpg) no-repeat center top;
+    height: 697px; }
+    .main-content-about .bg-map .title-map {
+      font-size: 3.6em;
+      color: #035B83;
+      padding-top: 30px;
+      text-align: center; }
+    .main-content-about .bg-map .des-map {
+      font-size: 1.6em;
+      color: #666666;
+      padding-top: 20px;
+      text-align: center; }
+    .main-content-about .bg-map .icon-mail {
+      background: url( //sc.cfygxz.com/source/www/aboutUs/about/icon-email.png) no-repeat center center;
+      width: 20px;
+      height: 20px;
+      display: block;
+      float: left;
+      margin-top: 20px;
+      margin-right: 10px; }
+    .main-content-about .bg-map .icon-headphone {
+      background: url( //sc.cfygxz.com/source/www/aboutUs/about/icon-headphone.png) no-repeat center center;
+      width: 20px;
+      height: 20px;
+      display: block;
+      float: left;
+      margin-top: 23px;
+      margin-right: 10px; }
+    .main-content-about .bg-map .icon-qq {
+      background: url( //sc.cfygxz.com/source/www/aboutUs/about/icon-qq.png) no-repeat center center;
+      width: 20px;
+      height: 20px;
+      display: block;
+      float: left;
+      margin-top: 23px;
+      margin-right: 10px; }
+    .main-content-about .bg-map .title-address {
+      font-size: 1.6em;
+      color: #035B83;
+      padding-top: 42px; }
+    .main-content-about .bg-map .title-addr-min {
+      color: #666666;
+      font-size: 1.6em;
+      padding-top: 20px; }
+    .main-content-about .bg-map .content-addr {
+      color: #333333;
+      font-size: 1.6em; }
+      .main-content-about .bg-map .content-addr a {
+        color: #333333; }
+        .main-content-about .bg-map .content-addr a:hover {
+          color: #035B83; }
+    .main-content-about .bg-map .fl {
+      float: left; }
+    .main-content-about .bg-map .fr {
+      float: right;
+      padding-left: 3%; }
+    .main-content-about .bg-map .text-map {
+      font-size: 1.6em;
+      color: #FFFFFF;
+      text-align: center;
+      position: relative;
+      top: 260px; }
+    .main-content-about .bg-map .link_w {
+      color: #0096DB;
+      padding: 0 5px; }
+      .main-content-about .bg-map .link_w:hover {
+        color: #035B83; }
+
+@media (min-width: 1920px) {
+  .bg-3 .des-min {
+    width: 40% !important; } }
+@media (max-width: 990px) {
+  .main-content-about .img-about {
+    margin-top: 14px; }
+  .main-content-about .bg-map .text-map {
+    top: 484px; } }
+@media (max-width: 720px) {
+  .main-content-about .img-about {
+    margin-top: 3px; }
+  .main-content-about .bg-map .text-map {
+    top: 484px; } }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,285 @@
+<div class="blackbg dn"></div>
+<div class="bannerblackbg dn"></div>
+
+
+<!-- 私信窗口 -->
+<div class="pletter_win clearfix mult dn">
+    <div class="mult_dialog"></div>
+</div>
+<div id="wh_content_tmp">
+    <div class="cont dn">
+        <div class="tit wh_drag"><label class="wh_nk"></label><label class="tit">【<strong></strong>】</label></div>
+        <div class="chat_content">
+            <div class="wh-content" style="height:269px">
+                <div class="dialoglist clearfix"></div>
+            </div>
+        </div>
+        <div class="input_box">
+            <div class="toolbar">
+                <a href="javascript:" class="tbtn facebtn" title="添加表情"></a>
+                <a href="javascript:" class="tbtn imgbtn" title="发图"></a>
+                <input type="file" class="imginp" style="display: none;">
+            </div>
+            <div class="input_area">
+                <div class="adiv">
+                    <!--<textarea class="ctextarea" placeholder="按回车发送私信"></textarea>-->
+                    <div contenteditable="true" class="ctextarea"></div>
+                </div>
+                <a href="javascript:" class="sendbtn"><span>发送</span></a>
+            </div>
+        </div>
+        <a class="pop_small" href="javascript:" title="最小化"><i>最小化</i></a>
+        <a class="pop_close" href="javascript:" title="关闭"><i>关闭</i></a>
+    </div>
+</div>
+
+
+<!-- 通用自动关闭提示框 -->
+<section class="tipsbox dn">
+    <div class="cont"></div>
+</section>
+
+<!--登录弹窗-->
+<!--登录账号-->
+<div class="popup_box dn login" type="m-login" id="m-login" >
+    <div class="cont">
+        <div class="popup-title">
+            <div>
+                CFD 账号登陆
+            </div>
+            <div class="pop_close">
+                <i href="javascript:void(0)"></i>
+            </div>
+        </div>
+        <div class="login-content">
+            <span id="login_tip" style="/* display: none; */">您已游客身份观看20分钟，若您想继续观看，请以我司真实账户登录观看</span>
+            <div class="login-items">
+                <i class="bg-person01"></i><input id="loginForm_mb" type="text" placeholder="账号/手机号" autocomplete="off"  id="loginForm_mb">
+            </div>
+            <div class="login-items">
+                <i class="bg-code"></i><input id="loginForm_pwd" type="password" placeholder="请输入密码" id="loginForm_pwd" autocomplete="off">
+                <div class="passImg active"><span class="bg-eye"></span></div>
+            </div>
+            <div class="login-in">
+                <a href="javascript:;" id="loginForm_sub">登陆</a>
+            </div>
+            <div class="login-other clearfix">
+                <a  href="/cn/mobile/rcfd_account?utm_source=company&utm_medium=M&utm_campaign=zhiboshi" target="_blank" onclick="ga('send', 'event', 'Live', 'ClickRegAccount', userFlag+platform, '1')" class="register fl">注册</a>
+                <a  href="forgetPwd.do" target="_blank" class="f-word fr">忘记密码</a>
+            </div>
+        </div>
+        <div class="login-info dn">
+
+        </div>
+    </div>
+
+</div>
+<!--登录账号结束-->
+ <!--在其他地方登录-->
+<div class="popup_box outInfo dn">
+    <div class="cont">
+        <div class="popup-title">
+            <div>
+                登出提示
+             </div>
+            <div class="pop_close">
+                <i href="javascript:void(0)"></i>
+            </div>
+        </div>
+        <div class="out-detail">
+            注意：您已在其他地方登录账号，如非本人操作，建议您尽快修改密码以确保账号安全！
+        </div>
+        <div class="out-btn">
+            <a href="" class="re-login">重新登录</a>
+            <a href="" class="re-close">确定</a>
+        </div>
+    </div>
+</div>
+<!--在其他地方登录结束-->
+<div class="popup_box tbox train_detail dn" id="panel_popupBox_train">
+    <div class="cont">
+        <div class="pop_tit t2"><span><i class="fr"></i></span><label></label><span><i></i></span></div>
+        <div id="train_info_id"></div>
+        <div class="scbox-shadow"></div>
+        <a class="pop_close" href="javascript:void(0)"><i>关闭</i></a>
+    </div>
+</div>
+
+<!--课程安排-->
+<div class="popup_box teach-lesson dn">
+    <div class="cont">
+        <div class="popup-title">
+            <div>
+                课程安排
+            </div>
+            <div class="pop_close">
+                <i href="javascript:void(0)"></i>
+            </div>
+        </div>
+        <div class="course_nav">
+        </div>
+        <div class="crouseContent">
+            <div class="course_tab" id="crouseList_0">
+            </div>
+            <div class="course_tab" id="crouseList_1">
+
+            </div>
+            <div class="course_tab" id="crouseList_2" >
+
+            </div>
+            <div class="course_tab" id="crouseList_3">
+            </div>
+            <div class="course_tab" id="crouseList_4" >
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--课程安排结束-->
+<!--用户信息-->
+<div class="popup_box userInfo dn">
+    <div class="cont">
+        <div>
+            <div class="pop_close">
+                <i href="javascript:void(0)"></i>
+            </div>
+        </div>
+
+        <div class="user-top">
+            <div class="teachImg"><img src="/cn/live/theme1/static/img/teacher.png" alt=""><span class="login-name" id="changeUseraName"></span></div>
+            <input  id="files" type="file">
+            <p class="changeImg">修改头像</p>
+        </div>
+        <div class="user-bottom">
+            <div class="item clearfix">
+                <div class="user-left">手机号 <input type="text" id="userPhone" readonly="readonly"> </div>
+                <div class="user-right">（手机号可快捷登录和找回密码）</div>
+            </div>
+            <div class="item clearfix">
+                <div class="user-left">账号 <input type="text" id="userNum" readonly="readonly"></div>
+                <div class="user-right ">（您的交易账号，可用于登录）</div>
+            </div>
+            <div class="item clearfix nickname">
+                <div class="user-left">昵称 <input type="text" id="modifyNickneer" readonly="readonly"></div>
+                <div class="user-right"  >
+                    <span  id="saveBefore">修改</span>
+                    <a href="javascript:void(0)" class="dn"  onclick="box.modifyNickname('modifyNickneer')" id="saveName">保存</a>
+                    <div>（2-10位字符，可由中文、英文、数字、“_”组成，不能全部数字）</div>
+                </div>
+            </div>
+            <div class="errormodifyNickneer dn"></div>
+        </div>
+        <div class="out-user">
+            <a href="javascript:void(0)" id="outLogin">退出登录</a>
+        </div>
+    </div>
+
+</div>
+<!--用户信息结束-->
+<!--消息公告-->
+<div class="popup_box notice-brand dn">
+   <div class="cont">
+       <div class="popup-title">
+           <div class="notice-title">
+               课程安排
+           </div>
+           <div class="pop_close">
+               <i href="javascript:void(0)"></i>
+           </div>
+       </div>
+       <div class="notice-detail">
+
+       </div>
+   </div>
+</div>
+<!--消息公告结束-->
+<!--广告弹窗-->
+<div class="popup_banner banner-popup  dn">
+            <div class="pop_close">
+                <i href="javascript:void(0)"></i>
+            </div>
+        <div id="middleBanner">
+
+        </div>
+
+</div>
+<!--广告弹窗结束-->
+<!--修改昵称弹窗-->
+<div class="popup_box nickname-change dn">
+    <div class="cont">
+        <div class="popup-title">
+            <div>
+                修改我的昵称
+            </div>
+            <div class="pop_close">
+                <i href="javascript:void(0)"></i>
+            </div>
+        </div>
+        <div class="change-box">
+            <input type="text" id="modifyfirst" maxlength="10">
+            <div class="clearname"><span class="bg-clear"></span></div>
+        </div>
+        <div class="errormodifyfirst dn"></div>
+        <div class="change-info">（2-10位字符，可由中文、英文、数字、“_”组成，不能全部数字）</div>
+        <div class="change-submit" id="modifyfirstsave"><a type="" href="javascript:void(0)" onclick="box.modifyNickname('modifyfirst')">提交</a></div>
+    </div>
+</div>
+<!-- 通用提示框 -->
+<div class="popup_box pub_hint dn" id="popMsgBox">
+    <div class="cont" id="popMsgCont">
+        <div class="scrollbox">
+            <h4 id="popMsgTit"></h4>
+            <p id="popMsgTxt"></p>
+        </div>
+        <a id="popMsgClo" class="pop_close" href="javascript:void(0)"><i>关闭</i></a>
+    </div>
+</div>
+<!-- 兼容提示 -->
+<div class="ie_upgrade dn">
+    <div class="inner">
+        <div class="ietip">
+            <h4>很抱歉！ 您正在使用的浏览器IE内核低于IE9</h4>
+            <div class="subt"><i></i><span>建议您对浏览器进行升级，以便获得更好的浏览体验</span><i></i></div>
+        </div>
+        <div class="browserlist">
+            <ul>
+                <li>
+                    <i class="ico1"></i>
+                    <p>Internet Explorer <em>9 +</em></p>
+                    <b></b>
+                </li>
+                <li>
+                    <i class="ico2"></i>
+                    <p>Firefox</p>
+                    <b></b>
+                </li>
+                <li>
+                    <i class="ico3"></i>
+                    <p>Chrome</p>
+                    <b></b>
+                </li>
+                <li>
+                    <i class="ico4"></i>
+                    <p>Safari</p>
+                    <b></b>
+                </li>
+                <li>
+                    <i class="ico5"></i>
+                    <p>360浏览器<span>内核低于IE9</span></p>
+                    <b class="error"></b>
+                </li>
+                <li>
+                    <i class="ico6"></i>
+                    <p>搜狗浏览器<span>内核低于IE9</span></p>
+                    <b class="error"></b>
+                </li>
+                <li>
+                    <i class="ico7"></i>
+                    <p>QQ浏览器<span>内核低于IE9</span></p>
+                    <b class="error"></b>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

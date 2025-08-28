@@ -1,0 +1,334 @@
+@charset "utf-8";
+/*css reset*/
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+span,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+li,
+ol {
+    list-style: none;
+}
+i,
+em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+input,
+textarea {
+    -webkit-appearance: none;
+}
+*{
+    box-sizing: border-box;
+}
+.m-adv{
+    position: relative;
+}
+.m-adv .layout-1{
+    background: url(../../images/m-common50/top-bg01.png) no-repeat;
+    width: 7.5rem;
+    height: 0.9rem;
+    background-size: 7.5rem 0.9rem;
+    padding-right: 0.3rem;
+}
+.m-adv .layout-1 img{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.m-adv .layout-1 a{
+    color: #fff;
+    font-size: 0.3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.m-adv .layout-1 .item-1 {
+    float: right;
+    font-size: 0;
+    line-height: 0.9rem;
+}
+.m-banner{
+    text-align: center;
+    font-size: 0;
+}
+.m-banner img{
+    width: 7.5rem;
+    height: 7.05rem;
+}
+.m-input{
+    background: #f4483c;
+    text-align: center;
+    padding-top:0.8rem;
+}
+.m-input .layout-1{
+    font-size: 0.28rem;
+    color: #fff;
+}
+/*开户*/
+.input_box {
+    padding: 0 0.8rem;
+    margin-top: 0.5rem;
+}
+.reg-form input {
+    width: 100%;
+    border:none;
+    border-radius: 0;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    padding-left: 2rem;
+    font-size: 0.3rem;
+    outline: medium;
+    filter:alpha(opacity=0); /*androd*/
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-color:transparent;
+    color: #fff;
+}
+.form-item  label {
+    position: absolute;
+    left: 0.2rem;
+    top: 0;
+    font-size: 0.3rem;
+    color: #fff;
+    padding-right: 0;
+    padding-left:0.1rem;
+    height:0.5rem;
+    padding-bottom: 0.1rem;
+}
+.form-item {
+    position: relative;
+    font-size: 0;
+    border: 1px solid #DDDDDD;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+input:focus{
+    outline: none;
+}
+.input-tip{
+    color: #fff;
+}
+.phone-f1.error,.upwd-f1.error,.yanZ-f1.error,.pc-yanZ-f1.error,.uname-f1.error,.email-f1.error,.idCard-f1.error{
+    border-color:#ef392b;
+}
+.upwd-f1.success,.phone-f1.success,.yanZ-f1.success,.pc-yanZ-f1.success,.uname-f1.success,.email-f1.success,.idCard-f1.success{
+    border-color: #C0C0C0;
+}
+.phone-f1.yellow,.upwd-f1.yellow,.yanZ-f1.yellow,.pc-yanZ.yellow,.uname-f1.yellow,.email-f1.yellow,.idCard-f1.yellow{
+    border-color:#C0C0C0;
+}
+.rec .re-number input {
+    font-size: 0.28rem;
+    -webkit-appearance: none;
+    border: none;
+    outline: medium;
+    width: 5rem;
+}
+.reg-form .input-tip {
+    height: 0.65rem;
+    font-size: 0.24rem;
+    padding-top:0;
+    text-align: left;
+}
+.reg-form .input-tip em {
+    vertical-align: top;
+    margin-right: 0.05rem;
+    width: 0.3rem;
+    height: 0.35rem;
+    display: inline-block;
+    background: url(../../rcfd-m/images/m-icon-img1.png) no-repeat -0.8rem -0.42rem;
+    background-size: 2.4rem 1.7rem;
+}
+
+.form-item a.btn-phonecode, .form-item a.re-btn {
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    line-height: 0.68rem;
+    font-size: 0.24rem;
+    width: 1.75rem;
+    height:0.68rem;
+    display: inline-block;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    color:#fff;
+}
+.form-item a.yz-code {
+    position: absolute;
+    right: 0;
+    top: 0.04rem;
+    line-height:0.58rem;
+    font-size: 16px;
+    width: 1.5rem;
+    height: 0.58rem;
+    display: inline-block;
+    color: #666;
+    padding: 0;
+    cursor: pointer;
+    padding-top: 0.1rem;
+}
+.form-item a.yz-code img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1rem;
+    height: 0.4rem;
+}
+.form-item a.yz-code span {
+    display: inline-block;
+    vertical-align: middle;
+    width:0.4rem;
+    height: 0.5rem;
+    background: url(../../rcfd-m/images/m-icon-img1.png) no-repeat -1.05rem 0.05rem;
+    background-size: 2.4rem 1.7rem;
+}
+
+.m-btn{
+    background: url(../../images/m-common50/button.png) no-repeat;
+    width: 5.6rem;
+    height: 0.8rem;
+    background-size: 5.6rem 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.m-btn a{
+    display: block;
+    width: 100%;
+    font-size: 0.32rem;
+    color: #f4483c;
+    line-height: 0.8rem;
+}
+.m-safe{
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+.m-label{
+    text-align: center;
+}
+.m-label .layout-1{
+    font-size: 0.44rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.m-label .layout-2{
+    font-size: 0;
+}
+.m-label .layout-2 .item-1{
+    margin-bottom: 0.4rem;
+}
+.m-label .layout-2 .item-1 .item-a{
+    margin-right: 0.4rem;
+}
+.m-label .layout-2 img{
+    width: 3rem;
+    height: 4rem;
+}
+.m-download{
+    background: url(../../images/m-common50/button.png) no-repeat;
+    width: 5.6rem;
+    height: 0.8rem;
+    background-size: 5.6rem 0.8rem;
+    margin: 0 auto;
+    margin-bottom: 0.7rem;
+}
+.m-download a{
+    width: 100%;
+    display: block;
+    line-height: 0.8rem;
+    font-size: 0.32rem;
+    color: #f4483c;
+}
+.m-footer{
+    background: #f4483c;
+    padding-bottom: 0.4rem;
+}
+.m-footer .layout-1{
+    font-size: 0.24rem;
+    color:#fff;
+}
+.m-footer .layout-2{
+    padding:0 0.5rem;
+    font-size: 0.2rem;
+    color: #fff;
+}
+.fix-footer{
+    width: 100%;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.3rem 0 0.5rem;
+    text-align: left;
+}
+.fix-footer img{
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+.fix-footer .item-1{
+    font-size: 0.28rem;
+    color: #fff;
+    width: 4rem;
+}
+.fix-footer .item-1 .item-a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.fix-footer .item-1 span{
+    font-size: 0.26rem;
+    color: #999;
+}
+.fix-footer .item-2{
+    width: 1.7rem;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    background:#ffa000 ;
+    border-radius: 0.1rem;
+}
+.fix-footer .item-2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+    margin-right: 0.3rem;
+}

@@ -1,0 +1,524 @@
+{
+  "data":[
+    {
+      "title":"移动平均线  (Moving Average)",
+      "urlItem":"/cn/edu/qualification-detail.html?00",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>1.什么是均线？</h2>",
+              "answer": "<p>  均线，也就是移动平均线，简称MA。它是将某一段时间的收盘价之和除以该周期，从而得到一条带有趋势性的轨迹。比如日线MA5就是5天内的收盘价除以5。均线按时间周期长短可分为短期均线（5天、10天），中期均线（30天、60天），以及长期均线（200天、280天）。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MA1.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>2.均线的特点有哪些？</h2>",
+              "answer": "<p>  （1）追踪趋势。注意价格的趋势，并追随这个趋势，不轻易放弃。</p><p>  （2）滞后性。在价格原有趋势发生反转时，由于均线追踪趋势的特性，它的行动往往过于迟缓，调头速度落后于大趋势，这是均线的一个极大的弱点。</p><p>  （3）稳定性。由于均线的计算方式可以知道，要大幅改变均线的数值很难，必须是当天的价格有很大的变动才行。因为均线的变动是一段时间内的变动，一天的大变动在一段时间内被分摊，也就不明显了。</p><p>  （4）助涨助跌性。如果把均线比作水，那么价格就是船。当均线方向与价格方向相同的时候，就好像顺水行舟，无论涨跌都很厉害，这就是均线的助涨和助跌作用。</p><p>  （5）支撑线与阻力线的特性。当价格暂时回调，均线方向就会与价格方向相反，这就属于逆水行舟，但只要水流的方向没变，价格自然会因为阻力而重新回到原来的趋势，这就是均线的支撑和阻力作用。</p>",
+              "pic": ""
+            }
+          ]
+        },
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  我们在使用均线时，要注意结合不同周期的均线一起使用。当短周期均线从下向上突破长周期均线，并且长周期均线正在向上移动时，这样形成的交叉叫做黄金交叉；相反，当短周期均线向下跌破长周期均线，并且长周期的均线正在向下移动时，这样形成的交叉叫做死亡交叉，就像两军交战，作为普通投资者，手里的兵力很少，所以你要做的不是一开始就加入某一方并肩作战，而是等分出胜负之后跟着站队就好，识时务者为俊杰，这样才能保证资金安全。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MA2.png'/></p>"
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—主图指标—移动平均线”，即可在价格走势图上显示周期为5,10,20,30,50的五条移动平均线。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MA3.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，设置技术指标，在主图指标中选择“MA”，即可在价格走势图上显示周期为5,10,20,30的4条移动平均线。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MA4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  以下是欧元美元的30分钟走势图，在5周期均线与10周期均线向下形成死亡交叉时，这是卖出（做空）欧元美元的最好时机；在5周期均线与10周期均线向上形成黄金交叉时，这是买入（做多）欧元美元的最好时机。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MA5.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"布林线指标  (Bollinger Bands)",
+      "urlItem":"/cn/edu/qualification-detail.html?01",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>什么是布林线？</h2>",
+              "answer": "<p>  布林线指标是一个多功能指标，它结合了移动平均和标准差，是最广泛使用的技术指标之一。</p><p>  布林线指标有三个组成部分：</p><p>  1.移动平均： 它一般会采用20个周期的移动平均。</p><p>  2.上界限：上界限通常是移动平均线加上2倍标准差（通过20个周期的收盘数据计算）得出。</p><p>  3.下界限：下界线一般是移动平均线减去2倍标准差。</p><p>  下图的欧元美元为我们展示了布林线指标（蓝色）</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BOLL1.png'/></p>"
+            }
+          ]
+        },
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>1.布林线指标顺从</h2>",
+              "answer": "<p>  布林线指标顺从基于大多数收盘价格都分布在布林线之间的假定。这说明，当价格在极其罕见的情况下超出布林线以外时，这种情形不会持续太久，并且终究会回到平均线，这里的平均线通常是指20周期简单移动平均。</p><p>  潜在的买入信号</p><p>  在以下欧元美元展示的例子中，当价格跌到下界限时，交易者可能会买进或者回补。</p><p>  潜在的卖出信号</p><p>  当价格落入布林线上方时，指标暗示着卖出或者回补撤出。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BOLL2.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>2.布林线指标突破</h2>",
+              "answer": "<p>  基本来说，布林线指标突破是布林线指标顺从以及价格回归平均假设的对立面。突破在稳定期之后发生，这时价格收在布林线之外。当交易者决定是否根据突破方向进行交易时，类似于支撑阻力线的指标可能会非常有用。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BOLL3.png'/></p>"
+            },
+            {
+              "subtitle": "",
+              "answer": "<p>  上图欧元美元日线走势为我们展示了两个布林线突破：</p><p>  通过抵抗潜在买入信号的布林线突破,当价格在靠稳阶段后向上打破布林线时，交易者可能买进。交易者可能会使用一些其它的确认指标，比如寻找被打破的阻力；这些在上面欧元美元走势图中有所说明。</p><p>  通过抵抗潜在卖出信号的布林线突破,与此类似，当价格落到布林线以下时，交易者可能卖出。交易者也有可能使用其它确认指标，比如寻找被打破的支撑；这些在上图欧元美元走势图中有所显示。</p>",
+              "pic": ""
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—主图指标—boll布林带”，即可在价格走势图上显示布林线指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BOLL5.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“主图指标”中点击 “BOLL”，即可调出布林线指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BOLL4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  以下是美元日元的4小时走势图，盘整震荡走势中，价格落入布林线上方边界，这是卖出（做空）美元日元的时机；价格落入布林线下方边界，这是买入（做多）美元日元的时机。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BOLL6.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":" 指数平滑异同平均线  (MACD)",
+      "urlItem":"/cn/edu/qualification-detail.html?02",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>什么是MACD？</h2>",
+              "answer": "<p>  MACD指标是最受欢迎的技术分析指标之一。MACD的三个主要组成部分展示在下方图表中：</p><p>  1.DIFF：12周期指数移动平均（EMA）减去26周期（EMA）。</p><p> 2.DEA：MACD的9日EMA。</p><p> 3.MACD矩形图：DIFF减去DEA信号线。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MACD1.png'/></p>"
+            }
+          ]
+        },
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  使用MACD的基本方法是移动平均交叉点。当短期12日指数移动平均（EMA）向上交叉于26日EMA时，潜在的买入信号就出现了；下面欧元美元走势图可以很好说明。</p><p><img src = '//sc.cfygxz.com/source/www/news/qualification/MACD2.png'/></p><p> 要记住MACD线是由12周期和26周期EMA创建的。因此：</p><p>1.当较短时期12日EMA向上突破较长时期26日EMA时，MACD线向上交于0点。</p><p>2.当12周期EMA向下交于26周期EMA时，MACD线向下交于0线。</p><p style='height:20px;'></p><p> 移动平均交点潜在买入信号</p><p> 当MACD向上突破0线时，潜在的买入信号就出现了。</p><p style='height:20px;'></p><p> 移动平均交点潜在卖出信号</p><p> 当MACD向下交于0线，潜在卖出信号就产生了。之前潜在的买卖信号可能会使人在之后的波动中进行交易。另一个潜在的买卖信号展示在下方美元日元的走势中：</p>",
+
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MACD3.png'/></p>"},
+            {
+              "subtitle": "",
+              "answer": "<p> 最常见的MACD买卖信号</p><p> MACD潜在买入信号</p><p> 当MACD（蓝线）向上交于MACD信号线（红线）时，潜在的买入信号就产生了。</p><p> MACD潜在卖出信号</p><p> 类似的，当MACD（蓝线）向下突破MACD信号线（红线）时，潜在的卖出信号就产生了。</p>",
+              "pic": ""
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p> 在CFD平台界面顶部选择“指标—常用指标—指数平滑异同平均线”，即可在价格走势图上显示MACD指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MACD4.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“副图指标”中点击 “MACD”，即可调出MACD指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MACD5.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  以下是美元日元的60分钟走势图，当MACD（蓝线）向上交于MACD信号线（红线）时，这是买入（做多）美元日元的时机；类似的，当MACD（蓝线）向下突破MACD（红线）信号线时，这是卖出（做空）美元日元的时机。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/MACD6.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"相对强弱指标  (RSI)",
+      "urlItem":"/cn/edu/qualification-detail.html?03",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>1.什么是RSI？</h2>",
+              "answer": "<p>  RSI，英文全称Relative Strength Index，即相对强弱指标。它是根据一段时期内，上涨幅度之和与下跌幅度之和的比率制作出的一种技术曲线。能够反映出市场一定时期内的景气程度。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/RSI1.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>2.RSI指标的原理是什么？</h2>",
+              "answer": "<p>  RSI的原理很简单，就是通过对比股市中买卖双方的力量强弱，从而预测未来股价的走势。比如市场上有一件商品，超过半数的人要买，这就是买方市场，商品价格就会涨。如果一半以上的人要卖，这就是卖方市场，商品价格自然会跌。</p><p style='height:20px;'></p><p> RSI指标的数值范围为0到100，多在20到80之间变动。一般超过80，就说明这只股票被过度买入，抛售压力相应增大，自然容易导致股价回落。当RSI值低于20以下，说明这只股票被过度卖出，股价就可能会出现反弹回升。</p><p style='height:20px;'></p><p> 但是，我们不能硬性地规定上述数值，因为每种类型股票的超卖超买值是不同的。一般而言，股价波动较大的股票，超买的数值较高（90至95），而视作超卖的数值较低（10至15）。至于那些表现较稳定的股票，超买的数值则较低（65至70），超卖的数值较高（35至 40）。</p>",
+              "pic": ""
+            }
+          ]
+        },
+
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>如何应用RSI指标？</h2>",
+              "answer": "<p>（1）蓝色的短期RSI值在20以下，由下向上交叉红色的长期RSI值时为买入信号。</p><p>（2）蓝色的短期RSI值在80以上，由上向下交叉红色的长期RSI值时为卖出信号。</p><p>（3）短期RSI值由上向下突破50，代表价格已经转弱。</p><p>（4）短期RSI值由下向上突破50，代表价格已经转强。</p><p>（5）当RSI值高于80进入超买区，价格随时可能形成短期回档。</p><p>（6）当RSI值低于20进入超卖区，价格随时可能形成短期反弹。</p><p>（7）汇价一波比一波高，而RSI一波比一波低。形成顶背离，行情可能反转下跌。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/RSI2.png'/></p>"
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—常用指标—RSI相对强弱指标”，即可在价格走势图上显示RSI指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/RSI3.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“副图指标”中点击 “RSI”，即可调出RSI指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/RSI4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p> 以下现货黄金60分钟走势图中，蓝色的短期RSI值在20以下，由下向上交叉红色的长期RSI值时，买入现货黄金；蓝色的短期RSI值在80以上，由上向下交叉红色的长期RSI值时，卖出现货黄金。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/RSI5.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"随机指标  (KDJ)",
+      "urlItem":"/cn/edu/qualification-detail.html?04",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>1.什么是KDJ？</h2>",
+              "answer": "<p>  KDJ，全称KDJ指标，或随机指标，是一种由乔治•莱恩首创的技术分析指标。它最初起源于期货市场，后来被引入股市，用于对股价变动的中短期趋势进行分析。当然，KDJ在外汇市场也是一个比较常用的技术分析工具。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/KDJ1.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>2.KDJ的原理</h2>",
+              "answer": "<p>  KDJ指标，以一个特定周期（常为9日、9周等）的最高价、最低价以及周期末尾的收盘价为基础，计算生成一个“未成熟随机值（RSV）”，并且再以“RSV”为基础计算出K值、D值和J值。然后将这三个值分别以点的形式描绘在坐标系中，连接多个这样的点，就形成了一个可以反映价格变动趋势的完整KDJ指标曲线。根据选用的周期不同，KDJ指标分为日KDJ指标、周KDJ指标、月KDJ指标、年KDJ指标以及分钟KDJ指标等。其中，日KDJ指标和周KDJ指标是最常被用于市场分析的两个类型。</p><p style='height:20px;'></p><p>KDJ指标通过价格变动的真实幅度，反映价格走势强弱和超买超买现象，向投资者传递买卖的信号。它综合考量了最高价、最低价、收盘价这三者之间的关系，能够较为快捷、直观地帮助投资者分析市场行情。</p><p style='height:20px;'></p><p>KDJ指标本质上表达的是一种随机波动的观念，所以对于中短期行情走势的分析较为准确。</p>",
+              "pic": ""
+            }
+          ]
+        },
+
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  这三种数值在图形上表现为三条相互纠缠的曲线，即K线、D线和J线。利用这三条曲线的波动走势以及它们之间的关系，能够帮助投资者研判市场趋势。KDJ指标主要用于反映市场中的超买超卖现象、K线与D线之间的交叉突破现象。</p>",
+              "pic": ""
+            },
+            {
+              "subtitle": "",
+              "answer": "<p>1.超买超卖现象</p><p>  所谓超买，就是大部分人只愿意买，不愿意卖，价格已被推至高位，后期下跌可能性较大；反之，超卖则对应低位，后市看涨。</p><p style='height:20px;'></p><p>超买区：K值大于80，D值大于70，J值大于90为超买。一般而言，价格很有可能下跌，未买入的不应该再追涨，已买入的可以适时卖出；</p><p style='height:20px;'></p><p>超卖区：K值小于20，D值小于30为超卖。一般而言，价格很有可能反弹上涨，未买入的可以寻机买入，已买入的不应该轻易卖出。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/KDJ2.png'/></p>"
+            },
+            {
+              "subtitle": "",
+              "answer": "<p>2.K线与D线的交叉突破现象</p><p>  K值大于D值，说明汇价处于上升趋势，所以当K线自下而上交叉突破D线时，正是买入的时机。反之，K值小于D值，说明汇价处于下降趋势，所以当K线自上而下交叉突破D线时，正是卖出的时机。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/KDJ3.png'/></p>"
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—常用指标—KDJ随机指标”，即可在价格走势图上显示KDJ指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/KDJ4.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“副图指标”中点击 “KDJ”，即可调出KDJ指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/KDJ5.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p> 在下面欧元美元的60分钟走势图中，在超卖区KDJ交叉，选择合适的K线信号，卖出欧元美元；在KDJ超买区，选择合适的K线信号，买入欧元美元。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/KDJ6.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"乖离率  (BIAS)",
+      "urlItem":"/cn/edu/qualification-detail.html?05",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>1.什么是乖离率？</h2>",
+              "answer": "<p>  乖离率，英文名BIAS，简称Y值，是通过计算股价与均线之间的差距百分比。从而得出股价因偏离移动平均趋势而造成可能的回档或反弹，以及股价继续原有趋势的可信度。所谓均线，代表的是一定时期内的市场平均成本。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BIAS1.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>2.乖离率的原理</h2>",
+              "answer": "<p>  乖离率最早来源于葛兰威尔的平均线定律，后来演变成广为使用的一种技术指标。如果股价在均线之上，乖离率为正值；反之则为负值。</p><p style='height:20px;'></p><p>它的理论基础是对投资者的心理分析，当股价偏离市场平均成本太大时，投资者的心理因素就会使偏离回归。正的乖离率越大，表示大多数买入的股民获利越丰厚，是绝佳的卖出点，股民容易萌生赚钱走人的念头，进而会造成后续股价下跌；</p><p style='height:20px;'></p><p>负的乖离率越大，表示大多数股民损失越大，也是较好的买入点，此时就会有人逢低买进，股价自然容易上涨。这也验证了股神巴菲特的一句名言，别人贪婪的时候我们要恐惧，别人恐惧的时候我们要贪婪。</p>",
+              "pic": ""
+            }
+          ]
+        },
+
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>如何正确运用乖离率？</h2>",
+              "answer": "<p>  乖离率周而复始地穿梭于0点的上方和下方，其值的高低对未来走势有一定的预测功能。对于乘离率达到什么程度才是正确的买入点或卖出点，目前并没有统一原则，使用者可对行情强弱的判断得出综合结论。不同市场、不同时期、不同周期即不同移动平均线算法所得出的乖离率是不同的。</p><p style='height:20px;'></p><p>一般来说，在大势上升市场，如遇负乘离率，可以在跌价时买进，因为进场风险小；在大势下跌时，走势中如遇正乖离，可以待回升高价时，出手持股。</p><p style='height:20px;'></p><p>在多头行情中，会出现许多高价，太早卖出会错失一段行情，可于先前高价的正乖离率点卖出；在空头市场时，亦会使负乖离率加大，可于先前低价的负乖离点买进。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BIAS2.png'/></p>"
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—常用指标—BIAS乖离率”，即可在价格走势图下方的副图显示BIAS指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BIAS3.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“副图指标”中点击 “BIAS”，即可调出BIAS指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BIAS4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p> 在下面现货黄金的60分钟走势图中，空头市场（下跌趋势）中，选择在正乖离率值区域卖出，做空现货黄金。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BIAS5.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"多空指数  (BBI)",
+      "urlItem":"/cn/edu/qualification-detail.html?06",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>什么是多空指数？</h2>",
+              "answer": "<p>  多空指数英文全名为'Bull And Bear lndex',简称BBI，是一种将不同日数移动平均线加权平均之后的综合指标，属于均线型指标，一般选用3日、6日、12日、24日等4条平均线。在使用移动平均线时，投资者往往对参数值选择有不同的偏好，而多空指数恰好解决了中短期移动平均线的期间长短合理性问题。很明显，在BBI指标中，近期数据较多，远期数据利用次数较少，因而是一种变相的加权计算。由于多空指数是一条混合平均线，所以既有短期移动平均线的灵敏，又有明显的中期趋势特征，适于稳健的投资者。</p><p>参数是3、6、12、24.</p><p>1. 3日均价=3日收盘价之和/3</p><p>2. 6日均价=6日收盘价之和/6</p><p>3. 12日均价=12日收盘价之和/12</p><p>4. 24日均价=24日收盘价之和/24</p><p>5. BBI=（3日均价+6日均价+12日均价+24日均价）/4</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BBI1.png'/></p>"
+            }
+          ]
+        },
+
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  1.价格位于BBI上方，视为多头市场。</p><p>2.价格位于BBI下方，视为空头市场。</p><p>3.下跌行情中，若当日收盘价跌破BBI曲线，表示多转空，为卖出信号。</p><p>4.上涨行情中，若当日收盘价升越BBI曲线，表示空转多，为买入信号。</p><p>5.上升回档时，BBI为支持线，可以发挥支撑作用。</p><p>6.下跌反弹时，BBI为压力线，可以发挥阻力作用。</p><p style='height:20px;'></p><p>BBI指标有效解决了不同周期移动平均线无法互相协调的问题，综合了多个移动平均线的数值后，将它们进行平均处理，这样得到的数值更客观、更形象，因为它如同一个议会，是在综合了大家的意见后得出结论，而不是单独作出评判，所以，用“多空指数”来判断多空的效果是比较理想，特别是在判断中长期走势的时候。</p><p style='height:20px;'></p><p>BBI指标的使用方法很简单，它只有一条参考线，当价格站在BBI指标线的上方，就说明正处于多头趋势，价格如果跌到了BBI指标的下方，就说明进入了空头趋势。由于BBI指标判断多空的特性，如果将该指标用在周线图中会收到意想不到的效果。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BBI2.png'/></p>"
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—主图指标—BBI多空指数”，即可在价格走势图上显示BBI指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BBI3.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“主图指标”中点击 “BBI”，即可调出BBI指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BBI4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p> 在下面欧元美元60分钟走势图中，价格跌破BBI指标向下运行时，是卖出欧元美元的时机。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/BBI5.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"威廉指标  (Williams %R)",
+      "urlItem":"/cn/edu/qualification-detail.html?07",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>什么是威廉指标？</h2>",
+              "answer": "<p>  威廉指标是指示超买和超卖的技术指标，它可以提供潜在买卖信号。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/WR1.png'/></p>"
+            }
+          ]
+        },
+
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>如何正确运用威廉指标？</h2>",
+              "answer": "<p>  威廉指标能给出买卖信号，就像在下面欧元美元60分钟走势图中展示的那样：</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/WR2.png'/></p>"
+            },
+            {
+              "subtitle": "",
+              "answer": "<p>威廉指标潜在买入信号</p><p>当威廉指标处于超卖线（80）以上，接下来又向下跌破80线，交易者考虑买入。</p><p style='height:20px;'></p><p>威廉指标潜在卖出信号</p><p>当威廉指标处于超买线（20）以下，接下来又向上穿过20线，交易者考虑卖出。</p>",
+              "pic": ""
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—常用指标—威廉指标”，即可在价格走势图上显示威廉指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/WR3.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“副图指标”中点击 “W&R”，即可调出威廉指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/WR4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p> 在下方的美元日元60分钟走势图中，当威廉指标向上穿过超买线时，考虑卖出美元日元；当威廉指标向下穿过超卖线时，考虑买入美元日元。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/WR5.png'/></p>"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title":"顺势指标  (CCI)",
+      "urlItem":"/cn/edu/qualification-detail.html?08",
+      "result":{
+        "detail": {
+          "shortTitle": "<h1>指标详解</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>什么是顺势指标？</h2>",
+              "answer": "<p>  顺势指标是给出买卖信号的常用技术指标，也被用来辨认价格变动中超买和超卖的区域。根据计算，约75%的价格变动的顺势指标分布在+100（超买）与-100（超卖）之间。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/CCI1.png'/></p>"
+            }
+          ]
+        },
+
+        "application": {
+          "shortTitle": "<h1>指标的应用</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p>  下图的美元日元60分钟走势图为我们展示了交易者如何使用顺势指标得出潜在买卖信号：</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/CCI2.png'/></p>"
+            },
+            {
+              "subtitle": "",
+              "answer": "<p>顺势指标潜在买入信号：</p><p>1.顺势指标低于超卖线（-100）。</p><p>2.顺势指标向上越过超卖线。</p><p style='height:20px;'></p><p>顺势指标潜在卖出信号：</p><p>1.顺势指标高于超买线（100）。</p><p>2.顺势指标向下越过超买线。</p><p style='height:20px;'></p><p>顺势指标指示了超买与超卖的状况，交易者可以据此进行买卖决策。</p>",
+              "pic": ""
+            }
+          ]
+        },
+        "how": {
+          "shortTitle": "<h1>如何在创富CFD平台使用该指标应用</h1>",
+          "list": [
+            {
+              "subtitle": "<h2>CFD平台PC端</h2>",
+              "answer": "<p>  在CFD平台界面顶部选择“指标—常用指标—顺势指标”，即可在价格走势图上显示CCI指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/CCI3.png'/></p>"
+            },
+            {
+              "subtitle": "<h2>CFD APP端</h2>",
+              "answer": "<p>  在“行情”界面，点击产品名称，进入价格行情页面，会默认显示移动平均线，点击“MA”图标，设置技术指标，在“副图指标”中点击 “CCI”，即可调出CCI指标。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/CCI4.jpg'/></p>"
+            }
+          ]
+        },
+        "example": {
+          "shortTitle": "<h1>指标的实战示例</h1>",
+          "list": [
+            {
+              "subtitle": "",
+              "answer": "<p> 在以下欧元美元60分钟走势图中，投资者可在顺势指标从下向上穿越超卖线时,买入欧元美元;在顺势指标从上向下穿越超买线时, 卖出欧元美元。</p>",
+              "pic": "<p><img src = '//sc.cfygxz.com/source/www/news/qualification/CCI5.png'/></p>"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

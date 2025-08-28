@@ -1,0 +1,193 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>国际-行情咨询-环球新闻</title>
+    <meta name="keywords" content="国际,环球新闻,实时报价,持仓比例,财经日历">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <!--#include file="/cn/template.css.html"-->
+    <!--#include file="/module/html.head.html"-->
+    <link rel="shortcut icon" href="/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
+    <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+    <link href="/cn/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/cn/css/news-detailed.css" rel="stylesheet" type="text/css" />
+    <script src="/cn/js/homepage/backheader.js"></script>
+</head>
+
+<body class="home-page">
+    <div class="main">
+        <!--#include file="/cn/common-html/suggestion.html"-->
+        <div class="panel" id="m-panel">
+            <!--#include file="/module/html.body.begin.html"-->
+            <!-- Begin header -->
+            <div class="pc">
+                <div class="e-header">
+                    <!--#include file="/cn/template.header.html"-->
+                </div>
+            </div>
+            <div class="m">
+                <script>
+                    menu();
+                </script>
+            </div>
+            <!-- End header -->
+            <div class="web-banner"></div>
+            <div class="inner">
+                <div class="billboard">
+                    <h1 class="title">环球新闻</h1>
+                </div>
+            </div>
+            <!-- End hero banner-->
+            <!-- Begin Main contents -->
+            <div class="main-content">
+                <div class="container clearfix">
+                    <div class="col-md-12 padding-content">
+                        <div id="title" class="col-md-12">
+                            <p class="title-content1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                            </p>
+                            <p class="date-1"></p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="des-content1" id="content"></div>
+                        </div>
+                    </div>
+                    <div class="pc">
+                        <div class="adv" style="margin: 50px 0;">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="back-btn">
+                    <a id="back" href="/cn/information/newss.html">返回</a>
+                </div>
+            </div>
+            <div class="m">
+                <!--底部-->
+                <script>
+                    footer();
+                </script>
+                <!--底部结束-->
+                <!--遮罩层-->
+                <div id="m-overlay" class="overlay" node-name="overlay"></div>
+                <!--遮罩层 end-->
+            </div>
+            <!--#include file="/cn/template.footer.html"-->
+        </div>
+        <!-- End Main contents -->
+        <div class="pc">
+            <!--#include file="/cn/template.right-1.html"-->
+        </div>
+        <div class="m">
+            <!--#include file="/cn/nav.html"-->
+        </div>
+    </div>
+    <!--#include file="/cn/template.js.html"-->
+</body>
+<script src="/cn/js/index.js"></script>
+<script src="/cn/js/jquery.mailtip.js"></script>
+<script>
+    setActiveMenu();
+    var qrElement = $('.float-content img[src$="/source/www/template/common/code.jpg"]');
+    if (qrElement.length) {
+        setQrImage(qrElement);
+    }
+</script>
+<script src="/cn/js/gwanalysis.js?type=1234567qwqw"></script>
+<script src="/cn/js/cfanalysis.js?type=220q"></script>
+<!--  common method openQQCustomer and openLive800 -->
+<script src="/cn/js/analytics.min.js"></script>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        offset: 100,
+        easing: "ease",
+        duration: 800,
+        delay: 100,
+        once: false
+    });
+    $(function () {
+        $('.phone').hover(function () {
+            $('.code_phone').fadeToggle();
+        });
+        $('.commonBtn').hover(function () {
+            $('.CFIXcode').fadeToggle();
+        });
+        $('.BTN_cfix').hover(function () {
+            $('.CFIXcode').fadeToggle();
+        });
+    });
+</script>
+<script>
+    function getId() {
+        //得到浏览器url地址#后的字符串（httt://../../..#..）
+        var type = window.location.hash.substring(2);
+        var data = type.split("/");
+        if (data.length > 1) {
+            //环球新闻
+            if (data[0] == "news") {
+                $(".title-banner").html("环球新闻");
+                // $(".sub-title").html("实时同步权威财经机构资讯");
+                var href = $("#back").attr("href");
+                $("#back").attr("href", href + "#/news");
+                return data[1];
+            } else if (data[0] == "brank") {
+                //央行年息
+                $(".title-banner").html("央行年息");
+                $(".sub-title").html("了解全球各国央行实时动态信息");
+                $("#back").attr("href", "/cn/information/centralBank.html");
+                return data[1];
+            }
+        }
+        //专家评论
+        $(".title-banner").html("专家评论");
+        // $(".sub-title").html("每天由专业团队对产品及行情进行分析");
+        return data[0];
+    };
+    //初始化
+    function init() {
+        //填充返回列表地址
+        $.ajax({
+            type: "GET",
+            headers: { isAjax: "true" },
+            url: info_url + "/1/api/article/detail/" + getId(),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (res) {
+                if (res.code == 0) {
+                    var json = res.data;
+                    if (json != null) {
+                        $("#title").find(".title-content1").html(`<img
+                                class=""
+                                src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;${json.title}`);
+                        $("#title").find(".date-1").text(json.ctime);
+                        $("#content").html(json.content);
+                    };
+                }
+            },
+            error: function () { }
+        });
+        var url = cms_url + "/api/ad/action/14?_r=" + Math.random();
+        $.post(url, null, function (data) {
+            data = JSON.parse(data);
+            var str = "";
+            for (var i in data) {
+                str += "<a href=\"" + data[i].attr.image_link + "\" style=\"display: block\"><img style=\"width:1200px;height:150px;display: block;\" src=\"" + data[i].attr.image_url + "\" alt=\"\"></a>";
+            }
+            $(".adv").append(str);
+        });
+    };
+    init();
+</script>
+
+</html>

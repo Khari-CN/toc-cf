@@ -1,0 +1,384 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>持仓比例_行情资讯_国际</title>
+  <meta name="keywords" content="国际,持仓比例,持仓分析,CFPI解读,未平仓合约比例" />
+  <meta name="description" content="本栏目提供查看最新持仓信息和仓位比例，算法，公式，原油、股指期货、股票仓位比例。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="wap-font-scale" content="no">
+  <!--#include file="/cn/template.css.html"-->
+  <!--#include file="/module/html.head.html"-->
+  <link rel="shortcut icon" href="/source/www/template/fav.ico">
+  <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
+  <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+  <link rel="stylesheet" href="/cn/css/information/position.css" />
+  <link rel="stylesheet" href="/cn/css/homepage/swiper.min.css" />
+  <script src="/cn/js/jquery-1.11.3.min.js"></script>
+  <script src="/cn/js/homepage/backheader.js"></script>
+  <style type="text/css">
+    body .CFIXcode {
+      width: 250px;
+      height: 150px;
+      position: absolute;
+      bottom: -150px;
+      left: -25px;
+      padding-top: 10px;
+      display: none;
+    }
+
+    .ratio-page .itemdt-wrapp .CFIXcode p {
+      color: #333333;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 10px;
+    }
+  </style>
+  <style id="dynamic"></style>
+</head>
+
+<body ng-controller="positionCtrl">
+  <div id="main">
+    <div class="panel" id="m-panel">
+      <!--#include file="/module/html.body.begin.html"-->
+      <!-- Begin header -->
+      <div class="pc">
+        <div class="e-header">
+          <!--#include file="/cn/template.header.html"-->
+        </div>
+      </div>
+      <div class="m">
+        <script>
+          menu();
+        </script>
+      </div>
+      <!-- End header -->
+      <div class="ratio-page">
+        <div class="web-banner">
+        </div>
+        <div class="inner">
+          <div class="billboard">
+            <h1 class="title">持仓比例</h1>
+          </div>
+        </div>
+        <!-- Begin main contents -->
+        <div class="web-content article">
+          <div class="web-page bg01 itemdt-wrapp">
+            <ul>
+              <li class="item1-details show clearfix" id="item1-details">
+                <div class="section7">
+                  <div class="row">
+                    <div class="container">
+                      <p class="main-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        &nbsp;&nbsp;为买卖方向提供重要参考
+                      </p>
+                      <div class="pc">
+                        <div class="panel">
+                          <h1 class="no-margin">持仓比例</h1>
+                          <div class="explanation">
+                            <p class="sub-title">
+                              持仓数据最后更新时间
+                              <span class="date-formatnb" ng-cloak>{{updatedDate |date : 'yyyy.MM.dd HH:mm'}}</span>
+                            </p>
+                            <div class="note">
+                              <span class="orange">看多</span><span class="blue">看空</span><span class="green">持平</span>
+                            </div>
+                          </div>
+                          <ul id="click-tabs" class="item-wrapper clearfix">
+                            <li ng-click="changeTab(0)" class="active">
+                              <a href="javascript:;">股指</a>
+                            </li>
+                            <li ng-click="changeTab(1)">
+                              <a href="javascript:;">外汇</a>
+                            </li>
+                            <li ng-click="changeTab(2)">
+                              <a href="javascript:;">贵金属</a>
+                            </li>
+                            <li ng-click="changeTab(3)" class="last-child">
+                              <a href="javascript:;">原油</a>
+                            </li>
+                          </ul>
+                          <div class="itemdt-wrapp">
+                            <ul>
+                              <li class="item1-details clearfix" ng-if="tabs[0]">
+                                <ul class="item-chart clearfix">
+                                  <li ng-repeat="data in stock">
+                                    <cf-pie data="{{data}}" buy="{{buy}}" sell="{{sell}}"></cf-pie>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="item2-details show clearfix" ng-if="tabs[1]">
+                                <h3>直盘货币对</h3>
+                                <ul class="item-chart clearfix">
+                                  <li ng-repeat="data in exchange.dollar">
+                                    <cf-pie data="{{data}}" buy="{{buy}}" sell="{{sell}}"></cf-pie>
+                                  </li>
+                                </ul>
+                                <h3 class="item-name">交叉盘货币对</h3>
+                                <ul class="item-chart clearfix">
+                                  <li ng-repeat="data in exchange.other">
+                                    <cf-pie data="{{data}}" buy="{{buy}}" sell="{{sell}}"></cf-pie>
+                                  </li>
+                                </ul>
+                                <h3 class="item-name">离岸人民币</h3>
+                                <ul class="item-chart clearfix">
+                                  <li ng-repeat="data in exchange.cnh">
+                                    <cf-pie data="{{data}}" buy="{{buy}}" sell="{{sell}}"></cf-pie>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="item3-details clearfix" ng-if="tabs[2]">
+                                <ul class="item-chart clearfix">
+                                  <li ng-repeat="data in metal">
+                                    <cf-pie data="{{data}}" buy="{{buy}}" sell="{{sell}}"></cf-pie>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="item4-details clearfix" ng-if="tabs[3]">
+                                <ul class="item-chart clearfix">
+                                  <li ng-repeat="data in commodity">
+                                    <cf-pie data="{{data}}" buy="{{buy}}" sell="{{sell}}"></cf-pie>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="m">
+                        <div class="navTit">
+                          <ul>
+                            <li type="stocks" class="stocks checked">
+                              <p>股指</p>
+                              <p class="line"></p>
+                            </li>
+                            <li type="exchanges">
+                              <p>外汇</p>
+                              <p class="line"></p>
+                            </li>
+                            <li type="metals">
+                              <p>贵金属</p>
+                              <p class="line"></p>
+                            </li>
+                            <li type="oils">
+                              <p>原油</p>
+                              <p class="line"></p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="note">
+                          <span class="orange">看多</span><span class="blue">看空</span><span class="green">持平</span>
+                        </div>
+                        <div class="conPage">
+                          <div class="conNav">
+                            <ul>
+                              <li type="dollars"><span>直盘货币对</span></li>
+                              <li type="others"><span>交叉盘货币对</span></li>
+                              <li type="cnhs"><span>离岸人民币</span></li>
+                            </ul>
+                          </div>
+                          <div class="conList"></div>
+                        </div>
+                        <div class="explanation">
+                          <p class="sub-title">
+                            持仓数据最后更新时间
+                            <span class="date-formatnb" ng-cloak>{{updatedDate |date : 'yyyy.MM.dd HH:mm'}}</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="web-page bg02">
+            <div class="container">
+              <p class="main-title" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">&nbsp;&nbsp;常见问题解答
+              </p>
+              <div class="faq container clearfix">
+                <div class="col-md-12 ">
+                  <a id="article_0" class="article-question collapsed" data-toggle="collapse"
+                    data-target="#article_body_0">什么是持仓比例？</a>
+                  <div class="article-answer collapse" id="article_body_0">
+                    <p>它是把三十多万客户对每项差价合约交易产品的实际多/空买卖交易数据以圆形及不同颜色综合展示。
+                      橘色代表多，蓝色代表空，当圈上的橘色较蓝色多，代表我们的客户群对该产品买多的比例较买空高。相反当蓝色的比例较多，即代表我们的客户对该产品买空的比例比买多高。</p>
+                  </div>
+                </div>
+                <div class="col-md-12 ">
+                  <a id="article_1" class="article-question collapsed" data-toggle="collapse"
+                    data-target="#article_body_1">圈内的数字是什么?</a>
+                  <div class="article-answer collapse" id="article_body_1">
+                    <p>
+                      若说持仓比例可提供清晰的客户买卖取态，那圈内由多空综合指标便更为直观的透视客户买卖情绪。下方看多/空/持平之建议为反向操作建议。
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12 ">
+                  <a id="article_2" class="article-question collapsed" data-toggle="collapse"
+                    data-target="#article_body_2">什么是多空综合指标?</a>
+                  <div class="article-answer collapse" id="article_body_2">
+                    <p>多空综合指标 (CFPI)
+                      对每个可交易产品之持仓比例及未平仓合约进行综合计算，从直观数字反映多空情绪，使用这个指标配合基本线图分析参考，立刻得出明确买卖方向。我们以0作为中位数值，当指标大于0时，表示做多的客户比做空的多，反之若指标少于0时，即做空的客户比做多的多。
+                    </p>
+                    <div class="row">
+                      <div class="col-xs-7 col-ssmm-12 col-ssm-7">
+                        <div class="img-wrapper">
+                          <img class="img-responsive"
+                            src="/source/www/news/ratio/charts.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-xs-5 col-ssmm-12 col-ssm-5">
+                        <div class="info-wrapper">
+                          <img class="img-responsive"
+                            src="/source/www/news/ratio/info.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 ">
+                  <a id="article_3" class="article-question collapsed" data-toggle="collapse"
+                    data-target="#article_body_3">如何使用多空综合指标?</a>
+                  <div class="article-answer collapse" id="article_body_3">
+                    <p>
+                      多空综合指标是一个反向指标来的，由于这是一个以散户数据进行计算的指标，从数据中我们看出，散户虽然在一开始的交易中是盈利的，但往往到最后，都是以亏损作结。因此，我们的指标会按散户的行为进行反向操作。当指标大于0时，散户都在做多，我们可能要考虑做空了。相反，当指标少于0，表示散户都在做空时，这时我们可能要考虑做多。特别要注意±
+                      50这个数值，因为当指标大过或等于这个数字时，意味着散户的多空比例差距已经非常大，过热或过淡的情绪或许已经出现。请谨记，多空综合指标是不能单独用作决定买卖方向的唯一指标，它是属于一个在进行基本线图分析后，进一步确认您买卖方向的一个分析工具。
+                    </p>
+                    <div class="img-box">
+                      <img class="img-responsive"
+                        src="/source/www/news/ratio/balance.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 ">
+                  <a id="article_4" class="article-question collapsed" data-toggle="collapse"
+                    data-target="#article_body_4">为何要使用多空综合指标?</a>
+                  <div class="article-answer collapse" id="article_body_4">
+                    <p>
+                      外汇或商品市场与股票市场存在着最大的不同之处，是在于它并无一个固定的单一交易所进行交易，这意味着在投资者的角度上，我们很难去集中评估目前的市场走势。国际把这个数据公开，并加以运算，以最直观
+                      (大或少于0)的数字，去告诉客户目前所有客户所选择的是那一个方向，而作为一所自2008年已开始营运的机构，我们的客户量也在不停的扩大，目前已能分析之客户量达三十多万，尽力保证以最客观的数据协助客户进行分析。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="web-page bg03">
+            <div class="container">
+              <div class="pc">
+                <p class="main-title" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="800">
+                  &nbsp;&nbsp;查看我们所有产品
+                </p>
+                <div class="more-product">
+                  <div class="forex" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                    <a class="main-intro" href="/cn/product/forex.html">外汇</a>
+                    <p class="sub-intro">交易主要货币对、次要货币对和稀有货币对</p>
+                  </div>
+                  <div class="commodities" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                    <a class="main-intro" href="/cn/product/commodities.html">商品</a>
+                    <p class="sub-intro">提供能源商品、基础原材料和农副产品</p>
+                  </div>
+                  <div class="indices" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800">
+                    <a class="main-intro" href="/cn/product/indices.html">指数</a>
+                    <p class="sub-intro">交易中华300 、美国Tech100、香港50全球热门指数</p>
+                  </div>
+                  <div class="stock" data-aos="fade-down" data-aos-delay="1400" data-aos-duration="800">
+                    <a class="main-intro" href="/cn/product/stock.html">股票</a>
+                    <p class="sub-intro">买卖及持有全球知名企业的股票</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="open-panel">
+                  <p>准备好透过创富国际开始交易了吗？</p>
+                  <a href="/cn/pc/rcfd_account"
+                    onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc">
+            <div class="web-page bg04"></div>
+            <div class="box2 container">
+              <div class="menu">
+                <div class="left-title">
+                  <p class="main-title">&nbsp;&nbsp;浏览更多</p>
+                  <p class="sub-title">为您提供各种专业产品服务</p>
+                </div>
+
+                <div class="right-menu">
+
+                  <a href="/cn/aboutUS.html"><span>关于创富</span><img class="arrow_icon"
+                      src="/source/www/about-us/new-version/arrow_icon.png"></a>
+                  <hr class="line">
+                  <a href="/cn/platform/cfd-intro.html"><span>交易平台</span><img class="arrow_icon"
+                      src="/source/www/about-us/new-version/arrow_icon.png"></a>
+                  <hr class="line">
+                  <a href="/cn/faq.html"><span>常见问题</span><img class="arrow_icon"
+                      src="/source/www/about-us/new-version/arrow_icon.png"></a>
+                  <hr class="line">
+                  <a href="/cn/information/quote.html"><span>实时报价</span><img class="arrow_icon"
+                      src="/source/www/about-us/new-version/arrow_icon.png"></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m">
+          <!--底部-->
+          <script>
+            footer();
+          </script>
+          <!--底部结束-->
+          <!--遮罩层-->
+          <div id="m-overlay" class="overlay" node-name="overlay"></div>
+          <!--遮罩层 end-->
+        </div>
+        <!--#include file="/cn/template.footer.html"-->
+      </div>
+      <!-- End Main contents -->
+      <div class="pc">
+        <!--#include file="/cn/template.right-1.html"-->
+      </div>
+      <div class="m">
+        <!--#include file="/cn/nav.html"-->
+      </div>
+    </div>
+  </div>
+  <!--#include file="/cn/template.js.html"-->
+</body>
+<script src="/cn/js/highCharts.min.js"></script>
+<script src="/cn/js/ScrollMagic.min.js"></script>
+<script src="/cn/js/autoNumeric-min.js"></script>
+<script src="/cn/js/angular.min.js"></script>
+<script src="/cn/js/ratio.js"></script>
+<script src="/cn/js/information/position.js"></script>
+<script src="/cn/js/ratio.plugin.js"></script>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
+<script>
+  AOS.init({
+    offset: 100,
+    easing: "ease",
+    duration: 800,
+    delay: 100,
+    once: false
+  });
+</script>
+<script>
+  $.conData();
+</script>
+
+<!--#include file="/module/html.body.end.html"-->
+
+</html>

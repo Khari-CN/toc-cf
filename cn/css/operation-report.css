@@ -1,0 +1,2938 @@
+#main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/operation-report/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.web-banner span {
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.web-banner span.size {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/advantage/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+    top: 328px;;
+    z-index: 999;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+}
+
+.billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.web-content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.web-content .web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 120px 0 97px 0;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 60px 0 10px 0;
+    color: #000000;
+}
+
+.web-content .bg-nav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.web-content .bg-nav .nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.web-content .bg-nav .nav .navs {
+    display: flex;
+}
+
+.web-content .bg-nav .nav ul,
+li {
+    list-style: none;
+    /* display: flex; */
+}
+
+.web-content .bg-nav .nav ul li {
+    width: 192px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9fa0a0;
+    cursor: pointer;
+    border: solid 1px #9fa0a0;
+    border-radius: 5px;
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    margin: 0 2rem;
+}
+
+.web-content .bg-nav .nav ul li.on {
+    border: solid 1px #2986d7;
+    color: #2986d7;
+}
+
+.web-content .bg-nav .nav ul li img.pic {
+    margin-left: -17px;
+}
+
+.web-content .bg-nav .nav ul li img.hide {
+    display: none;
+}
+
+.web-content .bg-nav .nav ul li img.hide1 {
+    display: none;
+}
+
+.web-content .nav-content {
+    overflow: hidden;
+    display: none;
+}
+
+.web-content .nav-content .report-page {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.report-page .inner .main-title,
+.data-page .inner .main-title {
+    margin: 0;
+}
+
+/*.web-content .nav-content .time{
+    overflow: hidden;
+    margin-top: 52px;
+    margin-left: 17px;
+}
+.web-content .nav-content .time span{
+    overflow: hidden;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #0096dc;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.web-content .nav-content .time span.triangle{
+    width:0;
+    height:0;
+    border-width:9px 9px 0;
+    border-style:solid;
+    border-color:#0096dc #fff #fff;
+    margin-left: 68px;
+}*/
+
+.web-content .nav-content .time {
+    overflow: hidden;
+    margin-top: 52px;
+    margin-left: 17px;
+}
+
+#yearselector {
+    width: 101px;
+    height: 25px;
+    border: solid 1px #9fa0a0;
+    border-radius: 3px;
+    font-weight: 700;
+    padding-left: 0.5em;
+    font-size: 1.4em;
+}
+
+#yearselector .on {
+    display: block;
+}
+
+.web-content .nav-content .time ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.web-content .nav-content .time ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #ddd;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.web-content .nav-content .time ul li.on {
+    background: #0096dc;
+    color: #fff
+}
+
+.web-content .nav-content .time-list {
+    overflow: hidden;
+    display: none;
+}
+
+.a-width {
+    overflow: hidden;
+    display: block;
+    width: 340px;
+    height: 337px;
+    margin-top: 15px;
+    float: left;
+    transition: all 0.35s ease-in;
+    margin-right: 58px;
+}
+
+.web-content .nav-content .time-list .con-list {
+    overflow: hidden;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner.png?1729") no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(81, 151, 184, .25) 0 0 20px;
+    margin: 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1712 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1712.png?1729") no-repeat;
+    box-shadow: rgba(135, 162, 195, .3) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1801 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1801.jpg?0314") no-repeat;
+    box-shadow: rgba(135, 162, 195, .3) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1802 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1802.png?0327") no-repeat;
+    box-shadow: rgba(223, 193, 109, .25) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1803 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1803.jpg?0327") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1804 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1804.png?0327") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1805 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1805.png?0716") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1806 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1806.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1807 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1807.png?v0814") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1808 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1808.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1809 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1809.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1810 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1810.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1811 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1811.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1812 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1812.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1901 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1901.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1902 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1902.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1903 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1903.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1904 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1904.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1905 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1905.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1906 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1906.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1907 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1907.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1908 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1908.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1909 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1909.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1910 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1910.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1911 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1911.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_1912 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-1912.jpg") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2020 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2020.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2002 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2002.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2003 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2003.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2004 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2004.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2004:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2004.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2005 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2005.png") no-repeat;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2005:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2005.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2006 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2006.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2006:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2006.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2007 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2007.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2007:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2007.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2008 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2008.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2008:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2008.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2009 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2009.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2009:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2009.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2010 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2010.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2010:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2010.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2011 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2011.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2011:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2011.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2012 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2012.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+}
+
+.web-content .nav-content .time-list .con-list.list_2012:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2012.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2101 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2101.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2101:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2101.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2102 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2102.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2102:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2102.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2103 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2103.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2103:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2103.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2104 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2104.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2104:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2104.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2105 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2105.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2105:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2105.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2106 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2106.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2106:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2106.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2107 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2107.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2107:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2107.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2108 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2108.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2108:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2108.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2109 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2109.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2109:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2109.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2110 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2110.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2110:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2110.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2111 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2111.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2111:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2111.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2112 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2112.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2112:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2112.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2201 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2201.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2201:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2201.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2202 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2202.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2202:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2202.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2203 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2203.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2203:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2203.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2204 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2204.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2204:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2204.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2205 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2205.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2205:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2205.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2206 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2206.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2206:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2206.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2207 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2207.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2207:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2207.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2208 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2208.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2208:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2208.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2209 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2209.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2209:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2209.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2210 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-2210.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2210:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2210.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2211 {
+    background: url("/images/about/operate-banner/banner-2211.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2211:hover {
+    background: url("/images/about/operate-banner/banner-hover-2211.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2212 {
+    background: url("/images/about/operate-banner/banner-2212.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2212:hover {
+    background: url("/images/about/operate-banner/banner-hover-2212.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2301 {
+    background: url("/images/about/operate-banner/banner-2301.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2301:hover {
+    background: url("/images/about/operate-banner/banner-hover-2301.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2302 {
+    background: url("/images/about/operate-banner/banner-2302.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2302:hover {
+    background: url("/images/about/operate-banner/banner-hover-2302.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2303 {
+    background: url("/images/about/operate-banner/banner-2303.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2303:hover {
+    background: url("/images/about/operate-banner/banner-hover-2303.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2304 {
+    background: url("/images/about/operate-banner/banner-2304.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2304:hover {
+    background: url("/images/about/operate-banner/banner-hover-2304.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2305 {
+    background: url("/images/about/operate-banner/banner-2305.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2305:hover {
+    background: url("/images/about/operate-banner/banner-hover-2305.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2306 {
+    background: url("/images/about/operate-banner/banner-2306.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2306:hover {
+    background: url("/images/about/operate-banner/banner-hover-2306.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2307 {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-2307.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2307:hover {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-hover-2307.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2308 {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-2308.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2308:hover {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-hover-2308.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2309 {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-2309.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2309:hover {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-hover-2309.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list.list_2310 {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-2310.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: rgba(44, 42, 66, .4) 0 0 20px;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2310:hover {
+    background: url("https://www.cfd139.com/images/about/operate-banner/banner-hover-2310.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.web-content .nav-content .time-list .con-list:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1711.png?1907") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1712:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1712.png?1933") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1801:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1801.jpg?1933") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1802:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1802.png?0327") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1803:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1803.jpg?0327") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1804:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1804.png?0327") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1805:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1805.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1806:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1806.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1807:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1807.png?v0814") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1808:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1808.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1809:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1809.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1810:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1810.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1811:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1811.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1812:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1812.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1901:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1901.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1902:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1902.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1903:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1903.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1904:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1904.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1905:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1905.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1906:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1906.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1907:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1907.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1908:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1908.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1909:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1909.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1910:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1910.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1911:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1911.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_1912:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-1912.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2020:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2020.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2002:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2002.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+.web-content .nav-content .time-list .con-list.list_2003:hover {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-hover-2003.png") no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.35s ease-in;
+}
+
+/*内页*/
+.oper-page {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/banner-bg-pc.jpg") no-repeat center bottom;
+    top: 0;
+    left: 0;
+}
+
+.oper-page .nav-content {
+    overflow: hidden;
+    background: #fff;
+    height: 70px;
+}
+
+.oper-page .nav-content .logo {
+    overflow: hidden;
+    float: left;
+    width: 15%;
+    margin-top: 8px;
+}
+
+.oper-page .nav-content .nav {
+    overflow: hidden;
+    float: left;
+    width: 85%;
+    margin-top: 4px;
+}
+
+.oper-page .nav-content .nav ul,
+li {
+    list-style: none;
+}
+
+.oper-page .nav-content .nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.oper-page .nav-content .nav ul li {
+    font-size: 16px;
+}
+
+.oper-page .nav-content .nav ul li span {
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+
+.oper-page .nav-content .nav ul li span:hover {
+    color: #0096dc;
+}
+
+.oper-page .nav-content .nav ul li span.on {
+    color: #0096dc;
+}
+
+.oper-page .nav-content .nav ul li a {
+    overflow: hidden;
+    display: block;
+    background: #0096dc;
+    color: #fff;
+    width: 102px;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.oper-page .slideBox {
+    overflow: hidden;
+    width: 100%;
+}
+
+.oper-page .slideBox .slider {
+    overflow: hidden;
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    margin-left: -600px;
+    margin-top: -350px;
+    padding: 16px 0;
+}
+
+.oper-page .slideBox .slider ul {
+    overflow: hidden;
+    list-style: none;
+    width: 90%;
+    padding: 5% 0 0 0;
+    margin: 0 auto;
+}
+
+.oper-page .slideBox .slider ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 700px;
+}
+
+.oper-page .slideBox .slider ul li .page {
+    overflow: hidden;
+    margin-top: 55px;
+}
+
+.oper-page .slideBox .slider ul li .page img {
+    margin: 0 auto 50px auto;
+}
+
+.oper-page .slideBox .slider ul li .page img.first {
+    width: 216px;
+}
+
+.oper-page .slideBox .slider ul li .page img.last {
+    width: 622px;
+}
+
+.oper-page .slideBox .prev,
+.oper-page .slideBox .next {
+    overflow: hidden;
+    position: absolute;
+    left: .5%;
+    margin-top: 26%;
+    z-index: 1;
+    display: block;
+    width: 68px;
+    height: 72px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon6-pc.png") no-repeat;
+}
+
+.oper-page .slideBox .next {
+    left: auto;
+    right: 1.5%;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon7-pc.png") no-repeat;
+}
+
+/*.oper-page .slideBox .prev:hover, .next:hover{ filter:alpha(opacity=100);opacity:1;}*/
+.oper-page .slideBox .prevStop {
+    display: none;
+}
+
+.oper-page .slideBox .nextStop {
+    display: none;
+}
+
+.oper-page .slideBox .arrow {
+    animation: next 1s infinite;
+    -webkit-animation: arrow 1s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+@keyframes arrow {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(16px);
+    }
+}
+
+@-webkit-keyframes arrow {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(16px);
+    }
+}
+
+.oper-page .slideBox .slider ul li .page-2 {
+    overflow: hidden;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .title {
+    overflow: hidden;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .title.margin {
+    margin-bottom: 50px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .title img {
+    margin: 0 auto;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .title span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .title span.size {
+    font-size: 20px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .nav-con {
+    overflow: hidden;
+    margin-top: 122px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list {
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    width: 23%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list img {
+    margin: 0 auto 16px auto;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .nav-con .list span.size {
+    font-size: 28px;
+    color: #ff9100;
+    margin-top: 12px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .container {
+    margin-top: 80px;
+    height: 200px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 70px 45px 85px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con.width-01 {
+    width: 73%;
+    margin: 0 auto;
+    display: block;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con.display {
+    display: block;
+    padding: 0 70px 0 85px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout {
+    overflow: hidden;
+    width: 45%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list {
+    overflow: hidden;
+    margin-bottom: 47px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin {
+    margin-left: 10%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin-1 {
+    margin-bottom: 30px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin-2 {
+    margin-bottom: 20px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list span.size {
+    font-size: 24px;
+    color: #ff9100;
+    margin-bottom: 6px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list.margin-1 span.size {
+    margin-bottom: 10px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1.center {
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 .item {
+    overflow: hidden;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 .item span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-1 .item span.bg {
+    font-size: 34px;
+    color: #f49455;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon5-pc.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 154px;
+    height: 117px;
+    line-height: 117px;
+    margin-bottom: 20px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 {
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    height: 166px;
+    color: #333;
+    margin-top: 36px;
+}
+
+/*.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item img{
+    width: 50px;
+}*/
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item span.bg-img {
+    width: 50px;
+    height: 166px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/neirong1-pc.png") no-repeat;
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item span.bg-img-1 {
+    width: 50px;
+    height: 100px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/neirong1-2-pc.png") no-repeat;
+    margin-top: 0;
+}
+
+/*@-webkit-keyframes appear {
+
+    0% { width:50px; height:0;}
+    50% { width:50px; height:50px;}
+    100% { width:50px; height:100px;}
+}
+
+@keyframes appear {
+
+    0% { width:50px; height:0;}
+    50% { width:50px; height:50px;}
+    100% { width:50px; height:100px;}
+}
+
+.appear {
+    animation: appear;
+    animation-duration: 2s;
+    -webkit-animation:appear 2s;
+    animation-fill-mode: forwards;
+    position:absolute;
+    display:block;
+}*/
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-1 span {
+    overflow: hidden;
+    display: block;
+    color: #999;
+    margin-right: 13px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-1 span.line {
+    width: 100%;
+    height: 10px;
+    border-bottom: dashed 1px #ccc;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-2 span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    height: 166px;
+    color: #333;
+    margin-top: 36px;
+}
+
+/*.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item img{
+    width: 50px;
+}*/
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-2 .item-2 span.bg-img {
+    width: 50px;
+    height: 100px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/neirong1-2-pc.png") no-repeat;
+    margin-top: 0;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 {
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3.width {
+    width: 100%
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item {
+    overflow: hidden;
+    width: 126px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 10px 0 45px 0;
+    color: #666;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item-1 {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item-1 span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    color: #ff9100;
+    position: absolute;
+    margin-left: 16px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-3 .item-1 span.margin {
+    margin-left: 160px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 .item {
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 .item img {
+    margin: 0 auto;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-4 .item img:first-child {
+    margin-bottom: 48px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item {
+    overflow: hidden;
+    float: left;
+    /*margin-right: 25px;*/
+    width: 35%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item:first-child {
+    margin-left: -5%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-5 .item span.color {
+    color: #ff9100;
+    font-size: 28px;
+    display: inline;
+    margin-right: 5px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 .item {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 .item.margin {
+    margin-left: 25%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-6 img {
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-7 {
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-7 .item {
+    overflow: hidden;
+    width: 380px;
+    height: 45px;
+    background: #ffb552;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-7 .item span {
+    overflow: hidden;
+    display: block;
+    width: 270px;
+    height: 45px;
+    background: #80acf4;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-8 {
+    overflow: hidden;
+    width: 251px;
+    margin: 0 auto;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span {
+    overflow: hidden;
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle {
+    overflow: hidden;
+    width: 274px;
+    background: #ffb552;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-right: 10px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-2 {
+    width: 86px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-3 {
+    width: 30px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-4 {
+    width: 74px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout .list-9 .item span.rectangle.width-5 {
+    width: 14px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 {
+    overflow: hidden;
+    width: 33%;
+    float: left;
+    margin-top: 74px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1.time1 {
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1.time2 {
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    width: 90%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 span.color {
+    font-size: 24px;
+    color: #ff9100;
+    margin-bottom: 0;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-1 span.line {
+    width: 44px;
+    height: 1px;
+    background: #ccc;
+    margin: 16px 0 10px 0;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-2 {
+    overflow: hidden;
+    width: 46%;
+    border-top: dashed 1px #ddd;
+    padding: 0 23%;
+    margin-top: 95px;
+    box-shadow: none;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .list-width {
+    overflow: hidden;
+    width: 100%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03 {
+    overflow: hidden;
+    width: 27%;
+    float: left;
+    margin-top: 64px;
+    margin-bottom: 45px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03.width {
+    width: 40%;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03 span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-03 img {
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-04 {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-04 a {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #0096dc;
+    border-bottom: solid 1px #0096dc;
+    padding-bottom: 3px;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.oper-page .slideBox .slider ul li .page-2 .con .layout-04 span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.page-2 .con .layout-2 ol {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-2 .con .layout-2 ol li {
+    overflow: hidden;
+    list-style: none;
+    width: 180px;
+    margin: 0;
+    box-shadow: none;
+    height: auto;
+    padding: 0;
+}
+
+.page-2 .con .layout-2 ol li a {
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+
+.page-2 .con .layout-2 ol li a.check span.masking {
+    background: transparent;
+}
+
+.page-2 .con .layout-2 ol li a.check span.bg-color {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon10-pc.png") no-repeat;
+}
+
+.page-2 .con .layout-2 ol li a span.masking {
+    background: rgba(255, 255, 255, .5);
+}
+
+.page-2 .con .layout-2 ol li a span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.page-2 .con .layout-2 ol li a span.pic {
+    overflow: hidden;
+    width: 101px;
+    height: 101px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/pic4-pc.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 23px auto 20px auto;
+}
+
+.page-2 .con .layout-2 ol li a span.pic.bg {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/pic5-pc.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-2 .con .layout-2 ol li a span.masking {
+    width: 101px;
+    height: 101px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: rgba(255, 255, 255, .5);
+    margin: 0;
+}
+
+.page-2 .con .layout-2 .item:hover span.masking {
+    background: transparent;
+}
+
+.page-2 .con .layout-2 .item a span.bg-color {
+    width: 22px;
+    height: 22px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon9-pc.png") no-repeat;
+    position: absolute;
+    z-index: 1;
+    margin-top: -12px;
+    margin-left: 78px;
+}
+
+.page-2 .con .layout-2 .item a span.bg-color.on {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon10-pc.png") no-repeat;
+}
+
+.page-2 .con .layout-2 .item:hover a span.bg-color {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/operation-report/icon10-pc.png") no-repeat;
+}
+
+.page-2 .con .layout-3 {
+    overflow: hidden;
+    display: block;
+    width: 80%;
+    margin: 14px auto;
+}
+
+.page-2 .con .layout-3 p {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+}
+
+.oper-page #footer {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/*@media screen and (max-height: 600px){
+    .inner{width: 900px}
+    .oper-page .slideBox .slider ul{width: 900px;height: 434px}
+    .oper-page .slideBox .slider ul li{width: 900px;height: 434px}
+    .oper-page .slideBox .prev,.oper-page .slideBox .next{left: 10%}
+    .oper-page .slideBox .next{left:auto;right: 10%}
+}*/
+
+/*运营数据*/
+.data-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 0 69px 0;
+}
+
+.data-page .data-title {
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.data-page .data-time {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.data-page .data-time p {
+    overflow: hidden;
+    display: inline-block;
+    border: solid 1px #0096dc;
+    width: 58px;
+    height: 58px;
+    margin: 0 10px;
+}
+
+.data-page .data-time p.center {
+    border: none;
+    width: 30px;
+    line-height: 58px;
+    height: 58px;
+    color: #181818;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.data-page .data-time p span {
+    overflow: hidden;
+    display: block;
+    background: #0096dc;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin: 4px 0 0 4px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.data-page .data-list {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.data-page .data-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-page .data-list ul li {
+    overflow: hidden;
+    list-style: none;
+}
+
+.data-page .data-list ul li span {
+    overflow: hidden;
+    display: block;
+    font-size: 1.5em;
+    color: #000000;
+    text-align: start;
+    line-height: 24px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.data-page .data-list ul li span.year-num {
+    color: #fea501;
+    font-size: 4em;
+    font-weight: bolder;
+    line-height: 48px;
+    display: inline-flex;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.data-page .data-list ul li span.year {
+    color: #fea501;
+    font-size: 1em;
+    line-height: 48px;
+    font-weight: normal;
+}
+
+.data-page .data-list ul li span.size {
+    color: #000000;
+    font-size: 3em;
+    line-height: 48px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.data-page .data-nav {
+    overflow: hidden;
+    margin-bottom: 51px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.data-page .data-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.data-page .data-nav ul li {
+    overflow: hidden;
+    list-style: none;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    padding: 0 20px;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+.data-page .data-nav ul li.checked {
+    border: solid 1px #0096dc;
+    color: #0096dc;
+}
+
+.data-page .data-nav ul li a {
+    overflow: hidden;
+    display: block;
+    width: 130px;
+    height: 32px;
+    background: #035b83;
+}
+
+.data-page .data-nav .select {
+    margin-right: 20px;
+}
+
+.data-page .data-nav .select select {
+    width: 101px;
+    height: 25px;
+    border: solid 1px #9fa0a0;
+    border-radius: 3px;
+    font-weight: 700;
+    padding-left: 0.5em;
+    letter-spacing: 0.1em;
+    font-size: 1.4em;
+}
+
+.data-page .data-nav .select select option {
+    overflow: hidden;
+    text-align: start;
+    background: #fff;
+    color: #333;
+}
+
+#data_category {
+    width: 202px;
+    height: 25px;
+    border: solid 1px #9fa0a0;
+    border-radius: 3px;
+    font-weight: 700;
+    padding-left: 0.5em;
+    letter-spacing: 0.1em;
+    font-size: 1.4em
+}
+
+.data-page .data-table {
+    overflow: hidden;
+    display: none;
+}
+
+.data-page .data-table .table-title {
+    overflow: hidden;
+    /*display: flex;
+    justify-content: space-between;*/
+    padding-right: 30px;
+}
+
+.data-page .data-table .table-title .normal-size {
+    overflow: hidden;
+    float: right;
+}
+
+.data-page .data-table .table-title .normal-size span {
+    overflow: hidden;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.data-page .data-table .table-title .big-size {
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    float: left;
+}
+
+.data-page .data-table .table-title .big-size span {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 24px;
+    color: #333;
+    font-size: 24px;
+}
+
+.data-page .data-table .table-title .big-size span:nth-child(1) {
+    font-size: 16px;
+}
+
+.data-page .data-table .table-title .big-size span:nth-child(2) {
+    font-size: 16px;
+}
+
+.data-page .data-table .table-con {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.data-page .data-table .table-con ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data-page .data-table .table-con ul li {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.data-page .data-table .table-con ul li span {
+    overflow: hidden;
+    display: block;
+    font-size: 1.2em;
+    color: #242424;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Microsoft JhengHei';
+}
+
+.data-page .data-table .table-con ul li span:first-child {
+    font-size: 1.5em;
+}
+
+.data-page .data-table .table-con ul li span:nth-child(2) {
+    border-radius: 8px;
+    width: 50px;
+    margin: 8px auto 18px;
+}
+
+.data-page .data-table .table-con ul li:nth-child(even) span:nth-child(2) {
+    background: linear-gradient(135deg, rgba(13, 99, 178, 1), rgba(12, 94, 168, 1), rgba(11, 76, 136, 1), rgba(10, 68, 122, 1));
+}
+
+.data-page .data-table .table-con ul li:nth-child(odd) span:nth-child(2) {
+    background: linear-gradient(135deg, rgba(74, 167, 253, 1), rgba(57, 154, 242, 1), rgba(39, 139, 231, 1), rgba(26, 129, 224, 1));
+}
+
+.data-page .data-item {
+    overflow: hidden;
+}
+
+.data-page .data-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-page .data-item ul li {
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    width: 340px;
+}
+
+.data-page .data-item ul li img {
+    margin-bottom: 58px;
+    width: 340px;
+    transition: all 0.35s ease-in;
+}
+
+.data-page .data-item ul li img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.35s ease-in;
+}
+
+.data-page .data-item ul li span {
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+    margin: 12px 0;
+}
+
+.data-page .data-item ul li p {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.data-page .data-btn {
+    overflow: hidden;
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #0096dc;
+    margin: 0 auto;
+    transition: all 0.35s ease-in;
+}
+
+.data-page .data-btn:hover {
+    background: #035b83;
+    transition: all 0.35s ease-in;
+}
+
+.data-page .data-btn a {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.data-page .data-item {
+    overflow: hidden;
+}
+
+.data-page .data-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data-page .data-item ul li {
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    width: 340px;
+}
+
+.data-page .data-item ul li img {
+    margin-bottom: 58px;
+    width: 340px;
+    transition: all 0.35s ease-in;
+}
+
+.data-page .data-item ul li img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.35s ease-in;
+}
+
+.data-page .data-item ul li span {
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+    margin: 12px 0;
+}
+
+.data-page .data-item ul li p {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@media (max-width: 1400px) {
+    .inner {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/aboutUs/operation-report/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: .5rem 0 0.1rem 0;
+    }
+
+    .web-content .bg-nav .nav ul li {
+        margin: 0 0.25rem;
+        font-size: 0.35rem;
+        width: 2.5rem;
+        height: 0.7rem;
+        letter-spacing: 3px;
+    }
+
+    .data-page .data-list ul li span.year-num {
+        font-size: .5rem;
+    }
+
+    .data-page .data-list ul li span.size {
+        font-size: .35rem;
+        font-weight: 700;
+    }
+
+    .data-page .data-list ul li span {
+        font-size: 0.25rem;
+        font-family: Microsoft JhengHei;
+    }
+
+    .data-page .data-list ul {
+        flex-wrap: wrap;
+    }
+
+    .data-page .data-list ul li {
+        padding: 0 0.15rem;
+    }
+
+    .line {
+        width: 1px;
+        height: 0.82rem;
+        margin: auto 0;
+    }
+
+    .data-page .data-nav .select select {
+        width: 1.5rem;
+        height: 0.45rem;
+        letter-spacing: 0;
+        font-size: 0.25rem;
+    }
+
+    #data_category {
+        width: 3rem;
+        height: 0.45rem;
+        letter-spacing: 0;
+        font-size: 0.25rem;
+    }
+
+    .data-page .data-table .table-con ul li span {
+        font-size: 0.18rem;
+    }
+
+    .data-page .data-table .table-con ul li span:first-child {
+        font-size: 0.2rem;
+    }
+
+    .data-page .data-table {
+        overflow: auto;
+    }
+
+    .data-page .data-table .table-con ul li {
+        overflow: hidden;
+        margin: 0 0.3rem;
+    }
+
+    .data-page .data-table .table-con {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-color: #2e2d69 transparent;
+        /* Firefox */
+        scrollbar-width: thin;
+        /* Firefox */
+    }
+
+    .table-con::-webkit-scrollbar {
+        /* Webkit */
+        width: auto;
+        height: 8px;
+    }
+
+    .table-con::-webkit-scrollbar-track {
+        background: #e4e4e4;
+    }
+
+    .table-con::-webkit-scrollbar-thumb {
+        background-color: #2e2d69;
+        border-radius: 2px;
+    }
+
+    .data-page .data-table .table-con ul {
+        display: inline-flex;
+        flex: 0 0 33.3333%;
+        /* max-width: 33.3333%; */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+
+    .tips {
+        color: #ff0000;
+        margin-top:0.2rem;
+        font-weight: 700;
+        font-family: 'Microsoft JhengHei';
+        font-size: 0.18rem;
+    }
+
+    #yearselector{
+        font-size: 0.25rem;
+    }
+
+    .web-content .nav-content .time{
+        margin-bottom: 0.3rem;
+    }
+
+    .web-content .nav-content .time-list{
+        margin: 0 auto;
+    }
+
+    .time-list a {
+        width: 3rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      .web-content .nav-content .time-list .con-list {
+        width: 2.7rem;
+        height: 2.7rem;
+        box-shadow: unset !important;
+        margin: 0 auto;
+    }
+
+    .a-width{
+        height: 3rem;
+        margin-right: 0.1rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    html {
+      font-size: 3.5rem;
+    }
+  }
+  

@@ -1,0 +1,1389 @@
+#main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    position: relative;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/advantage/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.web-banner span {
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+
+.web-banner span.size {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/advantage/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+   top: 325px;
+    z-index: 999;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.web-content {
+    position: relative;
+    width: 100%;
+}
+
+.web-content .main-content {
+    padding: 120px 0 0 0;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-left: 10px solid #3391e7 !important;
+    border-spacing: 5px;
+    color: #000000;
+}
+
+.web-content .web-nav {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/advantage/menu_bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 232px;
+    overflow: hidden;
+    margin-top: 24px;
+    padding-top: 20px;
+    box-shadow: 0px 4px 1px 0px #cccdcf;
+    display: flex;
+    align-items: center;
+}
+
+.web-content .web-nav.top-nav {
+    position: fixed;
+    margin-top: 120px;
+    top: -60px;
+    z-index: 99;
+    transition: all .25s ease-in;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.web-content .web-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.web-content .web-nav ul li {
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    margin-right: 56px;
+}
+
+.web-content .web-nav ul li a {
+    overflow: hidden;
+    display: block;
+    color: #ffffff;
+    font-size: 2.1em;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Microsoft JhengHei';
+    font-weight: 700;
+}
+
+.web-content .web-nav ul li a p {
+    margin-top: 10px;
+}
+
+.web-content .web-nav ul li a img {
+    max-width: 148px;
+    width: 100%;
+    height: auto;
+}
+
+.web-content .web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 58px 0 97px 0;
+}
+
+.web-content .web-page.bg02 {
+    background: #f4f4f5;
+}
+
+.web-content .web-page.bg02 .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner .block1 {
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.inner .block1 .pros1 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/pros1_bg.png') no-repeat;
+    background-size: 100% 100%;
+    width: 453px;
+    height: 309px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.inner .block1 .pros2 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/pros2_bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 641px;
+    height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 350px;
+    padding-bottom: 30px;
+}
+
+.inner .block1 .pros3 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/pros3_bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 641px;
+    height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.block2 {
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+}
+
+.block1,
+.block2 {
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.inner .block2 .pros4 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/pros4_bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 641px;
+    height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 350px;
+    padding-bottom: 30px;
+}
+
+.inner .block2 .pros5 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/pros5_bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 641px;
+    height: 150px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+.inner .block2 .pros6 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/pros6_bg.png') no-repeat;
+    background-size: 100% 100%;
+    width: 453px;
+    height: 309px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+}
+
+.web-content .web-page.bg03 {
+    background: #ffffff;
+    padding-top: 80px;
+}
+
+.web-content .web-page.bg03 .customer_bg {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/cs_bg.png') no-repeat;
+    background-size: 100% 100%;
+    max-width: 1107px;
+    height: 309px;
+    margin: 40px 0 0 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.web-content .web-page.bg03 .cs-panel {
+    margin-top: 40px;
+}
+
+.web-content .web-page.bg03 .customer_bg .cs_pros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 180px;
+}
+
+.web-content .web-page.bg03 .customer_bg .cs_pros p:first-child {
+    overflow: hidden;
+    display: block;
+    font-size: 2.1em;
+    line-height: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration-line: underline;
+    letter-spacing: 0.1em;
+    width: 100%;
+}
+
+.web-content .web-page.bg03 .customer_bg .cs_pros p:last-child {
+    overflow: hidden;
+    display: block;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0 30px;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+
+.web-content .web-page.bg04 {
+    background: #ffffff;
+    padding: 0 0 220px 0;
+}
+
+.web-content .web-page.paddingbottom {
+    padding-bottom: 42px;
+}
+
+.web-content .web-page .title {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.web-content .web-page .title span {
+    overflow: hidden;
+    display: inline-block;
+    font-size: 32px;
+    color: #035b83;
+}
+
+.web-content .web-page .con {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    margin-top: 20px;
+}
+
+.web-content .web-page.bg03 .con {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+/* .web-content .web-page.bg04 .con{
+    justify-content: center;
+    -webkit-justify-content:center;
+} */
+.web-content .web-page .con .con-list {
+    overflow: hidden;
+    width: 30%;
+    padding: 280px 0 40px 0;
+    /* box-shadow: 0 0 18px rgba(0,0,0,.2); */
+    margin: 18px 0;
+    background: #f7f7f7;
+    transition: all .25s ease-in;
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    cursor: pointer;
+}
+
+.web-content .web-page .con .con-bg1 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/secure1.png") no-repeat;
+    background-size: 100% 100%;
+    width: 355px;
+    height: 476px;
+}
+
+.web-content .web-page .con .con-bg2 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/secure2.png") no-repeat;
+    background-size: 100% 100%;
+    width: 355px;
+    height: 476px;
+}
+
+.web-content .web-page .con .con-bg3 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/secure3.png") no-repeat;
+    background-size: 100% 100%;
+    width: 355px;
+    height: 476px;
+}
+
+.web-content .web-page.bg03 .con .con-list {
+    background: #fff;
+    margin: 18px 1.5%;
+}
+
+.web-content .web-page .con .con-list:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transition: all .25s ease-in;
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+}
+
+.web-content .web-page .con .con-list img {
+    margin: 0 auto 18px auto;
+}
+
+.web-content .web-page .con .con-list span,
+.pros-title {
+    overflow: hidden;
+    display: block;
+    font-size: 2.1em;
+    line-height: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration-line: underline;
+    letter-spacing: 0.1em;
+}
+
+.web-content .web-page .con .con-list span.margin {
+    margin: 33px 0
+}
+
+.web-content .web-page .con .con-list .icon-list {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
+
+.web-content .web-page .con .con-list .icon-list.item01 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-15.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list.first .icon-list.item01 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-15-hover.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list .icon-list.item02 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-16.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list.first .icon-list.item02 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-16-hover.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list .icon-list.item03 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-17.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list.first .icon-list.item03 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-17-hover.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list .icon-list.item04 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-18.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list.first .icon-list.item04 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-18-hover.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list .icon-list.item05 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-19.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page .con .con-list.first .icon-list.item05 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/icon-19-hover.png?v0510") no-repeat center center;
+}
+
+.web-content .web-page.bg03 .con .con-list span {
+    color: #333;
+    margin: 35px 0 10px 0;
+}
+
+.web-content .web-page .con .con-list span.line {
+    width: 100%;
+    height: 1px;
+    background: #1c3845;
+    margin: 18px 0 10px 0;
+}
+
+.web-content .web-page .con .con-list p,
+.pros-subtitle {
+    overflow: hidden;
+    display: block;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 0 30px;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+
+.block1 .pros-subtitle {
+    font-size: 1.1em;
+}
+
+.web-content .web-page.bg03 .con .con-list p {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.web-content .web-page .con .con-list01 {
+    overflow: hidden;
+    width: 38%;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    margin: 35px 0 55px 0;
+}
+
+.web-content .web-page .con .con-list01 .left-img {
+    margin-right: 10px;
+}
+
+.web-content .web-page .con .con-list01 .right-con {
+    overflow: hidden;
+}
+
+.web-content .web-page .con .con-list01 .right-con span {
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+.web-content .web-page .con .con-list01 .right-con p {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.web-content .web-page .con01 {
+    overflow: hidden;
+}
+
+.web-content .web-page .con01 img {
+    margin: 60px auto 0 auto;
+}
+
+.web-content .web-page .con01 span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.web-content .web-page .con01 a {
+    overflow: hidden;
+    display: inline;
+    font-size: 16px;
+    color: #035b83;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .inner {
+        width: 96%;
+    }
+}
+
+.web-content .web-page.bg04 .con .con-bg4 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/source1.png") no-repeat;
+    background-size: 100% 100%;
+    width: 355px;
+    height: 430px;
+}
+
+.web-content .web-page.bg04 .con .con-bg5 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/source2.png") no-repeat;
+    background-size: 100% 100%;
+    width: 355px;
+    height: 430px;
+}
+
+.web-content .web-page.bg04 .con .con-bg6 {
+    background: url("//sc.cfygxz.com/source/www/aboutUs/advantage/source3.png") no-repeat;
+    background-size: 100% 100%;
+    width: 355px;
+    height: 430px;
+}
+
+.web-content .web-page.bg04 .con .con-list p {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box .open-panel {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/aboutUs/advantage/openAc_bg.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: -45px;
+    width: 1107px;
+    height: 172px;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.open-panel p {
+    font-size: 2.8em;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.open-panel a {
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.2em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 180px;
+    height: 45px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@keyframes flick {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+.flicker {
+    font-family: 'Merienda', sans-serif;
+    margin: 1rem auto;
+    color: #fffefe61;
+    background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+    background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+    background-size: 110px 100%;
+    background-clip: text;
+    animation: flick 1.5s infinite;
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #f6f6f6;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/aboutUs/advantage/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .web-content .web-page.bg01 {
+        background: url('//sc.cfygxz.com/source/www/about-us/m/bg1.png') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 0.6rem 0 0.1rem 0;
+    }
+
+    .company-details {
+        font-size: 0.22rem;
+        font-family: Microsoft JhengHei;
+        color: #000000;
+        line-height: 0.35rem;
+        font-weight: normal;
+        padding: 0.15rem 0;
+    }
+
+    .box{
+        margin-bottom: 0.5rem;
+    }
+
+    .box .open-panel {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/openAc_bg.png') no-repeat;
+        width: 6.35rem;
+        height: 1rem;
+        background-size: 100% 100%;
+        position: relative;
+        margin-bottom: 0.8rem;
+    }
+
+    .open-panel p {
+        font-size: 0.22rem;
+        font-family: 'Microsoft JhengHei';
+        font-weight: 700;
+        padding: 0 0rem 0 0.15rem;
+        letter-spacing: 0;
+    }
+
+    .open-panel a {
+        font-size: 0.23rem;
+        width: 2rem;
+        height: 0.45rem;
+    }
+
+    .tab-pagination {
+        display: inline-flex;
+        width: 100%;
+        margin: 0.5rem auto 1rem;
+        justify-content: space-evenly;
+    }
+
+    .tab-pagination .tab-bullet {
+        cursor: pointer;
+    }
+
+    .tab-pagination .tab-bullet span {
+        font-size: 0.3rem;
+        color: #595757;
+        font-family: 'Microsoft JhengHei';
+        font-weight: 700;
+    }
+
+    .tab-pagination .tab-bullet.active span {
+        color: #3391e7;
+    }
+
+    .tab-pagination .tab-bullet.active {
+        border-bottom: 5px solid #3391e7;
+    }
+
+    .tab-container {
+        margin-bottom: 1rem;
+    }
+
+    .Advantage .Advantage1 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/secure1.png') no-repeat;
+        background-size: 100% 100%;
+        width: 5.58rem;
+        height: 4.31rem;
+        margin: 0.6rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .Advantage .Advantage2 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/secure2.png') no-repeat;
+        background-size: 100% 100%;
+        width: 5.58rem;
+        height: 4.31rem;
+        margin: 0.6rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .Advantage .Advantage3 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/secure3.png') no-repeat;
+        background-size: 100% 100%;
+        width: 5.58rem;
+        height: 4.31rem;
+        margin: 0.6rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.3rem;
+    }
+
+    .adv-title {
+        font-family: 'Microsoft JhengHei';
+        color: #ffffff;
+        font-size: 0.3rem;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 0.1rem;
+    }
+
+    .adv-subtitle {
+        font-family: 'Microsoft JhengHei';
+        color: #ffffff;
+        font-size: 0.23rem;
+        text-align: center;
+    }
+
+    .trading>div .adv-title {
+        font-size: 0.28rem;
+    }
+
+    .trading>div .adv-subtitle {
+        font-size: 0.2rem;
+    }
+
+    .trad-title {
+        font-family: 'Microsoft JhengHei';
+        color: #ffffff;
+        font-size: 0.28rem;
+        text-align: start;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 0.1rem;
+    }
+
+    .trad-subtitle {
+        font-family: 'Microsoft JhengHei';
+        color: #ffffff;
+        font-size: 0.2rem;
+        text-align: start;
+    }
+
+    .trading1 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/trading1.png') no-repeat;
+        background-size: 100% 100%;
+        width: 6.39rem;
+        height: 4.36rem;
+        margin: 0 auto 0.45rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .trading2 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/trading2.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto 0.45rem;
+        width: 6.35rem;
+        height: 1.49rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: baseline;
+        padding-left: 2.8rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .trading3 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/trading3.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto 0.45rem;
+        width: 6.35rem;
+        height: 1.49rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: baseline;
+        padding-left: 0.5rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .trading4 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/trading4.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto 0.45rem;
+        width: 6.38rem;
+        height: 4.35rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .trading5 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/trading5.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto 0.45rem;
+        width: 6.36rem;
+        height: 1.49rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: baseline;
+        padding-left: 3rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .trading6 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/trading6.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto 0.45rem;
+        width: 6.36rem;
+        height: 1.49rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: baseline;
+        padding-left: 0.5rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .service .service1 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/service1.png') no-repeat;
+        background-size: 100% 100%;
+        width: 6.27rem;
+        height: 3.84rem;
+        margin: 0.45rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .service .service2 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/service2.png') no-repeat;
+        background-size: 100% 100%;
+        width: 6.27rem;
+        height: 3.84rem;
+        margin: 0.45rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .service .service3 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/service3.png') no-repeat;
+        background-size: 100% 100%;
+        width: 6.27rem;
+        height: 3.84rem;
+        margin: 0.45rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .source .source1 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/source1.png') no-repeat;
+        background-size: 100% 100%;
+        width: 5.58rem;
+        height: 4.31rem;
+        margin: 0.45rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .source .source2 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/source2.png') no-repeat;
+        background-size: 100% 100%;
+        width: 5.59rem;
+        height: 4.51rem;
+        margin: 0.45rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .source .source3 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/advantage/m/source3.png') no-repeat;
+        background-size: 100% 100%;
+        width: 5.59rem;
+        height: 4.51rem;
+        margin: 0.45rem auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+}

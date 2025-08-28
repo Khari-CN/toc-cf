@@ -1,0 +1,346 @@
+.appear {
+    animation: appear;
+    animation-duration: 2s;
+    -webkit-animation:appear 2s;
+    animation-fill-mode: forwards;
+    display:block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@-webkit-keyframes appear {
+    from { width:50px; height:0;}
+    to { width:50px; height:166px;}
+}
+@keyframes appear {
+    from { width:50px; height:0;}
+    to { width:50px; height:166px;}
+}
+
+.appear-1 {
+    animation: appear-1;
+    animation-duration: 2s;
+    -webkit-animation:appear-1 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@-webkit-keyframes appear-1 {
+    from { top:-100px}
+    to{ top:0}
+}
+@keyframes appear-1 {
+    from { top:-100px}
+    to{ top:0}
+}
+
+.a-slow-big{
+    animation:slowBig 1s ease-in-out both;
+    transform-origin: 50% 50%;
+    -webkit-animation:slowBig 1s ease-in-out both;
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes slowBig {
+    0%{transform:scale(0) rotate(-60deg);opacity:0;}
+    100%{transform:scale(1) rotate(0deg);opacity:1;}
+}
+@-webkit-keyframes slowBig {
+    0%{-webkit-transform:scale(0) rotate(-60deg);opacity:0;}
+    100%{-webkit-transform:scale(1) rotate(0deg);opacity:1;}
+}
+
+.a-big{
+    animation:slowBig 1s ease-in-out both;
+    transform-origin: 50% 50%;
+    -webkit-animation:slowBig 1s ease-in-out both;
+    -webkit-transform-origin: 50% 50%;
+}
+@keyframes slowBig {
+    0%{transform:scale(0);opacity:0;}
+    100%{transform:scale(1);opacity:1;}
+}
+@-webkit-keyframes slowBig {
+    0%{-webkit-transform:scale(0);opacity:0;}
+    100%{-webkit-transform:scale(1);opacity:1;}
+}
+.a_top{
+    animation:top_move .8s ease-in-out both;
+    -webkit-animation:top_move .8s ease-in-out both;
+}
+@keyframes top_move{
+    0%{opacity:0;transform:translate(0px,-30px)}
+    100%{opacity:1;transform:translate(0px,0px)}
+}
+@-webkit-keyframes top_move {
+    0%{opacity:0;-webkit-transform:translate(0px,-30px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+
+.a_bottom{
+    animation:bottom_move 1s ease-in-out both;
+    -webkit-animation:bottom_move 1s ease-in-out both;
+}
+@keyframes bottom_move{
+    0%{opacity:0;transform:translate(0px,16px)}
+    100%{opacity:1;transform:translate(0px,0px)}
+}
+@-webkit-keyframes bottom_move {
+    0%{opacity:0;-webkit-transform:translate(0px,16px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+
+.a_right{animation:right_move 1s ease-in-out both;-webkit-animation:right_move 1s ease-in-out both; }
+
+@keyframes right_move{
+    0%{opacity:0;transform:translate(50px,0px)}
+    100%{opacity:1;transform:translate(0px,0px)}
+}
+@-webkit-keyframes right_move{
+    0%{opacity:0;-webkit-transform:translate(50px,0px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+.a_left{animation:left_move 1s ease-in-out both;-webkit-animation:left_move 1s ease-in-out both; }
+
+@keyframes left_move{
+    0%{opacity:0;transform:translate(-50px,0px)}
+    100%{opacity:1;transform:translate(0px,0px)}
+}
+@-webkit-keyframes left_move{
+    0%{opacity:0;-webkit-transform:translate(-50px,0px)}
+    100%{opacity:1;-webkit-transform:translate(0px,0px)}
+}
+
+.left-to-right{
+    animation: left-to-right;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right {
+    from { left: -100px}
+    to{ left:0}
+}
+@keyframes left-to-right {
+    from { left: -100px}
+    to{ left:0}
+}
+.left-to-right-1{
+    animation: left-to-right-1;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-1 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-1 {
+    from { left: -260px}
+    to{ left:0}
+}
+@keyframes left-to-right-1 {
+    from { left: -260px}
+    to{ left:0}
+}
+.left-to-right-2{
+    animation: left-to-right-2;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-2 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-2 {
+    from { width:0; height:45px;}
+    to { width:270px; height:45px;}
+}
+@keyframes left-to-right-2 {
+    from { width:0; height:45px;}
+    to { width:270px; height:45px;}
+}
+.left-to-right-3{
+    animation: left-to-right-3;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-3 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-3 {
+    from { width:0; height:30px;}
+    to { width:274px; height:30px;}
+}
+@keyframes left-to-right-3 {
+    from { width:0; height:30px;}
+    to { width:274px; height:30px;}
+}
+.left-to-right-4{
+    animation: left-to-right-4;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-4 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-4 {
+    from { width:0; height:30px;}
+    to { width:86px; height:30px;}
+}
+@keyframes left-to-right-4 {
+    from { width:0; height:30px;}
+    to { width:86px; height:30px;}
+}
+.left-to-right-5{
+    animation: left-to-right-5;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-5 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-5 {
+    from { width:0; height:30px;}
+    to { width:30px; height:30px;}
+}
+@keyframes left-to-right-5 {
+    from { width:0; height:30px;}
+    to { width:30px; height:30px;}
+}
+.left-to-right-6{
+    animation: left-to-right-6;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-6 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-6 {
+    from { width:0; height:30px;}
+    to { width:74px; height:30px;}
+}
+@keyframes left-to-right-6 {
+    from { width:0; height:30px;}
+    to { width:74px; height:30px;}
+}
+.left-to-right-7{
+    animation: left-to-right-7;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-7 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-7 {
+    from { width:0; height:30px;}
+    to { width:14px; height:30px;}
+}
+@keyframes left-to-right-7 {
+    from { width:0; height:30px;}
+    to { width:14px; height:30px;}
+}
+.left-to-right-8{
+    animation: left-to-right-8;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-8 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-8 {
+    from { width:0; height:30px;}
+    to { width:93px; height:30px;}
+}
+@keyframes left-to-right-8 {
+    from { width:0; height:30px;}
+    to { width:93px; height:30px;}
+}
+.left-to-right-9{
+    animation: left-to-right-9;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-9 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-9 {
+    from { width:0; height:30px;}
+    to { width:35px; height:30px;}
+}
+@keyframes left-to-right-9 {
+    from { width:0; height:30px;}
+    to { width:35px; height:30px;}
+}
+.left-to-right-10{
+    animation: left-to-right-10;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-10 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-10 {
+    from { width:0; height:30px;}
+    to { width:70px; height:30px;}
+}
+@keyframes left-to-right-10 {
+    from { width:0; height:30px;}
+    to { width:70px; height:30px;}
+}
+.left-to-right-11{
+    animation: left-to-right-11;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-11 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-11 {
+    from { width:0; height:30px;}
+    to { width:24px; height:30px;}
+}
+@keyframes left-to-right-11 {
+    from { width:0; height:30px;}
+    to { width:24px; height:30px;}
+}
+.left-to-right-12{
+    animation: left-to-right-12;
+    animation-duration: 2s;
+    -webkit-animation:left-to-right-12 2s;
+    animation-fill-mode: backwards;
+    display:block;
+    left: 0;
+}
+@-webkit-keyframes left-to-right-12 {
+    from { width:0; height:45px;}
+    to { width:348px; height:45px;}
+}
+@keyframes left-to-right-12 {
+    from { width:0; height:45px;}
+    to { width:348px; height:45px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

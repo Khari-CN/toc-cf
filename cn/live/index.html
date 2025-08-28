@@ -1,0 +1,228 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        实时问答</title>
+    <link rel="shortcut icon" href="/source/www/template/fav.ico">
+
+    <link href="/cn/live/base/lib/lightbox/lightbox.css" type="text/css" rel="stylesheet" />
+    <link href="/cn/live/base/lib/swipe/swiper.min.css" type="text/css" rel="stylesheet" />
+    <link href="/cn/live/base/lib/mScroll/jquery.mCustomScrollbar.min.css" type="text/css" rel="stylesheet" />
+    <link href="/cn/live/base/lib/jqueryUI/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+    <link href="/cn/live/base/lib/face/face.css" type="text/css" rel="stylesheet" />
+    <link href="/cn/live/theme1/static/css/video.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/live/theme1/static/css/index.css">
+</head>
+
+<body>
+    <div class="box-header clearfix">
+        <div class="box-header-in clearfix">
+            <div class="header-left fl">
+                <a href="/?utm_source=company&utm_medium=pc&utm_campaign=zhiboshi" target="_blank" class="header-logo"><img src="http://download.cfd139.com/live/pc/live-logo.png" alt=""></a>
+                <a href="javascript:void(0)" class="topBannerAdv" target="_blank" id="topBannerAdv"><img src="" alt=""></a>
+            </div>
+            <div class="header-right fr">
+                <div class="hover-area fl">
+                    <ul class="clearfix ">
+                        <li>
+                            <a href="/cn/edu/qualification.html" target="_blank"><span>技术指标</span></a>
+                        </li>
+                        <li class="plateform_box">
+                            <a href="javascript:void(0)" class="toplink">
+                                <span>平台下载</span>
+                            </a>
+                            <div class="dropcont">
+                                <b class="arr bg-trangle"></b>
+                                <div class="plate-left fl">
+                                    <ul>
+                                        <li>
+                                            <span class="bg-buy"></span>
+                                            <div class="item-1">操作简单快捷</div>
+                                            <div class="item-2">
+                                                一击成交智能化订单处理
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="bg-upp"></span>
+                                            <div class="item-1">强大的分析功能</div>
+                                            <div class="item-2">
+                                                68种指标图表工具交易更有把握
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="bg-rocket"></span>
+                                            <div class="item-1">交易稳定流畅</div>
+                                            <div class="item-2">
+                                                0.06秒内成交每笔订单可查
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="bg-money "></span>
+                                            <div class="item-1">资金安全 随时进出</div>
+                                            <div class="item-2">
+                                                存取无限制，随时入金出金最快30分钟到账
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="plate-right fr">
+                                    <div><img src="http://download.cfd139.com/live/pc/box.png" alt=""></div>
+                                    <div class="img-text">CFD客户端下载</div>
+                                    <div class="code-img">
+                                        <ul class="clearfix">
+                                            <li>
+                                                <span class="bg-ios"></span>
+                                                <img class="dn" src="/source/material/ios-img.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <span class="bg-android"></span>
+                                                <img class="dn" src="/source/material/anzhuo-img.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <a href="/source/material/CFD_Setup.exe" class="bg-windows"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="source-download">
+                            <a href="javascript:void(0)" class="toplink">
+                                <span>资料下载</span>
+                            </a>
+                            <div class="dropcont clearfix">
+                                <b class="arr bg-trangle"></b>
+                                <div class="source-content clearfix">
+                                    <div class="search-box">
+                                        <input type="text" id="sourceBox"><span class="bg-sousuo" id="sourceSearch"></span>
+                                    </div>
+
+                                    <div class="source-list">
+                                        <div class="source-title">
+                                            <ul class="clearfix">
+                                                <li> 课件/文件名</li>
+                                                <li>更新时间</li>
+                                                <li>作者</li>
+                                                <li>操作</li>
+                                            </ul>
+                                        </div>
+                                        <div class="source-detail">
+                                            <ul id="downLoadSource">
+                                                <li>
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <span class="bg-ppt"></span> 七彩均线
+                                                        </li>
+                                                        <li>
+                                                            2018-06-18
+                                                        </li>
+                                                        <li>
+                                                            傅老师
+                                                        </li>
+                                                        <li>
+                                                            <span class="bg-download"></span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <span class="bg-word"></span> 七彩均线
+                                                        </li>
+                                                        <li>
+                                                            2018-06-18
+                                                        </li>
+                                                        <li>
+                                                            傅老师
+                                                        </li>
+                                                        <li>
+                                                            <span class="bg-download"></span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="clearfix">
+                                                        <li>
+                                                            <span class="bg-PDF"></span> 七彩均线
+                                                        </li>
+                                                        <li>
+                                                            2018-06-18
+                                                        </li>
+                                                        <li>
+                                                            傅老师
+                                                        </li>
+                                                        <li>
+                                                            <span class="bg-download"></span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="noSource dn">
+                                            没有相关的资料!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="open" target="_blank" href='https://ac.cfd139.com.cn/cn/pc/rcfd_account'>真实开户</a>
+                <a class="open" target="_blank" href='https://ac.cfd139.com.cn/cn/pc/dcfd_account'>模拟开户</a>
+                <a class="use-center" target="_blank" href="">账户入金</a>
+                <a class="login-btn" href="javascript:box.openLgBox();">
+               注册/登录
+            </a>
+                <a href="javascript:void(0)" id="myCount" class="myCount dn"><img src="/cn/live/theme1/static/img/teacher.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper clearfix">
+        <!--#include file="/new-live/cn/live/index_video.html"-->
+        <!--#include file="/new-live/cn/live/index_chat.html"-->
+    </div>
+
+    <!--#include file="/new-live/cn/live/index_box.html"-->
+    <script src="/source/www/live/jquery-1.11.3.min.js"></script>
+    <script>
+        var id_url = "";
+        var m_url = "";
+        var zhibo_api_url = "";
+        var zhibo_socket = "";
+        var mm_url = ""
+    </script>
+    <script type="text/javascript">
+        function pageFun() {
+            indexJS.init(); //初始化
+        }
+    </script>
+    <script src="/source/www/live/video.min.js"></script>
+    <script src="/source/www/live/neplayer.js"></script>
+    <script type="text/javascript" src="/source/www/live/socket.io.js"></script>
+    <script type="text/javascript" src="/cn/live/base/lib/mScroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/cn/live/base/lib/lightbox/lightbox.min.js"></script>
+    <script type="text/javascript" src="/source/www/live/jquery-ui.min.js"></script>
+    <script src="/cn/live/base/util/jquery.cookie.min.js"></script>
+    <script src="/cn/live/base/lib/swipe/swiper.min.js"></script>
+    <script type="text/javascript" src="/cn/live/base/util/common.js"></script>
+    <script src="/source/www/live/vue.js"></script>
+    <script src="/cn/live/theme1/static/js/calendar.js"></script>
+    <script type="text/javascript" src="/cn/live/theme1/static/js/index_video.js"></script>
+    <script type="text/javascript" src="/cn/live/theme1/static/js/index.js"></script>
+    <script type="text/javascript" src="/cn/live/theme1/static/js/index_video_teach.js"></script>
+    <script type="text/javascript" src="/cn/live/theme1/static/js/index_chat.js"></script>
+    <script type="text/javascript" src="/cn/live/theme1/static/js/index_box.js"></script>
+    <script type="text/javascript" src="/cn/live/base/lib/face/jquery.face.js"></script>
+    <script type="text/javascript" src="/cn/live/base/lib/paste.js"></script>
+    <script src="/cn/js/SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script type="text/javascript">
+        pageFun();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto;}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    //overflow: hidden;
+    position: relative;
+    margin-top: -74px;
+    width: 100%;
+    height: 350px;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/team-service/banner.jpg") no-repeat center;
+    padding-top: 200px;
+}
+.web-banner span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+.web-banner span.size{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.web-content{
+    overflow: hidden;
+    width: 100%;
+}
+.web-content .web-page{
+    overflow: hidden;
+    width: 100%;
+    height: 794px;
+    padding: 58px 0 97px 0;
+    background: url("//sc.cfygxz.com/source/www/aboutUs/team-service/neiye-bg.jpg") no-repeat center;
+}
+.web-content .web-page.bg{
+    background: #fff;
+    height: auto;
+    padding-bottom: 12px;
+}
+.web-content .web-page .con-list{
+    overflow: hidden;
+    width: 55%;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    margin-bottom: 30px;
+}
+.web-content .web-page .con-list .left-img{
+    margin: 0 10px;
+}
+.web-content .web-page .con-list .right-con{
+    overflow: hidden;
+}
+.web-content .web-page .con-list .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    color: #035b83;
+    text-align: justify;
+}
+.web-content .web-page .con-list .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+.web-content .web-page .con-list-1{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 72px;
+    margin-bottom: 60px;
+}
+.web-content .web-page .con-list-1 .layout{
+    overflow: hidden;
+    margin-right: 40px;
+}
+.web-content .web-page .con-list-1 .layout ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.web-content .web-page .con-list-1 .layout ul:first-child{margin-left: 20px}
+.web-content .web-page .con-list-1 .layout ul li{
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+}
+.web-content .web-page .con-list-1 .layout ul li.marginright{margin-right: 122px}
+.web-content .web-page .con-list-1 .layout ul li a{
+    overflow: hidden;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+    border-bottom: solid 1px transparent;
+}
+.web-content .web-page .con-list-1 .layout ul li a:hover{
+    border-bottom: solid 1px #333;
+}
+.web-content .web-page .con-list-1 .layout ul li span{
+    overflow: hidden;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.web-content .web-page .con-list-2{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.web-content .web-page .con-list-2 span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+.web-content .web-page .con-list-2 a{
+    overflow: hidden;
+    display: inline;
+    font-size: 16px;
+    color: #035b83;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
+
+
+

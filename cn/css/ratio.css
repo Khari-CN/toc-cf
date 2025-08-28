@@ -1,0 +1,954 @@
+.ratio-page .top-banner {
+  position: relative;
+  margin-top: -76px;
+  background: #1c4560;
+  line-height: 0;
+}
+.ratio-page .top-banner .img-banner {
+  display: block;
+  height: 350px;
+  opacity: 0.3;
+  background: url(//sc.cfygxz.com/source/www/news/ratio/banner.jpg) top center no-repeat;
+  background-size: cover !important;
+}
+.ratio-page .top-banner h2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 60px;
+  text-align: left;
+  font-size: 3.6em;
+  color: #fff;
+}
+.ratio-page .top-banner h2 span {
+  display: block;
+  font-size: 0.67em;
+  padding-top: 50px;
+}
+.ratio-page .top-banner .container {
+  position: absolute;
+  top: 45%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.date-formatnb {
+  font-family: Myriad, arial, sans-serif !important;
+  font-size: 1.29em !important;
+  position: relative;
+  top: 1px;
+}
+
+.article > .main-tabs {
+  margin-top: 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.article > .main-tabs li a {
+  text-align: left;
+  padding-left: 20%;
+}
+
+.item-wrapper {
+  width: 400px;
+  margin-bottom: -1px;
+}
+.item-wrapper li {
+  float: left;
+  width: 50%;
+}
+.item-wrapper li a {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  color: #666666;
+  outline: none;
+}
+.item-wrapper li.active a {
+  border-bottom: 3px solid #035B83;
+  color: #035B83;
+}
+.item-wrapper .ic-circle {
+  transition: all .15s ease-in;
+  background: url(//sc.cfygxz.com/source/www/news/ratio/circle-inact.png) 10% center no-repeat;
+}
+.item-wrapper .ic-circle:hover {
+  background: url(//sc.cfygxz.com/source/www/news/ratio/circle-act.png) 10% center no-repeat;
+}
+.item-wrapper .ic-circle:hover a {
+  color: #035B83;
+}
+.item-wrapper .ic-circle.active {
+  background: url(//sc.cfygxz.com/source/www/news/ratio/circle-act.png) 10% center no-repeat;
+}
+.item-wrapper .ic-book {
+  transition: all .15s ease-in;
+  background: url(//sc.cfygxz.com/source/www/news/ratio/book-inact.png) 10% center no-repeat;
+}
+.item-wrapper .ic-book:hover {
+  background: url(//sc.cfygxz.com/source/www/news/ratio/book-act.png) 10% center no-repeat;
+}
+.item-wrapper .ic-book:hover a {
+  color: #035B83;
+}
+.item-wrapper .ic-book.active {
+  background: url(//sc.cfygxz.com/source/www/news/ratio/book-act.png) 10% center no-repeat;
+}
+
+.ratio-page {
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+}
+.ratio-page .group {
+  position: relative;
+  margin-bottom: 52px;
+}
+.ratio-page .user-phone {
+  margin-bottom: 20px;
+}
+.ratio-page .user-phone label {
+  top: -15px;
+  color: #035B83;
+  font-size: 14px;
+}
+.ratio-page .user-phone span.area-code {
+  color: #cccccc;
+  float: left;
+  display: inline-block;
+  padding-top: 11px;
+  font-size: 16px;
+  width: 45px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.ratio-page input {
+  color: #666666;
+  font-size: 16px;
+  padding: 10px 0 2px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.ratio-page input.info {
+  background: none;
+  padding-left: 0;
+}
+.ratio-page input.phone-number {
+  width: 240px;
+  margin-left: 60px;
+}
+.ratio-page .info-box {
+  margin-bottom: 20px;
+}
+.ratio-page .info-box label {
+  top: -15px;
+  color: #035B83;
+  font-size: 14px;
+}
+.ratio-page input:focus {
+  outline: none;
+}
+.ratio-page label {
+  color: #666666;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.ratio-page input:focus ~ label,
+.ratio-page input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #035B83;
+}
+.ratio-page .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.ratio-page .bar:before,
+.ratio-page .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #0096DB;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.ratio-page .bar:before {
+  left: 50%;
+}
+.ratio-page .bar:after {
+  right: 50%;
+}
+.ratio-page input:focus ~ .bar:before,
+.ratio-page input:focus ~ .bar:after {
+  width: 50%;
+}
+.ratio-page .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.ratio-page input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+.ratio-page .itemdt-wrapp h1 {
+  font-size: 3.6em;
+  line-height: 2.0;
+  color: #035B83;
+  text-align: center;
+  margin-top: 50px;
+}
+.ratio-page .itemdt-wrapp h1.no-margin {
+  margin-top: 40px;
+}
+.ratio-page .itemdt-wrapp h2 {
+  font-size: 2.0em;
+  line-height: 2.0;
+  color: #035B83;
+}
+.ratio-page .itemdt-wrapp p {
+  font-size: 1.6em;
+  line-height: 1.8;
+  color: #333333;
+  text-align: justify;
+}
+.ratio-page .itemdt-wrapp img {
+  text-align: center;
+  margin: 0 auto;
+}
+.ratio-page .itemdt-wrapp h2.annotate {
+  text-align: center;
+  font-size: 2.4em;
+  line-height: 2.0;
+  color: #666666;
+  margin-top: 60px;
+}
+.ratio-page .section1 .row {
+  margin-top: 30px;
+}
+.ratio-page .section1 .img-wrapper {
+  width: 95%;
+  height: 240px;
+  background: #FFFFFF;
+}
+.ratio-page .section1 .img-wrapper .col-left,
+.ratio-page .section1 .img-wrapper .col-right {
+  float: left;
+  width: 50%;
+}
+.ratio-page .section1 .img-wrapper .barchart {
+  margin-left: 0;
+}
+.ratio-page .section1 .img-wrapper .col-right p {
+  text-align: left;
+  padding-left: 21%;
+}
+.ratio-page .section1 .img-wrapper p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.8;
+  text-align: center;
+  padding-top: 7%;
+}
+.ratio-page .section1 .img-wrapper img {
+  margin-left: 0;
+  display: block;
+}
+.ratio-page .section1 .info-wrapper {
+  width: 88%;
+  background: #FFFFFF;
+  height: 240px;
+  float: right;
+  position: relative;
+}
+.ratio-page .section1 .info-wrapper:before {
+  content: '';
+  background: url(//sc.cfygxz.com/source/www/news/ratio/become.png);
+  width: 24px;
+  height: 24px;
+  display: block;
+  left: -17%;
+  top: 50%;
+  margin-top: -12px;
+  position: absolute;
+}
+.ratio-page .section1 .info-wrapper p {
+  text-align: center;
+  margin-top: 15%;
+}
+.ratio-page .section1 .info-wrapper img {
+  margin-right: 0;
+  display: block;
+}
+.ratio-page .section2 {
+  margin-top: 40px;
+}
+.ratio-page .section2 .img-box {
+  margin-top: 40px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 28px;
+}
+.ratio-page .section2 p {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+.ratio-page .section3 {
+  margin-top: 40px;
+}
+.ratio-page .section4 {
+  margin-top: 40px;
+}
+.ratio-page .section4 .error-mess {
+  display: block;
+  font-size: 1.6em;
+  line-height: 1.8;
+  color: #C80000;
+  margin: 60px auto 80px;
+  text-align: center;
+}
+.ratio-page .section4 .error-mess img.error-img {
+  padding-right: 12px;
+  position: relative;
+  top: 2px;
+}
+.ratio-page .section4 .error-mess img.refresh {
+  margin-left: 12px;
+  position: relative;
+  top: 2px;
+  transition: all .25s ease;
+}
+.ratio-page .section4 .error-mess a {
+  line-height: 0;
+}
+.ratio-page .section4 .error-mess a:hover .refresh {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.ratio-page .section4 .valid-mess {
+  display: block;
+  font-size: 1.6em;
+  line-height: 1.8;
+  color: #659400;
+  margin: 60px auto 80px;
+  text-align: center;
+}
+.ratio-page .section4 .valid-mess img {
+  padding-right: 12px;
+  position: relative;
+  top: 2px;
+}
+.ratio-page .section4 .inforeg-error {
+  display: none;
+  width: 360px;
+  height: 30px;
+  line-height: 30px;
+  color: #ef392b;
+  font-size: 12px;
+}
+.ratio-page .section4 .checkbox {
+  float: left;
+  width: 15px;
+  height: 15px;
+  opacity: 0.7;
+}
+.ratio-page .section4 .desc {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-left: 5px;
+  color: #666666;
+}
+.ratio-page .section4 button {
+  width: 200px;
+  height: 32px;
+  line-height: 32px;
+  background: #0096DB;
+  font-size: 1.4em;
+  margin-top: 40px;
+  border: none;
+  margin: 60px auto 80px;
+  text-align: center;
+  color: #fff;
+  transition: all .15s ease-in;
+  cursor: pointer;
+  outline: none;
+}
+.ratio-page .section4 button:hover {
+  background: #035B83;
+}
+.ratio-page .section4 form {
+  margin-top: 30px;
+}
+.ratio-page .section4 form input.info {
+  padding-top: 13px;
+}
+.ratio-page .section4 form input.info::-webkit-input-placeholder {
+  /* WebKit browsers */
+  padding: 30px 0 0 42px;
+  color: #333333;
+}
+.ratio-page .section4 form input.info:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  padding: 30px 0 0 42px;
+  color: #333333;
+}
+.ratio-page .section4 form input.info::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  padding: 30px 0 0 42px;
+  color: #333333;
+}
+.ratio-page .section4 form input.info:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  padding: 30px 0 0 42px;
+  color: #333333;
+}
+.ratio-page .section5 {
+  background: url(//sc.cfygxz.com/source/www/news/ratio/bg-nav.png) center no-repeat;
+  height: 556px;
+  padding: 80px 0 0 0;
+}
+.ratio-page .section5 h2 {
+  font-size: 3.6em;
+  line-height: 2.0;
+  color: #035B83;
+}
+.ratio-page .section5 p {
+  font-size: 2.4em;
+  line-height: 2.0;
+  color: #666666;
+}
+.ratio-page .section5 .row {
+  margin-top: 30px;
+}
+.ratio-page .section5 .register {
+  width: 100%;
+  height: 236px;
+  margin: 0 auto;
+  position: relative;
+}
+.ratio-page .section5 .register .user-box {
+  height: 250px;
+  width: 150px;
+  position: absolute;
+  text-align: center;
+  left: 9%;
+  top: 50%;
+  border: 1px solid #AFB3B5;
+  margin-top: -125px;
+}
+.ratio-page .section5 .register p {
+  text-align: center;
+  padding-top: 12%;
+  color: #035B83;
+  font-size: 2.0em;
+}
+.ratio-page .section5 .register a {
+  float: right;
+  clear: both;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 1.6em;
+  line-height: 32px;
+  background: #0096DB;
+  text-align: center;
+  color: #fff;
+}
+.ratio-page .section5 .register a.child-bott {
+  clear: both;
+}
+.ratio-page .section5 .register .link-box {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  right: 13%;
+}
+.ratio-page .section5 .devices {
+  width: 100%;
+  height: 236px;
+  margin: 0 auto;
+  position: relative;
+}
+.ratio-page .section5 .devices .lap-box {
+  height: 250px;
+  width: 150px;
+  position: absolute;
+  text-align: center;
+  left: 9%;
+  top: 50%;
+  border: 1px solid #AFB3B5;
+  margin-top: -125px;
+}
+.ratio-page .section5 .devices p {
+  text-align: center;
+  padding-top: 12%;
+  color: #035B83;
+  font-size: 2.0em;
+}
+.ratio-page .section5 .devices a {
+  float: right;
+  clear: both;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 1.6em;
+  line-height: 32px;
+  background: #0096DB;
+  text-align: center;
+  color: #fff;
+}
+.ratio-page .section5 .devices a.child-bott {
+  clear: both;
+}
+.ratio-page .section5 .devices .link-box {
+  width: 40%;
+  position: absolute;
+  left: 51%;
+  top: 27%;
+}
+.ratio-page .section5 a {
+  transition: all .15s ease-in;
+}
+.ratio-page .section5 a:hover {
+  background: #03354C;
+}
+.ratio-page .section6 {
+  padding: 40px 0;
+}
+.ratio-page .section6 p {
+  font-size: 1.4em;
+  line-height: 2.0;
+}
+.ratio-page .section8 {
+  border-top: 1px solid #CCCCCC;
+  margin-top: 80px;
+}
+.ratio-page .section8 img {
+  margin: 0 auto;
+}
+.ratio-page .section8 h2 {
+  font-size: 3.6em;
+  color: #035B83;
+  margin: 80px 0 20px;
+}
+.ratio-page .section8 .desc-img span {
+  font-size: 1.4em;
+  color: #666666;
+  padding-left: 25px;
+}
+.ratio-page .section8 .desc-img span.last-child {
+  margin-left: 60px;
+  background: url(//sc.cfygxz.com/source/www/news/ratio/id-cfd.png) left center no-repeat;
+}
+.ratio-page .section8 .desc-img span.first-child {
+  background: url(//sc.cfygxz.com/source/www/news/ratio/ic-chart.png) left center no-repeat;
+}
+
+.section7 h1 {
+  text-align: center;
+  font-size: 3.6em;
+  line-height: 2.0;
+  color: #035B83;
+}
+.section7 p.sub-title {
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #666666;
+}
+.section7 .item-wrapper {
+  height: 30px;
+  width: 100%;
+}
+.section7 .item-wrapper li {
+  width: 25%;
+  display: inline-block;
+  border: 1px solid #D8D8D8;
+  border-right: none;
+}
+.section7 .item-wrapper li a {
+  font-size: 1.6em;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: none;
+  color: #666666;
+}
+.section7 .item-wrapper li.active {
+  background: #035B83;
+  border: 1px solid #035B83;
+  border-left: 1px solid #035B83;
+}
+.section7 .item-wrapper li.active a {
+  color: #FFFFFF;
+}
+.section7 .item-wrapper li.last-child {
+  border-right: 1px solid #D8D8D8;
+}
+.section7 .item-wrapper li.last-child.active {
+  border-right: 1px solid #035B83;
+}
+.section7 .itemdt-wrapp {
+  position: relative;
+}
+.section7 .itemdt-wrapp h3 {
+  font-size: 2.0em;
+  line-height: 2.0;
+  color: #333333;
+  padding-top: 30px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.section7 .note {
+  padding-left: 45px;
+}
+.section7 .note span {
+  font-size: 1.4em;
+  padding-left: 20px;
+  line-height: 2.0;
+}
+.section7 .note .orange {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 15px;
+}
+.section7 .note .orange:before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #FFA000;
+  top: 3px;
+  left: 0;
+}
+.section7 .note .blue {
+  position: relative;
+  margin-left: 20px;
+}
+.section7 .note .blue:before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #0096DC;
+  top: 3px;
+  left: 0;
+}
+.section7 .box-content {
+  padding: 30px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  width: 87%;
+  float: right;
+  margin-top: 24px;
+}
+.section7 .box-content h3 {
+  color: #035B83;
+  font-size: 1.6em;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.section7 .box-content .line {
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #D4D4D4;
+}
+.section7 .box-content .child-2 a {
+  color: #0096DB;
+}
+.section7 .highcharts-title {
+  font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif !important;
+}
+
+.section9 .box1-wrapper {
+  padding: 0 10px;
+}
+.section9 .row {
+  border: 1px solid #CBCDCE;
+  padding: 30px;
+  margin: 30px 0 50px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.section9 h3 {
+  font-size: 2.0em;
+  line-height: 2.0;
+  color: #035B83;
+  text-align: left;
+}
+.section9 p {
+  text-align: justify;
+  font-size: 1.6em;
+  line-height: 1.8;
+  color: #333333;
+}
+.section9 .box2-wrapper {
+  width: 85%;
+  float: right;
+  padding: 0 10px;
+}
+
+.item-chart li {
+  width: 33.33333%;
+  float: left;
+  background: transparent;
+  position: relative;
+}
+.item-chart .figures {
+  position: absolute;
+  font-size: 3.2em;
+  font-family: Myriad, arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 45%;
+  transition: all .3s ease;
+}
+.item-chart .gloss {
+  position: absolute;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 60%;
+  height: 26px;
+  line-height: 26px;
+  width: 30%;
+  letter-spacing: 2px;
+  transition: all .25s ease;
+}
+.item-chart .gloss a {
+  display: block;
+  width: 100%;
+}
+.item-chart .percent {
+  position: absolute;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 26px;
+  line-height: 26px;
+  width: 90%;
+}
+.item-chart .percent span {
+  color: #666666;
+  width: 50%;
+  display: inline-block;
+}
+.item-chart .cap4 {
+  color: #CF8200;
+  border: 1px solid #CF8200;
+  border-radius: 20px;
+}
+.item-chart .cap3 {
+  color: #035B83;
+  border: 1px solid #035B83;
+  border-radius: 20px;
+}
+.item-chart .cap2 {
+  color: #CF8200;
+  border: 1px solid #CF8200;
+  border-radius: 20px;
+}
+.item-chart .cap1 {
+  color: #669400;
+  border: 1px solid #669400;
+  border-radius: 20px;
+}
+
+#regtachart {
+  min-height: 250px;
+}
+#regtachart .highcharts-container {
+  overflow: visible !important;
+}
+#regtachart span.hot {
+  position: relative;
+}
+#regtachart span.hot:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 18px;
+  background: url(//sc.cfygxz.com/source/www/news/ratio/logo-blue.png) no-repeat;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* .highcharts-xaxis-labels span {
+    display: table-caption !important;
+    white-space: normal !important;
+} */
+.tooltip {
+  opacity: 1;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #666666;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #666666;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #666666;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+/* Begin media screeen */
+@media (min-width: 480px) {
+  .section7 .highcharts-title {
+    top: 45px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .ratio-page .section5 .register .link-box {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    right: 16%;
+  }
+  .ratio-page .section5 .devices .link-box {
+    width: 50%;
+    position: absolute;
+    top: 27%;
+    left: 63%;
+  }
+
+  .section7 .highcharts-title {
+    top: 45px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 1280px) {
+  .ratio-page .section5 .register .link-box {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    right: 13%;
+  }
+  .ratio-page .section5 .devices .link-box {
+    width: 40%;
+    position: absolute;
+    left: 51%;
+    top: 27%;
+  }
+}
+@media (min-width: 1367px) {
+  .ratio-page .section5 .register .link-box {
+    width: 34.48%;
+    position: absolute;
+    top: 40%;
+    right: 16%;
+  }
+  .ratio-page .section5 .devices .link-box {
+    width: 34.48%;
+    position: absolute;
+    top: 27%;
+    left: 54%;
+  }
+}
+@media (min-width: 1600px) {
+  .ratio-page .section1 .info-wrapper:before {
+    left: -16%;
+  }
+}
+@media (min-width: 1920px) {
+  .ratio-page .section1 .info-wrapper:before {
+    left: -19%;
+  }
+  .ratio-page .section5 .register .link-box {
+    width: 33.33%;
+    position: absolute;
+    top: 40%;
+    right: 11%;
+  }
+  .ratio-page .section5 .devices .link-box {
+    width: 33.33%;
+    position: absolute;
+    top: 27%;
+    left: 42.5%;
+  }
+
+  .section7 .highcharts-title {
+    top: 20px !important;
+    text-align: center;
+  }
+  .section7 .highcharts-container {
+    height: 320px !important;
+  }
+
+  .item-chart .percent {
+    bottom: 15px;
+  }
+  .item-chart .figures {
+    top: 39%;
+  }
+  .item-chart .gloss {
+    top: 55%;
+  }
+}
+/* End media screeen */
+
+/*# sourceMappingURL=ratio.css.map */

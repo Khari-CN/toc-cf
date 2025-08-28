@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+        var isDemo = false;
+    </script>
+
+
+    <!--监测代码-->
+    <script type="text/javascript">
+        function fireEvent(eventType, eventName){
+            var PROPERTY_ID = "2d4e22d6589443e59bdaf127464a1a4f";
+            var PING_SERVER_URL = "http://advertiser.inmobiapis.cn/tpce/v1/events/"+eventType+"?trackingPartner=InMobi";
+            var pageData = {};
+            if(typeof InmobiPixel != "undefined"){
+                window.inmobiPixel = new InmobiPixel();
+                window.inmobiPixel.init({
+                    pingServer: PING_SERVER_URL,
+                    propertyId: PROPERTY_ID,
+                    domain: "cf139.com"
+                });
+            }
+            window.inmobiPixel.ping(eventName, pageData);
+        }
+
+
+        function fireCustomEvent(eventName) {
+            fireEvent("custom", eventName);
+        }
+
+
+        function fireDownloadEvent() {
+            fireEvent("download", "download");
+        }
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="https://i.l.inmobicdn.cn/ifctpads/IFC/pixel/inmobipixel.js" onload='fireCustomEvent("cf139_lp")'>
+    </script>
+    <!--监测代码-->
+    <script src=' https://www.cf139.com/zt/hy/mobile/js/jquery-1.7.1.min.js'></script>
+    <script src="https://www.cf139.com/zt/hy/mobile/js/lpConfig.js"></script>
+    <script src="https://ac.cf139.com/js/gt.js"></script>
+    <script src="https://ac.cf139.com/js/captcha.js"></script>
+    <script src="http://ac.cf860.com/js/createCfdAccount.js"></script>
+    <script type="text/javascript" src="https://www.cf139.com/zt/hy/mobile/js/lpOpenAccount.js"></script>
+    <script type="text/javascript">
+        ac_url = "http://ac.cf860.com";
+        $(function(){
+            $('.zhuizong').attr("action","http://ac.cf860.com/cn/mobile/rcfd_second"+window.location.search);
+            $("#usercome").val(window.location.search);
+        })
+    </script>
+    <title>新手限享最高预期 5000美金 +100元现金红包</title>
+    <link rel="stylesheet" href="css/m-common50/m-common50.css?v=hiruweio">
+</head>
+<body>
+<div class="m-adv">
+   <div class="layout-1">
+       <div class="item-1">
+       <img src="images/m-common49/tel-icon.png" alt="">
+           <a tel="400-8428955" href="javascript:;">400-8428955</a>
+       </div>
+   </div>
+</div>
+<div class="m-banner">
+    <img src="images/m-common50/img-01.png?v=3232" alt="">
+</div>
+<div class="m-input">
+    <div class="layout-1">
+        国际不会在任何地方泄露您的信息
+    </div>
+    <div class="input_box">
+        <div class="reg-form clearfix">
+            <form id="submitForm" class="clearfix zhuizong" action="" method="post" >
+                <input type="hidden" id="unique" name="tracker.unique" value=""/>
+                <input type="hidden" id="hostname" name="tracker.hostname" value=""/>
+                <input id="referrer"  type="hidden" name="tracker.referrer" value=""/>
+                <input id="href" name="tracker.href"  type="hidden" value=""/>
+                <input type="hidden" name="tracker.driverType" value="2"/>
+                <input type="hidden" name="tracker.dataType" value="1"/>
+                <input type="hidden" value="" name="directRecommender"/>
+                <input type="hidden" value="" name="hiddenurl" id="usercome">
+                <!--頭條-->
+                <input type="hidden" value="1" name="toutiao"/>
+                <div class="form-item phone-f1">
+                    <label>手机号码</label>
+                    <input type="text" id="phone" name="mobilePhone" maxlength="11" >
+                </div>
+                <div class="input-tip phone-tip">
+                </div>
+                <div class="form-item upwd-f1">
+                    <label>自设密码</label>
+                    <input type="password" id="upwd" maxlength="8" name="password">
+                </div>
+                <div class="input-tip upwd-tip">
+                </div>
+                <!--<div class="form-item pc-yanZ-f1 yzmhideinfo" style="display: none" >-->
+                    <!--<label>验证码</label>-->
+                    <!--<input type="text" id="pc-yanZ" maxlength="4" name="pcheck">-->
+                    <!--<a href="javascript:void(0)" class="yz-code" onclick="ga('send', 'event', 'Reg_Real', 'ClickGetCode', 'SJ_GW', '1');"><img  onclick="refreshCaptcha(this);" src='https://ac.cf139.com/cn/pc/img' /></a>-->
+                <!--</div>-->
+                <!--<div class=" input-tip yzmhideinfo pc-yanZ-tip" style="display: none" >-->
+                <!--</div>-->
+                <div class="form-item yanZ-f1">
+                    <label>手机验证码</label>
+                    <input type="text" id="yanZ" maxlength="4"  name="phoneYz">
+                    <a class="btn-phonecode" onclick="ga('send', 'event', 'Reg_Real', 'ClickPhoneCode', 'SJ_GW', '1');"><span></span>获取验证码</a>
+                    <a class="re-btn" style="display: none" ><span></span>重新获取 <b id="secendhtml">60S</b> </a>
+                </div>
+                <div class="input-tip yanZ-tip ">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="m-btn">
+        <a class="open" href="javascript:void(0)" id="submitInfo" onclick="ga('send', 'event', 'Reg_Real', 'ClickInfo', 'SJ_GW', '1');fireDownloadEvent()">
+            立即注册领取
+        </a>
+    </div>
+    <div class="m-safe">
+        账户资金安全由第三方银行保障
+    </div>
+    <div class="m-label">
+        <div class="layout-1">
+            选择 选择放心
+        </div>
+        <div class="layout-2">
+            <div class="item-1">
+                <img class="item-a" src="images/m-common50/img-02.png?v=3232" alt="">
+                <img src="images/m-common50/img-03.png?v=46546" alt="">
+            </div>
+            <div class="item-1">
+                <img class="item-a" src="images/m-common50/img-04.png?v=643543" alt="">
+                <img src="images/m-common50/img-05.png?v=634534543" alt="">
+            </div>
+        </div>
+    </div>
+     <div class="m-download">
+      <a href="javascript:;" class="btnjr">马上下载APP交易提现</a>
+  </div>
+    <div class="m-footer">
+        <div class="layout-2">
+            温馨提示：投资有风险，入行需谨慎
+        </div>
+        <div class = "layout-2">
+            版权为国际有限公司所有，任何单位及个人未经许可不得节录或转载使用
+            <br> Copyright©2018 国际有限公司 All Rights Reserved.
+        </div>
+    </div>
+    <div class="fix-footer">
+            <div class="item-1">
+                <img src="images/common13/live800.png" alt="">
+                <div class="item-a">
+                    <span>马上交易</span> <br>
+                    提现最高5000美元
+                </div>
+
+            </div>
+            <div class="item-2">
+                <a href="javascript:;" class="btnjr">开始赚钱</a>
+            </div>
+    </div>
+</div>
+<script src="common-js/app.js?v=20180207" type="text/javascript" charset="utf-8"></script>
+<script>
+    var address = window.location.search;
+    if(address.indexOf("jrtt")!=-1){
+        $("input[name='toutiao']").attr('value','1')
+    }else{
+//        $("input[name='toutiao']").attr('value','2')
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+

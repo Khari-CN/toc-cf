@@ -1,0 +1,1191 @@
+#main {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow: hidden;
+}
+
+.pc {
+  display: block;
+}
+
+.m {
+  display: none;
+}
+
+.inner {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+  /*position: relative;*/
+}
+
+.inner.position {
+  position: relative
+}
+
+img {
+  overflow: hidden;
+  display: block;
+  border: none;
+}
+
+a,
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+li,
+ol,
+p,
+pre,
+span,
+table,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0
+}
+
+li,
+ol {
+  list-style: none
+}
+
+em,
+i {
+  font-style: normal
+}
+
+a {
+  text-decoration: none
+}
+
+input,
+textarea {
+  -webkit-appearance: none
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0
+}
+
+.e-header .header {
+  background: none;
+}
+
+.center-support {
+  display: none
+}
+
+.header .pcst-megamenu {
+  display: block;
+  visibility: visible;
+  margin: 0 auto 0;
+  opacity: 1;
+  z-index: 999;
+  top: 0;
+}
+
+.header .mobilest-megamenu {
+  display: block;
+}
+
+.web-banner {
+  background: url("https://sc.cfygxz.com/source/www/news/qualification/new-version/topbanner.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+  /* margin-top: 68px; */
+  padding-top: 200px;
+}
+
+.billboard {
+  background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 194px;
+  width: 608px;
+  position: absolute;
+  padding: 30px 0px 0 50px;
+  top: 328px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.billboard .title {
+  font-size: 3.8em;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+  font-size: 2.8em;
+  font-weight: lighter;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+.main-title {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  border-left: 10px solid #3391e7;
+  border-spacing: 5px;
+  margin: 60px 0 10px 0;
+  color: #000000;
+  text-align: left;
+}
+
+.ratio-page {
+  letter-spacing: 2px;
+}
+
+.ratio-page .top-banner {
+  position: relative;
+  margin-top: -76px;
+  line-height: 0;
+}
+
+.ratio-page .top-banner .img-banner {
+  display: block;
+  height: 350px;
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/banner.png') top center no-repeat;
+  background-size: cover !important;
+}
+
+.ratio-page .top-banner h2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 60px;
+  text-align: left;
+  font-size: 3.6em;
+  color: #fff;
+}
+
+.ratio-page .top-banner h2 span {
+  display: block;
+  font-size: 0.67em;
+  padding-top: 55px;
+}
+
+.ratio-page .top-banner .container {
+  position: absolute;
+  top: 45%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+.have-bg {
+  display: block;
+  /* background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/bg1.png') center no-repeat;
+  background-size: auto 515px !important; */
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.ratio-page .section1 {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/bg1.png') no-repeat;
+  background-size: 100% 100%;
+  height: 1600px;
+}
+
+.tred {
+  color: #c70505;
+  letter-spacing: 0.1em;
+}
+
+.tgreen {
+  color: #1eac0b;
+  letter-spacing: 0.1em;
+}
+
+.ratio-page .section1 h1 {
+  font-size: 4.2em;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bolder;
+  color: #000000;
+  letter-spacing: 0.2em;
+  padding-top: 120px;
+}
+
+/* .ratio-page p {
+  font-size: 15px;
+  color: #363636;
+  line-height: 1.7;
+} */
+
+.definition {
+  color: #000000;
+  font-size: 1.7em;
+  font-family: Microsoft JhengHei;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.chart1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* .img-wrapper .box-title h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+} */
+
+.img-wrapper {
+  max-width: 380px;
+  width: 100%;
+  /* background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden; */
+}
+
+.img-wrapper img {
+  max-width: 324px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: -1px;
+}
+
+.img-wrapper-left {
+  margin: 0 35px 0 auto;
+}
+
+.img-wrapper-right {
+  margin: auto 0 35px 0;
+}
+
+.img-wrapper .box-desc p {
+  font-family: Microsoft JhengHei;
+  text-align: center;
+  font-size: 1.4em;
+  color: #000000;
+  padding: 0 15px;
+  font-weight: 700;
+}
+
+.box-text-wrapper {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #c2c3c4;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.box-title-wrapper-L {
+  background-color: #c70505;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  font-family: Microsoft JhengHei;
+  font-size: 2.7em;
+  font-weight: 700;
+  border-bottom: 2px solid #c2c3c4;
+}
+
+.box-title-wrapper-R {
+  background-color: #1eac0b;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  font-family: Microsoft JhengHei;
+  font-size: 2.7em;
+  font-weight: 700;
+  border-bottom: 2px solid #c2c3c4;
+}
+
+.icon-up {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/limit-up-icon.png') no-repeat;
+  background-size: 100% 100%;
+  width: 27px;
+  height: 29px;
+  margin-right: 10px;
+}
+
+.icon-down {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/limit-down-icon.png') no-repeat;
+  background-size: 100% 100%;
+  width: 27px;
+  height: 29px;
+  margin-right: 10px;
+}
+
+.box-desc {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.ratio-page h4 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: .1em;
+  text-align: center;
+}
+
+.underline-box-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question-box {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/question-bg.png') no-repeat;
+  background-size: 100% 100%;
+  width: 590px;
+  height: 205px;
+  border-radius: 20px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  padding: 0 20px 0 20px;
+}
+
+.answer-box {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/answer-bg.png') no-repeat;
+  background-size: 100% 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.answer-box p {
+  font-family: Microsoft JhengHei;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.up {
+  color: #c70505;
+}
+
+.down {
+  color: #1eac0b;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end !important;
+}
+
+.underline-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+}
+
+.underline-box-wrap hr {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  height: 6px;
+  margin: 25px 0;
+}
+
+.ratio-page h5 {
+  font-size: 4.2em;
+  letter-spacing: .1em;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.ratio-page .section2 .col-right p,
+.ratio-page .section2 .block1 .block1_right p {
+  margin-bottom: 20px;
+  font-family: Microsoft JhengHei;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.section2 {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/bg2.png') no-repeat;
+  background-size: 100% 100%;
+  height: 1530px;
+}
+
+.section2 .container .block1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.section2 .container .block1 .block1_left {
+  flex-basis: 45%;
+  position: relative;
+}
+
+.section2 .container .block1 .block1_right {
+  flex-basis: 45%;
+}
+
+.section2 .container .block2 .block2_left {
+  padding-left: 60px
+}
+
+.section2 .container .block1 .block1_left .block1_icon {
+  max-width: 241px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+}
+
+.section2 .container .block1 .block1_left .block1_chart {
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  bottom: 60px;
+  right: 100px;
+}
+
+.section2 .container .block1 .block1_left .block1_list {
+  max-width: 139px;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  top: -55px;
+  left: 112px;
+}
+
+.section2 .container .block1 .block1_right .title {
+  font-weight: 700;
+  font-size: 2.6em;
+  letter-spacing: 0.1em;
+  text-align: start;
+}
+
+.section2 .container .block1 .block1_right .content {
+  font-weight: lighter;
+  font-size: 1.8em;
+  text-align: start;
+  margin: 10px 0 20px 0;
+  line-height: 1.8em;
+}
+
+.double-l {
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+  border-left: 0;
+  border-right: 0;
+  height: 6px;
+  margin: 25px 0;
+
+}
+
+.ratio-page .section2 {
+  margin: 120px 0 0 0;
+}
+
+.example-box {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/example-bg.png') no-repeat;
+  background-size: 100% 100%;
+  width: 760px;
+  height: 291px;
+  border-radius: 20px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  padding: 0 20px 0 20px;
+}
+
+.define-box {
+  background: url('https://sc.cfygxz.com/source/www/zt/price-limit/pc/new-version/define-bg.png') no-repeat;
+  background-size: 100% 100%;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.define-box p {
+  font-family: Microsoft JhengHei;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.ratio-page .s2>div:not(:last-child) {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.ratio-page .align-middle {
+  vertical-align: middle;
+}
+
+.ratio-page .col-left {
+  width: 41.66666667%;
+  text-align: center;
+}
+
+.ratio-page .col-right {
+  width: 58.33333333%;
+}
+
+.img-left {
+  width: 100%;
+  max-width: 388px;
+  padding-right: 30px;
+}
+
+.itemdt-wrapp {
+  position: relative;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.box .promotion-panel {
+  position: absolute;
+  background: url(//sc.cfygxz.com/source/www/product/index/promo_bg.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: -45px;
+  max-width: 1107px;
+  width: 100%;
+  height: 172px;
+  margin: 0 auto;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promotion-panel p {
+  font-size: 2.8em;
+  color: #ffffff;
+  font-weight: bolder;
+  /* letter-spacing: 0.1em; */
+  font-family: Microsoft JhengHei;
+}
+
+.promotion-panel a {
+  margin: 0 10px;
+  border-radius: 4px;
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 2.2em;
+  display: flex;
+  justify-content: center;
+  font-family: Microsoft JhengHei;
+  border: unset;
+  border-color: unset;
+  width: 208px;
+  height: 45px;
+  background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* web page responsive*/
+@media (max-width: 1400px) {
+  .inner {
+    width: 90%
+  }
+
+  .section2 {
+    height: 1610px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  html {
+    font-size: 4rem;
+  }
+
+  .main {
+    overflow: hidden;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .m {
+    display: block;
+  }
+
+  .main-header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+  }
+
+  .m-header {
+    position: absolute;
+    z-index: 999;
+    top: 1rem;
+    width: 100%;
+    height: 1rem;
+    border-bottom: unset;
+    background-color: #ffffff;
+  }
+
+  /* navigation bar for mobile */
+  .menu {
+    width: 285px;
+    background: #093965;
+    position: relative;
+  }
+
+  .menu .head {
+    padding-top: 0.4rem;
+    font-size: 0;
+    padding-bottom: 0.4rem;
+    text-align: right;
+  }
+
+  .menu .head span {
+    margin-right: 0.2rem;
+    display: block;
+    display: inline-block;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+    background-size: 100% 100%;
+    width: 0.36rem;
+    height: 0.37rem;
+  }
+
+  .menu .head a {
+    margin: 0 auto;
+    display: block;
+    font-size: 0.32rem;
+    width: 215px;
+    background-color: #0096dc;
+    color: #fff;
+    text-align: center;
+    line-height: 0.7rem;
+    margin-top: 0.2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 0.01rem solid transparent;
+    border-radius: 0.06rem;
+  }
+
+  .menu .head a:active {
+    background-color: #0088c8;
+  }
+
+  .menu .expmenu li {
+    position: relative;
+    background: #ffffff;
+    border-top: 0.05rem solid #093965;
+    border-bottom: 0.05rem solid #093965;
+  }
+
+  .menu .expmenu li a {
+    color: #093965;
+    font-size: 0.4rem;
+    height: 0.89rem;
+    line-height: 0.89rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    position: relative;
+    font-weight: 700;
+    border-top: unset;
+  }
+
+  .menu .expmenu li a p {
+    width: 65%;
+    padding-left: 12%;
+  }
+
+  .menu .expmenu li i.limit-time-icon {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.94rem;
+    height: 0.38rem;
+    top: unset;
+    margin-right: 0;
+    left: 2.4rem;
+    animation: lighting 6s infinite;
+  }
+
+  .menu .expmenu li i.new-icon {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.94rem;
+    height: 0.38rem;
+    top: unset;
+    margin-right: 0;
+    left: 2.4rem;
+  }
+
+  .menu .expmenu li:before {
+    border-left: 0.1rem solid transparent;
+    content: "";
+    height: 0.89rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+  }
+
+  .menu .expmenu li i {
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.1rem;
+  }
+
+  .menu .expmenu li span {
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+    width: 0.36rem;
+    height: 0.36rem;
+    background-size: 100% 100%;
+    margin-right: 0.25rem;
+  }
+
+  .menu .expmenu li .down,
+  .menu .expmenu li span {
+    display: inline-block;
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+    width: 0.36rem;
+    height: 0.36rem;
+    background-size: 100% 100%;
+    background-position: unset;
+    margin-right: 0.25rem;
+  }
+
+  .menu .expmenu li .down {
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+    width: 0.36rem;
+    height: 0.06rem;
+  }
+
+  @keyframes lighting {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .menu .expmenu li ul {
+    display: none;
+  }
+
+  .menu .expmenu li ul li a {
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+    padding-left: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    background-color: #093965;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #ffffff;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+    font-size: 0.32rem;
+  }
+
+  .menu .expmenu li ul li a:active {
+    background: #dfdfdf;
+  }
+
+  /* .menu .expmenu li ul li:first-child {
+  border-top: 0.01rem solid #eee;
+} */
+
+  .menu .expmenu .fifth p,
+  .menu .expmenu .first p,
+  .menu .expmenu .forth p,
+  .menu .expmenu .second p,
+  .menu .expmenu .third p {
+    width: 87%;
+  }
+
+  .menu .expmenu>li.current:before {
+    border-color: #ffffff;
+  }
+
+  .menu .expmenu>li.current a p {
+    color: #0958a2;
+  }
+
+  .menu .bottom_btn {
+    border-top: unset;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .menu .bottom_btn a:first-child {
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    border: unset;
+    margin-top: 1rem;
+  }
+
+  .menu .bottom_btn a {
+    width: 3.6rem;
+    margin: 0.5rem auto;
+    height: 0.77rem;
+    line-height: 0.77rem;
+    display: block;
+    color: #ffffff;
+    font-size: 0.35rem;
+    border: 0.01rem solid #ffffff;
+    border-radius: 0.06rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+  }
+
+
+
+  /* .menu .bottom_btn a:active {
+  background: #035;
+  color: #fff;
+  border: 0.01rem solid #035;
+} */
+
+  .panel {
+    /* height: 100%; */
+    position: relative;
+  }
+
+  .slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: auto;
+    z-index: 0;
+    display: none;
+    padding-bottom: 1rem;
+  }
+
+  .slideout-menu-left {
+    left: 0;
+  }
+
+  .slideout-menu-right {
+    right: 0;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding-bottom: 0;
+  }
+
+  .slideout-open,
+  .slideout-open .slideout-panel,
+  .slideout-open body {
+    overflow: hidden;
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+  .menu .expmenu li ul li p {
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+    padding-left: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #fecd69;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+    font-size: 0.32rem;
+  }
+
+  .menu .expmenu li ul li.sub-menu-nav {
+    background: #093965;
+    border-top: unset;
+  }
+
+  .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+    display: block !important;
+  }
+
+  .menu .expmenu li ul li ul.sub-child2 li {
+    background: #093965;
+    border-top: unset;
+  }
+
+  .menu .expmenu li ul li ul.sub-child2 li a {
+    padding-left: 0rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+  }
+
+
+  /*End navigation bar for mobile */
+  .web-banner {
+    background: url("https://sc.cfygxz.com/source/www/news/qualification/m/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 6.64rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .billboard {
+    background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 1.94rem;
+    width: 5.6rem;
+    position: absolute;
+    padding: 0 0 0 0.5rem;
+    top: 5.65rem;
+    left: 0.15rem;
+    z-index: 99;
+    display: flex;
+    align-items: baseline;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .billboard .title {
+    font-size: 0.55rem;
+    margin: 0;
+  }
+
+  .billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 80%;
+    margin: 0.1rem 0;
+  }
+
+  .billboard .subtitle {
+    font-size: 0.35rem;
+  }
+
+  .main-title {
+    font-size: 0.4rem;
+    margin: 2rem 0 0.1rem 0;
+  }
+
+  .ratio-page .section1 h1{
+    font-size: 0.45rem;
+  }
+
+  .definition{
+    font-size: 0.23rem;
+  }
+
+  .answer-box p{
+    font-size: 0.23rem;
+    line-height: 1.2;
+
+  }
+
+  .ratio-page h4{
+    font-size: 0.3rem;
+  }
+
+  .img-wrapper .box-desc p{
+    font-size: 0.25rem;
+  }
+
+  .box-title{
+    font-size: 0.4rem;
+  }
+  
+  .img-wrapper-left{
+    margin: 0 auto;
+  }
+
+  .chart1{
+    flex-flow:column;
+    align-items: center;
+  }
+
+  .icon-up, .icon-down{
+    width: 0.27rem;
+    height: 0.29rem;
+  }
+
+  .limit-up{
+    margin-bottom: 0.5rem;
+  }
+
+  .underline-box-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .ratio-page h5{
+    font-size: 0.4rem;
+    text-align: center;
+  }
+
+  .ratio-page .section2 .col-right p, .ratio-page .section2 .block1 .block1_right p{
+    font-size: 0.25rem;
+  }
+
+  .section2 .container .block1 .block1_left{
+    display: none;
+    flex-basis: 100%;
+  }
+
+  .section2 .container .block1 .block1_right{
+    flex-basis: 100%;
+  }
+
+  .define-box p{
+    font-size: 0.23rem;
+    line-height: 1.2;
+  }
+
+  .ratio-page .section1{
+    height: auto;
+  }
+
+ /* promotion panel */
+ .promotion-panel p {
+  font-size: 0.25rem;
+  text-align: left;
+}
+
+.promotion-panel a {
+  font-size: 0.3rem;
+  width: 2.28rem;
+  height: 0.55rem;
+  line-height: 0;
+  align-items: center;
+}
+
+.box {
+  padding: 0 0 0.3rem 0;
+}
+
+.box .promotion-panel {
+  position: absolute;
+  background: url(//sc.cfygxz.com/source/www/product/forex/m/promo_bg.png) no-repeat;
+  background-size: 100% 100%;
+  max-width: 7.05rem;
+  height: 1.1rem;
+  bottom: 1rem;
+  justify-content: space-evenly;
+  padding: 0 0.15rem;
+
+}
+
+
+}
+
+@media (max-width: 750px) {
+  .section2 {
+    background-size: cover;
+    height: unset;
+    padding-bottom: 180px;
+  }
+}
+
+@media (max-width: 401px) {
+  .answer-box p{
+    line-height: 1;
+  }
+  
+  .define-box p{
+    line-height: 1;
+  }
+}

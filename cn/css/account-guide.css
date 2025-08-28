@@ -1,0 +1,1485 @@
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.inner.position {
+    position: relative
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/acc/account-guide/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 60px 0 10px 0;
+    color: #000000;
+}
+
+.web-content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.web-content .bg-nav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.web-content .bg-nav .nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.web-content .bg-nav .nav .navs {
+    display: flex;
+}
+
+.web-content .bg-nav .nav ul,
+li {
+    list-style: none;
+    /* display: flex; */
+}
+
+.web-content .bg-nav .nav ul li {
+    width: 192px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9fa0a0;
+    cursor: pointer;
+    border: solid 1px #9fa0a0;
+    border-radius: 5px;
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    margin: 0 4rem;
+}
+
+.web-content .bg-nav .nav ul li.on {
+    border: solid 1px #2986d7;
+    color: #2986d7;
+}
+
+.web-content .con-nav ul.navs {
+    margin-top: 40px;
+}
+
+.web-content .con-nav {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.web-content .con-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.web-content .con-nav ul li {
+    width: 192px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9fa0a0;
+    cursor: pointer;
+    border: solid 1px #9fa0a0;
+    border-radius: 5px;
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    margin: 0 2rem;
+}
+
+.web-content .con-nav ul li.on {
+    border: solid 1px #2986d7;
+    color: #2986d7;
+}
+
+.web-content .con-page {
+    overflow: hidden;
+    display: none;
+}
+
+.web-content .con-page .page-list {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.web-content .con-page .page-list.bg-color {
+    background: #ffffff;
+}
+
+.web-content .con-page .page-list .list-title {
+    font-size: 2em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding: 20px 0 40px 0;
+    font-family: Microsoft JhengHei;
+}
+
+.web-content .con-page .page-list .list-title span {
+    overflow: hidden;
+    display: block;
+}
+
+.web-content .con-page .page-list .list-title span.size {
+    font-size: 22px;
+    color: #035b83;
+    margin-bottom: 8px;
+}
+
+.web-content .con-page .page-list .list-con {
+    background: #f4f4f5;
+    padding: 20px 0;
+}
+
+.web-content .con-page .page-list .saving-panel,
+.web-content .con-page .page-list .deposit-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.web-content .con-page .page-list .list-con .left-con {
+    overflow: hidden;
+    flex-basis: 50%;
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    padding: 30px 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.web-content .con-page .page-list .list-con .left-con img {
+    margin: 0 auto 15px auto;
+    width: 154px;
+}
+
+.web-content .con-page .page-list .list-con .left-con span.panel-title {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.web-content .con-page .page-list .list-con .left-con span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    font-family: Microsoft JhengHei;
+    font-weight: normal;
+}
+
+.web-content .con-page .page-list .list-con .right-con {
+    overflow: hidden;
+    flex-basis: 40%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.web-content .con-page .page-list .list-con .right-con span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 70px 0 40px 0;
+}
+
+.web-content .con-page .page-list .list-con .right-con a {
+    background-color: transparent;
+    background-size: 100% 100%;
+    width: 206px;
+    height: 48px;
+    margin: 15px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #ff8500;
+    font-size: 1.8em;
+    color: #ff8500;
+    line-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.web-content .con-page .page-list .list-con .right-con a:hover {
+    background-color: #ff8500;
+    border-color: #ff8500;
+    color: #f4f4f5;
+}
+
+.web-content .con-page .page-list .list-con .right-con a:nth-child(2) {
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 1.8em;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 206px;
+    height: 54px;
+    background: linear-gradient(180deg, rgba(74, 164, 247, 1) 0%, rgba(20, 98, 169, 1) 100%);
+    letter-spacing: .1em;
+}
+
+.web-content .con-page .page-list .list-nav {
+    overflow: hidden;
+}
+
+.web-content .con-page .page-list .list-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.web-content .con-page .page-list .list-nav ul li {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 1.7em;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 5px 0;
+    cursor: pointer;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    background: #c0bebe;
+}
+
+.web-content .con-page .page-list .list-nav ul li.on {
+    color: #ffffff;
+    background: #4aa4f7;
+}
+
+.web-content .con-page .page-list .list-nav ul li .pc {
+    width: 31px;
+    height: 26px;
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/pc_icon.png") no-repeat;
+    margin-right: 15px;
+}
+
+.web-content .con-page .page-list .list-nav ul li.on .pc {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/pc_icon.png") no-repeat;
+}
+
+.web-content .con-page .page-list .list-nav ul li .app {
+    width: 14px;
+    height: 25px;
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/mobile_icon.png") no-repeat;
+    margin-right: 15px;
+}
+
+.web-content .con-page .page-list .list-nav ul li.on .app {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/mobile_icon.png") no-repeat;
+}
+
+.web-content .con-page .page-list .list-layout {
+    overflow: hidden;
+    //display: none;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.web-content .con-page .page-list .list-layout .arrow {
+    overflow: hidden;
+    position: absolute;
+    margin-top: 23%;
+    z-index: 1;
+    width: 29px;
+    height: 47px;
+    display: none;
+    cursor: pointer;
+}
+
+.web-content .con-page .page-list .list-layout .arrow-l {
+    left: 0%;
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/arrow_left.png") no-repeat;
+}
+
+.web-content .con-page .page-list .list-layout .arrow-r {
+    left: auto;
+    right: 0%;
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/arrow_right.png") no-repeat;
+}
+
+.web-content .con-page .page-list .list-layout .prevStop {
+    display: none;
+}
+
+.web-content .con-page .page-list .list-layout .nextStop {
+    display: none;
+}
+
+.web-content .con-page .page-list .list {
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.web-content .con-page .page-list .list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-content .con-page .page-list .list ul li {
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 2em;
+    height: 30px;
+    color: #000000;
+    display: flex;
+    align-items: baseline;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.web-content .con-page .page-list .list ul li span {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.web-content .con-page .page-list .list ul li.cur span.fir {
+    color: #2986d7;
+}
+
+.web-content .con-page .page-list .list ul li.cur span.sec {
+    color: #2986d7;
+}
+
+.web-content .con-page .page-list .list ul li.cur span.tir {
+    color: #2986d7;
+}
+
+.web-content .con-page .page-list .list ul li.cur span:nth-child(2) {
+    color: #2986d7;
+    font-weight: bold;
+}
+
+.web-content .con-page .page-list .list ul li span:last-child {
+    margin: 0 10px;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd {
+    overflow: hidden;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd .margintop {
+    padding-top: 70px;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd .page {
+    overflow: hidden;
+    background: #ffffff;
+    display: none;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd .page img {
+    margin: 0 auto;
+    max-width: 806px;
+    width: 100%;
+    height: auto;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd div.app-page img,
+.web-content .con-page .page-list .list-layout .con-slider .bd div.app-qu-page img {
+    margin: 0 auto;
+    max-width: 229px;
+    width: 100%;
+    height: auto;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd .page span {
+    overflow: hidden;
+    display: block;
+    font-size: 1.7em;
+    line-height: 28px;
+    text-align: center;
+    margin: 12px 0 30px 0;
+    font-family: Microsoft JhengHei;
+    letter-spacing: .1em;
+    color: #000000;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd .page a {
+    overflow: hidden;
+    display: inline;
+    text-decoration: none;
+    color: #2986d7;
+    font-weight: 700;
+}
+
+.web-content .con-page .page-list .list-layout .con-slider .bd .page0 {
+    display: block
+}
+
+.web-content .con-page .page-list .hide-con {
+    overflow: hidden;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.web-content .con-page .page-list .hide-con .click-on {
+    overflow: hidden;
+    color: #2986d7;
+    font-size: 2em;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.web-content .con-page .page-list .hide-con .click-on .arrow-b {
+    overflow: hidden;
+    width: 13px;
+    height: 7px;
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/arrow_top.png") no-repeat;
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+
+.web-content .con-page .page-list .hide-con .click-on .arrow-b.arrow-t {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/new-version/arrow_top.png") no-repeat;
+    transform: rotate(0deg);
+}
+
+.web-content .con-page .page-list .hide-con .hide-list {
+    overflow: hidden;
+    margin-top: 30px;
+    display: none;
+}
+
+.web-content .con-page .page-list .hide-con .hide-list ul li,
+.web-content .con-page .page-list .hide-con .hide-list p {
+    font-family: Microsoft JhengHei;
+    overflow: hidden;
+    display: block;
+    font-size: 1.6em;
+    line-height: 2.5;
+    cursor: auto;
+}
+
+.hide-list ul.num-list li {
+    display: flex !important;
+}
+
+li.sub-list {
+    padding-left: 2%;
+}
+
+.web-content .con-list {
+    overflow: hidden;
+    margin: 74px 0;
+}
+
+.web-content .con-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.web-content .con-list ul li {
+    overflow: hidden;
+    list-style: none;
+    width: 276px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 34px;
+}
+
+.web-content .con-list ul li.firs {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/img-1.png") no-repeat center;
+}
+
+.web-content .con-list ul li.sec {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/img-2.png") no-repeat center;
+}
+
+.web-content .con-list ul li.tir {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/img-3.png") no-repeat center;
+}
+
+.web-content .con-list ul li.fou {
+    background: url("//sc.cfygxz.com/source/www/acc/account-guide/img-4.png") no-repeat center;
+    margin-right: 0;
+}
+
+.web-content .con-list ul li span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 30px;
+}
+
+.web-content .con-list ul li span:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 295px;
+    margin-bottom: 10px;
+}
+
+.web-content .con-page .page-list .item-list {
+    overflow: hidden;
+    margin: 20px 0 35px 0;
+}
+
+.web-content .con-page .page-list .item-list ul {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.web-content .con-page .page-list .item-list ul li {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.web-content .con-page .page-list .item-list ul li:last-child {
+    margin-right: 0
+}
+
+.web-content .con-page .page-list .item-list ul li span {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 48px;
+    color: #000016;
+    margin-left: 14px;
+}
+
+.web-content .con-page .page-list .down-list {
+    overflow: hidden;
+    width: 410px;
+    height: 160px;
+    box-shadow: 0 0 9px #eeee;
+    margin: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-content .con-page .page-list .down-list span {
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.web-content .con-page .page-list .down-list img {
+    cursor: pointer;
+    margin: 0 14px
+}
+
+.hover-code {
+    overflow: hidden;
+    position: absolute;
+    z-index: 9;
+    margin-top: -50px;
+    margin-left: 145px;
+}
+
+.hover-code .code {
+    overflow: hidden;
+    width: 100px;
+    display: block;
+}
+
+.hover-code .code img {
+    width: 100px;
+}
+
+.hover-code .code span {
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #fff;
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-bottom: 8px solid rgba(0, 0, 0, 0);
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    margin-left: 88px;
+}
+
+.hover-code .code.ios {
+    display: none;
+    margin-left: 0;
+    margin-right: 140px;
+}
+
+.hover-code .code.android {
+    display: none;
+    margin-left: 70px;
+    margin-right: 77px;
+}
+
+.web-content .con-page .page-list .tel-list {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    height: 180px;
+}
+
+.web-content .con-page .page-list .tel-list .item {
+    overflow: hidden;
+    width: 410px;
+    height: 160px;
+    box-shadow: 0 0 9px #eeee;
+    margin: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.web-content .con-page .page-list .tel-list .item span {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.web-content .con-page .page-list .tel-list .item span.size {
+    font-size: 32px;
+    line-height: normal;
+    font-weight: bold;
+    color: #0096dc;
+}
+
+.web-content .con-page .page-list .tel-list .item-01 {
+    overflow: hidden;
+    position: absolute;
+    left: 460px;
+    bottom: 9px;
+}
+
+.web-content .con-page .page-list .tel-list .item-01 span {
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.web-content .con-page .page-list .tel-list .item-01 span.color {
+    display: inline;
+    color: #f00;
+}
+
+/* bg02*/
+.bg02 {
+    background: url('//sc.cfygxz.com/source/www/acc/account-guide/new-version/bg02.png') no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    margin-top: 45px;
+}
+
+.bg02 .main-title {
+    border-left: 10px solid #ffac00;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.pros {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.pros img {
+    margin: 0 auto;
+}
+
+.pros .title {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+}
+
+.pros .sub-title {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.container .open-panel {
+    position: absolute;
+    display: flex;
+    bottom: -95px;
+    max-width: 1920px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container .open-panel a {
+    margin: 0 50px;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    max-width: 225px;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(74, 164, 247, 1) 0%, rgba(20, 98, 169, 1) 100%);
+}
+
+.container .open-panel a:last-child {
+    /* margin: 0 auto; */
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    max-width: 225px;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.web-page.bg06 {
+    background-color: #60646a;
+    padding: 0;
+    height: 40px;
+}
+
+/* End bg02*/
+
+/* web page responsive*/
+@media screen and (max-width: 1280px) {
+    .web-content .con-page .page-list .list-layout .arrow {
+        margin-top: 32%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .web-content .con-page .page-list .list-layout .arrow {
+        margin-top: 35%;
+    }
+
+    .container .open-panel {
+        bottom: -98px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .container .open-panel {
+        bottom: -88px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    /* .container .open-panel {
+        bottom: -80px;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    .web-content .con-page .page-list .list-layout .arrow {
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-content {
+        overflow: visible;
+    }
+
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/acc/account-guide/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: .5rem 0 0.1rem 0;
+    }
+
+    .web-content .con-nav {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .web-content .con-nav ul.navs li {
+        margin: 0 0.25rem;
+        font-size: 0.35rem;
+        width: 2.5rem;
+        height: 0.7rem;
+        letter-spacing: 3px;
+    }
+
+    .web-content .con-page .page-list .list-title {
+        font-size: 0.22rem;
+    }
+
+    /* saving deposit panel */
+
+    .web-content .con-page .page-list .list-con {
+        padding: 0.5rem 0 0.2rem 0;
+    }
+
+    .web-content .con-page .page-list .list-con .left-con {
+        flex-basis: 100%;
+    }
+
+    .web-content .con-page .page-list .list-con .right-con {
+        flex-basis: 100%;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .web-content .con-page .page-list .list-con .left-con img {
+        width: 1.54rem;
+    }
+
+    .web-content .con-page .page-list .list-con .left-con span.panel-title {
+        font-size: 0.28rem;
+    }
+
+    .web-content .con-page .page-list .list-con .left-con span {
+        font-size: 0.25rem;
+    }
+
+    .web-content .con-page .page-list .list-con .right-con a {
+        font-size: 0.28rem;
+        height: 0.6rem;
+        margin: 0 0.15rem;
+        width: 2.33rem;
+    }
+
+    .web-content .con-page .page-list .list-con .right-con a:nth-child(2) {
+        font-size: 0.28rem;
+        height: 0.7rem;
+        width: 2.33rem;
+    }
+
+    .web-content .con-page .page-list.bg-color{
+        padding: 0.3rem 0;
+    }
+
+    /* terms and condition */
+    .web-content .con-page .page-list .hide-con .click-on{
+        font-size: 0.3rem;
+    }
+
+    .web-content .con-page .page-list .hide-con .hide-list ul li, .web-content .con-page .page-list .hide-con .hide-list p{
+        font-size: .2rem;
+    }
+
+
+    /* bg02 */
+    .bg02 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/awards-honor/m/bg2.png') no-repeat;
+        background-size: 100% 100%;
+        height: 10.51rem;
+        width: 100%;
+    }
+
+    .bg-btn {
+        width: 100%;
+    }
+
+    .bg02 .main-title {
+        margin: 0 0 0.6rem 0;
+    }
+
+    .pros {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .pros>div img {
+        width: 1.48rem;
+    }
+
+    .pros>div {
+        margin-bottom: 0.5rem;
+    }
+
+    .pros .title {
+        font-size: 0.28rem;
+    }
+
+    .pros .sub-title {
+        font-size: 0.16rem;
+    }
+
+    .container .open-panel a {
+        font-size: 0.3rem;
+        margin: 0 0.3rem;
+
+    }
+
+    .container .open-panel a:last-child {
+        font-size: 0.3rem;
+    }
+
+    .container .open-panel {
+        bottom: -1.7rem;
+    }
+
+    /* bd */
+
+    .web-content .con-page .page-list .list ul li{
+        font-size: 0.25rem;
+        letter-spacing: 0;
+        height:0.6rem;
+    }
+
+    .web-content .con-page .page-list .list-layout .con-slider .bd .page span{
+        font-size: 0.25rem;
+        letter-spacing: 0;
+    }
+
+    .web-content .con-page .page-list .list-layout .con-slider .bd div.app-page img, .web-content .con-page .page-list .list-layout .con-slider .bd div.app-qu-page img{
+        max-width: 2.29rem;
+    }
+
+    .text-space{
+        margin-right: 0.1rem;
+    }
+}

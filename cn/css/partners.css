@@ -1,0 +1,758 @@
+/* body {
+  font-family: Myriad, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif; } */
+
+#main {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333
+}
+
+.pc {
+  display: block;
+}
+
+.m {
+  display: none;
+}
+
+.inner {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+  /*position: relative;*/
+}
+
+.e-header .header {
+  background: none;
+}
+
+.e-header .header {
+  background: none;
+}
+
+.center-support {
+  display: none
+}
+
+.header .pcst-megamenu {
+  display: block;
+  visibility: visible;
+  margin: 0 auto 0;
+  opacity: 1;
+  z-index: 999;
+  top: 0;
+}
+
+.header .mobilest-megamenu {
+  display: block;
+}
+
+.web-banner {
+  background: url("https://sc.cfygxz.com/source/www/aboutUs/partners/new-version/topbanner.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+  /* margin-top: 68px; */
+  padding-top: 200px;
+}
+
+.billboard {
+  background: url("https://sc.cfygxz.com/source/www/aboutUs/advantage/banner_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 194px;
+  width: 608px;
+  position: absolute;
+  padding: 30px 0px 0 50px;
+  top: 328px;
+  z-index: 999;
+}
+
+.billboard .title {
+  font-size: 3.8em;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+}
+
+.billboard .hr1 {
+  border: 1px solid #ffffff;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.billboard .subtitle {
+  font-size: 2.8em;
+  font-weight: lighter;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+
+.main-content {
+  /* overflow: hidden; */
+  width: 100%;
+  position: relative;
+}
+
+.main-content .web-page {
+  overflow: hidden;
+  width: 100%;
+  padding: 58px 0 0 0;
+}
+
+.main-content .web-page.bg01,
+.main-content .web-page.bg02,
+.main-content .web-page.bg03 {
+  background: #ffffff;
+}
+
+.main-title {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-left: 10px solid #3391e7;
+  border-spacing: 5px;
+  margin: 60px 0 10px 0;
+  color: #000000;
+}
+
+.partners-details {
+  font-size: 2em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  padding: 15px 0;
+  color: #000000;
+  font-family: Microsoft JhengHei;
+}
+
+.partner-display {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.partner-display>a img {
+  max-width: 148.5px;
+  width: 100%;
+  height: auto;
+}
+
+.partner-display2 {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.partner-display2>a img {
+  max-width: 117px;
+  width: 100%;
+  height: auto;
+}
+
+/* .main-content .web-page.bg03 {
+  margin-bottom: 97px;
+} */
+
+.partner-display3 {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.partner-display3>a img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+}
+
+.main-content .web-page.bg05 {
+  background: #ffffff;
+  padding: 50px 0 97px 0;
+  height: 400px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.box .menu {
+  background: url("https://sc.cfygxz.com/source/www/about-us/new-version/bg05_menu.png") no-repeat;
+  background-size: 100% 100%;
+  max-width: 1107px;
+  width: 100%;
+  height: 312px;
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-title .main-title {
+  border-left: 10px solid #ffac00;
+  font-size: 4em;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  margin-top: -15px;
+}
+
+.left-title .sub-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  margin-top: 15px;
+}
+
+.left-title {
+  padding-right: 30px;
+}
+
+.right-menu {
+  width: 40%;
+  padding-left: 30px;
+}
+
+.right-menu a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-menu hr {
+  width: 67%;
+  margin: 10px auto;
+}
+
+.right-menu a span {
+  font-size: 2.4em;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+}
+
+.right-menu a:hover {
+  transform: scale(1.1);
+}
+
+.right-menu a img {
+  width: 13px;
+  height: 21px;
+}
+
+@media (max-width: 1400px) {
+  .inner {
+    width: 90%
+  }
+}
+
+/*# sourceMappingURL=partners.css.map */
+@media screen and (max-width: 799px) {
+
+  html {
+    font-size: 4rem;
+  }
+
+  .main {
+    overflow: hidden;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .m {
+    display: block;
+  }
+
+  .main-header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+  }
+
+  .m-header {
+    position: absolute;
+    z-index: 999;
+    top: 1rem;
+    width: 100%;
+    height: 1rem;
+    border-bottom: unset;
+    background-color: #ffffff;
+  }
+
+  /* navigation bar for mobile */
+  .menu {
+    width: 285px;
+    background: #093965;
+    position: relative;
+  }
+
+  .menu .head {
+    padding-top: 0.4rem;
+    font-size: 0;
+    padding-bottom: 0.4rem;
+    text-align: right;
+  }
+
+  .menu .head span {
+    margin-right: 0.2rem;
+    display: block;
+    display: inline-block;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+    background-size: 100% 100%;
+    width: 0.36rem;
+    height: 0.37rem;
+  }
+
+  .menu .head a {
+    margin: 0 auto;
+    display: block;
+    font-size: 0.32rem;
+    width: 215px;
+    background-color: #0096dc;
+    color: #fff;
+    text-align: center;
+    line-height: 0.7rem;
+    margin-top: 0.2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 0.01rem solid transparent;
+    border-radius: 0.06rem;
+  }
+
+  .menu .head a:active {
+    background-color: #0088c8;
+  }
+
+  .menu .expmenu li {
+    position: relative;
+    background: #ffffff;
+    border-top: 0.05rem solid #093965;
+    border-bottom: 0.05rem solid #093965;
+  }
+
+  .menu .expmenu li a {
+    color: #093965;
+    font-size: 0.4rem;
+    height: 0.89rem;
+    line-height: 0.89rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    position: relative;
+    font-weight: 700;
+    border-top: unset;
+  }
+
+  .menu .expmenu li a p {
+    width: 65%;
+    padding-left: 12%;
+  }
+
+  .menu .expmenu li i.limit-time-icon {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.94rem;
+    height: 0.38rem;
+    top: unset;
+    margin-right: 0;
+    left: 2.4rem;
+    animation: lighting 6s infinite;
+  }
+
+  .menu .expmenu li i.new-icon {
+    position: absolute;
+    background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.94rem;
+    height: 0.38rem;
+    top: unset;
+    margin-right: 0;
+    left: 2.4rem;
+  }
+
+  .menu .expmenu li:before {
+    border-left: 0.1rem solid transparent;
+    content: "";
+    height: 0.89rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+  }
+
+  .menu .expmenu li i {
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.1rem;
+  }
+
+  .menu .expmenu li span {
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+    width: 0.36rem;
+    height: 0.36rem;
+    background-size: 100% 100%;
+    margin-right: 0.25rem;
+  }
+
+  .menu .expmenu li .down,
+  .menu .expmenu li span {
+    display: inline-block;
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+    width: 0.36rem;
+    height: 0.36rem;
+    background-size: 100% 100%;
+    background-position: unset;
+    margin-right: 0.25rem;
+  }
+
+  .menu .expmenu li .down {
+    background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+    width: 0.36rem;
+    height: 0.06rem;
+  }
+
+  @keyframes lighting {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .menu .expmenu li ul {
+    display: none;
+  }
+
+  .menu .expmenu li ul li a {
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+    padding-left: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    background-color: #093965;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #ffffff;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+    font-size: 0.32rem;
+  }
+
+  .menu .expmenu li ul li a:active {
+    background: #dfdfdf;
+  }
+
+  /* .menu .expmenu li ul li:first-child {
+  border-top: 0.01rem solid #eee;
+} */
+
+  .menu .expmenu .fifth p,
+  .menu .expmenu .first p,
+  .menu .expmenu .forth p,
+  .menu .expmenu .second p,
+  .menu .expmenu .third p {
+    width: 87%;
+  }
+
+  .menu .expmenu>li.current:before {
+    border-color: #ffffff;
+  }
+
+  .menu .expmenu>li.current a p {
+    color: #0958a2;
+  }
+
+  .menu .bottom_btn {
+    border-top: unset;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .menu .bottom_btn a:first-child {
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    border: unset;
+    margin-top: 1rem;
+  }
+
+  .menu .bottom_btn a {
+    width: 3.6rem;
+    margin: 0.5rem auto;
+    height: 0.77rem;
+    line-height: 0.77rem;
+    display: block;
+    color: #ffffff;
+    font-size: 0.35rem;
+    border: 0.01rem solid #ffffff;
+    border-radius: 0.06rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+  }
+
+
+
+  /* .menu .bottom_btn a:active {
+  background: #035;
+  color: #fff;
+  border: 0.01rem solid #035;
+} */
+
+  .panel {
+    /* height: 100%; */
+    position: relative;
+  }
+
+  .slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: auto;
+    z-index: 0;
+    display: none;
+    padding-bottom: 1rem;
+  }
+
+  .slideout-menu-left {
+    left: 0;
+  }
+
+  .slideout-menu-right {
+    right: 0;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding-bottom: 0;
+  }
+
+  .slideout-open,
+  .slideout-open .slideout-panel,
+  .slideout-open body {
+    overflow: hidden;
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+  .menu .expmenu li ul li p {
+    border-top: none;
+    border-bottom: none;
+    margin: 0 auto;
+    padding-left: 0.8rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    color: #fecd69;
+    font-family: Microsoft JhengHei;
+    font-weight: 100;
+    font-size: 0.32rem;
+  }
+
+  .menu .expmenu li ul li.sub-menu-nav {
+    background: #093965;
+    border-top: unset;
+  }
+
+  .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+    display: block !important;
+  }
+
+  .menu .expmenu li ul li ul.sub-child2 li {
+    background: #093965;
+    border-top: unset;
+  }
+
+  .menu .expmenu li ul li ul.sub-child2 li a {
+    padding-left: 0rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+  }
+
+
+  /*End navigation bar for mobile */
+  .web-banner {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/partners/m/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 6.64rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .billboard {
+    background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 1.94rem;
+    width: 5.6rem;
+    position: absolute;
+    padding: 0 0 0 0.5rem;
+    top: 5.65rem;
+    left: 0.15rem;
+    z-index: 99;
+    display: flex;
+    align-items: baseline;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .billboard .title {
+    font-size: 0.55rem;
+    margin: 0;
+  }
+
+  .billboard .hr1 {
+    border: 1px solid #ffffff;
+    width: 80%;
+    margin: 0.1rem 0;
+  }
+
+  .billboard .subtitle {
+    font-size: 0.35rem;
+  }
+
+  .main-title {
+    font-size: 0.4rem;
+    margin: 1rem 0 0.1rem 0;
+  }
+
+  .partners-details {
+    font-size: 0.22rem;
+  }
+
+  .partner-display>a img{
+    width: 1.65rem;
+  }
+
+  .main-content .web-page{
+    padding: .58rem 0 0 0;
+  }
+
+  .web-page.bg02 .main-title{
+    margin: .5rem 0 0.1rem 0;
+  }
+  
+  .web-page.bg03 .main-title{
+    margin: .5rem 0 0.1rem 0;
+  }
+
+  .web-page.bg03{
+    padding: 0.58rem 0 1.5rem 0;
+  }
+
+  .partner-display2>a img{
+    width: 1.3rem;
+  }
+
+  .partner-display3>a img{
+    max-width: 1.37rem;
+  }
+
+  .partner-display3{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .partner-display3 a {
+    width: 50%;
+    margin: 0.25rem auto;
+  }
+
+  .web-page.bg07 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/m/bg2.png') no-repeat;
+    height: 3.67rem;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .flex-panel {
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .web-page.bg07 .motto .main {
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-left: 25px;
+    text-align: center;
+  }
+
+  .web-page.bg07 .motto .sub {
+    font-size: 0.3rem;
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .web-page.bg07 .motto a {
+    font-size: 0.3rem;
+    width: 2.65rem;
+    height: 0.65rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    align-items: center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+  }
+
+}

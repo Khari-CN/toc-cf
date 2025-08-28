@@ -1,0 +1,531 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CFPI解读_行情资讯-国际</title>
+	<meta name="keywords" content="贵金属多空指标,指数多空,指数怎么看,多空看点"/>
+	<meta name="description" content="本栏目提供国际最新更新的多空指标、多空看点和专业分析师独家见解。"/>
+    <!--#include file="/module/html.head.html"-->
+    <!--#include file="/cn/template.css.html"-->
+    <link rel="stylesheet" href="/cn/css/ratio.css">	
+    <style type="text/css">
+         body .CFIXcode {
+        width: 250px;
+        height: 150px;
+        position: absolute;
+        bottom: -150px;
+        left: -25px;
+        padding-top: 10px;
+        display: none;
+        }
+        .ratio-page .itemdt-wrapp .CFIXcode p {
+        color: #333333;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+    }
+ </style>
+</head>
+
+<body>
+	<!--#include file="/module/html.body.begin.html"-->
+    <div class="ratio-page">
+        <!--#include file="/cn/template.header.html"-->
+        
+        <div class="top-banner">
+            <span class="img-banner"></span>
+
+            <div class="container">
+                <h2>持仓分析<span>交易分析配合专业指标，为买卖方向提供重要参考</span></h2>
+            </div>
+                    
+        </div>
+        <!-- Begin main contents -->
+
+        <div class="article">
+            <!-- 面包屑-->
+            <div class="crumb-wrap">
+                <div class="w clearfix">
+                    <div class="item"><a href="/">首页</a></div>
+                    <div class="item sep">></div>
+                    <div class="item"><a href="/cn/information/news.html">行情资讯</a></div>
+                    <div class="item sep">></div>
+                    <div class="item"><a href="/cn/information/position.html">持仓比例</a></div>
+                    <div class="item sep">></div>
+                    <div class="item"><a href="javascript:;">CFPI读解</a></div>
+                </div>
+            </div>
+            <div class="main-tabs">
+                <div class="container">
+                    <ul class="item-wrapper clearfix">
+                        <li class="ic-circle"><a href="/cn/information/position.html">持仓比例</a></li>
+                        <li class="ic-book active"><a href="javascript:;">CFPI 读解</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemdt-wrapp">
+                <ul>
+                    <li class="item1-details hide clearfix" id="item1-details">
+                        <div class="section7">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="col-xs-8 col-ssmm-12 col-ssm-8">
+                                        <h1 class="no-margin">持仓比例</h1>
+                                        <p class="sub-title">持仓数据最后更新时间 2016.07.15 14:59</p>
+                                        <ul id="click-tabs" class="item-wrapper clearfix">
+                                            <li><a href="javascript:;">股指</a></li>
+                                            <li class="active"><a href="javascript:;">外汇</a></li>
+                                            <li><a href="javascript:;">贵金属</a></li>
+                                            <li class="last-child"><a href="javascript:;">原油</a></li>
+                                        </ul>
+                                        <div class="itemdt-wrapp">
+                                            <ul>
+                                                <li class="item1-details clearfix">
+                                                    <ul class="item-chart clearfix">
+                                                        <li>
+                                                            <div id="chart19"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap1" href="">看空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 55%</span><span class="subt">空 45%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart20"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap2" href="">多空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 55%</span><span class="subt">空 45%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart21"></div>
+                                                            <div class="figures">802.48</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart22"></div>
+                                                            <div class="figures">802.48</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart31"></div>
+                                                            <div class="figures">802.48</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart32"></div>
+                                                            <div class="figures">802.48</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="item2-details show clearfix">
+                                                    <h3>直盘货币对</h3>
+                                                    <ul class="item-chart clearfix">
+                                                        <li>
+                                                            <div id="chart1"></div>
+                                                            <div class="figures">+70</div>
+                                                            <div class="gloss"><a class="cap1" href="">看空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart2"></div>
+                                                            <div class="figures">-25</div>
+                                                            <div class="gloss"><a class="cap2" href="">多空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart3"></div>
+                                                            <div class="figures">-6</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart4"></div>
+                                                            <div class="figures">-2</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart5"></div>
+                                                            <div class="figures">+22</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart6"></div>
+                                                            <div class="figures">+19</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="item-name">叉盘货币对</h3>
+                                                    <ul class="item-chart clearfix">
+                                                        <li>
+                                                            <div id="chart8"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap1" href="">看空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart9"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap2" href="">多空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart10"></div>
+                                                            <div class="figures">802.48</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart11"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart12"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart13"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart14"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart15"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart16"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart17"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart18"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="item-name">离岸人民币</h3>
+                                                    <ul class="item-chart clearfix">
+                                                        <li>
+                                                            <div id="chart33"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap1" href="">看空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart34"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap2" href="">多空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="item3-details clearfix">
+                                                    <ul class="item-chart clearfix">
+                                                        <li>
+                                                            <div id="chart23"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap1" href="">看空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart24"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap2" href="">多空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="item4-details clearfix">
+                                                    <ul class="item-chart clearfix">
+                                                        <li>
+                                                            <div id="chart27"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap1" href="">看空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart28"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap2" href="">多空</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div id="chart29"></div>
+                                                            <div class="figures">802.48</div>
+                                                            <div class="gloss"><a class="cap3" href="">看多</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div id="chart30"></div>
+                                                            <div class="figures">2.00</div>
+                                                            <div class="gloss"><a class="cap4" href="">持平</a></div>
+                                                            <div class="percent">
+                                                                <span class="add">多 80%</span><span class="subt">空 20%</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-ssmm-12 col-ssm-4">
+                                        <h2 class="annotate">如何解读持仓分析？</h2>
+                                        <div class="note">
+                                            <span class="orange">看多</span><span class="blue">看空</span>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="child-1">
+                                                <h3>什么是持仓比例？</h3>
+                                                <p>
+                                                    它是把三十多万客户对每项差价合约交易产品的实际多/空买卖交易数据以圆形及不同颜色综合展示。 橘色代表多，蓝色代表空，当圈上的橘色较蓝色多，代表我们的客户群对该产品买多的比例较买空高。相反当蓝色的比例较多，即代表我们的客户对该产品买空的比例比买多高。
+                                                </p>
+                                            </div>
+                                            <i class="line"></i>
+                                            <div class="child-2">
+                                                <h3>圈内的数字是什么?</h3>
+                                                <p>
+                                                    若说持仓比例可提供清晰的客户买卖取态，那圈内由多空综合指标便更为直观的透视客户买卖情绪。下方看多/空/持平之建议为反向操作建议。 想知道如何使用？<a href="">按这了解</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section8">
+                            <div class="container">
+                                <h2>未平仓合约比率</h2>
+                                <div class="desc-img">
+                                    <span class="first-child">未平仓数据最后更新时间 2016.07.15  14:59</span> <span class="last-child">热炒信号最后更新时间 2016.07.15  14:59</span>
+                                </div>
+                                <div id="regtachart"></div>
+                            </div>
+                        </div>
+                        <div class="section9 desc-chart">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-8 col-ssmm-12 col-ssm-8">
+                                        <div class="box1-wrapper">
+                                            <h3>什么是未平仓合约比率?</h3>
+                                            <p>
+                                                未平仓合约比率把每项差价合约产品的未平仓单量占所有产品的持仓单量之比例列出，所有产品的比率加总为 100%。此数据的其中一个分析用途是观察客户群的实际操作情况，从而发掘值得交易之产品，为这，我们为你特设了「热炒讯号」，直接标示热门交易品种。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-ssmm-12 col-ssm-4">
+                                        <div class="box2-wrapper">
+                                            <h3>什么是热炒讯号?</h3>
+                                            <p>
+                                                热炒讯号是我们为您研发的直观标记，依靠我们的讯号便能一秒看出目前持仓单量最高之七大差价合约交易产品。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2-details show clearfix" id="item2-details">
+                        <h1>多空综合指标 (CFPI)</h1>
+                        <div class="section1">
+                            <div class="container">
+                                <h2>什么是多空综合指标?</h2>
+                                <p>每个可交易产品之持仓比例及未平仓合约进行综合计算，从直观数字反映多空情绪，使用这个指标配合基本线图分析参考，立刻得出明确买卖方向。我们以0作为中位数值，当指标大于0时，表示做多的客户比做空的多，反之若指标少于0时，即做空的客户比做多的多。</p>
+                                <div class="row">
+                                    <div class="col-xs-7 col-ssmm-12 col-ssm-7">
+                                        <div class="img-wrapper">
+                                            <img class="img-responsive" src="/source/www/news/ratio/charts.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5 col-ssmm-12 col-ssm-5">
+                                        <div class="info-wrapper">
+                                            <img class="img-responsive" src="/source/www/news/ratio/info.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section2">
+                            <div class="container">
+                                <h2>如何使用多空综合指标</h2>
+                                <p>多空综合指标是不能单独用作决定买卖方向的唯一指标，它是属于一个在进行基本线图分析后，进一步确认您买卖方向的一个分析工具。
+                                </p>
+                                <div class="img-box">
+                                    <img class="img-responsive" src="/source/www/news/ratio/balance.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section3">
+                            <div class="container">
+                                <h2>为何要使用多空综合指标</h2>
+                                <p>外汇或商品市场与股票市场存在着最大的不同之处，是在于它并无一个固定的单一交易所进行交易，这意味着在投资者的角度上，我们很难去集中评估目前的市场走势。客户所选择的是那一个方向，而作为一所自2008年已开始营运的机构，我们的客户量也在不停的扩大，目前已能分析之客户量达三十多万，尽力保证以最客观的数据协助客户进行分析。
+                                </p>
+                            </div>
+                        </div>
+                        <div ng-controller="cfpiController" class="section4">
+                            <!--<div class="container">-->
+                                <!--<h2>您要参考
+                                <!--<p>工欲善其事，必先利其器，善用
+                                <!--</p>-->
+                                <!--<form ng-submit="submit()">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-xs-6 col-ssmm-12 col-ssm-6">-->
+                                            <!--<div class="group">-->
+                                                <!--<input id="name" type="text" ng-model="onlineResponse.accountname">-->
+                                                <!--<span class="bar"></span>-->
+                                                <!--<label>姓名</label>-->
+                                                <!--<div class="inforeg-error" id="name-err">真实姓名只能为中文或者大写英文</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="group user-phone">-->
+                                                <!--<span class="area-code">+86</span>-->
+                                                <!--<input id="phone" class="phone-number" type="tel" maxlength="11" ng-model="onlineResponse.phone">-->
+                                                <!--<span class="bar"></span>-->
+                                                <!--<label>电话</label>-->
+                                                <!--<div class="inforeg-error" id="phone-err">请检查电话号码是否正确</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-xs-6 col-ssmm-12 col-ssm-6">-->
+                                            <!--<div class="group">-->
+                                                <!--<input id="email" type="text" ng-model="onlineResponse.email">-->
+                                                <!--<span class="bar"></span>-->
+                                                <!--<label>电邮地址</label>-->
+                                                <!--<div class="inforeg-error" id="email-err">输入正确的邮箱格式，如cf88@163.com！</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="group info-box">-->
+                                                <!--<input class="info" type="text" disabled ng-model="onlineResponse.content">-->
+                                                <!--<span class="bar"></span>-->
+                                                <!--<label>内容</label>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<input class="checkbox" type="checkbox" checked="checked" name="checkb" value="checkb" ng-model="onlineResponse.tickedReceiveInfo"><span class="desc">本人确认
+                                    <!--<button ng-show="showButton" class="submit clearfix" type="submit">提交</button>-->
+                                    <!--<div ng-show="showError" class="error-mess"><img class="error-img" src="/source/www/news/ratio/error.png" alt="">提交失败，请重试<a href=""><img onclick="location.reload()" class="refresh" src="/source/www/news/ratio/f5.png" alt=""></a></div>-->
+                                    <!--<div ng-show="showSuccess" class="valid-mess"><img src="/source/www/news/ratio/success.png" alt="">提交成功！</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        </div>
+                    </li>
+                </ul>
+                
+                
+                <!--#include file="/cn/template.notification.html"-->                
+                
+                <div class="section6">
+                    <div class="container">
+                        <p>
+                            信息免责声明：客户不应将任何交易建议视为投资意见，客户必须根据自身的状况作出交易决定。
+                            <br> 教育信息：所有课程及指导信息仅为教育目的而提供，客户不应倚赖有关内容，因它可能会基于实际交易情况而有所不同。关于本网站所提供的任何意见、分析及指标仅为教育目的而提供，不构成投资建议。国际不会为直接或间接使用或依赖以上数据而造成的任何亏损或损失负责。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End main contents -->
+
+
+        <!--#include file="/cn/template.js.html"-->
+        <!--#include file="/cn/template.footer.html"-->
+    	<!--#include file="/cn/template.right-1.html"-->
+    
+    </div>
+
+    <script src="/cn/js/highCharts.min.js"></script>
+    <script src="/cn/js/ScrollMagic.min.js"></script>
+    <script src="/cn/js/autoNumeric-min.js"></script>
+    <script src="/cn/js/ratio.js"></script>
+    <script src="/cn/js/angular.min.js"></script>
+    <script src="/cn/js/cfpi-plugin.js"></script>
+
+
+    <!--#include file="/module/html.body.end.html"-->
+</body>
+
+</html>

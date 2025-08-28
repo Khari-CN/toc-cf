@@ -1,0 +1,1856 @@
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.pc {
+    display: block;
+}
+
+.m {
+    display: none;
+}
+
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+.inner.position {
+    position: relative
+}
+
+img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.center-support {
+    display: none
+}
+
+.header .pcst-megamenu {
+    display: block;
+    visibility: visible;
+    margin: 0 auto 0;
+    opacity: 1;
+    z-index: 999;
+    top: 0;
+}
+
+.header .mobilest-megamenu {
+    display: block;
+}
+
+.web-banner {
+    background: url("https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/topbanner.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 68px; */
+    padding-top: 200px;
+}
+
+.billboard {
+    background: url("https://sc.cfygxz.com/source/www/aboutUs/contact-us/banner_bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 194px;
+    width: 608px;
+    position: absolute;
+    padding: 30px 0px 0 50px;
+    top: 328px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.billboard .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.billboard .subtitle {
+    font-size: 2.8em;
+    font-weight: lighter;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+}
+
+.main-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    border-left: 10px solid #3391e7;
+    border-spacing: 5px;
+    margin: 60px 0 10px 0;
+    color: #000000;
+}
+
+.contact-details {
+    font-size: 1.7em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding: 15px 0;
+    font-family: Microsoft JhengHei;
+}
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+textarea {
+    resize: none
+}
+
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+
+option {
+    padding: 10px 0;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.top-banner {
+    position: relative;
+    margin-top: -76px;
+    background: #1c4560;
+    line-height: 0;
+}
+
+.top-banner .img-banner {
+    display: block;
+    height: 350px;
+    background: url(//sc.cfygxz.com/source/www/product/intro-ind/top-banner.jpg) top center no-repeat;
+    background-size: cover !important;
+}
+
+.top-banner .img-banner .title-banner {
+    font-size: 3.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 194px;
+}
+
+.top-banner .img-banner .sub-title {
+    font-size: 2.4em;
+    line-height: 1.8;
+    color: #FFFFFF;
+    padding-bottom: 70px;
+}
+
+.top-banner .img-banner-commodities {
+    display: block;
+    height: 350px;
+    background: url(//sc.cfygxz.com/source/www/product/comodities/banner.jpg) top center no-repeat;
+    background-size: cover !important;
+}
+
+.top-banner .img-banner-commodities.counter {
+    background: url(//sc.cfygxz.com/source/www/product/counter/banner-bg.jpg?v0503) top center no-repeat;
+}
+
+.top-banner .img-banner-commodities .title-banner {
+    font-size: 3.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 194px;
+}
+
+.top-banner .img-banner-commodities .sub-title {
+    font-size: 2.4em;
+    line-height: 1.8;
+    color: #FFFFFF;
+}
+
+.article>.main-links {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.article h2.main-title {
+    font-size: 3.6em;
+    color: #035B83;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.article h2.main-titlesm {
+    font-size: 2.4em;
+    line-height: 1;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.article h3.sub-title {
+    color: #666666;
+    font-size: 1.6em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.article h3.sub-title a {
+    display: inline-block;
+    color: #0096DB;
+    font-size: 1em;
+    position: relative;
+    color: #0099cc;
+    margin-left: 5px;
+}
+
+.article h3.sub-title a:hover:after {
+    right: -17px;
+}
+
+.link-box {
+    width: 600px;
+    margin-bottom: -1px;
+    margin-top: 10px;
+}
+
+.link-box li {
+    float: left;
+    width: 25%;
+}
+
+.link-box li a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    text-align: left;
+    padding-left: 21%;
+    font-size: 1.6em;
+    color: #666666;
+    outline: none;
+}
+
+.link-box li.active a {
+    border-bottom: 3px solid #035B83;
+    color: #035B83;
+    cursor: default;
+}
+
+.link-box .ic-circle {
+    background: url(//sc.cfygxz.com/source/www/product/forex/icon-2.png) 10% center no-repeat;
+}
+
+.link-box .ic-circle.active {
+    background: url(//sc.cfygxz.com/source/www/product/forex/icon-2.png) 10% center no-repeat;
+}
+
+.link-box .ic-book {
+    background: url(//sc.cfygxz.com/source/www/product/forex/icon-3.png) 10% center no-repeat;
+}
+
+.link-box .ic-Js {
+    background: url(//sc.cfygxz.com/source/www/product/counter/icon-img03.png) 10% center no-repeat;
+}
+
+.link-box .ic-Js.active {
+    background: url(//sc.cfygxz.com/source/www/product/counter/icon-img04.png) 10% center no-repeat;
+}
+
+.link-box .ic-book.active {
+    background: url(//sc.cfygxz.com/source/www/product/forex/icon-3.png) 10% center no-repeat;
+}
+
+.link-box .ic-all {
+    background: url(//sc.cfygxz.com/source/www/product/intro/icon-1.png) 10% center no-repeat;
+}
+
+.link-box .ic-all.active.counter {
+    background: url(//sc.cfygxz.com/source/www/product/counter/sm_ico.jpg) 7% center no-repeat;
+}
+
+.link-box .ic-all.active {
+    background: url(//sc.cfygxz.com/source/www/product/forex/icon-1.png) 10% center no-repeat;
+}
+
+.main-article {
+    padding: 60px 0 0 0;
+}
+
+.main-article .item-wrapper {
+    position: relative;
+}
+
+.main-article .item-wrapper li.line {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #CCCCCC;
+    bottom: 2px;
+    position: absolute;
+    z-index: 0;
+    border: none;
+}
+
+.main-article .item-wrapper li.line:hover {
+    border: none;
+}
+
+.main-article .item-wrapper li {
+    position: relative;
+    z-index: 29;
+    float: left;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.main-article .item-wrapper li a {
+    font-size: 1.6em;
+    color: #333333;
+    display: inline-block;
+    width: 153px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.main-article .item-wrapper li:hover {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.main-article .item-wrapper li.active {
+    border-top: 3px solid #035B83;
+    border-bottom: 1px solid #FFFFFF;
+    background: #fff;
+}
+
+.main-article .item-wrapper li.active a {
+    color: #035B83;
+}
+
+.main-article .section2 .img-fl {
+    width: 49%;
+    float: left;
+}
+
+.main-article .section2 .img-fl img {
+    width: 225px;
+    height: 170px;
+}
+
+.main-article .section2 .fr {
+    float: left;
+    width: 50%;
+}
+
+.main-article .section2 .img-left {
+    display: block;
+    width: 474px;
+    height: 170px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #CCCCCC;
+}
+
+.main-article .section2 .img-left:hover {
+    box-shadow: 1px 1px 1px 1px #CCCCCC;
+}
+
+.main-article .section2 .img-left .title-img {
+    font-size: 2.4em;
+    color: #035B83;
+    padding-top: 17px;
+    padding-left: 27px;
+}
+
+.main-article .section2 .img-left .des-img {
+    font-size: 1.6em;
+    color: #333333;
+    line-height: 1.4;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 29px;
+    text-align: justify;
+}
+
+.main-article .section2 .img-right {
+    float: right;
+}
+
+.main-article .width-fl {
+    width: 4%;
+    float: left;
+    display: block;
+}
+
+.main-article .padding-sec3 {
+    padding-top: 80px;
+}
+
+.main-article .section3 {
+    margin-bottom: 80px;
+}
+
+.main-article .section3 .item {
+    background: url(//sc.cfygxz.com/source/www/product/forex/bg-number.jpg) center no-repeat;
+    width: 212px;
+    height: 195px;
+}
+
+.main-article .section3 ul li {
+    float: left;
+    min-height: 220px;
+}
+
+.main-article .section3 .title-item {
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 1.8;
+    padding-top: 37px;
+    color: #333333;
+}
+
+.main-article .section3 .link-item {
+    background-color: #0096DB;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    width: 120px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    display: block;
+    margin: 15px auto 0px;
+}
+
+.main-article .section3 .link-item:hover {
+    background-color: #035B83;
+}
+
+.main-article .section3 p {
+    font-size: 4.3em;
+    font-family: "Myriad";
+    color: #035B83;
+    text-align: center;
+}
+
+.main-article .section3 span {
+    font-size: 16px;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    color: #333333;
+}
+
+.main-article .section3 .padding-col2 {
+    padding-left: 26px;
+}
+
+.main-article .section3 .margin-col {
+    padding-left: 11px;
+}
+
+.main-article .section3 .margin-col1 {
+    padding-left: 26px;
+}
+
+.section2 .img-fl {
+    width: 40%;
+    float: left;
+}
+
+.section2 .img-fl img {
+    width: 225px;
+    height: 175px;
+}
+
+.section2 .fr {
+    float: left;
+    width: 60%;
+}
+
+.section5 {
+    padding: 40px 0;
+}
+
+.section5 p {
+    font-size: 1.4em;
+    line-height: 2.0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.hot {
+    color: #C80000;
+}
+
+/*# sourceMappingURL=indices.css.map */
+
+
+
+
+
+
+/*cunter */
+.main-article .counter_Dtitle {
+    font-size: 36px;
+    color: #03354c;
+}
+
+.main-article .counter_Stitle {
+    font-size: 16px;
+    color: #666666;
+    padding-top: 40px;
+}
+
+.section4_Stitle {
+    font-size: 1.5em;
+    color: #8d8d8d;
+    font-family: Microsoft JhengHei;
+}
+
+.counterTab {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.counterTab li {
+    float: left;
+    width: 25%;
+    height: 64px;
+    font-size: 2.1em;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: url("https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/tab_bg.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    letter-spacing: 0.1em;
+    padding: 0 5px;
+}
+
+.counterTab .counteractive {
+    background: url("https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/tab_bg_active.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.tab-icon1 {
+    width: 25px;
+    height: 29px;
+}
+
+.tab-icon2 {
+    width: 27px;
+    height: 25px;
+}
+
+.tab-icon3 {
+    width: 30px;
+    height: 24px;
+}
+
+.tab-icon4 {
+    width: 22px;
+    height: 25px;
+}
+
+.main-article .section4 {
+    padding: 30px 2% 40px 2%;
+    padding-right: 0;
+    padding-bottom: 0;
+    border: 1px solid #535050;
+    border-top: unset;
+}
+
+.link_title {
+    float: left;
+}
+
+.link_title .first_li {
+    float: left;
+    font-size: 2.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #8d8d8d;
+    margin-right: 35px;
+    margin-top: 35px;
+    font-family: Microsoft JhengHei;
+}
+
+.first_li select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*.select{
+		width: 155px;
+		height: 50px;
+		background: url(//sc.cfygxz.com/source/www/product/counter/icon-jiantou.png)no-repeat 90% 50%;
+		-webkit-appearance: select;
+    -moz-appearance: none;
+    appearance:none;
+	  padding-left: 50px;
+	  color: #999999;
+	  font-size: 16px;
+	  margin-top: 20px;
+	  border: 1px solid #dddddd;
+	  outline: none;
+}*/
+.select option {
+    padding: 10px 0;
+}
+
+.selectactive {
+    position: relative;
+    z-index: 1;
+}
+
+.input {
+    width: 155px;
+    height: 50px;
+    margin-top: 20px;
+    background: url("https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/select_bg.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    text-align: center;
+    font-size: .7em;
+    outline: none;
+    color: #999999;
+    padding: 0 20px;
+    border-radius: unset;
+    -webkit-appearance: none;
+    font-family: Microsoft JhengHei;
+}
+
+.Btninput {
+    float: left;
+    margin-top: 50px;
+    width: 158px;
+    height: 50px;
+    background: #3391e7;
+    border: 1px solid #3391e7;
+    outline: none;
+    color: #FFFFFF;
+    font-size: .7em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+}
+
+.Btninput:hover {
+    border: 1px solid #1b6bb2;
+    background: #1b6bb2;
+}
+
+.point {
+    clear: both;
+    padding-top: 35px;
+    display: flex;
+    border-bottom: 1px solid #8d8d8d;
+    padding-bottom: 30px;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.point span {
+    color: #000000;
+    font-size: 1.6em;
+    line-height: 60px;
+    width: 35px;
+    font-family: Microsoft JhengHei;
+    font-weight: 700;
+    width: 80px;
+}
+
+.Btn_1 {
+    height: 50px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FFFFFF;
+    background: url(https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/result_bg.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 2.4em;
+    margin: 0 15px;
+    padding: 0px 20px;
+    margin-top: 12px;
+    font-family: Microsoft JhengHei;
+}
+
+.last {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font-size: 1.4em;
+    font-family: Microsoft JhengHei;
+    color: #8d8d8d;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.last i {
+    width: 22px;
+    height: 19px;
+    display: block;
+    background: url(https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/clock_icon.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 10px;
+}
+
+.pic_foot {
+    margin-top: 70px;
+}
+
+.pic_foot .commtitle {
+    font-size: 2.4em;
+    color: #666666;
+}
+
+.box_foot {
+    height: 170px;
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+
+.commtitle_pic {
+    display: block;
+    width: 40%;
+    float: left;
+}
+
+.commtitle_pic img {
+    display: block;
+    width: 100%;
+}
+
+.box_foot .box.left,
+.box_foot .box.right {
+    width: 48%;
+}
+
+.box_foot .box.left {
+    float: left;
+}
+
+.box_foot .box.right {
+    float: right;
+}
+
+.box_foot .box_tit {
+    position: relative;
+    width: 54%;
+    float: right;
+}
+
+.box_tit .ic_1 {
+    font-size: 2em;
+    color: #035B83;
+    padding-bottom: 5px;
+}
+
+.box_tit .ic_2 {
+    font-size: 1.6em;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;
+    height: 120px;
+}
+
+.look-more {
+    font-size: 1.6em;
+    color: #0099cc;
+    text-align: right;
+    display: block;
+    margin-right: 19px;
+    padding-right: 25px;
+    background: url(//sc.cfygxz.com/source/www/product/counter/more-bt.png) 92% center no-repeat;
+    transition: all .25s ease-in;
+    position: absolute;
+    z-index: 30;
+    right: 0;
+    bottom: 0;
+}
+
+.look-more:hover {
+    background-position: right center;
+}
+
+.choise {
+    display: block;
+    font-size: .7em;
+    padding-top: 15px;
+    color: #8d8d8d;
+    text-align: center;
+    font-weight: 500;
+}
+
+.state1 {
+    color: red;
+    display: block;
+}
+
+.state3 {
+    color: red;
+}
+
+/* .Tab_ico {
+    padding: 0 30px;
+    height: 100%;
+    display: block;
+    float: left;
+
+} */
+
+.Tab_text {
+    margin-left: 5px;
+}
+
+/* .Tab_ico.Tab_icoactive {
+    background: url(//sc.cfygxz.com/source/www/product/counter/icon-img02.jpg)no-repeat 75%;
+    background-size: 40%;
+} */
+
+/*下拉框*/
+.ui-select,
+.sel {
+    width: 155px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: .7em;
+    background: url("https://sc.cfygxz.com/source/www/product/trade-calculator/new-version/select_bg_arrow.png") no-repeat;
+    background-size: 100% 100%;
+    color: #8d8d8d;
+    outline: none;
+    border: none;
+    border-radius: unset;
+    -webkit-appearance: listbox;
+    /* text-indent: 25px; */
+    display: flex;
+    align-items: center;
+    font-family: Microsoft JhengHei;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.sss {
+    display: none;
+}
+
+.selecttitle {
+    color: #666666;
+    font-size: 14px;
+}
+
+.selecttext {
+    color: #999999;
+}
+
+.commtitle_769 {
+    font-size: 1.4em;
+    color: #000000;
+    padding-top: 30px;
+    font-family: Microsoft JhengHei;
+}
+
+
+/*公共头部*/
+#header_375 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background: #267fbb;
+    z-index: 101;
+    margin: 0 auto;
+}
+
+.header-info {
+    position: relative;
+    padding-left: 5px;
+}
+
+.mainlogo.fl {
+    float: left;
+}
+
+.contact-info a i.icon-qqonline {
+    background: url(//sc.cfygxz.com/source/www/product/counter/m1_pic.png)no-repeat -215px 3px;
+    background-size: 300px 550px;
+    display: block;
+    width: 50px;
+    height: 40px;
+    float: left;
+}
+
+.contact-info a {
+    position: relative;
+    top: 10px;
+    float: left;
+    display: inline-block;
+    width: auto;
+    height: 34px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mainlogo a {
+    background: url(//sc.cfygxz.com/source/www/product/counter/m1_logo.png)no-repeat 0 8px;
+    width: 200px;
+    height: 50px;
+    display: block;
+    background-size: 200px 35px;
+}
+
+.point span:first-child {
+    text-align: left;
+}
+
+/*新设计cf139移动端页脚*/
+.footer_new {
+    width: 100%;
+    height: auto;
+    background: #03354c;
+    margin-top: 0.2rem;
+}
+
+.footer_new_text {
+    padding-top: 0.33rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    padding-bottom: 0.8rem;
+}
+
+.footer_new_text p {
+    color: #819aa6;
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.22rem;
+}
+
+.footer_new_pic {
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+    padding-top: 0.32rem;
+    padding-bottom: 0.32rem;
+}
+
+.footer_new_pic li {
+    float: left;
+    width: 21%;
+    margin: 0 6%;
+}
+
+.footer_new_pic img {
+    display: block;
+    width: 100%;
+}
+
+.footer_new_a {
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 0.15rem;
+}
+
+.footer_new_a li {
+    float: left;
+    display: flex;
+    width: 21%;
+    text-align: center;
+    margin: 0 2%;
+}
+
+.footer_new_a a {
+    font-size: 0.12rem;
+    color: #819aa6;
+}
+
+.code .code_big img {
+    float: inherit;
+    width: 100%;
+    padding-top: 0;
+}
+
+.code_big {
+    display: none;
+}
+
+.footer_ico {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 0.4rem;
+}
+
+.footer_ico li {
+    width: 33.333%;
+    height: 100%;
+    font-size: 0.14rem;
+    text-align: center;
+    line-height: 0.32rem;
+    float: left;
+    background: none;
+}
+
+.ui-select.sss-0 {
+    padding-left: 15px;
+    font-size: .7em;
+    font-weight: 500;
+    letter-spacing: .1em;
+    font-family: Microsoft JhengHei;
+}
+
+.lazyload {
+    height: 60px;
+    background: url(//sc.cfygxz.com/source/www/product/counter/5-121204194033-51.gif)no-repeat 0px -3px;
+    background-size: 70%;
+}
+
+/* Begin bg02 */
+.web-page {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px 0 97px 0;
+}
+
+
+.bg02 {
+    background: #ffffff;
+}
+
+
+.bg02 .container .more-product {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.bg02 .container .more-product div {
+    background: url('https://sc.cfygxz.com/source/www/news/quote/new-version/bg2_bg.png') no-repeat;
+    background-size: 100% 100%;
+    max-width: 267px;
+    width: 100%;
+    height: 137px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column;
+    padding: 2% 5% 2% 5%;
+}
+
+.bg02 .container .more-product div a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 2.2em;
+    font-family: 'Microsoft JhengHei';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bg02 .container .more-product div p {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-family: 'Microsoft JhengHei';
+    text-align: center;
+}
+
+/* End bg02 */
+/* Begin bg03 */
+.web-page.bg03 {
+    background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/bg2.png') no-repeat;
+    background-size: 100% 100%;
+    height: 521px;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.web-page.bg03 .motto {
+    margin: 0 auto;
+}
+
+.web-page.bg03 .motto .main {
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-left: 25px
+}
+
+.web-page.bg03 .motto .sub {
+    text-align: center;
+    font-size: 2.2em;
+    color: #ffffff;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.web-page.bg03 .motto a {
+    background-size: 100% 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 2.3em;
+    display: flex;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    border: unset;
+    border-color: unset;
+    width: 225px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+/* End bg03 */
+/* Begin bg04 */
+.web-page.bg04 {
+    background: #60646a;
+    padding: 50px 0 97px 0;
+    margin-top: -1px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.box .menu {
+    background: url("https://sc.cfygxz.com/source/www/about-us/new-version/bg05_menu.png") no-repeat;
+    background-size: 100% 100%;
+    max-width: 1107px;
+    width: 100%;
+    height: 312px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.left-title .main-title {
+    border-left: 10px solid #ffac00;
+    font-size: 4em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    margin-top: -15px;
+}
+
+.left-title .sub-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+.left-title {
+    padding-right: 30px;
+}
+
+.right-menu {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.right-menu a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-menu hr {
+    width: 67%;
+    margin: 10px auto;
+}
+
+.right-menu a span {
+    font-size: 2.4em;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+}
+
+.right-menu a:hover {
+    transform: scale(1.1);
+}
+
+.right-menu a img {
+    width: 13px;
+    height: 21px;
+    margin: 0;
+}
+
+/* End bg04 */
+
+/* web page responsive*/
+@media screen and (max-width: 960px) {
+    .counterTab li {
+        font-size: 1.8em;
+    }
+
+    .right-menu {
+        width: 40%;
+        padding-left: 0;
+    }
+
+    .left-title {
+        padding-right: 0;
+    }
+
+    .right-menu a span {
+        font-size: 2em;
+
+    }
+}
+
+/* mobile version responsive*/
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 4rem;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .m {
+        display: block;
+    }
+
+    .main-header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+    }
+
+    .m-header {
+        position: absolute;
+        z-index: 999;
+        top: 1rem;
+        width: 100%;
+        height: 1rem;
+        border-bottom: unset;
+        background-color: #ffffff;
+    }
+
+    /* navigation bar for mobile */
+    .menu {
+        width: 285px;
+        background: #093965;
+        position: relative;
+    }
+
+    .menu .head {
+        padding-top: 0.4rem;
+        font-size: 0;
+        padding-bottom: 0.4rem;
+        text-align: right;
+    }
+
+    .menu .head span {
+        margin-right: 0.2rem;
+        display: block;
+        display: inline-block;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/close_btn.png);
+        background-size: 100% 100%;
+        width: 0.36rem;
+        height: 0.37rem;
+    }
+
+    .menu .head a {
+        margin: 0 auto;
+        display: block;
+        font-size: 0.32rem;
+        width: 215px;
+        background-color: #0096dc;
+        color: #fff;
+        text-align: center;
+        line-height: 0.7rem;
+        margin-top: 0.2rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 0.01rem solid transparent;
+        border-radius: 0.06rem;
+    }
+
+    .menu .head a:active {
+        background-color: #0088c8;
+    }
+
+    .menu .expmenu li {
+        position: relative;
+        background: #ffffff;
+        border-top: 0.05rem solid #093965;
+        border-bottom: 0.05rem solid #093965;
+    }
+
+    .menu .expmenu li a {
+        color: #093965;
+        font-size: 0.4rem;
+        height: 0.89rem;
+        line-height: 0.89rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Microsoft JhengHei;
+        position: relative;
+        font-weight: 700;
+        border-top: unset;
+    }
+
+    .menu .expmenu li a p {
+        width: 65%;
+        padding-left: 12%;
+    }
+
+    .menu .expmenu li i.limit-time-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/limit_time_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+        animation: lighting 6s infinite;
+    }
+
+    .menu .expmenu li i.new-icon {
+        position: absolute;
+        background: url(//sc.cfygxz.com/source/www/homepage/m/new_icon.png) no-repeat;
+        background-size: 100% 100%;
+        width: 0.94rem;
+        height: 0.38rem;
+        top: unset;
+        margin-right: 0;
+        left: 2.4rem;
+    }
+
+    .menu .expmenu li:before {
+        border-left: 0.1rem solid transparent;
+        content: "";
+        height: 0.89rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu .expmenu li i {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 0.1rem;
+    }
+
+    .menu .expmenu li span {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down,
+    .menu .expmenu li span {
+        display: inline-block;
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/plus_icon.png);
+        width: 0.36rem;
+        height: 0.36rem;
+        background-size: 100% 100%;
+        background-position: unset;
+        margin-right: 0.25rem;
+    }
+
+    .menu .expmenu li .down {
+        background-image: url(//sc.cfygxz.com/source/www/homepage/m/minus_icon.png);
+        width: 0.36rem;
+        height: 0.06rem;
+    }
+
+    @keyframes lighting {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .menu .expmenu li ul {
+        display: none;
+    }
+
+    .menu .expmenu li ul li a {
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        background-color: #093965;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        color: #ffffff;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li a:active {
+        background: #dfdfdf;
+    }
+
+    /* .menu .expmenu li ul li:first-child {
+      border-top: 0.01rem solid #eee;
+    } */
+
+    .menu .expmenu .fifth p,
+    .menu .expmenu .first p,
+    .menu .expmenu .forth p,
+    .menu .expmenu .second p,
+    .menu .expmenu .third p {
+        width: 87%;
+    }
+
+    .menu .expmenu>li.current:before {
+        border-color: #ffffff;
+    }
+
+    .menu .expmenu>li.current a p {
+        color: #0958a2;
+    }
+
+    .menu .bottom_btn {
+        border-top: unset;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .menu .bottom_btn a:first-child {
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        border: unset;
+        margin-top: 1rem;
+    }
+
+    .menu .bottom_btn a {
+        width: 3.6rem;
+        margin: 0.5rem auto;
+        height: 0.77rem;
+        line-height: 0.77rem;
+        display: block;
+        color: #ffffff;
+        font-size: 0.35rem;
+        border: 0.01rem solid #ffffff;
+        border-radius: 0.06rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: Microsoft JhengHei;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+    }
+
+
+
+    /* .menu .bottom_btn a:active {
+      background: #035;
+      color: #fff;
+      border: 0.01rem solid #035;
+    } */
+
+    .panel {
+        /* height: 100%; */
+        position: relative;
+    }
+
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        overflow: auto;
+        z-index: 0;
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    .slideout-menu-left {
+        left: 0;
+    }
+
+    .slideout-menu-right {
+        right: 0;
+    }
+
+    .slideout-panel {
+        position: relative;
+        z-index: 1;
+        background-color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    .slideout-open,
+    .slideout-open .slideout-panel,
+    .slideout-open body {
+        overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+        display: block;
+    }
+
+    .menu .expmenu li ul li p {
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-left: 0.8rem;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        color: #fecd69;
+        font-family: Microsoft JhengHei;
+        font-weight: 100;
+        font-size: 0.32rem;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li.sub-menu-nav ul.sub-child2 {
+        display: block !important;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li {
+        background: #093965;
+        border-top: unset;
+    }
+
+    .menu .expmenu li ul li ul.sub-child2 li a {
+        padding-left: 0rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+    }
+
+
+    /*End navigation bar for mobile */
+    .web-banner {
+        background: url("https://sc.cfygxz.com/source/www/product/trade-calculator/m/topbanner.png") no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 6.64rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .billboard {
+        background: url("https://sc.cfygxz.com/source/www/about-us/m/banner_bg.png") no-repeat;
+        background-size: 100% 100%;
+        height: 1.94rem;
+        width: 5.6rem;
+        position: absolute;
+        padding: 0 0 0 0.5rem;
+        top: 5.65rem;
+        left: 0.15rem;
+        z-index: 99;
+        display: flex;
+        align-items: baseline;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .billboard .title {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+
+    .billboard .hr1 {
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 0.1rem 0;
+    }
+
+    .billboard .subtitle {
+        font-size: 0.35rem;
+    }
+
+    .main-title {
+        font-size: 0.4rem;
+        margin: 1rem 0 0.1rem 0;
+    }
+
+    .contact-details {
+        font-size: 0.22rem;
+    }
+
+    /* web-page3 */
+    .web-page.bg03 {
+        background: url('//sc.cfygxz.com/source/www/aboutUs/contact-us/m/bg2.png') no-repeat;
+        height: 3.67rem;
+        background-size: 100% 100%;
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .flex-panel {
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .web-page.bg03 .motto .main {
+        font-size: 0.4rem;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    .web-page.bg03 .motto .sub {
+        font-size: 0.3rem;
+        color: #ffffff;
+        font-weight: lighter;
+        letter-spacing: 0.1em;
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .web-page.bg03 .motto a {
+        font-size: 0.3rem;
+        width: 2.65rem;
+        height: 0.65rem;
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        font-family: Microsoft JhengHei;
+        border: unset;
+        border-color: unset;
+        align-items: center;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: 600;
+        background: linear-gradient(180deg, rgba(255, 172, 0, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    }
+
+    /* calculator content */
+
+    .main-article{
+        margin-bottom: 1rem;
+    }
+
+    .main-article .section4 {
+        border: none;
+    }
+
+    .counterTab li {
+        font-size: .28rem;
+        color: #595757;
+        background: #ffffff;
+        padding: 0 0.1rem;
+        margin: 0 auto;
+        text-align: center;
+        height: auto;
+    }
+
+    .Tab_text {
+        margin-left: 0;
+        /* text-wrap: nowrap;
+        white-space: nowrap; */
+    }
+
+    .counterTab .counteractive {
+        background: #ffffff;
+        border-bottom: 5px solid #3391e7;
+        color: #3391e7;
+    }
+
+    .Tab_ico {
+        display: none;
+    }
+
+    .link_title .first_li {
+        font-size: 0.28rem;
+        color: #000000;
+    }
+
+    .section4_Stitle {
+        font-size: 0.23rem;
+        color: #000000;
+    }
+
+    .Btninput {
+        font-size: .28rem;
+        width: 2.6rem;
+        height: 0.65rem;
+    }
+
+    .Btn_1 {
+        font-size: 0.3rem;
+        width: auto;
+        height: 0.65rem;
+    }
+
+    .point {
+        border-bottom: none;
+        justify-content: space-evenly;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .point span {
+        font-size: 0.25rem;
+        width: unset;
+    }
+
+    .last {
+        font-size: 0.2rem;
+        padding: 0;
+    }
+
+    .last i {
+        width: .22rem;
+        height: .19rem;
+    }
+
+    .commtitle_769 {
+        font-size: 0.2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .bg02 .container .more-product div {
+        height: auto;
+    }
+}
