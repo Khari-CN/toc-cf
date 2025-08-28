@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册就送BTC红包</title>
+    <link rel="stylesheet" href="css/activity01.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/user.js"></script>
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+</head>
+<body>
+<div class="banner">
+    <div style="margin-left: .3rem"><a href="javascript:;"><img src="images/activity01/logo_ebit.png" alt=""></a></div>
+    <div class="check-detail"><a href="activity-detail.html" target="_blank" class="button">查看活动细则</a></div>
+</div>
+<div class="form-list">
+    <div class="input_box">
+        <div class="reg-form clearfix">
+            <div class="form-text">一分钟轻松开户</div>
+            <form id="submitForm" class="clearfix zhuizong" action="" method="post" >
+                <input type="hidden" id="unique" name="tracker.unique" value=""/>
+                <input type="hidden" id="hostname" name="tracker.hostname" value=""/>
+                <input id="referrer"  type="hidden" name="tracker.referrer" value=""/>
+                <input id="href" name="tracker.href"  type="hidden" value=""/>
+                <input type="hidden" name="tracker.driverType" value="2"/>
+                <input type="hidden" name="tracker.dataType" value="1"/>
+                <input type="hidden" value="" name="directRecommender"/>
+                <input type="hidden" value="" name="hiddenurl" id="usercome">
+                <div class="form-item phone-f1">
+                    <label>手机号码</label>
+                    <input type="text" id="phone" name="mobilePhone" maxlength="11" >
+                </div>
+                <div class="input-tip phone-tip">
+                </div>
+                <div class="form-item upwd-f1">
+                    <label>自设密码</label>
+                    <input type="password" id="upwd" maxlength="8" name="password">
+                </div>
+                <div class="input-tip upwd-tip">
+                </div>
+                <div class="form-item yanZ-f1">
+                    <label>手机验证码</label>
+                    <input type="text" id="yanZ" maxlength="6"  name="phoneYz">
+                    <a class="btn-phonecode" id="btn-phonecode"><span></span>获取验证码</a>
+                    <a class="re-btn" style="display: none" ><span></span>重新获取 <b id="secendhtml">60S</b> </a>
+                </div>
+                <div class="input-tip yanZ-tip ">
+                </div>
+            </form>
+        </div>
+        <div class="form-sure">
+            <a href="javascript:void(0)" id="submitBtn">立即注冊</a>
+        </div>
+    </div>
+</div>
+<div class="model">
+    <div class="model-top">
+        <ul>
+            <li>
+                <ul class="clearfix">
+                    <li style=" color: #fff;">P2P</li>
+                    <li style=" color: #fff;">数字币</li>
+                    <li style=" color: #fff;">股票</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="clearfix">
+                    <li>5%-15%</li>
+                    <li class="second-list">5倍杠杆配资</li>
+                    <li>10% 的涨幅</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="clearfix" style="margin-top: .2rem;">
+                    <li>1-12个</li>
+                    <li class="second-list" style="    margin-top: -.15rem;">双向交易 <br>T+0交易</li>
+                    <li>T+1交易</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="clearfix" style=" margin-top: .1rem;">
+                    <li>还本付息</li>
+                    <li class="second-list">低手续费</li>
+                    <li>佣金,税费等</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="model-bottom">
+        <ul class="clearfix">
+            <li>
+                <div class="item-1"><img src="images/activity01/icon-01.png" alt=""></div>
+                <div class="item-2">创新交易模式</div>
+                <div class="item-3">双向交易，更多获利机会 <br>杠杆配置，小投入大回报</div>
+            </li>
+            <li>
+                <div class="item-1"><img src="images/activity01/icon-02.png" alt=""></div>
+                <div class="item-2">安全保障系统</div>
+                <div class="item-3">严格风控管理，顶级风控体系 <br>
+                    三重安保体系，资金安全无忧</div>
+            </li>
+            <li style=" margin-top: .3rem;">
+                <div class="item-1"><img src="images/activity01/icon-03.png" alt=""></div>
+                <div class="item-2">顶级技术团队</div>
+                <div class="item-3">11年金融经验，国际顶尖技术 <br>
+                    专业分布式架构，防DDOS攻击</div>
+            </li>
+            <li style=" margin-top: .3rem;">
+                <div class="item-1"><img src="images/activity01/icon-04.png" alt=""></div>
+                <div class="item-2">服务全球市场</div>
+                <div class="item-3">5大运营中心，业务覆盖全球 <br>
+                    7*24交易服务，完善教育机制</div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="fixed-footer">
+    <div class="item-1"><img src="images/activity01/left_03.png" alt=""></div>
+    <div class="item-2">
+        全球专业数字资产交易中心 <br>
+        <span>移动交易，随时随地 <br>以小博大，操作便捷</span>
+    </div>
+    <div class="item-3">
+        <a href="">下载 APP</a>
+    </div>
+</div>
+<div class="popup" style="display: none"  onclick='$(this).hide()'>
+    <div class="popup-content">
+        <img src="images/activity01/ebit-x.png" alt="">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1239 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+
+<head>
+    <script type="text/javascript" src="/cn/js/gt.js"></script>
+    <!-- <script type="text/javascript" src="/cn/js/preload-captcha.js"></script> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <title>
+        CPT Markets| 国际金融平台 | 安全交易
+    </title>
+    <meta name="keywords" content="炒外汇,投资,互联网金融交易平台,现货投资交易" />
+    <meta name="description" content="机会！" />
+    <!-- 倒时器-->
+    <link rel="stylesheet" href="/cn/css/CF_a63css.css" />
+    <link rel="stylesheet" href="/cn/css/style3.css" />
+    <script type="text/javascript" src="/cn/js/jquery-1.11.3.min.js"></script>
+    <script src="/cn/js/bottom_js_zh.js" type="text/javascript"></script>
+    <script src="/n/js/homepage/gsap.min.js"></script>
+    <script type="text/javascript" src="/n/js/jquery.easing.js"></script>
+    <!--<script type="text/javascript" src="/n/js/fliptimer.js"></script>-->
+    <!--倒计时end-->
+    <!--#include file="/cn/template.css.html"-->
+    <link rel="shortcut icon" href="/static/images/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="/static/images/template/fav.ico">
+    <link rel="stylesheet" href="/cn/css/template.css">
+    <!-- end -->
+    <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/css/flexslider.css" />
+    <link rel="stylesheet" href="/cn/css/flipclock.css" />
+    <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+    <link rel="stylesheet" href="/cn/css/homepage.css" />
+    <link rel="stylesheet" href="/cn/css/homepage/swiper.min.css" />
+    <!--#include file="/module/html.head.html"-->
+    <script src="/cn/js/angular.min.js"></script>
+    <script src="/cn/js/homepage.plugin.js?v=20180605"></script>
+    <script src="/cn/js/homepage/backheader.js"></script>
+    <!-- <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement,
+                event = "onorientationchange" in window ? "orientationchange" : "resize",
+                fn = function () {
+                    var width = docEle.clientWidth;
+                    if (width <= 798) width && (docEle.style.fontSize = 50 * (width / 375) + "px");
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+            doc.addEventListener("resize", fn, false);
+        })(document, window);
+    </script> -->
+</head>
+
+<body class="home-page" ng-controller="homeCtrl">
+    <!--#include file="/module/html.body.end.html"-->
+    <div class="main">
+        <div class="panel" id="m-panel">
+            <div class="pc">
+                <!--#include file="/cn/template.header.html"-->
+                <script src="/cn/js/live800.js"></script>
+                <script>
+                    window.onscroll = function () {
+                        var scroll =
+                            document.documentElement.scrollTop ||
+                            document.body.scrollTop ||
+                            window.pageYOffset;
+                        if (scroll >= 20) {
+                            $(".center-support").addClass("scroll-down");
+                            $(".new-megamenu").addClass("top-0");
+                            $(".new-megamenu").addClass("menu-sroll-bg")
+                        } else {
+                            $(".center-support").removeClass("scroll-down");
+                            $(".new-megamenu").removeClass("top-0");
+                            $(".new-megamenu").removeClass("menu-sroll-bg")
+                        }
+                    };
+                </script>
+                <div class="header">
+                    <!-- Begin center support bar -->
+                    <div class="center-support">
+                        <div class="container">
+                            <div class="user-btn">
+                                <a href="javascript: void(0)"
+                                    onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">开启真实账户</a>
+                                <a href="javascript: void(0)">用户中心登录</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-megamenu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-1 col-ssm-1">
+                                    <div class="logo">
+                                        <a href="/"><img src="/static/images/cpt_logo.png" alt="国际logo" /></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-ssm-1"></div>
+                                <div class="col-xs-10 col-ssm-10">
+                                    <ul class="mega-menu clearfix" style="margin-top: 10px;">
+                                        <li>
+                                            <a href="/cn/aboutUS.html">关于我们</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/cn/aboutUS.html">关于我们</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/cn/about/advantage.html">
+                                                        企业优势</a>
+                                                </li>
+                                                <li><a href="/cn/about/awards-honor.html">企业荣誉</a>
+                                                </li>
+                                                <li><a href="/cn/about/operation-report.html">运营数据</a>
+                                                </li>
+                                                <li><a href="/cn/about/partners.html">合作伙伴</a>
+                                                </li>
+                                                <li><a href="/cn/about/contact-us.html">联系我们</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript: void(0)">最新优惠<i class="new-icon-limited"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="javascript: void(0)">新客优惠</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript: void(0)">
+                                                        老客优惠</a>
+                                                </li>
+                                                <li><a href="javascript: void(0)">推荐好友</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/cn/product.html">交易产品</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/cn/product/forex.html">外汇</a>
+                                                </li>
+                                                <li><a href="/cn/product/commodities.html">商品</a>
+                                                </li>
+                                                <li><a href="/cn/product/indices.html">指数</a>
+                                                </li>
+
+                                                <li><a href="/cn/product/stock.html">股票</a>
+                                                </li>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <a href="/cn/pc/rcfd_account"
+                                            onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">开户交易</a>
+                                        <div class="child1-wrapper">
+                                            <ul class="sub-child1">
+                                                <li>
+                                                    <p>开户交易</p>
+                                                    <ul class="sub-child2">
+                                                        <li><a href="/cn/pc/rcfd_account"
+                                                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实开户</a>
+                                                        </li>
+                                                        <li><a href="/cn/pc/dcfd_account"
+                                                                onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a>
+                                                        </li>
+                                                        <li><a href="/cn/acc/terms.html">账户类型</a>
+                                                        </li>
+                                                        <li><a href="/cn/acc/super-vip.html">尊贵账户</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>软件下载</p>
+                                                    <ul class="sub-child2">
+                                                        <li><a href="/cn/platform/cfd-intro.html">CFD交易平台</a>
+                                                        </li>
+                                                        <li><a href="/cn/platform/cfd/step.html">操作指南</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://cfd138.com/cn/MT5/MT5acc_step.html">MT5教学</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>交易须知</p>
+                                                    <ul class="sub-child2">
+                                                        <li><a href="/cn/exchangerate.html">汇率兑换</a>
+                                                        </li>
+                                                        <li><a href="/cn/acc/account-guide.html">存取指南</a>
+                                                        </li>
+                                                        <li><a href="/cn/acc/closeposition.html">交易下单</a>
+                                                        </li>
+                                                        <li><a href="/cn/product/trade-calculator.html">交易计算器
+                                                        </li>
+                                                        <li><a href="/cn/faq.html">常见问题</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="agency" href="/cn/agency.html">代理合作
+                                            <i class="new-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li style="display: none;">
+                                        <a href="/cn/information/newss.html#/news">行情资讯</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/cn/information/newss.html#/news">环球新闻</a>
+                                            </li>
+                                            <li><a href="/cn/information/quote.html">实时报价</a>
+                                            </li>
+                                            <li><a href="/cn/information/position.html">持仓比例</a>
+                                            </li>
+                                            <li><a href="/cn/information/calendar.html">财经日历</a>
+                                            </li>
+                                            <li><a href="/cn/information/centralBank.html">央行动态</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li style="display: none;">
+                                        <a href="javascript:;">
+                                            研究院</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/cn/edu/analyst.html">专家评论</a>
+                                            </li>
+                                            <li><a href="">互动问答</a></li>
+                                            <li>
+                                                <a href="/cn/super-topic/super_topic.html">
+                                                    汇聊</a>
+                                            </li>
+                                            <li><a href="/cn/edu/qualification.html">学习文章</a>
+                                            </li>
+                                            <li><a href="/cn/edu/course.html">视频课程</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End center support bar -->
+                    <!-- Bengin stick megamenu larger than 1366px -->
+                    <!-- End header bar -->
+
+                    <!-- End stick megamenu larger than 1366px -->
+                    <!-- Bengin stick megamenu less than 1366px -->
+
+                    <!-- End stick megamenu less than 1366px -->
+                    <!-- End header bar -->
+                </div>
+                <!-- end -->
+            </div>
+            <div class="m">
+                <!--header -->
+                <script>
+                    menu();
+                </script>
+                <!-- end header-->
+            </div>
+            <!-- Begin hero banner-->
+            <!-- config updated -->
+            <div class="pc event" style="display: none;">
+                <div id="swiper2" class="promotion swiper-container">
+                    <div class="banner swiper-wrapper">
+                        <div class="swiper-slide banner-flow">
+                            <img class="curtain" src="/static/images/banner_curtain.png">
+                            <p class="promotion-name">美国新抉择</p>
+                            <a href="https://www.cfd139.com/cn/zt/pointLevel20241009.html">
+                                <img class="" src="/static/images/clawMachine.png">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-flow">
+                            <img class="curtain" src="/static/images/banner_curtain.png">
+                            <p class="promotion-name">新客优惠</p>
+                            <a href="https://www.cfd139.com/cn/zt/campaign20241201.html?cms">
+                                <img class="" src="/static/images/new_customer_v1.png">
+                            </a>
+                        </div>
+                        <div class="swiper-slide banner-flow">
+                            <img class="curtain" src="/static/images/banner_curtain.png">
+                            <p class="promotion-name">老客优惠</p>
+                            <a href="https://www.cfd139.com/cn/zt/old-campaign20241201.html?cms"><img class=""
+                                    src="/static/images/old_customer_v1.png"></a>
+                        </div>
+                        <div class="swiper-slide banner-flow">
+                            <img class="curtain" src="/static/images/banner_curtain.png">
+                            <p class="promotion-name">推荐好友</p>
+                            <a href="https://www.cfd139.com/cn/zt/referral-new.html?cms"><img class=""
+                                    src="/static/images/referee_v3.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="flexslider">
+                <ul class="slides">
+                    <li ng-repeat="Img in bannerImgList track by $index" on-finish-render>
+                        <a href="{{Img.attr.image_link}}" >
+                            <img ng-src="/{Img.attr.image_url}}" alt="{{Img.name}}" />
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+            </div>
+            <div class="hero">
+                <div class="video-page">
+                    <video playsinline autoplay muted loop id="TopBanner_video" poster="./static/images/video_cover.png"">
+                        <source src=" /./static/video/TopBanner_video.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <div class="mainbanner-title">
+                        <div class="container">
+                            <h1>17年稳健根基<br />智造财富新未来</h1>
+                            <a href="javascript: void(0)"
+                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                            <a id="promotion_url" style="display: none;" href="/cn/acc/promotion.html"><img class="gift"
+                                    src="/static/images/gift_icon.png"><span class="gift-title">了解更多迎新及老客礼遇！</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End hero banner-->
+            <!-- Begin Main contents -->
+            <div class="main-content">
+                <!-- Begin Section 1 -->
+                <!-- End Section 1 -->
+                <!-- Begin Section 2 -->
+                <div class="section2">
+                    <div class="container">
+                        <div class="company">
+                            <div class="company-reward-block">
+                                <div class="pc">
+                                    <img src="/static/images/reward1.png" />
+                                    <img src="/static/images/reward2.png" />
+                                </div>
+                                <div class="m">
+                                    <img src="/static/images/m/reward1_m.png" />
+                                    <img src="/static/images/m/reward2_m.png" />
+                                </div>
+                            </div>
+                            <div class="company-status-block">
+                                <div class="total-cust">
+                                    <p class="main-title"><span class="num">200</span>万<img class="icon"
+                                            src="/static/images/plus_icon.png">
+                                    </p>
+                                    <p class="sub-title">全球投资者客户支持</p>
+                                </div>
+                                <img class="line" src="/static/images/vertical_line.png">
+                                <div class="status-year">
+                                    <p class="main-title">
+                                        <span class="num">17</span>年
+                                        <img class="line" style="margin: 0 3px;" src="/static/images/plus_icon.png">
+
+                                    </p>
+                                    <p class="sub-title">100%监管合规</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Section 2 -->
+                <!-- Begin btn-container -->
+                <div class="pc">
+                    <div class="container">
+                        <div class="btn-container2">
+                            <img class="CFD-ios" src="/static/images/CFD_IOS.png" />
+                            <img class="CFD-android" src="/static/images/CFD_Android.png" />
+                            <a href="javascript:void(0)"
+                                onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadPCUI', 'PC_GW', '1');">
+                                <img src="/static/images/CFD_winOS.png" /></a>
+                        </div>
+                        <!-- <div class="App_code2 ios-CFD"><span></span><img src="/static/images/footer/pic7-ios.png" /></div> -->
+                        <!-- <div class="App_code2 android-CFD"><span></span><img src="/source/material/code-adr.png" /> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End btn-container -->
+            <!-- Begin Section 3 -->
+            <div class="section3">
+                <div class="m">
+                    <div id="swiper3" class="promotion swiper-container">
+                        <div class="banner swiper-wrapper">
+                            <div class="swiper-slide banner-flow">
+                                <img class="curtain" src="/static/images/m/banner_curtain_m.png">
+                                <p class="promotion-name">美国新抉择</p>
+                                <p class="more-event-details">了解更多</p>
+                                <a href="/cn/zt/pointLevel241009/pointLevel20241009.html">
+                                    <img class="" src="/static/images/m/clawMachine_m.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide banner-flow">
+                                <img class="curtain" src="/static/images/m/banner_curtain_m.png">
+                                <p class="promotion-name">新客优惠</p>
+                                <p class="more-event-details">了解更多</p>
+                                <a href="/cn/zt/campaign20241201.html?cms">
+                                    <img class="" src="/static/images/m/new_customer_m.png">
+                                </a>
+                            </div>
+                            <div class="swiper-slide banner-flow">
+                                <img class="curtain" src="/static/images/m/banner_curtain_m.png">
+                                <p class="promotion-name">老客优惠</p>
+                                <p class="more-event-details">了解更多</p>
+                                <a href="/cn/zt/old-campaign20241201.html?cms"><img class=""
+                                        src="/static/images/m/old_customer_m.png"></a>
+                            </div>
+                            <div class="swiper-slide banner-flow">
+                                <img class="curtain" src="/static/images/m/banner_curtain_m.png">
+                                <p class="promotion-name">推荐好友</p>
+                                <p class="more-event-details">了解更多</p>
+                                <a href="/cn/zt/referral-new.html?cms"><img class=""
+                                        src="/static/images/m/referee_m.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="block">
+                        <div class="pc">
+                            <div class="left-part">
+                                <div class="title">
+                                    <p><img class="icon1" data-aos="flip-left" data-aos-delay="400"
+                                            data-aos-duration="800"
+                                            src="/static/images/s3_title_icon1.png"><span>佣金手续费交易</span>
+                                    </p>
+                                    <p><span>轻松投资<img class="icon2" data-aos="flip-right" data-aos-delay="600"
+                                                data-aos-duration="800"
+                                                src="/static/images/s3_title_icon2.png">金融产品</span>
+                                    </p>
+                                </div>
+                                <div class="product">
+                                    <a data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000"
+                                        href="/cn/product/forex.html" alt="外汇"><img
+                                            src="/static/images/s3_forex.png"></a>
+                                    <a data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000"
+                                        href="/cn/product/commodities.html" alt="商品"><img
+                                            src="/static/images/s3_commodities.png"></a>
+
+                                    <a data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000"
+                                        href="/cn/product/indices.html" alt="指数"><img
+                                            src="/static/images/s3_indices.png"></a>
+                                    <a data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1000"
+                                        href="/cn/product/stock.html" alt="股票"><img
+                                            src="/static/images/s3_stock.png"></a>
+                                </div>
+
+                            </div>
+                            <div class="right-part">
+                                <img class="right-icon" data-aos="fade-left" data-aos-delay="600"
+                                    data-aos-duration="1000" src="/static/images/s3_right_icon.png">
+                            </div>
+                        </div>
+                        <div class="m">
+                            <div class="left-part">
+                                <div class="title">
+                                    <p><img class="icon1" data-aos="flip-left" data-aos-delay="400"
+                                            data-aos-duration="800"
+                                            src="/static/images/s3_title_icon1.png"><span>佣金手续费交易</span>
+                                    </p>
+                                    <p><span>轻松投资<img class="icon2" data-aos="flip-right" data-aos-delay="600"
+                                                data-aos-duration="800"
+                                                src="/static/images/s3_title_icon2.png">金融产品</span>
+                                    </p>
+                                </div>
+                                <div class="product">
+                                    <a data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000"
+                                        href="/cn/product/forex.html" alt="外汇"><img
+                                            src="/static/images/m/s3_forex_m.png"></a>
+                                    <a data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000"
+                                        href="/cn/product/commodities.html" alt="商品"><img
+                                            src="/static/images/m/s3_commodities_m.png"></a>
+
+                                    <a data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000"
+                                        href="/cn/product/indices.html" alt="指数"><img
+                                            src="/static/images/m/s3_indices_m.png"></a>
+                                    <a data-aos="fade-down" data-aos-delay="1200" data-aos-duration="1000"
+                                        href="/cn/product/stock.html" alt="股票"><img
+                                            src="/static/images/m/s3_stock_m.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section 3 -->
+            <!-- Begin Section 4 -->
+            <div class="section4">
+                <div class="container">
+                    <div class="s4-content">
+                        <h3 class="title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">全面强大的交易工具
+                        </h3>
+                        <p class="content" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                            简单易用、稳定流畅、130+专业技术分析工具</p>
+                        <a id="platform_url" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000"
+                            href="/cn/platform/cfd-intro.html">发掘我们的平台</a>
+                        <div class="device-CFD" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                            <img class="s4_phone" aos="zoom-in" aos-delay="1600" style="width: 207px;"
+                                src="/static/images/phone_step1.png" alt="Phone_CFD">
+                            <img class="s4_macbook" aos="zoom-in" aos-delay="300" src="/static/images/s4_macbook.png"
+                                alt="PC_CFD">
+                        </div>
+                    </div>
+                </div>
+                <div class="m">
+                    <div class="app-platform-panel panel-position">
+                        <a href="https://itunes.apple.com/us/app/chuang-fucfd/id1153506842?mt=8"
+                            onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadCFD', 'cfd-intro', '1');"><img
+                                src="/static/images/m/apple_icon.png" />
+                            <p>App Store<br /><span>立即下载</span></p>
+                        </a>
+                        <a href="/source/material/CFD_APP.apk"
+                            onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadCFD', 'cfd-intro', '1');"><img
+                                src="/static/images/m/android_icon.png" />
+                            <p>Google Play<br /><span>立即下载</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section 4 -->
+            <!-- Begin Section 5 -->
+            <div class="section5">
+                <div class="container">
+                    <div class="block1">
+                        <div class="block1_left" data-aos="zoom-in-right" data-aos-duration="1000">
+                            <img class="block1_icon" src="/static/images/block1_icon.png" alt="">
+                            <img class="block1_chart" data-aos="flip-right" data-aos-duration="1400"
+                                data-aos-delay="600" src="/static/images/block1_chart.png" alt="">
+                            <img class="block1_list" data-aos="fade-up-right" data-aos-duration="1400"
+                                data-aos-delay="1000" src="/static/images/block1_list.png" alt="">
+                        </div>
+                        <div class="block1_right" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                            <h3 class="title">运用精辟市场见解掌握投资先机</h3>
+                            <p class="content">想与经验丰富的创富团队合作实现您的财富目标吗？成为用户，即可直接在交易平台上获得环球实时快讯及专家最新洞见</p>
+                            <a id="news_url" href="javascript:;">更多快讯</a>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="block2_left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <h3 class="title">值得信赖的交易平台</h3>
+                            <p class="content">
+                                您的资金将隔离存管在国际认可的银行，并按照相关法规严格监管；专业的技术团队使用最先进的技术保障交易安全及客户隐私
+                            </p>
+                            <a id="aboutUS_url" href="/cn/aboutUS.html">关于我们</a>
+                        </div>
+                        <div class="block2_right" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="200">
+                            <img class="block2_icon" src="/static/images/block2_icon.png" alt="">
+                            <img class="block2_index" data-aos="flip-left" data-aos-delay="1000"
+                                data-aos-duration="1400" src="/static/images/block2_index.png" alt="">
+                            <img class="block2_analysic" data-aos="fade-up-left" data-aos-delay="1200"
+                                data-aos-duration="1000" src="/static/images/block2_analysic.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section 5 -->
+            <!-- Begin Section 7 -->
+            <div class="section7">
+                <div class="container">
+
+                    <swiper-container>
+                    </swiper-container>
+
+                    <h3 class="agencies">奖项与荣誉</h3>
+                    <div class="pc">
+                        <div id="swiper1" class="swiper-container partner-icon">
+                            <div class="swiper-wrapper partner-display">
+                                <div class="swiper-slide">
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="ANZ">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="DBS">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="COMODO SECURE">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png"
+                                            alt="FINANCIAL DISPUTE RESOLUTION SERVICE">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="YINIUU">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="SINA">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="NETEASE">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="TENCENT">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="REUTERS">
+                                    </div>
+                                    <div class="partner-img">
+                                        <img src="/static/images/awards1.png" alt="REUTERS">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="m">
+                        <div id="swiper4" class="swiper-container partner-icon">
+                            <div class="swiper-wrapper partner-display">
+                                <div class="swiper-slide">
+                                    <div class="partner-row">
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-01.png" alt="ANZ">
+                                        </div>
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-02.png" alt="DBS">
+                                        </div>
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-03.png" alt="COMODO SECURE">
+                                        </div>
+                                    </div>
+                                    <div class="partner-row">
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-04.png"
+                                                alt="FINANCIAL DISPUTE RESOLUTION SERVICE">
+                                        </div>
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-05.png" alt="YINIUU">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="partner-row">
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-06.png" alt="SINA">
+                                        </div>
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-07.png" alt="NETEASE">
+                                        </div>
+                                    </div>
+                                    <div class="partner-row">
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-08.png" alt="TENCENT">
+                                        </div>
+                                        <div class="partner-img">
+                                            <img src="/static/images/partner-09.png" alt="REUTERS">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section8">
+                <div class="container">
+                    <p class="title rotate">
+                        <span>准</span>
+                        <span>备</span>
+                        <span>好</span>
+                        <span>了</span>
+                        <span>吗</span>
+                        <span>？</span>
+                    </p>
+                    <div class="sub-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <p class="content"> 全线上开户，最快<span class="neon">30秒</span>完成开户步骤</p>
+                    </div>
+                    <div class="pc">
+                        <div class="step" data-aos="zoom-out-up" data-aos-delay="600" data-aos-duration="1000">
+                            <div class="ipage-component-step" data-type="light">
+                                <ul class="ipage-component-step-ul">
+                                    <li class="step-item-li active">
+                                        <div class="step-item">
+                                            <div class="step-item-index">1</div>
+                                            <div class="step-item-content">
+                                                <p class="step-item-content-title">选择真实开户</p>
+                                                <!-- <p class="step-item-content-detail">并设立账户密码</p> -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item-li">
+                                        <div class="step-item">
+                                            <div class="step-item-index">2</div>
+                                            <div class="step-item-content">
+                                                <p class="step-item-content-title">验证手机号码</p>
+                                                <p class="step-item-content-title">并设立账户密码</p>
+                                                <!-- <p class="step-item-content-detail">身份证号及常用邮箱</p> -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item-li">
+                                        <div class="step-item">
+                                            <div class="step-item-index">3</div>
+                                            <div class="step-item-content">
+                                                <p class="step-item-content-title">输入个人资料</p>
+                                                <p class="step-item-content-title">账户级别越高，点差优惠越大</p>
+                                                <!-- <p class="step-item-content-detail">点差优惠越大</p> -->
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="step-item-li">
+                                        <div class="step-item no-content">
+                                            <div class="step-item-index">4</div>
+                                            <div class="step-item-content">
+                                                <p class="step-item-content-title no-content">完成开户</p>
+                                                <p class="step-item-content-detail"></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="ipage-component-step-images">
+                                    <div class="step-item-image img-1" style="max-width: 300px; display: none;"><img
+                                            src="/static/images/phone_step1.png">
+                                    </div>
+                                    <div class="step-item-image img-2" style="max-width: 300px; display: none;"><img
+                                            src="/static/images/phone_step2.png">
+                                    </div>
+                                    <div class="step-item-image img-3" style="max-width: 300px; display: block;">
+                                        <img src="/static/images/phone_step3.png">
+                                        <div class="grade-cust"><img src="/static/images/phone_popup.png">
+                                        </div>
+                                    </div>
+                                    <div class="step-item-image img-4" style="max-width: 300px; display: none;"><img
+                                            src="/static/images/phone_step4.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m">
+                        <div id="swiper5" class="swiper-container open-acc-panel">
+                            <div class="swiper-wrapper step-panel">
+                                <div class="swiper-slide">
+                                    <div class="step-bg step4">
+                                        <img class="number-plate" src="/static/images/m/number1.png">
+                                        <p class="step-text">选择真实开户</p>
+                                        <img class="step-img" src="/static/images/m/phone_step1.png">
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="step-bg">
+                                        <img class="number-plate" src="/static/images/m/number2.png">
+                                        <p class="step-text">验证手机号码<br />并设立账户密码</p>
+                                        <img class="step-img" src="/static/images/m/phone_step2.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="step-bg">
+                                        <img class="number-plate" src="/static/images/m/number3.png">
+                                        <p class="step-text">输入个人资料<br />账户级别越高，点差优惠越大</p>
+                                        <img class="step-img" src="/static/images/m/phone_step3.png?v=1">
+                                        <div class="grade-cust"><img src="/static/images/m/phone_popup.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="step-bg">
+                                        <img class="number-plate" src="/static/images/m/number4.png">
+                                        <p class="step-text step4">完成开户</p>
+                                        <img class="step-img" src="/static/images/m/phone_step4.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="btn-open" data-aos="flip-down" data-aos-delay="800" data-aos-duration="1000">
+                        <a id="video_url" href="javascript:;">观看开户教学视频</a>
+                        <a href="javascript: void(0)"
+                            onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                    </div>
+                    <div class="m">
+                        <div class="app-platform-panel">
+                            <a href="https://itunes.apple.com/us/app/chuang-fucfd/id1153506842?mt=8"
+                                onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadCFD', 'cfd-intro', '1');"><img
+                                    src="/static/images/m/apple_icon.png" />
+                                <p>App Store<br /><span>立即下载</span></p>
+                            </a>
+                            <a href="/source/material/CFD_APP.apk"
+                                onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadCFD', 'cfd-intro', '1');"><img
+                                    src="/static/images/m/android_icon.png" />
+                                <p>Google Play<br /><span>立即下载</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section 7 -->
+            <!--拜年视频
+        <div class="video-bg" style="position: fixed;bottom: 0;right: 0;background: #f6f6f6;color:#ff0000;z-index: 1000">
+        <div style="font-size: 16px;text-align: center;padding:10px 0;">&lt;!&ndash;#echo var='CF_TEXT' default=''国际作客东方卫视向中国人民拜年</div>&ndash;&gt;
+        <div class="video-newyear" style="width: 360px;height: 200px;"  >
+        <div style="position: absolute;left: -7px;top:-9px;z-index: 100"><img src="/lt;!&ndash;#echo var='IMG_URL' default=''/static/images/zt/btn-close-stankovic.png" onclick="$('.video-bg').hide()" alt=""></div>&ndash;&gt;
+        <video src="/lt;!&ndash;#echo var='IMG_URL' default=''/source/video/newyear-video.mp4" controls="controls" width="100%" height="100%" ></video>&ndash;&gt;
+        </div>
+        </div>-->
+        </div>
+        <div class="pc">
+            <div class="container">
+                <div class="btn-container">
+                    <img class="CFD-ios" src="/static/images/CFD_IOS.png" />
+                    <img class="CFD-android" src="/static/images/CFD_Android.png" />
+                    <a href="javascript:void(0)"
+                        onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadPCUI', 'PC_GW', '1');">
+                        <img src="/static/images/CFD_winOS.png" /></a>
+                </div>
+                <!-- <div class="App_code ios-CFD"><img src="/static/images/footer/pic7-ios.png" /><span></span>
+                    </div>
+                    <div class="App_code android-CFD"><img src="/source/material/code-adr.png" /><span></span>
+                    </div> -->
+            </div>
+        </div>
+        <!--功能建议弹窗-->
+        <!--#include file="/cn/common-html/suggestion.html"-->
+        <div class="m">
+            <!--底部-->
+            <script>
+                footer();
+            </script>
+            <!--底部结束-->
+            <!--遮罩层-->
+            <div id="m-overlay" class="overlay" node-name="overlay"></div>
+            <!--遮罩层 end-->
+        </div>
+        <!--#include file="/cn/template.footer.html"-->
+        <!-- updated 20200911 1700 -->
+        <div class="pc">
+            <div id="footer">
+                <a href="javascript:;" class="backtop"></a>
+                <div class="footer-inner">
+                    <div class="part1">
+                        <div class="left-nav">
+                            <div class="list row">
+                                <div class="col-sm-4">
+
+                                    <p class="sub-title"> 关于我们</p>
+                                    <p><a href="/cn/aboutUS.html">关于</a>
+                                    </p>
+                                    <p><a href="/cn/about/advantage.html">企业优势</a></p>
+                                    <p><a href="/cn/about/awards-honor.html">企业荣誉</a>
+                                    </p>
+                                    <p> <a href="/cn/about/operation-report.html">运营数据</a>
+                                    </p>
+                                    <!-- <p> <a href="/cn/about/partners.html">合作伙伴</a></p> -->
+                                    <!-- <p> <a href="/cn/about/contact-us.html">联系我们</a> -->
+                                    </p>
+
+
+                                    <p class="sub-title">交易产品</p>
+                                    <p> <a href="/cn/product/forex.html">外汇</a></p>
+                                    <p> <a href="/cn/product/commodities.html">商品</a>
+                                    </p>
+                                    <p> <a href="/cn/product/indices.html">指数</a></p>
+                                    <p> <a href="/cn/product/stock.html">股票</a></p>
+
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="sub-title">开户交易</p>
+                                    <p> <a href="javascript:;"
+                                            onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实账户</a>
+                                    </p>
+                                    <p><a href="javascript:;"
+                                            onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a>
+                                    </p>
+                                    <p><a href="javascript:;">帐户类型</a>
+                                    <p><a href="javascript:;">尊贵账户</a>
+                                    <p> <a href="javascript:;">CFD交易平台</a>
+                                    </p>
+                                    <p> <a href="javascript:;">操作指南</a>
+                                    </p>
+                                    <p> <a href="javascript:;">汇率兑换</a></p>
+                                    <p> <a href="javascript:;">存取指南</a>
+                                    </p>
+                                    <p> <a href="javascript:;">交易下单</a>
+                                    </p>
+                                    <p> <a href="/cn/product/trade-calculator.html">交易计算器</a>
+                                    <p> <a href="javascript:;">常见问题</a></p>
+                                    <p> <a href="javascript:;">最新优惠</a></p>
+                                    <p> <a href="javascript:;">推荐好友</a>
+                                    </p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="sub-title-1"><a href="javascript:;">代理合作</a></p>
+                                    <p class="sub-title sub-title-2">行情资讯</p>
+                                    <p> <a href="javascript:;">环球新闻</a>
+                                    </p>
+                                    <p><a href="javascript:;">实时报价</a>
+                                    </p>
+                                    <p><a href="javascript:;">持仓比例</a>
+                                    </p>
+                                    <p><a href="javascript:;">财经日历</a>
+                                    </p>
+                                    <p> <a href="javascript:;">央行动态</a>
+                                    </p>
+
+                                    <p class="sub-title">创富研究院</p>
+                                    <p><a href="javascript:;">专家评论</a></p>
+                                    <p><a href="javascript:;">互动问答</a></p>
+                                    <p><a href="javascript:;">
+                                            汇聊</a></p>
+                                    <p><a href="javascript:;">学习文章</a>
+                                    </p>
+                                    <p><a href="javascript:;">视频课程</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-nav">
+                            <!-- <div class="logo"><img src="/static/images/cpt_logo.png" />
+                        </div> -->
+                            <ul>
+                                <li><img src="/static/images/footer/new-icon-cs.png" /><a href="javascript:;">在线客服</a>
+                                </li>
+                                <!--<li><img src="/static/images/footer/icon-qq.png" /><a
+                            href="javascript:;"
+                            onclick="cf.common.openQQCustomer();countBiUtil.gwanalysis('2', '0', '1', '', '', '');">QQ
+                            客服</a></li>-->
+                                <li><img src="/static/images/footer/new-icon-email.png" /><a
+                                        href="javascript:;">cs@cptglobales.com</a>
+                                </li>
+                                <!-- <li><img src="/static/images/footer/new-icon-phone.png" /><span>400-8428955</span>
+                            </li> -->
+                                <!--<li><img src="/lt;!&ndash;#echo var='IMG_URL' default=''&ndash;&gt;/static/images/footer/icon-wechat.png"/><span>&lt;!&ndash;#echo var='CFD_ENG' default=''&ndash;&gt;</span></li>-->
+                                <li>
+                                    <span class="download">下载客户端：</span>
+                                </li>
+                                <li>
+                                    <img class="img-ios" src="/static/images/footer/icon-ios.png" />
+                                    <img class="vertical-line" src="/static/images/footer/vertical-line.png" />
+                                    <img class="img-android" src="/static/images/footer/icon-android.png" />
+                                    <img class="vertical-line" src="/static/images/footer/vertical-line.png" />
+                                    <img src="/static/images/footer/icon-windows.png" />
+                                </li>
+
+                            </ul>
+                            <!-- <div class="code ios"><span></span><img src="/static/images/footer/pic7-ios.png" /></div> -->
+                            <!-- <div class="code android"><span></span><img src="/source/material/code-adr.png" /></div> -->
+                            <!-- <div class="code weixin"><span></span><img src="/static/images/footer/weixin8-pic.png" /></div> -->
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="part2">
+                        <div class="list">
+                            <p>监管资讯: <br> 受南非金融部门行为监管局（FSCA） 监管，牌照号 45954；<br>受昂儒昂离岸金融管理局（AOFA） 监管，许可证号为
+                                L15643/CPTG；<br>受英国金融行为监管局（FCA）
+                                授权与监管，机构参考号 606110
+                            </p>
+                            <p>风险警告：<br />保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，<br />您可能因此损失全部本金。保证金交易不一定适合所有投资者，交易前请确认您已了解相关风险
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="part3">
+                        <div class="links-nav">
+                            <ul>
+                                <li><a href="javascript:;">隐私条款</a>
+                                </li>
+
+                                <li><a href="javascript:;">免责声明</a>
+                                </li>
+
+                                <li><a>交易事项</a></li>
+
+                                <li><a href="javascript:;">客户协议</a>
+                                </li>
+
+                                <!-- <li><a href="/cn/sitemap.html">网站地图</a></li> -->
+
+                                <!-- <li><a href="/en/">English</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="part4">
+                        <div class="copy-right">
+                            <p>Copyright © 2025
+                                <a href="">
+                                    cptmarkets有限公司</a> 版权所有 不得转载
+                            </p>
+                            <p>如需要以 Internet Explorer 开启网站请使用版本 10 或以上 , 以 360 浏览器请使用版本 8 或以上</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m">
+            <div id="footer">
+                <div class="footer-inner">
+                    <div class="part1">
+                        <div class="logo"><img src="/static/images/footer/m/logo_m.png" />
+                        </div>
+                        <ul>
+                            <li><img src="/static/images/footer/m/new-icon-email-m.png" /><a href="mailto:cs@.com</a>
+                        </li>
+                        <li><img src=" /static/images/footer/m/new-icon-cs-m.png" /><a class="download">下载客户端</a></li>
+                            <li><img src="/static/images/footer/m/new-icon-phone-m.png" /><span>400-8428955</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="part2">
+                        <div class="faq clearfix">
+                            <div class="col-md-12">
+                                <a id="footer_faq_submenu_0" class="faq-submenu collapsed" data-toggle="collapse"
+                                    data-target="#footer_faq_body_0">关于我们</a>
+                                <div class="submenu-answer collapse" id="footer_faq_body_0">
+                                    <ul>
+                                        <li><a href="/cn/aboutUS.html">关于</a>
+                                        </li>
+                                        <li><a href="/cn/about/advantage.html">企业优势</a>
+                                        </li>
+                                        <li><a href="/cn/about/awards-honor.html">企业荣誉</a>
+                                        </li>
+                                        <li><a href="/cn/about/operation-report.html">运营数据</a>
+                                        </li>
+                                        <li><a href="/cn/about/partners.html">合作伙伴</a>
+                                        </li>
+                                        <li><a href="/cn/about/contact-us.html">联系我们</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 ">
+                                <a id="footer_faq_submenu_1" class="faq-submenu collapsed" data-toggle="collapse"
+                                    data-target="#footer_faq_body_1">交易产品</a>
+                                <div class="submenu-answer collapse" id="footer_faq_body_1">
+                                    <ul>
+                                        <li><a href="/cn/product/forex.html">外汇</a></li>
+                                        <li><a href="/cn/product/commodities.html">商品</a></li>
+                                        <li><a href="/cn/product/indices.html">指数</a></li>
+                                        <li><a href="/cn/product/stock.html">股票</a></li>
+                                        <!--<li><a href="/cn/product/virtual.html">虚拟货币</a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 ">
+                                <a id="footer_faq_submenu_2" class="faq-submenu collapsed" data-toggle="collapse"
+                                    data-target="#footer_faq_body_2">开户交易</a>
+                                <div class="submenu-answer collapse" id="footer_faq_body_2">
+                                    <ul>
+                                        <li class="sub-menu-nav">开户交易</li>
+                                        <li><a href="/cn/mobile/rcfd_account"
+                                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实开户</a>
+                                        </li>
+                                        <li><a href="/cn/mobile/dcfd_account"
+                                                onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a>
+                                        </li>
+                                        <li><a href="/cn/acc/terms.html">账户类型</a></li>
+                                        <li><a href="/cn/acc/super-vip.html">尊贵账户</a></li>
+                                        <li class="sub-menu-nav">软件下载</li>
+                                        <li><a href="/cn/platform/cfd-intro.html">CFD交易平台</a></li>
+                                        <li><a href="/cn/platform/cfd/step.html">操作指南</a></li>
+                                        <li class="sub-menu-nav">交易须知</li>
+                                        <li> <a href="/cn/exchangerate.html">汇率兑换</a></li>
+                                        <li><a href="/cn/acc/account-guide.html">存取指南</a></li>
+                                        <li><a href="/cn/acc/closeposition.html">交易下单</a></li>
+                                        <li><a href="/cn/product/trade-calculator.html">交易计算器</a></li>
+                                        <li><a href="/cn/faq.html">常见问题</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 ">
+                                <a id="footer_faq_submenu_3" href="/cn/agency.html">代理合作</a>
+                            </div>
+
+                            <div class="col-md-12 ">
+                                <a id="footer_faq_submenu_5" class="faq-submenu collapsed" data-toggle="collapse"
+                                    data-target="#footer_faq_body_5">行情资讯</a>
+                                <div class="submenu-answer collapse" id="footer_faq_body_5">
+                                    <ul>
+                                        <li><a href="/cn/information/newss.html">环球新闻</a></li>
+                                        <li><a href="/cn/information/quote.html">实时报价</a></li>
+                                        <li><a href="/cn/information/position.html">持仓比例</a>
+                                        </li>
+                                        <li><a href="/cn/information/calendar.html">财经日历</a>
+                                        </li>
+                                        <li><a href="/cn/information/centralBank.html">央行动态</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 ">
+                                <a id="footer_faq_submenu_4" class="faq-submenu collapsed" data-toggle="collapse"
+                                    data-target="#footer_faq_body_4">研究院</a>
+                                <div class="submenu-answer collapse" id="footer_faq_body_4">
+                                    <ul>
+                                        <li><a href="/cn/edu/analyst.html">专家评论</a></li>
+                                        <li><a href="">互动问答</a></li>
+                                        <li><a href="/cn/super-topic/super_topic.html">汇聊</a>
+                                        </li>
+                                        <li><a href="/cn/edu/qualification.html">学习文章</a>
+                                        </li>
+                                        <li><a href="/cn/edu/course.html">视频课程</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part3">
+                        <div class="list">
+                            <p>国际有限公司品牌在多个司法管辖区均获得授权和监管。</p>
+                            <p>GLOBAL PTY LTD)
+                                受澳大利亚证券与投资委员会 (ASIC) 监管，牌照号为001273790；受美国全国期货协会 (NFA) 认证交易商，认证号为0522236；
+                                受巴哈马证券委员会
+                                (SCB) 监管，监管号为SIA-F213。</p>
+                            <p>风险警告：<br />保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，您可能因此损失全部本金。保证金交易不一定适合所有投资者，交易前请确认您已了解相关风险
+                            </p>
+                        </div>
+                    </div>
+                    <div class="part4">
+                        <ul>
+                            <li><a href="/cn/notice.html">最新公告</a></li>
+                            <li><a href="/source/material/privacyPolicy.html">隐私条款</a>
+                            </li>
+
+                            <li><a href="/source/material/disclaimer.html">免责声明</a>
+                            </li>
+
+                            <li><a onclick="showDisclosureAudio()">交易事项</a></li>
+
+                            <li><a href="/source/material/client_agreement.pdf">客户协议</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="part5">
+                        <div class="copy-right">
+                            <p>Copyright © 2024
+                                <a href="/">
+                                    国际有限公司</a> 版权所有 不得转载
+                            </p>
+                            <p>如需要以 Internet Explorer 开启网站请使用版本 10 或以上 , <br />以 360 浏览器请使用版本 8 或以上</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </div>
+    <!-- End Main contents -->
+    <!--#include file="/cn/template.js.html"-->
+
+    <!--#include file="./disclosure.html"-->
+    <script src="/cn/js/homepage/app.js"></script>
+    <script>
+        // $(".right-slide").slide({
+        //     mainCell: ".slider ul",
+        //     autoPlay: true,
+        //     autoPage: true,
+        //     effect: "leftLoop",
+        //     vis: 2
+        // });
+        // $('.left-nav ul li:eq(4)').hover(function () {$(".weixin").show();}, function () {$(".weixin").hide();});
+        $('.img-ios').hover(function () {
+            $(".ios").show();
+        }, function () {
+            $(".ios").hide();
+        });
+        $('.img-android').hover(function () {
+            $(".android").show();
+        }, function () {
+            $(".android").hide();
+        });
+        //    处理域名
+        var domain = window.location.host;
+        if (domain.indexOf("www.cfd139.com.cn") != -1 || domain.indexOf("www.cfd139.com.cn") != -1) {
+            $(".links-nav").hide()
+        } else {
+            $(".links-nav").show()
+        }
+    </script>
+    <script>
+        const showDisclosureAudio = () => {
+            document.querySelector('#disclosure-agreement').classList.add('is-active')
+            checkReadDisclosure()
+        }
+    </script>
+    <div class="pc">
+        <!--#include file="/cn/template.right-1.html"-->
+    </div>
+    <div class="m">
+        <!--#include file="/cn/nav.html"-->
+    </div>
+    </div>
+
+    <script type="text/javascript" src="/cn/js/gt.js"></script>
+    <script src="/n/js/echo.min.js"></script>
+    <script src="/n/js/homepage/aos.js"></script>
+    <script src="/n/js/homepage/swiper.min.js"></script>
+    <script src="/ttps://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="/n/js/isInViewport.min.js"></script>
+    <script src="/n/js/jquery.cookie.min.js"></script>
+    <!-- <script src="/n/js/ScrollMagic.min.js"></script> -->
+    <script src="/n/js/typed.min.js"></script>
+    <script src="/n/js/jquery.flexslider-min.js"></script>
+    <script src="/cn/js/highCharts.min.js"></script>
+    <script src="/n/js/jquery.appear.js"></script>
+    <script src="/n/js/autoNumeric-min.js"></script>
+    <script src="/n/js/wow.min.js"></script>
+    <script src="/n/js/nice-select.min.js"></script>
+    <script src="/n/js/flipclock.min.js"></script>
+    <script src="/n/js/md5.js"></script>
+    <script src="/cn/js/homepage.js?v=20180607"></script>
+    <script src="/cn/js/bootstrap.min.js"></script>
+    <!-- For Mobile Mainpage -->
+    <script src="/cn/js/homepage/nav.js"></script>
+    <!--#include file="/popup/yearend-popup.html"-->
+    <script>
+        // var width = document.documentElement.clientWidth;
+        AOS.init({
+            offset: 100,
+            easing: "ease",
+            duration: 800,
+            delay: 100,
+            once: false
+        });
+        document.querySelector('#TopBanner_video').playbackRate = 0.8;
+        // var m_url = "//m.cfd139.com"
+
+        // !function (a) { var b = /iPhone/i, c = /iPod/i, d = /iPad/i, e = /(?=.*\bAndroid\b)(?=.*\bMobile\b)/i, f = /Android/i, g = /(?=.*\bAndroid\b)(?=.*\bSD4930UR\b)/i, h = /(?=.*\bAndroid\b)(?=.*\b(?:KFOT|KFTT|KFJWI|KFJWA|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|KFARWI|KFASWI|KFSAWI|KFSAWA)\b)/i, i = /IEMobile/i, j = /(?=.*\bWindows\b)(?=.*\bARM\b)/i, k = /BlackBerry/i, l = /BB10/i, m = /Opera Mini/i, n = /(CriOS|Chrome)(?=.*\bMobile\b)/i, o = /(?=.*\bFirefox\b)(?=.*\bMobile\b)/i, p = new RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)", "i"), q = function (a, b) { return a.test(b) }, r = function (a) { var r = a || navigator.userAgent, s = r.split("[FBAN"); return "undefined" != typeof s[1] && (r = s[0]), s = r.split("Twitter"), "undefined" != typeof s[1] && (r = s[0]), this.apple = { phone: q(b, r), ipod: q(c, r), tablet: !q(b, r) && q(d, r), device: q(b, r) || q(c, r) || q(d, r) }, this.amazon = { phone: q(g, r), tablet: !q(g, r) && q(h, r), device: q(g, r) || q(h, r) }, this.android = { phone: q(g, r) || q(e, r), tablet: !q(g, r) && !q(e, r) && (q(h, r) || q(f, r)), device: q(g, r) || q(h, r) || q(e, r) || q(f, r) }, this.windows = { phone: q(i, r), tablet: q(j, r), device: q(i, r) || q(j, r) }, this.other = { blackberry: q(k, r), blackberry10: q(l, r), opera: q(m, r), firefox: q(o, r), chrome: q(n, r), device: q(k, r) || q(l, r) || q(m, r) || q(o, r) || q(n, r) }, this.seven_inch = q(p, r), this.any = this.apple.device || this.android.device || this.windows.device || this.other.device || this.seven_inch, this.phone = this.apple.phone || this.android.phone || this.windows.phone, this.tablet = this.apple.tablet || this.android.tablet || this.windows.tablet, "undefined" == typeof window ? this : void 0 }, s = function () { var a = new r; return a.Class = r, a }; "undefined" != typeof module && module.exports && "undefined" == typeof window ? module.exports = r : "undefined" != typeof module && module.exports && "undefined" != typeof window ? module.exports = s() : "function" == typeof define && define.amd ? define("isMobile", [], a.isMobile = s()) : a.isMobile = s() }(this);
+        // if (isMobile.any) {
+        //     $('#video_url').attr('href', m_url + '/cn/information/academy/course.html');
+        //     $('#aboutUS_url').attr('href', m_url +'/cn/aboutUS.html');
+        //     $('#platform_url').attr('href', m_url +'/cn/q&a/cfd-intro.html');
+        //     $('#promotion_url').attr('href', m_url +'/cn/promotion.html');
+        //     $('#news_url').attr('href', m_url +'/cn/news/list.html?type=world');
+        // } else {
+        //     $('#video_url').attr('href', '/cn/edu/course.html');
+        //     $('#aboutUS_url').attr('href', '/cn/aboutUS.html');
+        //     $('#platform_url').attr('href', '/cn/platform/cfd-intro.html');
+        //     $('#promotion_url').attr('href','/cn/acc/promotion.html');
+        //     $('#news_url').attr('href','/cn/information/newss.html#/news');
+        // }
+    </script>
+</body>
+
+</html>
