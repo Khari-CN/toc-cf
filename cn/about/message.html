@@ -1,0 +1,149 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en"  ng-app="cfApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>在线留言_国际</title>
+    <meta name="keywords" content="优势,意见反馈,在线留言"/>
+    <meta name="description" content="本栏目提供国际意见提交和问题咨询，如果您有任何疑问或建议，请在此留言告诉我们，谢谢您的支持。"/>
+    <!--#include file="/module/html.head.html"-->
+    <!--#include file="/cn/template.css.html"-->
+    <link rel="stylesheet" href="/cn/css/message.css">
+</head>
+
+<body>
+	<!--#include file="/module/html.body.begin.html"-->
+	
+    <div class="message-page" ng-controller="messageCtrl">    	
+    	<!--#include file="/cn/template.header.html"-->
+        
+        <!-- =====Begin main content message page===== -->
+        <div class="top-banner">
+            <span class="img-banner"></span>
+            <div class="container">
+            	<h1>在线留言</h1>
+	            <h2>我们重视您的体验，如对网站、平台或服务有任何意见，可于这里反馈</h2>
+            </div>            
+        </div>
+        <!-- 面包屑-->
+        <div class="crumb-wrap">
+            <div class="w clearfix">
+                <div class="item"><a href="/">首页</a></div>
+                <div class="item sep">></div>
+                <div class="item"><a href="/cn/aboutUS.html">关于</a></div>
+                <div class="item sep">></div>
+                <div class="item"><a href="javascript:;">在线留言</a></div>
+            </div>
+        </div>
+        <div class="section1">
+
+        	<div class="container">
+        		<h2>意见反馈</h2>
+                <p class="weight">您有任何投诉或意见反馈，可在本页面留言提交；</p>
+                <p class="weight">如您有任何需要快速解决的问题，请联系国际<a class="chat" href="javascript:;" onclick="cf.common.openLive800();ga('send', 'event', 'Reg_Real', 'Click800', 'PC_GW', '1');countBiUtil.gwanalysis('2', '0', '2', '', '', '');">24小时在线客服</a>。</p>
+        		<p class="sub-title">每个好的意见都为公司成长带来重要的价值，因此我们鼓励客户留言，对于公司认为的优质建议，我们的客服专员会主动联络以表答谢，并会送上神秘礼品作为回馈。</p>
+        		<form name="onlineResponseFrm" novalidate>
+                    <div class="row">   
+                        <div class="col-xs-6 col-ssmm-12 col-ssm-6">
+                            <div class="group">
+                                <input id="name" type="text" autofocus ng-model="onlineResponse.accountname" name="accountname" capitalize ng-pattern="/^[\u4E00-\u9FA5A-Z\0]+$/" required>
+                                <span class="bar"></span>
+                                <label>姓名</label>
+                                <div ng-show="!onlineResponseFrm.accountname.$valid" class="inforeg-error" id="name-err">真实姓名只能为中文或者大写英文</div>
+                            </div>
+                            <div class="group user-phone">
+                                <span class="area-code">+86</span>
+                                <input id="phone" class="phone-number" type="tel" maxlength="11" ng-model="onlineResponse.phone" name="onlineResponse.phone" ng-pattern="/^\d{11}$/" required>
+                                <span class="bar"></span>
+                                <label>电话</label>
+                                <div class="inforeg-error" id="phone-err">请检查电话号码是否正确</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-ssmm-12 col-ssm-6">
+                            <div class="group">
+                                <input id="email" type="text" ng-model="onlineResponse.email"  name="onlineResponse.email" ng-pattern="/^[a-z0-9-.]{1,30}@[a-z0-9-]{1,65}\.[a-z]{2,5}$/" required>
+                                <span class="bar"></span>
+                                <label>电邮地址</label>
+                                <div class="inforeg-error" id="email-err">输入正确的邮箱格式，如cf88@163.com！</div>
+                            </div>
+                            <div class="group info-box">
+                                <select id="option" ng-model="onlineResponse.type" name="onlineResponse.type" required>
+		                          <option selected value="OPINION">意见反馈</option>
+		                          <option value="COMPLAINT">我要投诉</option>
+<!-- 		                          <option value="option-third" value="">意见类型</option> -->
+		                        </select>
+                                <span class="bar"></span>
+                                <label>留言类型</label>
+                            </div>
+                        </div>						
+					</div>
+                    <label class="more-info" for="more-info">内容</label>
+                    <textarea id="more-info" maxlength="501" ng-model="onlineResponse.content" name="onlineResponse.content" required ng-min="100" ng-max="500"></textarea>
+                    <div id="des-error" class="inforeg-error">内容只可填写为500字</div>
+                    <div class="checkbox-wrapper"><input  class="checkbox" ng-model="onlineResponse.tickedReceiveInfo"  type="checkbox" name="checkb"  value="checkb" checked="checked"><span class="desc">本人确认之平台</span></div>
+                    <button class="submit clearfix" type="button" name="subbt" ng-click="createMessage()" value="subbt" ng-show="!isSuccess">提交</button>
+                    <div class="error-mess" ng-show="isSubmitted && !isSuccess"><img class="error-img" src="/source/www/aboutUs/message/error.png" alt="">提交失败，请重试<a href=""><img class="refresh" src="/source/www/aboutUs/message/f5.png" alt=""></a></div>
+                    <div class="valid-mess" ng-show="isSubmitted && isSuccess"><img src="/source/www/aboutUs/message/success.png" alt="">提交成功！</div>
+                </form>
+        	</div>
+        </div>
+        <div class="section2">
+        	<div class="container">
+        	<h2>优势</h2>
+	        	<div class="advantage clearfix">
+	        		<div class="row">
+	        			<div class="col-xs-3 col-ssm-6 col-sm-3">
+	        				<div class="article-wr">
+	        					<img class="img-responsive" src="/source/www/aboutUs/message/man.jpg" alt="">
+			        			<h3>国际监管认证</h3>
+			        			<p><!--新西兰FSP和-->澳大利亚ASIC，双重金融监管</p>
+			        			<a class="link-more" href="/cn/aboutUS.html">了解更多</a>
+	        				</div>	        				
+	        			</div>
+	        			<div class="col-xs-3 col-ssm-6 col-sm-3">
+	        				<div class="article-wr">
+	        					<img class="img-responsive" src="/source/www/aboutUs/message/coin.jpg" alt="">
+				        		<h3>最低投资成本</h3>
+				        		<p>免费开立账户，可交易点差处于业界最低水平，成本透明，公开，公正</p>
+				        		<a class="link-more" href="/cn/pc/rcfd_account">了解更多</a>
+	        				</div>	        				
+	        			</div>
+	        			<div class="col-xs-3 col-ssm-6 col-sm-3">
+		        			<div class="article-wr">
+		        				<img class="img-responsive" src="/source/www/aboutUs/message/currency.jpg" alt="">
+				        		<h3>多元化交易</h3>
+				        		<p>可交易等全球热门产品逾200种。提供差价合约交易模式</p>
+				        		<a class="link-more" href="/cn/product/forex/cfd-contract.html">了解更多</a>
+		        			</div>	        				
+	        			</div>
+	        			<div class="col-xs-3 col-ssm-6 col-sm-3 last-child">
+		        			<div class="article-wr">
+		        				<img class="img-responsive" src="/source/www/aboutUs/message/news.jpg" alt="">
+				        		<h3>专业分析支持</h3>
+				        		<p>产品报价，国际新闻信息及热门交易产品分析实时提供</p>
+				        		<a class="link-more" href="/cn/information/position.html">了解更多</a>
+		        			</div>	        				
+	        			</div>
+	        		</div>
+	        	</div>        		
+        	</div>
+        </div>
+        
+	    <!--#include file="/cn/template.notification.html"-->
+        <!-- =====End main content message page===== -->
+
+        <!--#include file="/cn/template.js.html"-->
+        <!--#include file="/cn/template.footer.html"-->
+    	<!--#include file="/cn/template.right-1.html"-->
+    </div>
+
+    <script src="/cn/js/nice-select.min.js"></script>
+    <script src="/cn/js/autoNumeric-min.js"></script>
+    <script src="/cn/js/message.js"></script>
+    <script src="/cn/js/angular.min.js"></script>
+    <script src="/cn/js/message-plugin.js"></script>
+    <!--#include file="/module/html.body.end.html"-->
+</body>
+
+</html>

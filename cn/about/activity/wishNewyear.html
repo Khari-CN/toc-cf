@@ -1,0 +1,114 @@
+<!--#include file="/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        国际-公司活动-金融服务</title>
+    <meta name="keywords" content="国际">
+    <meta name="description" content="本栏目提供国际是一家实力雄厚的在线金融平台,提供全世界最具竞争力的金融服务产品">
+    <!--#include file="/module/html.head.html"-->
+    <!--#include file="/cn/template.css.html"-->
+    <link rel="stylesheet" href="/cn/css/activity.css">
+    <link rel="stylesheet" href="/cn/css/commentary321.css?v=6387463">
+    <script src="/cn/js/jquery-1.11.3.min.js"></script>
+    <style>
+        .video-container img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="home-page">
+    <!--#include file="/module/html.body.end.html"-->
+    <!--#include file="/cn/template.header.html"-->
+
+    <!-- Begin hero banner-->
+    <div class="top-banner-acitvity ">
+
+        <div class="banner-acitvity">
+            <div class="container">
+                <div class="title-banner">公司活动</div>
+                <div class="sub-title">除专注发展金融服务，每年我们还会积极参与不同社会活动与时并进</div>
+            </div>
+        </div>
+    </div>
+    <!-- End hero banner-->
+    <!-- Begin Main contents -->
+    <div class="main-content">
+        <div class="container clearfix">
+            <div class="header-content">
+                <div class="col-md-12">
+                    <div class="col-md-10">
+                        <div class="title-header">
+                            <i class="icon-doc"></i> 新春祝福
+                        </div>
+                    </div>
+                </div>
+                <div class="border-header"></div>
+            </div>
+            <div class="com-content">
+                <h1>
+                    国际作客东方卫视向中国人民拜年，并于贺岁档播出</h1>
+                <p>2018狗年春节到，在这万家团圆的美好时刻，大中华区高级营运经理Marcus先生作客东方卫视电视台，代表
+                    国际及
+                    国际向中国全国人民拜年，祝中国全国人民身体健康，阖家幸福，狗年旺旺。</p>
+                <div class="video-container" id="video-container">
+                    <!--<video preload="auto" onpause=""  style="width: 700px;" id="v4">-->
+                    <!--<source src="/source/video/newyear-video.mp4?v=425543" type="video/mp4"/>-->
+                    <!--</video>-->
+                    <!--<img src="/source/www/aboutUs/activity/play.png" alt="" id="btn"/>-->
+
+
+                </div>
+                <p>2017年，
+                    国际在广大投资者的支持下，获得了飞跃式的发展，累积总客户数突破45万！并在客户体验升级、
+                    APP资讯交易、真实模拟账户自由切换、新投资产品引进、电话平仓服务等方面取得了非常好的进步，获得了广大用户的热烈赞誉。展望2018，我们将做得更好，推出更多满足投资者需求的新服务。</p>
+                <p>匠心沉淀，懂投资更懂您。</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var v4 = document.getElementById("v4");
+        var box = document.getElementById("video-container");
+
+        btn.onclick = function() {
+            if (v4.paused) {
+                v4.play();
+                btn.src = '<!--#echo var='
+                IMG_URL ' default='
+                '-->/source/www/aboutUs/activity/pause.png';
+            } else {
+                v4.pause();
+                btn.src = '<!--#echo var='
+                IMG_URL ' default='
+                '-->/source/www/aboutUs/activity/play.png';
+            }
+        };
+
+        box.onmouseleave = function() {
+            btn.style.display = 'none';
+        };
+        box.onmouseenter = function() {
+            btn.style.display = 'block';
+        };
+        v4.onended = function() {
+            btn.src = '<!--#echo var='
+            IMG_URL ' default='
+            '-->/source/www/aboutUs/activity/play.png';
+        }
+    </script>
+    <!--#include file="/cn/template.notification.html"-->
+    <!-- End Main contents -->
+
+
+    <!--#include file="/cn/template.js.html"-->
+    <!--#include file="/cn/template.footer.html"-->
+    <!--#include file="/cn/template.right-1.html"-->
+
+
+</body>
+
+</html>
