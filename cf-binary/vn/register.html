@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Fun Trade Option | Build your future with investments</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png"/>
+
+    <!-- css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/animate.min.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/vn.css" rel="stylesheet">
+
+  </head>
+
+<body>
+
+<div id="loading"></div>
+    
+<header class="fixed-top">
+<div class="container">
+  <nav class="navbar navbar-expand-lg align-items-end">
+
+    <a class="navbar-brand" href="index.html">
+      <img class="logo" src="../assets/images/FTO_logo.svg">
+    </a>
+    <div class="navbar-right-icon">
+      <button class="navbar-toggler navbar-login toggleLoginPopup">
+        <span class="navbar-toggler-icon login-icon"></span>
+      </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon menu-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <div class="navbar-wrap bgdarkblue d-lg-flex flex-lg-column">
+
+        <ul class="navbar-nav ml-auto d-none d-lg-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link lang dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- language icon -->
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="lang-ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#FFFFFF;}
+              </style>
+              <g>
+                <g>
+                  <path class="st0" d="M13.5,27C6.06,27,0,20.94,0,13.5C0,6.06,6.06,0,13.5,0C20.94,0,27,6.06,27,13.5C27,20.94,20.94,27,13.5,27z
+                     M13.5,1.59C6.93,1.59,1.59,6.93,1.59,13.5c0,6.57,5.34,11.91,11.91,11.91c6.57,0,11.91-5.34,11.91-11.91
+                    C25.41,6.93,20.07,1.59,13.5,1.59z"/>
+                </g>
+                <g>
+                  <path class="st0" d="M13.5,26.69l-0.47-0.35c-0.31-0.23-7.65-5.78-7.65-12.84c0-2.94,1.33-6.1,3.85-9.13
+                    c1.87-2.25,3.72-3.65,3.8-3.7l0.47-0.35l0.47,0.35c0.31,0.23,7.65,5.78,7.65,12.84c0,2.94-1.33,6.1-3.85,9.13
+                    c-1.87,2.25-3.72,3.64-3.8,3.7L13.5,26.69z M13.5,2.32c-1.58,1.32-6.54,5.9-6.54,11.18c0,5.29,4.96,9.86,6.53,11.18
+                    c1.58-1.32,6.53-5.9,6.53-11.18C20.03,8.2,15.08,3.64,13.5,2.32z"/>
+                </g>
+                <g>
+                  <path class="st0" d="M2.68,20.01l-0.8-1.37c0.21-0.12,5.28-3.04,11.62-3.04s11.41,2.92,11.62,3.04l-0.8,1.37l0.4-0.69l-0.4,0.69
+                    c-0.05-0.03-4.92-2.83-10.82-2.83C7.61,17.18,2.73,19.98,2.68,20.01z"/>
+                </g>
+                <g>
+                  <path class="st0" d="M13.5,11.41c-6.34,0-11.41-2.92-11.62-3.04l0.8-1.37C2.73,7.02,7.61,9.82,13.5,9.82
+                    c5.89,0,10.77-2.8,10.82-2.83l0.8,1.37C24.91,8.49,19.84,11.41,13.5,11.41z"/>
+                </g>
+                <g>
+                  <rect x="12.71" y="1.3" class="st0" width="1.59" height="24.4"/>
+                </g>
+              </g>
+              </svg>
+              <!-- language icon -->Vie
+              <!-- arrow icon -->
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="arrow-ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 15.59 8.8" style="enable-background:new 0 0 15.59 8.8;" xml:space="preserve">
+              <style type="text/css">
+                .st1{fill:#FFFFFF;}
+              </style>
+              <path class="st1" d="M15.34,0.25c-0.34-0.34-0.88-0.34-1.21,0L8.16,6.22c-0.2,0.2-0.53,0.2-0.73,0L1.47,0.25
+                c-0.34-0.34-0.88-0.34-1.21,0c-0.34,0.34-0.34,0.88,0,1.21l6.33,6.33l0.85,0.85c0.2,0.2,0.53,0.2,0.73,0l0.85-0.85l6.33-6.33
+                C15.67,1.13,15.67,0.59,15.34,0.25z"/>
+              </svg>
+              <!-- arrow icon --></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../en/register.html">Eng</a>
+              <a class="dropdown-item" href="#">Vie</a>
+              <a class="dropdown-item" href="../th/register.html">Tha</a>
+            </div>
+          </li>
+          <li class="nav-item nav-item-login">
+            <a class="nav-link d-inline-block nav-link-login pr-0" href="login.html">Đăng nhập</a> / <a class="nav-link d-inline-block nav-link-login pl-0 active" href="register.html">Đăng ký</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link scrollTo" scrollTo="#home" href="#">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollTo" scrollTo="#features" href="#">Đặc trưng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollTo" scrollTo="#binary-option" href="#">Tùy chọn nhị phân</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollTo" scrollTo="#faqs" href="#">CHỨNG MINH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollTo" scrollTo="#contact" href="#">Tiếp xúc</a>
+          </li>
+          <li class="nav-item d-lg-none d-xl-none">
+            <a class="nav-link reg" href="register.html"> Đăng ký</a>
+          </li>
+          <li class="nav-item d-lg-none d-xl-none dropdown">
+            <a class="nav-link lang dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- language icon -->
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="lang-ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#FFFFFF;}
+              </style>
+              <g>
+                <g>
+                  <path class="st0" d="M13.5,27C6.06,27,0,20.94,0,13.5C0,6.06,6.06,0,13.5,0C20.94,0,27,6.06,27,13.5C27,20.94,20.94,27,13.5,27z
+                      M13.5,1.59C6.93,1.59,1.59,6.93,1.59,13.5c0,6.57,5.34,11.91,11.91,11.91c6.57,0,11.91-5.34,11.91-11.91
+                    C25.41,6.93,20.07,1.59,13.5,1.59z"/>
+                </g>
+                <g>
+                  <path class="st0" d="M13.5,26.69l-0.47-0.35c-0.31-0.23-7.65-5.78-7.65-12.84c0-2.94,1.33-6.1,3.85-9.13
+                    c1.87-2.25,3.72-3.65,3.8-3.7l0.47-0.35l0.47,0.35c0.31,0.23,7.65,5.78,7.65,12.84c0,2.94-1.33,6.1-3.85,9.13
+                    c-1.87,2.25-3.72,3.64-3.8,3.7L13.5,26.69z M13.5,2.32c-1.58,1.32-6.54,5.9-6.54,11.18c0,5.29,4.96,9.86,6.53,11.18
+                    c1.58-1.32,6.53-5.9,6.53-11.18C20.03,8.2,15.08,3.64,13.5,2.32z"/>
+                </g>
+                <g>
+                  <path class="st0" d="M2.68,20.01l-0.8-1.37c0.21-0.12,5.28-3.04,11.62-3.04s11.41,2.92,11.62,3.04l-0.8,1.37l0.4-0.69l-0.4,0.69
+                    c-0.05-0.03-4.92-2.83-10.82-2.83C7.61,17.18,2.73,19.98,2.68,20.01z"/>
+                </g>
+                <g>
+                  <path class="st0" d="M13.5,11.41c-6.34,0-11.41-2.92-11.62-3.04l0.8-1.37C2.73,7.02,7.61,9.82,13.5,9.82
+                    c5.89,0,10.77-2.8,10.82-2.83l0.8,1.37C24.91,8.49,19.84,11.41,13.5,11.41z"/>
+                </g>
+                <g>
+                  <rect x="12.71" y="1.3" class="st0" width="1.59" height="24.4"/>
+                </g>
+              </g>
+              </svg>
+              <!-- language icon -->Vie
+              <!-- arrow icon -->
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="arrow-ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 15.59 8.8" style="enable-background:new 0 0 15.59 8.8;" xml:space="preserve">
+              <style type="text/css">
+                .st1{fill:#FFFFFF;}
+              </style>
+              <path class="st1" d="M15.34,0.25c-0.34-0.34-0.88-0.34-1.21,0L8.16,6.22c-0.2,0.2-0.53,0.2-0.73,0L1.47,0.25
+                c-0.34-0.34-0.88-0.34-1.21,0c-0.34,0.34-0.34,0.88,0,1.21l6.33,6.33l0.85,0.85c0.2,0.2,0.53,0.2,0.73,0l0.85-0.85l6.33-6.33
+                C15.67,1.13,15.67,0.59,15.34,0.25z"/>
+              </svg>
+              <!-- arrow icon --></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../en/register.html">Eng</a>
+              <a class="dropdown-item" href="#">Vie</a>
+              <a class="dropdown-item" href="../th/register.html">Tha</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <button class="navbar-toggler navbar-close bgblue" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon close-icon"></span>
+      </button>
+    </div>
+    
+  </nav>
+</div>
+</header>
+
+<main role="main">
+
+  <section class="single-page" id="register">
+    <div class="container">
+      <div class="row align-items-lg-center justify-content-lg-center">
+        <div class="col-12 col-lg-6 order-lg-1 pl-lg-5">
+          <div class="content-wrap-g text-center text-lg-right">
+            <img data-wow-delay=".1s" data-wow-duration="1.6s" class="graphic ani wow fadeInUp" src="../assets/images/graphic/register.png">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 order-lg-0 pr-lg-5">
+          <div class="content-wrap">
+            <h1 data-wow-delay=".3s" class="wow fadeInUp mb-4">ĐĂNG KÝ</h1>
+            <div class="form-wrap">
+              <form id="reg-form">
+                <div data-wow-delay=".35s" class="wow fadeInUp form-group">
+                  <input type="text" class="form-control" id="FirstName" placeholder="Tên đầu tiên">
+                </div>
+                <div data-wow-delay=".4s" class="wow fadeInUp form-group">
+                  <input type="text" class="form-control" id="LastName" placeholder="Họ">
+                </div>
+                <div data-wow-delay=".453s" class="wow fadeInUp form-group mobile-wrap">
+                  <select name="countryCode" disabled id="countryCode" select class="form-control mobile-left">
+                    <option data-countryCode="CN" value="86" Selected>+86</option>
+                    <option data-countryCode="VN" value="84">+84</option>
+                    <optgroup label="Other countries">
+                      <option data-countryCode="DZ" value="213">+213</option>
+                      <option data-countryCode="AD" value="376">+376</option>
+                      <option data-countryCode="AO" value="244">+244</option>
+                      <option data-countryCode="AI" value="1264">+1264</option>
+                      <option data-countryCode="AG" value="1268">+1268</option>
+                      <option data-countryCode="AR" value="54">+54</option>
+                      <option data-countryCode="AM" value="374">+374</option>
+                      <option data-countryCode="AW" value="297">+297</option>
+                      <option data-countryCode="AU" value="61">+61</option>
+                      <option data-countryCode="AT" value="43">+43</option>
+                      <option data-countryCode="AZ" value="994">+994</option>
+                      <option data-countryCode="BS" value="1242">+1242</option>
+                      <option data-countryCode="BH" value="973">+973</option>
+                      <option data-countryCode="BD" value="880">+880</option>
+                      <option data-countryCode="BB" value="1246">+1246</option>
+                      <option data-countryCode="BY" value="375">+375</option>
+                      <option data-countryCode="BE" value="32">+32</option>
+                      <option data-countryCode="BZ" value="501">+501</option>
+                      <option data-countryCode="BJ" value="229">+229</option>
+                      <option data-countryCode="BM" value="1441">+1441</option>
+                      <option data-countryCode="BT" value="975">+975</option>
+                      <option data-countryCode="BO" value="591">+591</option>
+                      <option data-countryCode="BA" value="387">+387</option>
+                      <option data-countryCode="BW" value="267">+267</option>
+                      <option data-countryCode="BR" value="55">+55</option>
+                      <option data-countryCode="BN" value="673">+673</option>
+                      <option data-countryCode="BG" value="359">+359</option>
+                      <option data-countryCode="BF" value="226">+226</option>
+                      <option data-countryCode="BI" value="257">+257</option>
+                      <option data-countryCode="KH" value="855">+855</option>
+                      <option data-countryCode="CM" value="237">+237</option>
+                      <option data-countryCode="CA" value="1">+1</option>
+                      <option data-countryCode="CV" value="238">+238</option>
+                      <option data-countryCode="KY" value="1345">+1345</option>
+                      <option data-countryCode="CF" value="236">+236</option>
+                      <option data-countryCode="CL" value="56">+56</option>
+                      <!-- <option data-countryCode="CN" value="86">+86</option> -->
+                      <option data-countryCode="CO" value="57">+57</option>
+                      <option data-countryCode="KM" value="269">+269</option>
+                      <option data-countryCode="CG" value="242">+242</option>
+                      <option data-countryCode="CK" value="682">+682</option>
+                      <option data-countryCode="CR" value="506">+506</option>
+                      <option data-countryCode="HR" value="385">+385</option>
+                      <option data-countryCode="CU" value="53">+53</option>
+                      <option data-countryCode="CY" value="90392">+90392</option>
+                      <option data-countryCode="CY" value="357">+357</option>
+                      <option data-countryCode="CZ" value="42">+42</option>
+                      <option data-countryCode="DK" value="45">+45</option>
+                      <option data-countryCode="DJ" value="253">+253</option>
+                      <option data-countryCode="DM" value="1809">+1809</option>
+                      <option data-countryCode="DO" value="1809">+1809</option>
+                      <option data-countryCode="EC" value="593">+593</option>
+                      <option data-countryCode="EG" value="20">+20</option>
+                      <option data-countryCode="SV" value="503"> +503</option>
+                      <option data-countryCode="GQ" value="240">+240</option>
+                      <option data-countryCode="ER" value="291">+291</option>
+                      <option data-countryCode="EE" value="372">+372</option>
+                      <option data-countryCode="ET" value="251">+251</option>
+                      <option data-countryCode="FK" value="500">Islands +500</option>
+                      <option data-countryCode="FO" value="298">Islands +298</option>
+                      <option data-countryCode="FJ" value="679">+679</option>
+                      <option data-countryCode="FI" value="358">+358</option>
+                      <option data-countryCode="FR" value="33">+33</option>
+                      <option data-countryCode="GF" value="594">+594</option>
+                      <option data-countryCode="PF" value="689">+689</option>
+                      <option data-countryCode="GA" value="241">+241</option>
+                      <option data-countryCode="GM" value="220">+220</option>
+                      <option data-countryCode="GE" value="7880">+7880</option>
+                      <option data-countryCode="DE" value="49">+49</option>
+                      <option data-countryCode="GH" value="233">+233</option>
+                      <option data-countryCode="GI" value="350">+350</option>
+                      <option data-countryCode="GR" value="30">+30</option>
+                      <option data-countryCode="GL" value="299">+299</option>
+                      <option data-countryCode="GD" value="1473">+1473</option>
+                      <option data-countryCode="GP" value="590">+590</option>
+                      <option data-countryCode="GU" value="671">+671</option>
+                      <option data-countryCode="GT" value="502">+502</option>
+                      <option data-countryCode="GN" value="224">+224</option>
+                      <option data-countryCode="GW" value="245">+245</option>
+                      <option data-countryCode="GY" value="592">+592</option>
+                      <option data-countryCode="HT" value="509">+509</option>
+                      <option data-countryCode="HN" value="504">+504</option>
+                      <option data-countryCode="HK" value="852">+852</option>
+                      <option data-countryCode="HU" value="36">+36</option>
+                      <option data-countryCode="IS" value="354">+354</option>
+                      <option data-countryCode="IN" value="91">+91</option>
+                      <option data-countryCode="ID" value="62">+62</option>
+                      <option data-countryCode="IR" value="98">+98</option>
+                      <option data-countryCode="IQ" value="964">+964</option>
+                      <option data-countryCode="IE" value="353">+353</option>
+                      <option data-countryCode="IL" value="972">+972</option>
+                      <option data-countryCode="IT" value="39">+39</option>
+                      <option data-countryCode="JM" value="1876">+1876</option>
+                      <option data-countryCode="JP" value="81">+81</option>
+                      <option data-countryCode="JO" value="962">+962</option>
+                      <option data-countryCode="KZ" value="7">+7</option>
+                      <option data-countryCode="KE" value="254">+254</option>
+                      <option data-countryCode="KI" value="686">+686</option>
+                      <option data-countryCode="KP" value="850">+850</option>
+                      <option data-countryCode="KR" value="82">+82</option>
+                      <option data-countryCode="KW" value="965">+965</option>
+                      <option data-countryCode="KG" value="996">+996</option>
+                      <option data-countryCode="LA" value="856">+856</option>
+                      <option data-countryCode="LV" value="371">+371</option>
+                      <option data-countryCode="LB" value="961">+961</option>
+                      <option data-countryCode="LS" value="266">+266</option>
+                      <option data-countryCode="LR" value="231">+231</option>
+                      <option data-countryCode="LY" value="218">+218</option>
+                      <option data-countryCode="LI" value="417">+417</option>
+                      <option data-countryCode="LT" value="370">+370</option>
+                      <option data-countryCode="LU" value="352">+352</option>
+                      <option data-countryCode="MO" value="853">+853</option>
+                      <option data-countryCode="MK" value="389">+389</option>
+                      <option data-countryCode="MG" value="261">+261</option>
+                      <option data-countryCode="MW" value="265">+265</option>
+                      <option data-countryCode="MY" value="60">+60</option>
+                      <option data-countryCode="MV" value="960">+960</option>
+                      <option data-countryCode="ML" value="223">+223</option>
+                      <option data-countryCode="MT" value="356">+356</option>
+                      <option data-countryCode="MH" value="692">+692</option>
+                      <option data-countryCode="MQ" value="596">+596</option>
+                      <option data-countryCode="MR" value="222">+222</option>
+                      <option data-countryCode="YT" value="269">+269</option>
+                      <option data-countryCode="MX" value="52">+52</option>
+                      <option data-countryCode="FM" value="691">+691</option>
+                      <option data-countryCode="MD" value="373">+373</option>
+                      <option data-countryCode="MC" value="377">+377</option>
+                      <option data-countryCode="MN" value="976">+976</option>
+                      <option data-countryCode="MS" value="1664">+1664</option>
+                      <option data-countryCode="MA" value="212">+212</option>
+                      <option data-countryCode="MZ" value="258">+258</option>
+                      <option data-countryCode="MN" value="95">+95</option>
+                      <option data-countryCode="NA" value="264">+264</option>
+                      <option data-countryCode="NR" value="674">+674</option>
+                      <option data-countryCode="NP" value="977">+977</option>
+                      <option data-countryCode="NL" value="31">+31</option>
+                      <option data-countryCode="NC" value="687">+687</option>
+                      <option data-countryCode="NZ" value="64">+64</option>
+                      <option data-countryCode="NI" value="505">+505</option>
+                      <option data-countryCode="NE" value="227">+227</option>
+                      <option data-countryCode="NG" value="234">+234</option>
+                      <option data-countryCode="NU" value="683">+683</option>
+                      <option data-countryCode="NF" value="672">+672</option>
+                      <option data-countryCode="NP" value="670">+670</option>
+                      <option data-countryCode="NO" value="47">+47</option>
+                      <option data-countryCode="OM" value="968">+968</option>
+                      <option data-countryCode="PW" value="680">+680</option>
+                      <option data-countryCode="PA" value="507">+507</option>
+                      <option data-countryCode="PG" value="675">+675</option>
+                      <option data-countryCode="PY" value="595">+595</option>
+                      <option data-countryCode="PE" value="51">+51</option>
+                      <option data-countryCode="PH" value="63">+63</option>
+                      <option data-countryCode="PL" value="48">+48</option>
+                      <option data-countryCode="PT" value="351">+351</option>
+                      <option data-countryCode="PR" value="1787">+1787</option>
+                      <option data-countryCode="QA" value="974">+974</option>
+                      <option data-countryCode="RE" value="262">+262</option>
+                      <option data-countryCode="RO" value="40">+40</option>
+                      <option data-countryCode="RU" value="7">+7</option>
+                      <option data-countryCode="RW" value="250">+250</option>
+                      <option data-countryCode="SM" value="378">+378</option>
+                      <option data-countryCode="ST" value="239">+239</option>
+                      <option data-countryCode="SA" value="966">+966</option>
+                      <option data-countryCode="SN" value="221">+221</option>
+                      <option data-countryCode="CS" value="381">+381</option>
+                      <option data-countryCode="SC" value="248">+248</option>
+                      <option data-countryCode="SL" value="232"> +232</option>
+                      <option data-countryCode="SG" value="65">+65</option>
+                      <option data-countryCode="SK" value="421"> +421</option>
+                      <option data-countryCode="SI" value="386">+386</option>
+                      <option data-countryCode="SB" value="677">+677</option>
+                      <option data-countryCode="SO" value="252">+252</option>
+                      <option data-countryCode="ZA" value="27">+27</option>
+                      <option data-countryCode="ES" value="34">+34</option>
+                      <option data-countryCode="LK" value="94">+94</option>
+                      <option data-countryCode="SH" value="290">+290</option>
+                      <option data-countryCode="KN" value="1869">+1869</option>
+                      <option data-countryCode="SC" value="1758">+1758</option>
+                      <option data-countryCode="SD" value="249">+249</option>
+                      <option data-countryCode="SR" value="597">+597</option>
+                      <option data-countryCode="SZ" value="268">+268</option>
+                      <option data-countryCode="SE" value="46">+46</option>
+                      <option data-countryCode="CH" value="41">+41</option>
+                      <option data-countryCode="SI" value="963">+963</option>
+                      <option data-countryCode="TW" value="886">+886</option>
+                      <option data-countryCode="TJ" value="7">+7</option>
+                      <option data-countryCode="TH" value="66">+66</option>
+                      <option data-countryCode="TG" value="228">+228</option>
+                      <option data-countryCode="TO" value="676">+676</option>
+                      <option data-countryCode="TT" value="1868">+1868</option>
+                      <option data-countryCode="TN" value="216">+216</option>
+                      <option data-countryCode="TR" value="90">+90</option>
+                      <option data-countryCode="TM" value="7">+7</option>
+                      <option data-countryCode="TM" value="993">+993</option>
+                      <option data-countryCode="TC" value="1649">+1649</option>
+                      <option data-countryCode="TV" value="688">+688</option>
+                      <option data-countryCode="UG" value="256">+256</option>
+                      <option data-countryCode="GB" value="44">+44</option>
+                      <option data-countryCode="UA" value="380">+380</option>
+                      <option data-countryCode="AE" value="971">+971</option>
+                      <option data-countryCode="UY" value="598">+598</option>
+                      <option data-countryCode="US" value="1">+1</option>
+                      <option data-countryCode="UZ" value="7">+7</option>
+                      <option data-countryCode="VU" value="678">+678</option>
+                      <option data-countryCode="VA" value="379"> +379</option>
+                      <option data-countryCode="VE" value="58">+58</option>
+                      <!-- <option data-countryCode="VN" value="84">+84</option> -->
+                      <option data-countryCode="VG" value="84">+1284</option>
+                      <option data-countryCode="VI" value="84">+1340</option>
+                      <option data-countryCode="WF" value="681">+681</option>
+                      <option data-countryCode="YE" value="969">+969</option>
+                      <option data-countryCode="YE" value="967">+967</option>
+                      <option data-countryCode="ZM" value="260">+260</option>
+                      <option data-countryCode="ZW" value="263">+263</option>
+                    </optgroup>
+                  </select>
+                  <input type="text" class="form-control  mobile-right" id="MobileNo" placeholder="Số điện thoại di động">
+                </div>
+                <div data-wow-delay=".5s" class="wow fadeInUp form-group">
+                  <input type="email" class="form-control" id="Email" placeholder="E-mail">
+                </div>
+                <div data-wow-delay=".55s" class="wow fadeInUp pt-2 text-center text-lg-left"><button type="submit" class="btn" href="#">Đăng ký</button></div>
+              </form>
+              <div  data-wow-delay=".6s" class="wow fadeInUp remark pt-4">
+                <p>Bất kỳ câu hỏi, xin vui lòng liên hệ với dịch vụ của chúng tôi trực tuyến.<br>BẢN QUYỀN 2021 Quyền chọn Giao dịch Vui vẻ. Đã đăng ký Bản quyền.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer d-none">
+  <div class="container">
+    <div class="fsm tgrey text-center text-lg-right">BẢN QUYỀN 2021 Quyền chọn Giao dịch Vui vẻ. Đã đăng ký Bản quyền.</div>
+  </div>
+</footer>
+
+<div id="login-popup">
+  <section class="popup-wrap">
+    <div class="container">
+      <div class="navbar-toggler-icon close-icon toggleLoginPopup"></div>
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-7 order-lg-1 pl-lg-5">
+          <div class="content-wrap-g text-center">
+            <img class="graphic" src="../assets/images/graphic/login.png">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-5 order-lg-0 pr-lg-5">
+          <div class="content-wrap">
+            <h1 class="">CHÀO MỪNG BẠN ĐẾN</h1>
+            <h1 class="mb-3">VỚI TRUNG TÂM SỬ DỤNG</h1>
+            <div class="form-wrap">
+              <form id="login-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="id" placeholder="Tài khoản giao dịch / Số điện thoại di động">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="pw" placeholder=""Mật khẩu">
+                </div>
+                <div class="text-center text-lg-left"><button type="submit" class="btn" href="#">Đăng nhập</button></div>
+              </form>
+              <div class="remark pt-3">
+                <p class=" white">Không phải là thành viên? <a href="register.html" class="under">Đăng ký</a> để xây dựng tương lai của bạn với đầu tư.</p>
+                <p class="mb-0">Bất kỳ câu hỏi, xin vui lòng liên hệ với dịch vụ của chúng tôi trực tuyến.</p>
+                <p class=" mb-0">BẢN QUYỀN 2021 Quyền chọn Giao dịch Vui vẻ. Đã đăng ký Bản quyền.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<!-- script -->
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/react.production.min.js"></script>
+<script src="../assets/js/react-dom.production.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+
+</body>
+</html>
