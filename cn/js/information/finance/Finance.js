@@ -13,7 +13,7 @@ function zhezhao() {
 function nodata(str) {
   var html = '<div  id="unvacationHtml">';
   html += '<div id="unvacation">';
-  html += '	<img loading="lazy" src="/images/finance/123.png"/>';
+  html += '	<img loading="lazy" src="/toc-cf/images/finance/123.png"/>';
   html += '	<p align="center">' + str + "</p>";
   html += "</div>";
   html += "</div>";

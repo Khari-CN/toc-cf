@@ -121,31 +121,31 @@ cfApp.controller('assessmentController', function($scope, $http, $location) {
     if(16 <= point && point<= 17){
         $(".chart-moreif").html("<span class='cust-type'>迷你</span> <br\>  账户");
         $(".medal").toggleClass("medal1");
-        $('#circle-bg').empty().append('<img src="//sc.cfygxz.com/source/www/assessment/new-version/circle_bg1.png">');
+        $('#circle-bg').empty().append('<img src="/toc-cf//sc.cfygxz.com/source/www/assessment/new-version/circle_bg1.png">');
         $("#right-ichart").html(html1);
         $("#right-ichart li").toggleClass("icon1");
     }else if( 18 <= point && point<= 30){
         $(".chart-moreif").html("<span class='cust-type'>标准</span> <br\> 账户");
         $(".medal").toggleClass("medal2");
-        $('#circle-bg').empty().append('<img src="//sc.cfygxz.com/source/www/assessment/new-version/circle_bg2.png">');
+        $('#circle-bg').empty().append('<img src="/toc-cf//sc.cfygxz.com/source/www/assessment/new-version/circle_bg2.png">');
         $("#right-ichart").html(html2);
         $("#right-ichart li").toggleClass("icon2");
     }else if( 31 <= point && point<= 36){
         $(".chart-moreif").html("<span class='cust-type'>铂金</span> <br\> 账户");
         $(".medal").toggleClass("medal3");
-        $('#circle-bg').empty().append('<img src="//sc.cfygxz.com/source/www/assessment/new-version/circle_bg3.png">');
+        $('#circle-bg').empty().append('<img src="/toc-cf//sc.cfygxz.com/source/www/assessment/new-version/circle_bg3.png">');
         $("#right-ichart").html(html3);
         $("#right-ichart li").toggleClass("icon3");
     }else if( 37 <= point && point<= 40){
         $(".chart-moreif").html("<span class='cust-type'>巴菲特</span> <br\> 账户");
         $(".medal").toggleClass("medal4");
-        $('#circle-bg').empty().append('<img src="//sc.cfygxz.com/source/www/assessment/new-version/circle_bg4.png">');
+        $('#circle-bg').empty().append('<img src="/toc-cf//sc.cfygxz.com/source/www/assessment/new-version/circle_bg4.png">');
         $("#right-ichart").html(html4);
         $("#right-ichart li").toggleClass("icon4")
     }else{
         $(".chart-moreif").html("<span class='cust-type'>标准</span> <br\> 账户");
         $(".medal").toggleClass("medal2");
-        $('#circle-bg').empty().append('<img src="//sc.cfygxz.com/source/www/assessment/new-version/circle_bg2.png">');
+        $('#circle-bg').empty().append('<img src="/toc-cf//sc.cfygxz.com/source/www/assessment/new-version/circle_bg2.png">');
         $("#right-ichart").html(html2);
     }
 

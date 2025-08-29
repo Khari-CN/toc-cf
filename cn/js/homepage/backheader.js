@@ -44,7 +44,7 @@ function menu() {
       '<div class="main-header"><div class="header-top"></div><div class="m-header m-header3" id="m-header">';
     html += '  <div class="layout-1" style="padding-left: 0.3rem;">';
     html += '   <div class="item-1">';
-    html += '     <a href="/" class="left-1"></a>';
+    html += '     <a href="/toc-cf/" class="left-1"></a>';
     html += " </div>";
     html += ' <div class="item-2">';
     html +=
@@ -103,7 +103,7 @@ function footer() {
     html +=
       "<li><a class='suggestion-footer' href=\"javascript:void(0)\" onclick=\"showAdviceForm()\"><img class='icon' src='//sc.cfygxz.com/source/www/homepage/m/m_footer_icon4.png'><em>功能建议</em></a></li>";
     html +=
-      '<li><a href="/cn/acc/promotion.html"><img class="icon" src="//sc.cfygxz.com/source/www/homepage/m/m_footer_icon1.png"><em>最新优惠</em></a></li>';
+      '<li><a href="/toc-cf/cn/acc/promotion.html"><img class="icon" src="/toc-cf//sc.cfygxz.com/source/www/homepage/m/m_footer_icon1.png"><em>最新优惠</em></a></li>';
     html +=
       "<li><a class='live800' href=\"javascript:void(0)\"  onclick=\"openLive800();ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_GW', '1');\"><img class='icon' src='//sc.cfygxz.com/source/www/homepage/m/m_footer_icon2.png'><em>在线客服</em></a></li>";
     html +=

@@ -28,7 +28,7 @@ function menu()
         html+='<div class="m-header" id="m-header">';
         html+='  <div class="layout-1" style="padding-left: 0.15rem;">';
         html+='   <div class="item-1">';
-        html+='     <a href="/" class="left-1"></a>';
+        html+='     <a href="/toc-cf/" class="left-1"></a>';
         html+=' </div>';
         html+=' </div>';
         html+='	</div>';
