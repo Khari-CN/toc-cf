@@ -7,10 +7,8 @@
     <title>股票_
         国际
     </title>
-    <meta name="keywords"
-        content="合作">
-    <meta name="description"
-        content="邮箱：cs@cfd139.com。">
+    <meta name="keywords" content="合作">
+    <meta name="description" content="邮箱：cs@cfd139.com。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,6 +16,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="wap-font-scale" content="no">
     <!--#include file="/cn/template.css.html"-->
+    <link rel="shortcut icon" href="/static/images/ico.png">
+    <link rel="apple-touch-icon image_src" href="/static/images/ico.png">
+    <link rel="stylesheet" href="/cn/css/template.css">
+    <!-- end -->
     <!--#include file="/module/html.head.html"-->
     <link rel="shortcut icon" href="/source/www/template/fav.ico">
     <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
@@ -38,6 +40,195 @@
             <div class="pc">
                 <div class="e-header">
                     <!--#include file="/cn/template.header.html"-->
+                    <script src="/cn/js/live800.js"></script>
+                    <script>
+                        window.onscroll = function () {
+                            var scroll =
+                                document.documentElement.scrollTop ||
+                                document.body.scrollTop ||
+                                window.pageYOffset;
+                            if (scroll >= 20) {
+                                $(".center-support").addClass("scroll-down");
+                                $(".new-megamenu").addClass("top-0");
+                                $(".new-megamenu").addClass("menu-sroll-bg")
+                            } else {
+                                $(".center-support").removeClass("scroll-down");
+                                $(".new-megamenu").removeClass("top-0");
+                                $(".new-megamenu").removeClass("menu-sroll-bg")
+                            }
+                        };
+                    </script>
+                    <div class="header">
+                        <!-- Begin center support bar -->
+                        <div class="center-support">
+                            <div class="container">
+                                <div class="user-btn">
+                                    <a href="javascript: void(0)"
+                                        onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">开启真实账户</a>
+                                    <a href="javascript: void(0)">用户中心登录</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-megamenu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-1 col-ssm-1">
+                                        <div class="logo">
+                                            <a href="/"><img src="/static/images/cpt_logo.png" alt="国际logo" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 col-ssm-1"></div>
+                                    <div class="col-xs-10 col-ssm-10">
+                                        <ul class="mega-menu clearfix" style="margin-top: 10px;">
+                                            <li>
+                                                <a href="/cn/aboutUS.html">关于我们</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="/cn/aboutUS.html">关于我们</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/cn/about/advantage.html">
+                                                            企业优势</a>
+                                                    </li>
+                                                    <li><a href="/cn/about/awards-honor.html">企业荣誉</a>
+                                                    </li>
+                                                    <li><a href="/cn/about/operation-report.html">运营数据</a>
+                                                    </li>
+                                                    <li><a href="/cn/about/partners.html">合作伙伴</a>
+                                                    </li>
+                                                    <li><a href="/cn/about/contact-us.html">联系我们</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="javascript: void(0)">最新优惠<i class="new-icon-limited"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="javascript: void(0)">新客优惠</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript: void(0)">
+                                                            老客优惠</a>
+                                                    </li>
+                                                    <li><a href="javascript: void(0)">推荐好友</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="/cn/product.html">交易产品</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="/cn/product/forex.html">外汇</a>
+                                                    </li>
+                                                    <li><a href="/cn/product/commodities.html">商品</a>
+                                                    </li>
+                                                    <li><a href="/cn/product/indices.html">指数</a>
+                                                    </li>
+
+                                                    <li><a href="/cn/product/stock.html">股票</a>
+                                                    </li>
+                                            </li>
+                                        </ul>
+                                        <li>
+                                            <a href="/cn/pc/rcfd_account"
+                                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">开户交易</a>
+                                            <div class="child1-wrapper">
+                                                <ul class="sub-child1">
+                                                    <li>
+                                                        <p>开户交易</p>
+                                                        <ul class="sub-child2">
+                                                            <li><a href="/cn/pc/rcfd_account"
+                                                                    onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实开户</a>
+                                                            </li>
+                                                            <li><a href="/cn/pc/dcfd_account"
+                                                                    onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a>
+                                                            </li>
+                                                            <li><a href="/cn/acc/terms.html">账户类型</a>
+                                                            </li>
+                                                            <li><a href="/cn/acc/super-vip.html">尊贵账户</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <p>软件下载</p>
+                                                        <ul class="sub-child2">
+                                                            <li><a href="/cn/platform/cfd-intro.html">CFD交易平台</a>
+                                                            </li>
+                                                            <li><a href="/cn/platform/cfd/step.html">操作指南</a>
+                                                            </li>
+                                                            <li><a
+                                                                    href="https://cfd138.com/cn/MT5/MT5acc_step.html">MT5教学</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <p>交易须知</p>
+                                                        <ul class="sub-child2">
+                                                            <li><a href="/cn/exchangerate.html">汇率兑换</a>
+                                                            </li>
+                                                            <li><a href="/cn/acc/account-guide.html">存取指南</a>
+                                                            </li>
+                                                            <li><a href="/cn/acc/closeposition.html">交易下单</a>
+                                                            </li>
+                                                            <li><a href="/cn/product/trade-calculator.html">交易计算器
+                                                            </li>
+                                                            <li><a href="/cn/faq.html">常见问题</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="agency" href="/cn/agency.html">代理合作
+                                                <i class="new-icon"></i>
+                                            </a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a href="/cn/information/newss.html#/news">行情资讯</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/cn/information/newss.html#/news">环球新闻</a>
+                                                </li>
+                                                <li><a href="/cn/information/quote.html">实时报价</a>
+                                                </li>
+                                                <li><a href="/cn/information/position.html">持仓比例</a>
+                                                </li>
+                                                <li><a href="/cn/information/calendar.html">财经日历</a>
+                                                </li>
+                                                <li><a href="/cn/information/centralBank.html">央行动态</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a href="javascript:;">
+                                                研究院</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/cn/edu/analyst.html">专家评论</a>
+                                                </li>
+                                                <li><a href="">互动问答</a></li>
+                                                <li>
+                                                    <a href="/cn/super-topic/super_topic.html">
+                                                        汇聊</a>
+                                                </li>
+                                                <li><a href="/cn/edu/qualification.html">学习文章</a>
+                                                </li>
+                                                <li><a href="/cn/edu/course.html">视频课程</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End center support bar -->
+                        <!-- Bengin stick megamenu larger than 1366px -->
+                        <!-- End header bar -->
+
+                        <!-- End stick megamenu larger than 1366px -->
+                        <!-- Bengin stick megamenu less than 1366px -->
+
+                        <!-- End stick megamenu less than 1366px -->
+                        <!-- End header bar -->
+                    </div>
+                    <!-- end -->
                 </div>
             </div>
             <div class="m">
@@ -59,44 +250,38 @@
                     <div class="inner">
                         <span class="main-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800"><img
                                 class=""
-                                src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;国际交易股票的理由</span>
+                                src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;使用我们交易股票的理由</span>
                         <div class="pc">
                             <div class="forex-icon">
                                 <div class="icon-bg odd-bg" data-aos="fade-down" data-aos-delay="400"
                                     data-aos-duration="800">
-                                    <img class="icon icon1"
-                                        src="/source/www/product/stock/new-version/stock_icon1.png">
+                                    <img class="icon icon1" src="/static/images/indices/indices_icon1.png">
                                     <p class="main-pros">交易成本低</p>
                                     <p class="sub-pros">不收取交易手续费或佣金</p>
-                                    <a class="more-details"
-                                        href="/source/material/CFD_price.pdf">了解更多
+                                    <a class="more-details" href="javascript:;">了解更多
                                         ></a>
                                 </div>
                                 <div class="icon-bg even-bg" data-aos="fade-down" data-aos-delay="600"
                                     data-aos-duration="800">
-                                    <img class="icon icon2"
-                                        src="/source/www/product/stock/new-version/stock_icon2.png">
+                                    <img class="icon icon2" src="/static/images/indices/indices_icon2.png">
                                     <p class="main-pros">投资收益最大化</p>
                                     <p class="sub-pros">股票保证金交易的杠杆最大可达 本金的20倍、T+0灵活性短线操作</p>
-                                    <a class="more-details"
-                                        href="/source/material/CFD_details.pdf">了解更多
+                                    <a class="more-details" href="javascript:;">了解更多
                                         ></a>
                                 </div>
                                 <div class="icon-bg odd-bg" data-aos="fade-down" data-aos-delay="800"
                                     data-aos-duration="800">
-                                    <img class="icon icon3"
-                                        src="/source/www/product/forex/new-version/forex_icon3.png">
+                                    <img class="icon icon3" src="/static/images/forex/forex_icon3.png">
                                     <p class="main-pros">强大交易平台</p>
                                     <p class="sub-pros">60+ 技术分析工具、 无负数结余保证</p>
-                                    <a class="more-details" href="/cn/platform/cfd-intro.html">了解更多 ></a>
+                                    <a class="more-details" href="javascript:;">了解更多 ></a>
                                 </div>
                                 <div class="icon-bg even-bg" data-aos="fade-down" data-aos-delay="1000"
                                     data-aos-duration="800">
-                                    <img class="icon icon4"
-                                        src="/source/www/product/forex/new-version/forex_icon4.png">
+                                    <img class="icon icon4" src="/static/images/forex/forex_icon4.png">
                                     <p class="main-pros">专业服务</p>
                                     <p class="sub-pros">50+ 客服全天 24 小时在线、30+ 高级投顾服务</p>
-                                    <a class="more-details" href="/cn/about/advantage.html">了解更多 ></a>
+                                    <a class="more-details" href="javascript:;">了解更多 ></a>
                                 </div>
                             </div>
                         </div>
@@ -105,35 +290,29 @@
                                 <div class="forex-icon swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="icon-bg odd-bg">
-                                            <img class="icon icon1"
-                                                src="/source/www/product/stock/new-version/stock_icon1.png">
+                                            <img class="icon icon1" src="/static/images/indices/stock_icon1.png">
                                             <p class="main-pros">交易成本低</p>
                                             <p class="sub-pros">不收取交易手续费或佣金</p>
-                                            <a class="more-details"
-                                                href="/source/material/CFD_price.pdf">了解更多
+                                            <a class="more-details" href="/source/material/CFD_price.pdf">了解更多
                                                 ></a>
                                         </div>
                                         <div class="icon-bg even-bg">
-                                            <img class="icon icon2"
-                                                src="/source/www/product/stock/new-version/stock_icon2.png">
+                                            <img class="icon icon2" src="/static/images/indices/stock_icon2.png">
                                             <p class="main-pros">投资收益最大化</p>
                                             <p class="sub-pros">股票保证金交易的杠杆最大可达 本金的20倍、T+0灵活性短线操作</p>
-                                            <a class="more-details"
-                                                href="/source/material/CFD_details.pdf">了解更多
+                                            <a class="more-details" href="/source/material/CFD_details.pdf">了解更多
                                                 ></a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="icon-bg odd-bg">
-                                            <img class="icon icon3"
-                                                src="/source/www/product/forex/new-version/forex_icon3.png">
+                                            <img class="icon icon3" src="/static/images/forex/forex_icon3.png">
                                             <p class="main-pros">强大交易平台</p>
                                             <p class="sub-pros">60+ 技术分析工具、 无负数结余保证</p>
                                             <a class="more-details" href="/cn/platform/cfd-intro.html">了解更多 ></a>
                                         </div>
                                         <div class="icon-bg even-bg">
-                                            <img class="icon icon4"
-                                                src="/source/www/product/forex/new-version/forex_icon4.png">
+                                            <img class="icon icon4" src="/static/images/forex/forex_icon4.png">
                                             <p class="main-pros">专业服务</p>
                                             <p class="sub-pros">50+ 客服全天 24 小时在线、30+ 高级投顾服务</p>
                                             <a class="more-details" href="/cn/about/advantage.html">了解更多 ></a>
@@ -151,28 +330,27 @@
                         <div class="company">
                             <div class="company-reward-block">
                                 <div class="pc">
-                                    <img src="/source/www/homepage/reward1.png" />
-                                    <img src="/source/www/homepage/reward2.png" />
+                                    <img src="/static/images/reward1.png" />
+                                    <img src="/static/images/reward2.png" />
                                 </div>
                                 <div class="m">
-                                    <img
-                                        src="/source/www/product/forex/m/reward1.png" />
-                                    <img
-                                        src="/source/www/product/forex/m/reward2.png" />
+                                    <img src="/source/www/product/forex/m/reward1.png" />
+                                    <img src="/source/www/product/forex/m/reward2.png" />
                                 </div>
                             </div>
                             <div class="company-status-block">
                                 <div class="total-cust">
-                                    <p class="subtotal"><span class="num">100</span>万<img class="icon"
-                                            src="/source/www/homepage/plus_icon.png">
+                                    <p class="subtotal"><span class="num">200</span>万<img class="icon"
+                                            src="/static/images/plus_icon.png">
                                     </p>
-                                    <p class="subtotal-title">总客户人数</p>
+                                    <p class="subtotal-title">全球投资者客户支持</p>
                                 </div>
-                                <img class="line"
-                                    src="/source/www/homepage/vertical_line.png">
+                                <img class="line" src="/static/images/vertical_line.png">
                                 <div class="status-year">
-                                    <p class="subtotal"><span class="num">15</span>年</p>
-                                    <p class="subtotal-title">稳定营运</p>
+                                    <p class="subtotal"><span class="num">17</span>年
+                                        <img class="line" style="margin: 0 3px;" src="/static/images/plus_icon.png">
+                                    </p>
+                                    <p class="subtotal-title">100%监管合规</p>
                                 </div>
                             </div>
                         </div>
@@ -193,32 +371,26 @@
                                         src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;专业的外汇交易平台</span>
                             </div>
                             <p class="sub-title">
-                                CFD平台提供简单易用的中文交易界面，整合了多种经优化的强大功能，透过桌面电脑或智能手机便能随时随地使用我们的一站式投资平台。
+                                平台提供简单易用的中文交易界面，整合了多种经优化的强大功能，透过桌面电脑或智能手机便能随时随地使用我们的一站式投资平台。
                             </p>
                             <div class="CFD-pros">
-                                <div class="pro1"><img
-                                        src="/source/www/product/forex/new-version/CFD_icon1.png" /><span
+                                <div class="pro1"><img src="/static/images/forex/CFD_icon1.png" /><span
                                         class="pro_content">60+技术分析工具</span></div>
-                                <div class="pro2"><img
-                                        src="/source/www/product/forex/new-version/CFD_icon2.png" /><span
+                                <div class="pro2"><img src="/static/images/forex/CFD_icon2.png" /><span
                                         class="pro_content">专业市场策略</span></div>
-                                <div class="pro3"><img
-                                        src="/source/www/product/forex/new-version/CFD_icon3.png" /><span
+                                <div class="pro3"><img src="/static/images/forex/CFD_icon3.png" /><span
                                         class="pro_content">0.06秒一击成交</span></div>
-                                <div class="pro4"><img
-                                        src="/source/www/product/forex/new-version/CFD_icon4.png" /><span
+                                <div class="pro4"><img src="/static/images/forex/CFD_icon4.png" /><span
                                         class="pro_content">出入金快捷</span></div>
                             </div>
-                            <a href="/cn/platform/cfd-intro.html">了解更多</a>
+                            <a href="javascript:;">了解更多</a>
                         </div>
                         <div class="right-content">
                             <div class="device-CFD" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                                <img class="s4_phone" aos="zoom-in" aos-delay="1600"
-                                    src="/source/www/homepage/s4_phone.gif"
+                                <img class="s4_phone" aos="zoom-in" aos-delay="1600" src="/static/images/s4_phone.gif"
                                     alt="Phone_CFD">
                                 <img class="s4_macbook" aos="zoom-in" aos-delay="300"
-                                    src="/source/www/product/forex/new-version/bg3_mac.png"
-                                    alt="PC_CFD">
+                                    src="/static/images/forex/bg3_mac.png" alt="PC_CFD">
                             </div>
                         </div>
                     </div>
@@ -226,31 +398,28 @@
                     <div class="pc">
                         <div class="inner">
                             <div class="btn-container2">
-                                <img class="CFD-ios"
-                                    src="/source/www/homepage/CFD_IOS.png" />
-                                <img class="CFD-android"
-                                    src="/source/www/homepage/CFD_Android.png" />
-                                <a href="/source/material/CFD_Setup.exe"
+                                <img class="CFD-ios" src="/static/images/CFD_IOS.png" />
+                                <img class="CFD-android" src="/static/images/CFD_Android.png" />
+                                <a href="javascript:;"
                                     onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadPCUI', 'PC_GW', '1');">
-                                    <img
-                                        src="/source/www/homepage/CFD_winOS.png" /></a>
+                                    <img src="/static/images/CFD_winOS.png" /></a>
                             </div>
-                            <div class="App_code2 ios-CFD"><span></span><img
-                                    src="/source/www/footer/pic7-ios.png" /></div>
-                            <div class="App_code2 android-CFD"><span></span><img
-                                    src="/source/material/code-adr.png" /></div>
+                            <!-- <div class="App_code2 ios-CFD"><span></span><img src="/source/www/footer/pic7-ios.png" />
+                            </div>
+                            <div class="App_code2 android-CFD"><span></span><img src="/source/material/code-adr.png" />
+                            </div> -->
                         </div>
                     </div>
                     <div class="m">
                         <div class="app-platform-panel panel-position">
                             <a href="https://itunes.apple.com/us/app/chuang-fucfd/id1153506842?mt=8"
                                 onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadCFD', 'cfd-intro', '1');"><img
-                                    src="/source/www/homepage/m/apple_icon.png" />
+                                    src="/static/images/m/apple_icon.png" />
                                 <p>App Store<br /><span>立即下载</span></p>
                             </a>
                             <a href="/source/material/CFD_APP.apk"
                                 onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadCFD', 'cfd-intro', '1');"><img
-                                    src="/source/www/homepage/m/android_icon.png" />
+                                    src="/static/images/m/android_icon.png" />
                                 <p>Google Play<br /><span>立即下载</span></p>
                             </a>
                         </div>
@@ -261,37 +430,35 @@
                 <div class="web-page bg04">
                     <div class="inner">
                         <span class="main-title" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800"><img
-                            class=""
-                            src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;常见问题解答</span>
+                                class=""
+                                src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;常见问题解答</span>
                         <div class="faq container clearfix">
                             <div class="vir-con">
                                 <div class="col-md-12 ">
                                     <a id="article_0" class="article-question collapsed" data-toggle="collapse"
-                                        data-target="#article_body_0">什么是股票
-                                        ？
+                                        data-target="#article_body_0">什么是股票 CFD ？
                                     </a>
                                     <div class="article-answer collapse" id="article_body_0">
-                                        <p>股票
-                                            的中文名称是股票差价合约。最初只是大机构的一种有效规避证卷风险的工具，由于越来越多的普通投资者在熟悉差价合约（
+                                        <p>股票 CFD
+                                            的中文名称是股票差价合约。最初只是大机构的一种有效规避证卷风险的工具，由于越来越多的普通投资者在熟悉差价合约（ CFD
                                             ）的交易规则后，都喜欢上了这一种投资品种
                                             ，现在已经成为全球零售投资者的一种普通投资工具。
                                         </p>
-                                        <p>股票差价合约（
+                                        <p>股票差价合约（ CFD
                                             ）交易的标的是股票的涨跌差价。如果你判断该股票上涨，可以选择做多；如果判断该股票下跌，则可以选择做空。无论该股票是上涨还是下跌均可以自由的去交易该股票。可以这么说，股票
-                                            交易是专为中短线交易者而设计的，在交易性方面更灵活，比如多空双向交易、T+0，杠杆交易等，股票
-                                            的交易者除了不能参加股东大会投票之外，拥有与其他股票投资者完全相同的条件。正是因为有这些交易优势，许多投资者都已懂得制定自己的投资战略并通过
-                                            的交易平台进行投资。想了解我们的商品交易成本?请<a
-                                                class="heyue">点击这里</a>。
+                                            交易是专为中短线交易者而设计的，在交易性方面更灵活，比如多空双向交易、T+0，杠杆交易等，股票 CFD
+                                            的交易者除了不能参加股东大会投票之外，拥有与其他股票投资者完全相同的条件。正是因为有这些交易优势，许多投资者都已懂得制定自己的投资战略并通过我们的的交易平台进行投资。想了解我们的商品交易成本?请<a
+                                                class="">点击这里</a>。
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-12 ">
                                     <a id="article_1" class="article-question collapsed" data-toggle="collapse"
-                                        data-target="#article_body_1">股票
+                                        data-target="#article_body_1">股票 CFD
                                         交易是如何操作的?
                                     </a>
                                     <div class="article-answer collapse" id="article_body_1">
-                                        <p>股票
+                                        <p>股票 CFD
                                             是以现货合约来交易的。这些合约是您可以在一个指定的价格下对其进行买或卖的一个操作。
                                         </p>
                                     </div>
@@ -300,9 +467,9 @@
                                     <a id="article_4" class="article-question collapsed" data-toggle="collapse"
                                         data-target="#article_body_4">股票受什么因素影响？</a>
                                     <div class="article-answer collapse" id="article_body_4">
-                                        <p>由于股票市场受多种因素的影响包括公司运营状况、行业整体发展、股市牛熊信号、国家经济政策、央行利率政策、外部环境因素等。因此，股票
-                                            的价格走势同样也会受到这些因素的影响,。股票
-                                            交易是不会成为股东，但股票
+                                        <p>由于股票市场受多种因素的影响包括公司运营状况、行业整体发展、股市牛熊信号、国家经济政策、央行利率政策、外部环境因素等。因此，股票 CFD
+                                            的价格走势同样也会受到这些因素的影响,。股票 CFD
+                                            交易是不会成为股东，但股票 CFD
                                             的价格会随着标的股票的价格同步变化。
                                         </p>
                                         <p>• 当空头供大于求时，股票合约价格下跌</p>
@@ -311,29 +478,29 @@
                                 </div>
                                 <div class="col-md-12 ">
                                     <a id="article_2" class="article-question collapsed" data-toggle="collapse"
-                                        data-target="#article_body_2">股票
+                                        data-target="#article_body_2">股票 CFD
                                         交易的优势？
                                     </a>
                                     <div class="article-answer collapse" id="article_body_2">
                                         <strong>低交易成本</strong>
-                                        <p class="pleft">相比股票交易市场，大多数股票
+                                        <p class="pleft">相比股票交易市场，大多数股票 CFD
                                             交易商不收取交易手续费或佣金，只通过点差（买入价格和卖出价格的差价）获利。
-                                            国际提供的点差在股票交易市场中位处行业低水平。具体收费请<a
-                                                href="https://img.cfd139.com/source/material/CFD_price.pdf">点击这里</a>。
+                                            我们提供的点差在股票交易市场中位处行业低水平。具体收费请<a
+                                                href="javascript:;">点击这里</a>。
                                         </p>
                                         <strong class="padding-title">杠杆20倍</strong>
-                                        <p class="pleft">投资者可利用杠杆作用放大投资金额。不同产品杠杆也不同，目前股票
-                                            保证金交易的杠杆最大可达本金的20倍，例如：原先通过普通股票账户购买，需要1000美元才能购买100股的某支股，在选择股票
-                                            交易品种后，通过使用20倍杠杆，则仅需在买入支付中支付50美元即可。对于不同风险偏好的投资者来说，股票
+                                        <p class="pleft">投资者可利用杠杆作用放大投资金额。不同产品杠杆也不同，目前股票 CFD
+                                            保证金交易的杠杆最大可达本金的20倍，例如：原先通过普通股票账户购买，需要1000美元才能购买100股的某支股，在选择股票 CFD
+                                            交易品种后，通过使用20倍杠杆，则仅需在买入支付中支付50美元即可。对于不同风险偏好的投资者来说，股票 CFD
                                             要比单一交易方向的传统股票投资提供了更多的选择和获利可能。需要注意的是，杠杆的高度使用会带来巨大收益同时也有机会导致巨额亏损。
                                         </p>
                                         <strong>对冲功能</strong>
-                                        <p class="pleft">可双向交易，所以在股票
+                                        <p class="pleft">可双向交易，所以在股票 CFD
                                             交易市场不存在熊市牛市的区别，无论涨跌只要选对方向均可获利。
                                         </p>
                                         <strong>交易灵活</strong>
-                                        <p class="pleft">股票
-                                            交易的目的是以股票涨跌来实现盈利，并非真正成为上市公司的股东。投资者可利用T+0随时交易的灵活性短线操作，及时止盈止损，将投资收益最大化。基于此，拥有更高灵活性的股票
+                                        <p class="pleft">股票 CFD
+                                            交易的目的是以股票涨跌来实现盈利，并非真正成为上市公司的股东。投资者可利用T+0随时交易的灵活性短线操作，及时止盈止损，将投资收益最大化。基于此，拥有更高灵活性的股票 CFD
                                             自然而然成为更多投资者的选择。
                                         </p>
                                     </div>
@@ -355,7 +522,7 @@
                                 </div>
                                 <div class="col-md-12 ">
                                     <a id="article_3" class="article-question collapsed" data-toggle="collapse"
-                                        data-target="#article_body_3">股票
+                                        data-target="#article_body_3">股票 CFD
                                         交易实例
                                     </a>
                                     <div class="article-answer collapse" id="article_body_3">
@@ -394,12 +561,12 @@
                                 <div class="col-md-12 ">
                                     <a id="article_6" class="article-question collapsed" data-toggle="collapse"
                                         data-target="#article_body_6">
-                                        平台可交易哪些股票？
+                                        我们的平台可交易哪些股票？
                                     </a>
                                     <div class="article-answer collapse" id="article_body_6">
                                         <p>
                                             平台可交易的股票有：美股（阿里巴巴BABA、苹果AAPL）及港股（腾讯控股00700、汇丰控股00005、香港交易所00388）等5种股票产品。详情请见<a
-                                                class="heyue">合约细则</a>。
+                                                class="">合约细则</a>。
                                         </p>
                                     </div>
                                 </div>
@@ -416,8 +583,7 @@
                                     <a id="article_8" class="article-question collapsed" data-toggle="collapse"
                                         data-target="#article_body_8">交易股票1手需要多少保证金？</a>
                                     <div class="article-answer collapse" id="article_body_8">
-                                        <p>在
-                                            平台，不同产品需要不同保证金，如交易某股票1手需要1000美元初始保证金，交易0.01手，则等比例需要10美元。
+                                        <p>在我们的平台，不同产品需要不同保证金，如交易某股票1手需要1000美元初始保证金，交易0.01手，则等比例需要10美元。
                                         </p>
                                     </div>
                                 </div>
@@ -437,9 +603,7 @@
                                     <div class="article-answer collapse" id="article_body_10">
                                         <p>
                                             平台给投资者提供处于行业低水平的点差，具体详见
-                                            <a href="/source/material/CFD_price.pdf"
-                                                target="_blank">
-                                                
+                                            <a href="javascript:;" >
                                                 平台价格与收费
                                             </a>。
                                         </p>
@@ -449,11 +613,8 @@
                                     <a id="article_11" class="article-question collapsed" data-toggle="collapse"
                                         data-target="#article_body_11">交易股票有过夜利息吗？</a>
                                     <div class="article-answer collapse" id="article_body_11">
-                                        <p>在
-                                            平台，交易股票持仓过夜是有持仓过夜利息的，详见
-                                            <a href="/source/material/CFD_price.pdf"
-                                                target="_blank">
-                                                
+                                        <p>在我们的平台，交易股票持仓过夜是有持仓过夜利息的，详见
+                                            <a href="javascript:;">
                                                 平台价格与收费
                                             </a>。
                                         </p>
@@ -481,232 +642,545 @@
                                     </p>
                                 </div>
                             </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc">
+                    <div class="web-page bg05">
+                        <div class="inner">
+                            <div class="tab-pagination">
+                                <div class="tab-bullet left_bullet active" data-title="slider-1">
+                                    <span>立即开户</span>
+                                </div>
+                                <div class="tab-bullet middle_bullet" data-title="slider-2">
+                                    <span>开户教学</span>
+                                </div>
+                            </div>
+                            <div class="tab-container">
+                                <div class="tab-slider slider-1" id="slider-1">
+                                    <div class="acc-type">
+                                        <div class="Paper_Ac">
+                                            <p class="title">模拟账户</p>
+                                            <div class="item">
+                                                <ul>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_L.png" />
+                                                        <span>免费开立账户</span>
+                                                    </li>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_L.png" />
+                                                        <span>探索及熟悉交易平台</span>
+                                                    </li>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_L.png" />
+                                                        <span>零风险实时模拟交易</span>
+                                                    </li>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_L.png" />
+                                                        <span>找到个人的获利操作方式</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a href="javascript:;"
+                                                onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">免费模拟账户</a>
+                                        </div>
+                                        <div class="Real_Ac">
+                                            <p class="title">真实账户</p>
+                                            <div class="item">
+                                                <ul>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_R.png" />
+                                                        <span>免费开立账户</span>
+                                                    </li>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_R.png" />
+                                                        <span>特设一击成交功能</span>
+                                                    </li>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_R.png" />
+                                                        <span>支持68种技术指标分析</span>
+                                                    </li>
+                                                    <li>
+                                                        <img class="check"
+                                                            src="/static/images/about-us/check_R.png" />
+                                                        <span>提供高达500倍杠杆投资</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a href="javascript:;"
+                                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">免费真实账户</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-slider slider-2" id="slider-2">
+                                    <div class="step" data-aos="zoom-out-up" data-aos-delay="600"
+                                        data-aos-duration="1000">
+                                        <div class="ipage-component-step" data-type="light">
+                                            <ul class="ipage-component-step-ul">
+                                                <li class="step-item-li active">
+                                                    <div class="step-item">
+                                                        <div class="step-item-index">1</div>
+                                                        <div class="step-item-content">
+                                                            <p class="step-item-content-title">选择真实开户</p>
+                                                            <!-- <p class="step-item-content-detail">并设立账户密码</p> -->
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="step-item-li">
+                                                    <div class="step-item">
+                                                        <div class="step-item-index">2</div>
+                                                        <div class="step-item-content">
+                                                            <p class="step-item-content-title">验证手机号码</p>
+                                                            <p class="step-item-content-title">并设立账户密码</p>
+                                                            <!-- <p class="step-item-content-detail">身份证号及常用邮箱</p> -->
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="step-item-li">
+                                                    <div class="step-item">
+                                                        <div class="step-item-index">3</div>
+                                                        <div class="step-item-content">
+                                                            <p class="step-item-content-title">输入个人资料</p>
+                                                            <p class="step-item-content-title">账户级别越高，点差优惠越大</p>
+                                                            <!-- <p class="step-item-content-detail">点差优惠越大</p> -->
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="step-item-li">
+                                                    <div class="step-item no-content">
+                                                        <div class="step-item-index">4</div>
+                                                        <div class="step-item-content">
+                                                            <p class="step-item-content-title no-content">完成开户</p>
+                                                            <p class="step-item-content-detail"></p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="ipage-component-step-images">
+                                                <div class="step-item-image img-1"
+                                                    style="max-width: 300px; display: none;">
+                                                    <img src="/static/images/phone_step1.png">
+                                                </div>
+                                                <div class="step-item-image img-2"
+                                                    style="max-width: 300px; display: none;">
+                                                    <img src="/static/images/phone_step2.png">
+                                                </div>
+                                                <div class="step-item-image img-3"
+                                                    style="max-width: 300px; display: block;">
+                                                    <img src="/static/images/phone_step3.png">
+                                                    <div class="grade-cust"><img src="/static/images/phone_popup.png">
+                                                    </div>
+                                                </div>
+                                                <div class="step-item-image img-4"
+                                                    style="max-width: 300px; display: none;">
+                                                    <img src="/static/images/phone_step4.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-open" data-aos="flip-down" data-aos-delay="800"
+                                        data-aos-duration="1000">
+                                        <a href="/cn/edu/course.html">观看开户教学视频</a>
+                                        <a href="/cn/pc/rcfd_account"
+                                            onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-container">
+                                <img class="CFD-ios" src="/static/images/CFD_IOS.png" />
+                                <img class="CFD-android" src="/static/images/CFD_Android.png" />
+                                <a href="javascript:;"
+                                    onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadPCUI', 'PC_GW', '1');">
+                                    <img src="/static/images/CFD_winOS.png" /></a>
+                                <!-- <div class="icon">
+                                    <div class="App_code ios-CFD"><span></span><img
+                                            src="/source/www/footer/pic7-ios.png" />
+                                    </div>
+                                    <div class="App_code android-CFD"><span></span><img
+                                            src="/source/material/code-adr.png" />
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="web-page bg06">
+                    <div class="inner">
+                        <span class="main-title" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800"><img
+                                class=""
+                                src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;查看我们所有产品</span>
+                        <div class="more-product">
+                            <div class="forex" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                                <a class="main-intro" href="/cn/product/forex.html">外汇</a>
+                                <p class="sub-intro">交易主要货币对、次要货币对和稀有货币对</p>
+                            </div>
+                            <div class="commodities" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                                <a class="main-intro" href="/cn/product/commodities.html">商品</a>
+                                <p class="sub-intro">提供能源商品、基础原材料和农副产品</p>
+                            </div>
+                            <div class="indices" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800">
+                                <a class="main-intro" href="/cn/product/indices.html">指数</a>
+                                <p class="sub-intro">交易中华300 、美国Tech100、香港50全球热门指数</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner box">
+                    <div class="promotion-panel">
+                        <div class="pc">
+                            <p>每月限时活动 回馈客户</p>
+                        </div>
+                        <div class="m">
+                            <p>每月限时活动<br />回馈客户</p>
+                        </div>
+                        <a href="/cn/acc/promotion.html">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="m">
+                <!--底部-->
+                <script>
+                    footer();
+                </script>
+                <!--底部结束-->
+                <!--遮罩层-->
+                <div id="m-overlay" class="overlay" node-name="overlay"></div>
+                <!--遮罩层 end-->
+            </div>
+            <!--#include file="/cn/template.footer.html"-->
+            <!-- updated 20200911 1700 -->
+            <div class="pc">
+                <div id="footer">
+                    <a href="javascript:;" class="backtop"></a>
+                    <div class="footer-inner">
+                        <div class="part1">
+                            <div class="left-nav">
+                                <div class="list row">
+                                    <div class="col-sm-4">
+
+                                        <p class="sub-title"> 关于我们</p>
+                                        <p><a href="/cn/aboutUS.html">关于</a>
+                                        </p>
+                                        <p><a href="/cn/about/advantage.html">企业优势</a></p>
+                                        <p><a href="/cn/about/awards-honor.html">企业荣誉</a>
+                                        </p>
+                                        <p> <a href="/cn/about/operation-report.html">运营数据</a>
+                                        </p>
+                                        <!-- <p> <a href="/cn/about/partners.html">合作伙伴</a></p> -->
+                                        <!-- <p> <a href="/cn/about/contact-us.html">联系我们</a> -->
+                                        </p>
+
+
+                                        <p class="sub-title">交易产品</p>
+                                        <p> <a href="/cn/product/forex.html">外汇</a></p>
+                                        <p> <a href="/cn/product/commodities.html">商品</a>
+                                        </p>
+                                        <p> <a href="/cn/product/indices.html">指数</a></p>
+                                        <p> <a href="/cn/product/stock.html">股票</a></p>
+
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="sub-title">开户交易</p>
+                                        <p> <a href="javascript:;"
+                                                onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实账户</a>
+                                        </p>
+                                        <p><a href="javascript:;"
+                                                onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a>
+                                        </p>
+                                        <p><a href="javascript:;">帐户类型</a>
+                                        <p><a href="javascript:;">尊贵账户</a>
+                                        <p> <a href="javascript:;">CFD交易平台</a>
+                                        </p>
+                                        <p> <a href="javascript:;">操作指南</a>
+                                        </p>
+                                        <p> <a href="javascript:;">汇率兑换</a></p>
+                                        <p> <a href="javascript:;">存取指南</a>
+                                        </p>
+                                        <p> <a href="javascript:;">交易下单</a>
+                                        </p>
+                                        <p> <a href="/cn/product/trade-calculator.html">交易计算器</a>
+                                        <p> <a href="javascript:;">常见问题</a></p>
+                                        <p> <a href="javascript:;">最新优惠</a></p>
+                                        <p> <a href="javascript:;">推荐好友</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="sub-title-1"><a href="javascript:;">代理合作</a></p>
+                                        <p class="sub-title sub-title-2">行情资讯</p>
+                                        <p> <a href="javascript:;">环球新闻</a>
+                                        </p>
+                                        <p><a href="javascript:;">实时报价</a>
+                                        </p>
+                                        <p><a href="javascript:;">持仓比例</a>
+                                        </p>
+                                        <p><a href="javascript:;">财经日历</a>
+                                        </p>
+                                        <p> <a href="javascript:;">央行动态</a>
+                                        </p>
+
+                                        <p class="sub-title">CPT研究院</p>
+                                        <p><a href="javascript:;">专家评论</a></p>
+                                        <p><a href="javascript:;">互动问答</a></p>
+                                        <p><a href="javascript:;">
+                                                汇聊</a></p>
+                                        <p><a href="javascript:;">学习文章</a>
+                                        </p>
+                                        <p><a href="javascript:;">视频课程</a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-nav">
+                                <!-- <div class="logo"><img src="/static/images/cpt_logo.png" />
+                        </div> -->
+                                <ul>
+                                    <li><img src="/static/images/footer/new-icon-cs.png" /><a
+                                            href="javascript:;">在线客服</a>
+                                    </li>
+                                    <!--<li><img src="/static/images/footer/icon-qq.png" /><a
+                            href="javascript:;"
+                            onclick="cf.common.openQQCustomer();countBiUtil.gwanalysis('2', '0', '1', '', '', '');">QQ
+                            客服</a></li>-->
+                                    <li><img src="/static/images/footer/new-icon-email.png" /><a
+                                            href="javascript:;">cs@cptglobales.com</a>
+                                    </li>
+                                    <!-- <li><img src="/static/images/footer/new-icon-phone.png" /><span>400-8428955</span>
+                            </li> -->
+                                    <!--<li><img src="/lt;!&ndash;#echo var='IMG_URL' default=''&ndash;&gt;/static/images/footer/icon-wechat.png"/><span>&lt;!&ndash;#echo var='CFD_ENG' default=''&ndash;&gt;</span></li>-->
+                                    <li>
+                                        <span class="download">下载客户端：</span>
+                                    </li>
+                                    <li>
+                                        <img class="img-ios" src="/static/images/footer/icon-ios.png" />
+                                        <img class="vertical-line" src="/static/images/footer/vertical-line.png" />
+                                        <img class="img-android" src="/static/images/footer/icon-android.png" />
+                                        <img class="vertical-line" src="/static/images/footer/vertical-line.png" />
+                                        <img src="/static/images/footer/icon-windows.png" />
+                                    </li>
+
+                                </ul>
+                                <!-- <div class="code ios"><span></span><img src="/static/images/footer/pic7-ios.png" /></div> -->
+                                <!-- <div class="code android"><span></span><img src="/source/material/code-adr.png" /></div> -->
+                                <!-- <div class="code weixin"><span></span><img src="/static/images/footer/weixin8-pic.png" /></div> -->
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="part2">
+                            <div class="list">
+                                <p>监管资讯: <br> 受南非金融部门行为监管局（FSCA） 监管，牌照号 45954；<br>
+                                    受伯利兹国际金融服务委员会（IFSC） 监管，许可证号为 FSC000314/17；<br>
+                                    受昂儒昂离岸金融管理局（AOFA） 监管，许可证号为 L15643/CPTG；<br>
+                                    受英国金融行为监管局（FCA）授权与监管，注册号 6707165
+                                </p>
+                                <p>风险警告：<br />保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，<br />您可能因此损失全部本金。保证金交易不一定适合所有投资者，交易前请确认您已了解相关风险
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="part3">
+                            <div class="links-nav">
+                                <ul>
+                                    <li><a href="javascript:;">隐私条款</a>
+                                    </li>
+
+                                    <li><a href="javascript:;">免责声明</a>
+                                    </li>
+
+                                    <li><a>交易事项</a></li>
+
+                                    <li><a href="javascript:;">客户协议</a>
+                                    </li>
+
+                                    <!-- <li><a href="/cn/sitemap.html">网站地图</a></li> -->
+
+                                    <!-- <li><a href="/en/">English</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="part4">
+                            <div class="copy-right">
+                                <p>Copyright © 2025
+                                    <a href="">
+                                        cptmarkets有限公司</a> 版权所有 不得转载
+                                </p>
+                                <p>如需要以 Internet Explorer 开启网站请使用版本 10 或以上 , 以 360 浏览器请使用版本 8 或以上</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pc">
-                <div class="web-page bg05">
-                    <div class="inner">
-                        <div class="tab-pagination">
-                            <div class="tab-bullet left_bullet active" data-title="slider-1">
-                                <span>立即开户</span>
+            <div class="m">
+                <div id="footer">
+                    <div class="footer-inner">
+                        <div class="part1">
+                            <div class="logo"><img src="/static/images/footer/m/logo_m.png" />
                             </div>
-                            <div class="tab-bullet middle_bullet" data-title="slider-2">
-                                <span>开户教学</span>
-                            </div>
+                            <ul>
+                                <li><img src="/static/images/footer/m/new-icon-email-m.png" /><a href="mailto:cs@.com</a>
+                        </li>
+                        <li><img src=" /static/images/footer/m/new-icon-cs-m.png" /><a class="download">下载客户端</a></li>
+                                <li><img src="/static/images/footer/m/new-icon-phone-m.png" /><span>400-8428955</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="tab-container">
-                            <div class="tab-slider slider-1" id="slider-1">
-                                <div class="acc-type">
-                                    <div class="Paper_Ac">
-                                        <p class="title">模拟账户</p>
-                                        <div class="item">
-                                            <ul>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_L.png" />
-                                                    <span>免费开立账户</span>
-                                                </li>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_L.png" />
-                                                    <span>探索及熟悉交易平台</span>
-                                                </li>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_L.png" />
-                                                    <span>零风险实时模拟交易</span>
-                                                </li>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_L.png" />
-                                                    <span>找到个人的获利操作方式</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="/cn/pc/dcfd_account"
-                                            onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">免费模拟账户</a>
-                                    </div>
-                                    <div class="Real_Ac">
-                                        <p class="title">真实账户</p>
-                                        <div class="item">
-                                            <ul>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_R.png" />
-                                                    <span>免费开立账户</span>
-                                                </li>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_R.png" />
-                                                    <span>特设一击成交功能</span>
-                                                </li>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_R.png" />
-                                                    <span>支持68种技术指标分析</span>
-                                                </li>
-                                                <li>
-                                                    <img class="check"
-                                                        src="/source/www/about-us/new-version/check_R.png" />
-                                                    <span>提供高达500倍杠杆投资</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="/cn/pc/rcfd_account"
-                                            onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">免费真实账户</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-slider slider-2" id="slider-2">
-                                <div class="step" data-aos="zoom-out-up" data-aos-delay="600" data-aos-duration="1000">
-                                    <div class="ipage-component-step" data-type="light">
-                                        <ul class="ipage-component-step-ul">
-                                            <li class="step-item-li active">
-                                                <div class="step-item">
-                                                    <div class="step-item-index">1</div>
-                                                    <div class="step-item-content">
-                                                        <p class="step-item-content-title">选择真实开户</p>
-                                                        <!-- <p class="step-item-content-detail">并设立账户密码</p> -->
-                                                    </div>
-                                                </div>
+                        <div class="part2">
+                            <div class="faq clearfix">
+                                <div class="col-md-12">
+                                    <a id="footer_faq_submenu_0" class="faq-submenu collapsed" data-toggle="collapse"
+                                        data-target="#footer_faq_body_0">关于我们</a>
+                                    <div class="submenu-answer collapse" id="footer_faq_body_0">
+                                        <ul>
+                                            <li><a href="/cn/aboutUS.html">关于</a>
                                             </li>
-                                            <li class="step-item-li">
-                                                <div class="step-item">
-                                                    <div class="step-item-index">2</div>
-                                                    <div class="step-item-content">
-                                                        <p class="step-item-content-title">验证手机号码</p>
-                                                        <p class="step-item-content-title">并设立账户密码</p>
-                                                        <!-- <p class="step-item-content-detail">身份证号及常用邮箱</p> -->
-                                                    </div>
-                                                </div>
+                                            <li><a href="/cn/about/advantage.html">企业优势</a>
                                             </li>
-                                            <li class="step-item-li">
-                                                <div class="step-item">
-                                                    <div class="step-item-index">3</div>
-                                                    <div class="step-item-content">
-                                                        <p class="step-item-content-title">输入个人资料</p>
-                                                        <p class="step-item-content-title">账户级别越高，点差优惠越大</p>
-                                                        <!-- <p class="step-item-content-detail">点差优惠越大</p> -->
-                                                    </div>
-                                                </div>
+                                            <li><a href="/cn/about/awards-honor.html">企业荣誉</a>
                                             </li>
-                                            <li class="step-item-li">
-                                                <div class="step-item no-content">
-                                                    <div class="step-item-index">4</div>
-                                                    <div class="step-item-content">
-                                                        <p class="step-item-content-title no-content">完成开户</p>
-                                                        <p class="step-item-content-detail"></p>
-                                                    </div>
-                                                </div>
+                                            <li><a href="/cn/about/operation-report.html">运营数据</a>
+                                            </li>
+                                            <li><a href="/cn/about/partners.html">合作伙伴</a>
+                                            </li>
+                                            <li><a href="/cn/about/contact-us.html">联系我们</a>
                                             </li>
                                         </ul>
-                                        <div class="ipage-component-step-images">
-                                            <div class="step-item-image img-1" style="max-width: 300px; display: none;">
-                                                <img
-                                                    src="/source/www/homepage/phone_step1.png">
-                                            </div>
-                                            <div class="step-item-image img-2" style="max-width: 300px; display: none;">
-                                                <img
-                                                    src="/source/www/homepage/phone_step2.png">
-                                            </div>
-                                            <div class="step-item-image img-3"
-                                                style="max-width: 300px; display: block;">
-                                                <img
-                                                    src="/source/www/homepage/phone_step3.png">
-                                                <div class="grade-cust"><img
-                                                        src="/source/www/homepage/phone_popup.png">
-                                                </div>
-                                            </div>
-                                            <div class="step-item-image img-4" style="max-width: 300px; display: none;">
-                                                <img
-                                                    src="/source/www/homepage/phone_step4.png">
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="btn-open" data-aos="flip-down" data-aos-delay="800"
-                                    data-aos-duration="1000">
-                                    <a href="/cn/edu/course.html">观看开户教学视频</a>
-                                    <a href="/cn/pc/rcfd_account"
-                                        onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">立即开户</a>
+                                <div class="col-md-12 ">
+                                    <a id="footer_faq_submenu_1" class="faq-submenu collapsed" data-toggle="collapse"
+                                        data-target="#footer_faq_body_1">交易产品</a>
+                                    <div class="submenu-answer collapse" id="footer_faq_body_1">
+                                        <ul>
+                                            <li><a href="/cn/product/forex.html">外汇</a></li>
+                                            <li><a href="/cn/product/commodities.html">商品</a></li>
+                                            <li><a href="/cn/product/indices.html">指数</a></li>
+                                            <li><a href="/cn/product/stock.html">股票</a></li>
+                                            <!--<li><a href="/cn/product/virtual.html">虚拟货币</a></li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <a id="footer_faq_submenu_2" class="faq-submenu collapsed" data-toggle="collapse"
+                                        data-target="#footer_faq_body_2">开户交易</a>
+                                    <div class="submenu-answer collapse" id="footer_faq_body_2">
+                                        <ul>
+                                            <li class="sub-menu-nav">开户交易</li>
+                                            <li><a href="/cn/mobile/rcfd_account"
+                                                    onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');">真实开户</a>
+                                            </li>
+                                            <li><a href="/cn/mobile/dcfd_account"
+                                                    onclick="ga('send', 'event', 'Reg_Demo', 'ClickAccount', 'PC_GW', '1');">模拟开户</a>
+                                            </li>
+                                            <li><a href="/cn/acc/terms.html">账户类型</a></li>
+                                            <li><a href="/cn/acc/super-vip.html">尊贵账户</a></li>
+                                            <li class="sub-menu-nav">软件下载</li>
+                                            <li><a href="/cn/platform/cfd-intro.html">CFD交易平台</a></li>
+                                            <li><a href="/cn/platform/cfd/step.html">操作指南</a></li>
+                                            <li class="sub-menu-nav">交易须知</li>
+                                            <li> <a href="/cn/exchangerate.html">汇率兑换</a></li>
+                                            <li><a href="/cn/acc/account-guide.html">存取指南</a></li>
+                                            <li><a href="/cn/acc/closeposition.html">交易下单</a></li>
+                                            <li><a href="/cn/product/trade-calculator.html">交易计算器</a></li>
+                                            <li><a href="/cn/faq.html">常见问题</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <a id="footer_faq_submenu_3" href="/cn/agency.html">代理合作</a>
+                                </div>
+
+                                <div class="col-md-12 ">
+                                    <a id="footer_faq_submenu_5" class="faq-submenu collapsed" data-toggle="collapse"
+                                        data-target="#footer_faq_body_5">行情资讯</a>
+                                    <div class="submenu-answer collapse" id="footer_faq_body_5">
+                                        <ul>
+                                            <li><a href="/cn/information/newss.html">环球新闻</a></li>
+                                            <li><a href="/cn/information/quote.html">实时报价</a></li>
+                                            <li><a href="/cn/information/position.html">持仓比例</a>
+                                            </li>
+                                            <li><a href="/cn/information/calendar.html">财经日历</a>
+                                            </li>
+                                            <li><a href="/cn/information/centralBank.html">央行动态</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 ">
+                                    <a id="footer_faq_submenu_4" class="faq-submenu collapsed" data-toggle="collapse"
+                                        data-target="#footer_faq_body_4">研究院</a>
+                                    <div class="submenu-answer collapse" id="footer_faq_body_4">
+                                        <ul>
+                                            <li><a href="/cn/edu/analyst.html">专家评论</a></li>
+                                            <li><a href="">互动问答</a></li>
+                                            <li><a href="/cn/super-topic/super_topic.html">汇聊</a>
+                                            </li>
+                                            <li><a href="/cn/edu/qualification.html">学习文章</a>
+                                            </li>
+                                            <li><a href="/cn/edu/course.html">视频课程</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="btn-container">
-                            <img class="CFD-ios"
-                                src="/source/www/homepage/CFD_IOS.png" />
-                            <img class="CFD-android"
-                                src="/source/www/homepage/CFD_Android.png" />
-                            <a href="/source/material/CFD_Setup.exe"
-                                onclick="ga('send', 'event', 'Download_CFD', 'ClickDownloadPCUI', 'PC_GW', '1');">
-                                <img
-                                    src="/source/www/homepage/CFD_winOS.png" /></a>
-                            <div class="icon">
-                                <div class="App_code ios-CFD"><span></span><img
-                                        src="/source/www/footer/pic7-ios.png" />
-                                </div>
-                                <div class="App_code android-CFD"><span></span><img
-                                        src="/source/material/code-adr.png" />
-                                </div>
+                        <div class="part3">
+                            <div class="list">
+                                <p>国际有限公司品牌在多个司法管辖区均获得授权和监管。</p>
+                                <p>GLOBAL PTY LTD)
+                                    受澳大利亚证券与投资委员会 (ASIC) 监管，牌照号为001273790；受美国全国期货协会 (NFA) 认证交易商，认证号为0522236；
+                                    受巴哈马证券委员会
+                                    (SCB) 监管，监管号为SIA-F213。</p>
+                                <p>风险警告：<br />保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，您可能因此损失全部本金。保证金交易不一定适合所有投资者，交易前请确认您已了解相关风险
+                                </p>
+                            </div>
+                        </div>
+                        <div class="part4">
+                            <ul>
+                                <li><a href="/cn/notice.html">最新公告</a></li>
+                                <li><a href="/source/material/privacyPolicy.html">隐私条款</a>
+                                </li>
+
+                                <li><a href="/source/material/disclaimer.html">免责声明</a>
+                                </li>
+
+                                <li><a onclick="showDisclosureAudio()">交易事项</a></li>
+
+                                <li><a href="/source/material/client_agreement.pdf">客户协议</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="part5">
+                            <div class="copy-right">
+                                <p>Copyright © 2024
+                                    <a href="/">
+                                        国际有限公司</a> 版权所有 不得转载
+                                </p>
+                                <p>如需要以 Internet Explorer 开启网站请使用版本 10 或以上 , <br />以 360 浏览器请使用版本 8 或以上</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="web-page bg06">
-                <div class="inner">
-                    <span class="main-title" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800"><img
-                        class=""
-                        src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;查看我们所有产品</span>
-                    <div class="more-product">
-                        <div class="forex" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
-                            <a class="main-intro" href="/cn/product/forex.html">外汇</a>
-                            <p class="sub-intro">交易主要货币对、次要货币对和稀有货币对</p>
-                        </div>
-                        <div class="commodities" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
-                            <a class="main-intro" href="/cn/product/commodities.html">商品</a>
-                            <p class="sub-intro">提供能源商品、基础原材料和农副产品</p>
-                        </div>
-                        <div class="indices" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800">
-                            <a class="main-intro" href="/cn/product/indices.html">指数</a>
-                            <p class="sub-intro">交易中华300 、美国Tech100、香港50全球热门指数</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="inner box">
-                <div class="promotion-panel">
-                    <div class="pc">
-                        <p>每月限时活动 回馈新老客户</p>
-                    </div>
-                    <div class="m">
-                        <p>每月限时活动<br />回馈新老客户</p>
-                    </div>
-                    <a href="/cn/acc/promotion.html">了解更多</a>
-                </div>
-            </div>
+            <!-- end -->
+        </div>
+        <!-- End Main contents -->
+        <div class="pc">
+            <!--#include file="/cn/template.right-1.html"-->
         </div>
         <div class="m">
-            <!--底部-->
-            <script>
-                footer();
-            </script>
-            <!--底部结束-->
-            <!--遮罩层-->
-            <div id="m-overlay" class="overlay" node-name="overlay"></div>
-            <!--遮罩层 end-->
+            <!--#include file="/cn/nav.html"-->
         </div>
-        <!--#include file="/cn/template.footer.html"-->
-    </div>
-    <!-- End Main contents -->
-    <div class="pc">
-        <!--#include file="/cn/template.right-1.html"-->
-    </div>
-    <div class="m">
-        <!--#include file="/cn/nav.html"-->
-    </div>
     </div>
 </body>
 <script src="/cn/js/ipage.js"></script>

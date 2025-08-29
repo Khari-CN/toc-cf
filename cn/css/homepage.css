@@ -3593,6 +3593,7 @@ html {
 
   .section7 .partner-icon .partner-display .partner-img>img {
     max-width: 150px;
+    max-height: 150px;
   }
 
   /* .section8 .container .btn-open{
