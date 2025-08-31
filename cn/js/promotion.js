@@ -135,7 +135,7 @@ $.extend({
           '<div class="pc">',
           '<div class="hover-img">',
           '<p class="text-hover">' + smalls[i].name + "</p>",
-          '<img src="/toc-cf//sc.cfygxz.com/source/www/acc/promotion/forward.png">',
+          '<img src="//sc.cfygxz.com/source/www/acc/promotion/forward.png">',
           "</div>",
           "</div>",
           "</a>",

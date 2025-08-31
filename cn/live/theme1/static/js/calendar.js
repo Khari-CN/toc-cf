@@ -339,11 +339,11 @@ var calendar = new Vue({
                 li.setAttribute("class","active");
 
                 if(idName == "001"){
-                    li.childNodes[0].src="/toc-cf/source/www/news/calendar/asia-h.png"
+                    li.childNodes[0].src="/source/www/news/calendar/asia-h.png"
                 }else if(idName == "002"){
-                    li.childNodes[0].src="/toc-cf/source/www/news/calendar/europe-h.png"
+                    li.childNodes[0].src="/source/www/news/calendar/europe-h.png"
                 }else{
-                    li.childNodes[0].src="/toc-cf/source/www/news/calendar/america-h.png"
+                    li.childNodes[0].src="/source/www/news/calendar/america-h.png"
                 }
                 $(".single-country ul li[typeName="+ idName+"]").addClass("active")
 

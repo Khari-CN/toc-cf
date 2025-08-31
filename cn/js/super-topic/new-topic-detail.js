@@ -372,7 +372,7 @@ $.extend({
     $(".detail-title")
       .empty()
       .append(
-        ' <div class="news-title"><img src="/toc-cf//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;' +
+        ' <div class="news-title"><img src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;' +
           topicTitle +
           '</div> <div class="news-time">发布时间: ' +
           stime +

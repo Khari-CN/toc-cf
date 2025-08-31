@@ -14,13 +14,13 @@
     <meta name="wap-font-scale" content="no">
     <!--#include file="/cn/template.css.html"-->
     <!--#include file="/module/html.head.html"-->
-    <link rel="shortcut icon" href="/toc-cf/source/www/template/fav.ico">
-    <link rel="apple-touch-icon image_src" href="/toc-cf/source/www/template/fav.ico">
-    <link href="/toc-cf/cn/css/homepage/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/toc-cf/cn/css/homepage/nav.css" />
-    <link href="/toc-cf/cn/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="/toc-cf/cn/css/news-detailed.css" rel="stylesheet" type="text/css" />
-    <script src="/toc-cf/cn/js/homepage/backheader.js"></script>
+    <link rel="shortcut icon" href="/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="/source/www/template/fav.ico">
+    <link href="/cn/css/homepage/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cn/css/homepage/nav.css" />
+    <link href="/cn/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/cn/css/news-detailed.css" rel="stylesheet" type="text/css" />
+    <script src="/cn/js/homepage/backheader.js"></script>
 </head>
 
 <body class="home-page">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="back-btn">
-                    <a id="back" href="/toc-cf/cn/information/newss.html">返回</a>
+                    <a id="back" href="/cn/information/newss.html">返回</a>
                 </div>
             </div>
             <div class="m">
@@ -92,8 +92,8 @@
     </div>
     <!--#include file="/cn/template.js.html"-->
 </body>
-<script src="/toc-cf/cn/js/index.js"></script>
-<script src="/toc-cf/cn/js/jquery.mailtip.js"></script>
+<script src="/cn/js/index.js"></script>
+<script src="/cn/js/jquery.mailtip.js"></script>
 <script>
     setActiveMenu();
     var qrElement = $('.float-content img[src$="/source/www/template/common/code.jpg"]');
@@ -101,13 +101,13 @@
         setQrImage(qrElement);
     }
 </script>
-<script src="/toc-cf/cn/js/gwanalysis.js?type=1234567qwqw"></script>
-<script src="/toc-cf/cn/js/cfanalysis.js?type=220q"></script>
+<script src="/cn/js/gwanalysis.js?type=1234567qwqw"></script>
+<script src="/cn/js/cfanalysis.js?type=220q"></script>
 <!--  common method openQQCustomer and openLive800 -->
-<script src="/toc-cf/cn/js/analytics.min.js"></script>
-<script src="/toc-cf/cn/js/homepage/aos.js"></script>
-<script src="/toc-cf/cn/js/homepage/nav.js"></script>
-<script src="/toc-cf/cn/js/bootstrap.min.js"></script>
+<script src="/cn/js/analytics.min.js"></script>
+<script src="/cn/js/homepage/aos.js"></script>
+<script src="/cn/js/homepage/nav.js"></script>
+<script src="/cn/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     AOS.init({
         offset: 100,
@@ -169,7 +169,7 @@
                     if (json != null) {
                         $("#title").find(".title-content1").html(`<img
                                 class=""
-                                src="/toc-cf//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;${json.title}`);
+                                src="//sc.cfygxz.com/source/www/aboutUs/awards-honor/title_bar.png">&nbsp;&nbsp;${json.title}`);
                         $("#title").find(".date-1").text(json.ctime);
                         $("#content").html(json.content);
                     };

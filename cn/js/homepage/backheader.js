@@ -44,11 +44,10 @@ function menu() {
       '<div class="main-header"><div class="header-top"></div><div class="m-header m-header3" id="m-header">';
     html += '  <div class="layout-1" style="padding-left: 0.3rem;">';
     html += '   <div class="item-1">';
-    html += '     <a href="/toc-cf/" class="left-1"></a>';
+    html += '     <a href="/" class="left-1"></a>';
     html += " </div>";
     html += ' <div class="item-2">';
-    html +=
-      '     <a href="https://ac.cfd139.com/cn/mobile/rcfd_account" class="right-1">开启真实账户';
+    html += '     <a href="javascript:;" class="right-1">开启真实账户';
     html += "     </a>";
     html += '    <a href="javascript:;" class="right-2" node-name="point">';
     html += "  </a>";
@@ -103,7 +102,7 @@ function footer() {
     html +=
       "<li><a class='suggestion-footer' href=\"javascript:void(0)\" onclick=\"showAdviceForm()\"><img class='icon' src='//sc.cfygxz.com/source/www/homepage/m/m_footer_icon4.png'><em>功能建议</em></a></li>";
     html +=
-      '<li><a href="/toc-cf/cn/acc/promotion.html"><img class="icon" src="/toc-cf//sc.cfygxz.com/source/www/homepage/m/m_footer_icon1.png"><em>最新优惠</em></a></li>';
+      '<li><a href="/cn/acc/promotion.html"><img class="icon" src="//sc.cfygxz.com/source/www/homepage/m/m_footer_icon1.png"><em>最新优惠</em></a></li>';
     html +=
       "<li><a class='live800' href=\"javascript:void(0)\"  onclick=\"openLive800();ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_GW', '1');\"><img class='icon' src='//sc.cfygxz.com/source/www/homepage/m/m_footer_icon2.png'><em>在线客服</em></a></li>";
     html +=
@@ -124,6 +123,6 @@ $(function () {
     $(".referral-footer").attr("href", ac_url + "/" + window.location.search);
   }
 });
-function showAdviceForm(){
+function showAdviceForm() {
   $("#suggestion").show();
 }
