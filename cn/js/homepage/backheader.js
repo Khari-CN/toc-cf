@@ -1,5 +1,5 @@
 var cs_url = "https://m.cfd139.com/cn/onlinecs.html";
-// var ac_url = "https://ac.cfd139.com";
+var ac_url = "";
 function openLive800() {
   $(".live800").attr("href", cs_url);
 }

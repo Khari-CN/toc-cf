@@ -636,13 +636,13 @@ AOS.init();
 (function a() {
   // e.preventDefault();
   new Swiper("#swiper5", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      disableOnInteraction: false,
-      enabled: true,
-    },
+    // loop: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    //   disableOnInteraction: false,
+    //   enabled: true,
+    // },
     autoplay: false,
     slidesPerView: "auto",
     centeredSlides: true,

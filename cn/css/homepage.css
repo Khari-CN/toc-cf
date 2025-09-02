@@ -2302,6 +2302,7 @@ html {
 
 .section4 .container .s4-content .device-CFD .s4_phone {
   position: absolute;
+  width: 207px;
   z-index: 2;
   left: 20px;
   bottom: 0;
@@ -4773,10 +4774,10 @@ swiper-container {
 
   .section3 {
     background: url('//sc.cfygxz.com/source/www/homepage/m/s3_bg.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position:0 -200px;
     max-width: 7.5rem;
     width: 100%;
-    height: 12.8rem;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -5073,6 +5074,7 @@ swiper-container {
     height: 2.23rem;
     position: relative;
     text-align: center;
+    font-size: 0;
   }
 
   .section8 .open-acc-panel .step-panel .swiper-slide .number-plate {
