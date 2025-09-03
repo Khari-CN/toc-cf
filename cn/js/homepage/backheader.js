@@ -102,7 +102,7 @@ function footer() {
     html +=
       "<li><a class='suggestion-footer' href=\"javascript:void(0)\" onclick=\"showAdviceForm()\"><img class='icon' src='//sc.cfygxz.com/source/www/homepage/m/m_footer_icon4.png'><em>功能建议</em></a></li>";
     html +=
-      '<li><a href="/cn/acc/promotion.html"><img class="icon" src="//sc.cfygxz.com/source/www/homepage/m/m_footer_icon1.png"><em>最新优惠</em></a></li>';
+      '<li><a href="/toc-cf/cn/acc/promotion.html"><img class="icon" src="//sc.cfygxz.com/source/www/homepage/m/m_footer_icon1.png"><em>最新优惠</em></a></li>';
     html +=
       "<li><a class='live800' href=\"javascript:void(0)\"  onclick=\"openLive800();ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_GW', '1');\"><img class='icon' src='//sc.cfygxz.com/source/www/homepage/m/m_footer_icon2.png'><em>在线客服</em></a></li>";
     html +=

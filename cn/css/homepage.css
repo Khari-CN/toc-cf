@@ -4981,7 +4981,7 @@ swiper-container {
   }
 
   .section7 .partner-icon .partner-display .swiper-slide {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .section7 .partner-icon .partner-display .swiper-slide .partner-row {

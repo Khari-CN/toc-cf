@@ -582,7 +582,7 @@ template {
 
 .m-header .layout-1 .item-1 .left-1 {
     display: inline-block;
-    background-image: url(/static/images/cpt_logo.png);
+    background-image: url("/toc-cf/static/images/cpt_logo.png");
     width: 2.02rem;
     height: .71rem;
     background-size: 100% 100%;

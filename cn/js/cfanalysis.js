@@ -201,7 +201,7 @@ countBiUtil.gwanalysis = function (behaviorType, platformType, advisoryType, beh
         _maq.push(['_setEventAction', eventAction]);
     }
 
-    _maq.push(['_setPlatformName', '创富国际']);
+    _maq.push(['_setPlatformName', '']);
     _maq.push(['_setSessionId', countBiUtil.getSessionId(countBiUtil.GA_KEY)]);
     _maq.push(['_setUserId', countBiUtil.getUserId(countBiUtil.CF_COOKIE_USERID)]);
     <!--访问上一url地址-->

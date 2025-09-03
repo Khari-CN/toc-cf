@@ -782,5 +782,15 @@ img {
     .inner .open-panel a:last-child{
         font-size: 0.3rem;
     }
+    .partner-row{
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+    }
+    .partner-icon .partner-display .partner-img>img {
+        height: 1.66rem;
+        margin: 0.25rem 0.2rem;
+        max-width: unset;
+      }
 
 }

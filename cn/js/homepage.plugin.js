@@ -396,7 +396,7 @@ cfApp.directive('cfPie', function () {
                 sell: '@'
 
             },
-        template: '<div id="container{{pieData.symbol}}"></div><div class="figures">{{(value>0?"+":"")}}{{value|number :0}}</div><div class="gloss"><a ng-class="cClass" href="/cn/information/position.html">{{text}}</a></div>',
+        template: '<div id="container{{pieData.symbol}}"></div><div class="figures">{{(value>0?"+":"")}}{{value|number :0}}</div><div class="gloss"><a ng-class="cClass" href="/toc-cf/cn/information/position.html">{{text}}</a></div>',
         link: function (scope, element, attrs) {
             scope.value;
             scope.cClass = "";
