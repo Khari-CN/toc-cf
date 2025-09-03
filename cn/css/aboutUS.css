@@ -3001,6 +3001,7 @@ img {
     .license {
         margin-top: 0.3rem;
         flex-wrap: wrap;
+        column-gap: 50px;
     }
 
     .license .medal {
@@ -3008,7 +3009,7 @@ img {
     }
 
     .license .medal img {
-        width: 2.1rem;
+        width: 1.3rem;
     }
 
     .license-details {
