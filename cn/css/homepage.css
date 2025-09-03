@@ -4990,14 +4990,24 @@ swiper-container {
   }
 
   .section7 .partner-icon .partner-display .partner-img>img {
-    width: 1.66rem;
+    height: 1.66rem;
+    width: auto;
     margin: 0.25rem 0.2rem;
     max-width: unset;
   }
 
+  .section7 .partner-icon .partner-display .partner-img {
+    text-align: center;
+  }
+
+  .section7 .partner-icon .partner-display .partner-img>span{
+    display: block;
+    font-size: 0.22rem;
+  }
+
   .section7 .partner-icon {
     padding: 0;
-    height: 3rem;
+    height: 5rem;
   }
 
   /* Section7 End */
