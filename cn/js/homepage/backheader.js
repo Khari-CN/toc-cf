@@ -44,7 +44,7 @@ function menu() {
       '<div class="main-header"><div class="header-top"></div><div class="m-header m-header3" id="m-header">';
     html += '  <div class="layout-1" style="padding-left: 0.3rem;">';
     html += '   <div class="item-1">';
-    html += '     <a href="/" class="left-1"></a>';
+    html += '     <a href="/toc-cf" class="left-1"></a>';
     html += " </div>";
     html += ' <div class="item-2">';
     html += '     <a href="javascript:;" class="right-1">开启真实账户';
