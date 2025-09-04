@@ -826,7 +826,7 @@ var chat = {
      */
     getAImgOrLevel: function(userId, clientGroup, userType, avatar) {
         var retObj = {
-            aImg: common.isValid(avatar) ? '<img src="' + avatar + '">' : '<img src="/toc-cf/cn/live/theme1/static/img/strage-teacher.png">',
+            aImg: common.isValid(avatar) ? '<img src="' + avatar + '">' : '<img src="/cn/live/theme1/static/img/strage-teacher.png">',
             level: ''
         };
         if (common.isValid(userType) && userType > 0) {
